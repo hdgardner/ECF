@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Button id="NewCurrency" text="{CatalogStrings:Currency_New_Currency}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdCatalogNewCurrency"/>
+      <Splitter id="ActionsSplitter"/>
+      <Menu id="ActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif">
+        <Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdCatalogDeleteCurrency"/>
+      </Menu>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdCatalogNewCurrency">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSCatalogClient.NewCurrency()</ClientScript>
+      </Command>
+
+      <Command id="cmdCatalogDeleteCurrency">
+        <BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+        <ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.CurrencyDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+      </Command>
+
+      <!-- Grid commands -->
+      <Command id="cmdCatalogGridCurrencyEdit">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSCatalogClient.EditCurrency2(params)</ClientScript>
+      </Command>
+
+      <Command id="cmdCatalogGridCurrencyDelete">
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.CurrencyDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

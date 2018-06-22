@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProductDataSet" targetNamespace="http://tempuri.org/ProductDataSet.xsd" xmlns:mstns="http://tempuri.org/ProductDataSet.xsd" xmlns="http://tempuri.org/ProductDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProductDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ProductDataSet" msprop:Generator_DataSetName="ProductDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EntryStock" msprop:Generator_UserTableName="EntryStock" msprop:Generator_RowDeletedName="EntryStockRowDeleted" msprop:Generator_RowChangedName="EntryStockRowChanged" msprop:Generator_RowClassName="EntryStockRow" msprop:Generator_RowChangingName="EntryStockRowChanging" msprop:Generator_RowEvArgName="EntryStockRowChangeEvent" msprop:Generator_RowEvHandlerName="EntryStockRowChangeEventHandler" msprop:Generator_TableClassName="EntryStockDataTable" msprop:Generator_TableVarName="tableEntryStock" msprop:Generator_RowDeletingName="EntryStockRowDeleting" msprop:Generator_TablePropName="EntryStock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SkuId" msprop:Generator_UserColumnName="SkuId" msprop:Generator_ColumnVarNameInTable="columnSkuId" msprop:Generator_ColumnPropNameInRow="SkuId" msprop:Generator_ColumnPropNameInTable="SkuIdColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InStockQuantity" msprop:Generator_UserColumnName="InStockQuantity" msprop:Generator_ColumnVarNameInTable="columnInStockQuantity" msprop:Generator_ColumnPropNameInRow="InStockQuantity" msprop:Generator_ColumnPropNameInTable="InStockQuantityColumn" type="xs:decimal" />
+              <xs:element name="ReservedQuantity" msprop:Generator_UserColumnName="ReservedQuantity" msprop:Generator_ColumnVarNameInTable="columnReservedQuantity" msprop:Generator_ColumnPropNameInRow="ReservedQuantity" msprop:Generator_ColumnPropNameInTable="ReservedQuantityColumn" type="xs:decimal" />
+              <xs:element name="ReorderMinQuantity" msprop:Generator_UserColumnName="ReorderMinQuantity" msprop:Generator_ColumnVarNameInTable="columnReorderMinQuantity" msprop:Generator_ColumnPropNameInRow="ReorderMinQuantity" msprop:Generator_ColumnPropNameInTable="ReorderMinQuantityColumn" type="xs:decimal" />
+              <xs:element name="PreorderQuantity" msprop:Generator_UserColumnName="PreorderQuantity" msprop:Generator_ColumnVarNameInTable="columnPreorderQuantity" msprop:Generator_ColumnPropNameInRow="PreorderQuantity" msprop:Generator_ColumnPropNameInTable="PreorderQuantityColumn" type="xs:decimal" />
+              <xs:element name="BackorderQuantity" msprop:Generator_UserColumnName="BackorderQuantity" msprop:Generator_ColumnVarNameInTable="columnBackorderQuantity" msprop:Generator_ColumnPropNameInRow="BackorderQuantity" msprop:Generator_ColumnPropNameInTable="BackorderQuantityColumn" type="xs:decimal" />
+              <xs:element name="AllowBackorder" msprop:Generator_UserColumnName="AllowBackorder" msprop:Generator_ColumnVarNameInTable="columnAllowBackorder" msprop:Generator_ColumnPropNameInRow="AllowBackorder" msprop:Generator_ColumnPropNameInTable="AllowBackorderColumn" type="xs:boolean" />
+              <xs:element name="AllowPreorder" msprop:Generator_UserColumnName="AllowPreorder" msprop:Generator_ColumnVarNameInTable="columnAllowPreorder" msprop:Generator_ColumnPropNameInRow="AllowPreorder" msprop:Generator_ColumnPropNameInTable="AllowPreorderColumn" type="xs:boolean" />
+              <xs:element name="InventoryStatus" msprop:Generator_UserColumnName="InventoryStatus" msprop:Generator_ColumnVarNameInTable="columnInventoryStatus" msprop:Generator_ColumnPropNameInRow="InventoryStatus" msprop:Generator_ColumnPropNameInTable="InventoryStatusColumn" type="xs:int" />
+              <xs:element name="PreorderAvailabilityDate" msprop:Generator_UserColumnName="PreorderAvailabilityDate" msprop:Generator_ColumnVarNameInTable="columnPreorderAvailabilityDate" msprop:Generator_ColumnPropNameInRow="PreorderAvailabilityDate" msprop:Generator_ColumnPropNameInTable="PreorderAvailabilityDateColumn" type="xs:dateTime" />
+              <xs:element name="BackorderAvailabilityDate" msprop:Generator_UserColumnName="BackorderAvailabilityDate" msprop:Generator_ColumnVarNameInTable="columnBackorderAvailabilityDate" msprop:Generator_ColumnPropNameInRow="BackorderAvailabilityDate" msprop:Generator_ColumnPropNameInTable="BackorderAvailabilityDateColumn" type="xs:dateTime" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BestSellersReport" msprop:Generator_UserTableName="BestSellersReport" msprop:Generator_RowDeletedName="BestSellersReportRowDeleted" msprop:Generator_RowChangedName="BestSellersReportRowChanged" msprop:Generator_RowClassName="BestSellersReportRow" msprop:Generator_RowChangingName="BestSellersReportRowChanging" msprop:Generator_RowEvArgName="BestSellersReportRowChangeEvent" msprop:Generator_RowEvHandlerName="BestSellersReportRowChangeEventHandler" msprop:Generator_TableClassName="BestSellersReportDataTable" msprop:Generator_TableVarName="tableBestSellersReport" msprop:Generator_RowDeletingName="BestSellersReportRowDeleting" msprop:Generator_TablePropName="BestSellersReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Period" msprop:Generator_UserColumnName="Period" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInTable="PeriodColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" msprop:Generator_UserColumnName="ProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ordered" msprop:Generator_UserColumnName="Ordered" msprop:Generator_ColumnPropNameInRow="Ordered" msprop:Generator_ColumnVarNameInTable="columnOrdered" msprop:Generator_ColumnPropNameInTable="OrderedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EntryStock" />
+      <xs:field xpath="mstns:SkuId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

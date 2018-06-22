@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="JurisdictionDto" targetNamespace="http://schemas.mediachase.com/ecf/50/JurisdictionDto.xsd" xmlns:mstns="http://schemas.mediachase.com/ecf/50/JurisdictionDto.xsd" xmlns="http://schemas.mediachase.com/ecf/50/JurisdictionDto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="JurisdictionDto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:Generator_UserDSName="JurisdictionDto" msprop:Generator_DataSetName="JurisdictionDto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="JurisdictionRelation" msprop:Generator_UserTableName="JurisdictionRelation" msprop:Generator_RowDeletedName="JurisdictionRelationRowDeleted" msprop:Generator_RowChangedName="JurisdictionRelationRowChanged" msprop:Generator_RowClassName="JurisdictionRelationRow" msprop:Generator_RowChangingName="JurisdictionRelationRowChanging" msprop:Generator_RowEvArgName="JurisdictionRelationRowChangeEvent" msprop:Generator_RowEvHandlerName="JurisdictionRelationRowChangeEventHandler" msprop:Generator_TableClassName="JurisdictionRelationDataTable" msprop:Generator_TableVarName="tableJurisdictionRelation" msprop:Generator_RowDeletingName="JurisdictionRelationRowDeleting" msprop:Generator_TablePropName="JurisdictionRelation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JurisdictionId" msprop:Generator_UserColumnName="JurisdictionId" msprop:Generator_ColumnVarNameInTable="columnJurisdictionId" msprop:Generator_ColumnPropNameInRow="JurisdictionId" msprop:Generator_ColumnPropNameInTable="JurisdictionIdColumn" type="xs:int" />
+              <xs:element name="JurisdictionGroupId" msprop:Generator_UserColumnName="JurisdictionGroupId" msprop:Generator_ColumnPropNameInRow="JurisdictionGroupId" msprop:Generator_ColumnVarNameInTable="columnJurisdictionGroupId" msprop:Generator_ColumnPropNameInTable="JurisdictionGroupIdColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Jurisdiction" msprop:Generator_UserTableName="Jurisdiction" msprop:Generator_RowDeletedName="JurisdictionRowDeleted" msprop:Generator_RowChangedName="JurisdictionRowChanged" msprop:Generator_RowClassName="JurisdictionRow" msprop:Generator_RowChangingName="JurisdictionRowChanging" msprop:Generator_RowEvArgName="JurisdictionRowChangeEvent" msprop:Generator_RowEvHandlerName="JurisdictionRowChangeEventHandler" msprop:Generator_TableClassName="JurisdictionDataTable" msprop:Generator_TableVarName="tableJurisdiction" msprop:Generator_RowDeletingName="JurisdictionRowDeleting" msprop:Generator_TablePropName="Jurisdiction">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JurisdictionId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="JurisdictionId" msprop:Generator_ColumnPropNameInRow="JurisdictionId" msprop:Generator_ColumnVarNameInTable="columnJurisdictionId" msprop:Generator_ColumnPropNameInTable="JurisdictionIdColumn" type="xs:int" />
+              <xs:element name="DisplayName" msprop:Generator_UserColumnName="DisplayName" msprop:Generator_ColumnPropNameInRow="DisplayName" msprop:Generator_ColumnVarNameInTable="columnDisplayName" msprop:Generator_ColumnPropNameInTable="DisplayNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StateProvinceCode" msprop:Generator_UserColumnName="StateProvinceCode" msprop:Generator_ColumnPropNameInRow="StateProvinceCode" msprop:Generator_ColumnVarNameInTable="columnStateProvinceCode" msprop:Generator_ColumnPropNameInTable="StateProvinceCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CountryCode" msprop:Generator_UserColumnName="CountryCode" msprop:Generator_ColumnPropNameInRow="CountryCode" msprop:Generator_ColumnVarNameInTable="columnCountryCode" msprop:Generator_ColumnPropNameInTable="CountryCodeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JurisdictionType" msprop:Generator_UserColumnName="JurisdictionType" msprop:Generator_ColumnVarNameInTable="columnJurisdictionType" msprop:Generator_ColumnPropNameInRow="JurisdictionType" msprop:Generator_ColumnPropNameInTable="JurisdictionTypeColumn" type="xs:int" />
+              <xs:element name="ZipPostalCodeStart" msprop:Generator_UserColumnName="ZipPostalCodeStart" msprop:Generator_ColumnVarNameInTable="columnZipPostalCodeStart" msprop:Generator_ColumnPropNameInRow="ZipPostalCodeStart" msprop:Generator_ColumnPropNameInTable="ZipPostalCodeStartColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ZipPostalCodeEnd" msprop:Generator_UserColumnName="ZipPostalCodeEnd" msprop:Generator_ColumnVarNameInTable="columnZipPostalCodeEnd" msprop:Generator_ColumnPropNameInRow="ZipPostalCodeEnd" msprop:Generator_ColumnPropNameInTable="ZipPostalCodeEndColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="City" msprop:Generator_UserColumnName="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="District" msprop:Generator_UserColumnName="District" msprop:Generator_ColumnVarNameInTable="columnDistrict" msprop:Generator_ColumnPropNameInRow="District" msprop:Generator_ColumnPropNameInTable="DistrictColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="County" msprop:Generator_UserColumnName="County" msprop:Generator_ColumnVarNameInTable="columnCounty" msprop:Generator_ColumnPropNameInRow="County" msprop:Generator_ColumnPropNameInTable="CountyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GeoCode" msprop:Generator_UserColumnName="GeoCode" msprop:Generator_ColumnVarNameInTable="columnGeoCode" msprop:Generator_ColumnPropNameInRow="GeoCode" msprop:Generator_ColumnPropNameInTable="GeoCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApplicationId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ApplicationId" msprop:Generator_ColumnVarNameInTable="columnApplicationId" msprop:Generator_ColumnPropNameInRow="ApplicationId" msprop:Generator_ColumnPropNameInTable="ApplicationIdColumn" type="xs:string" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="JurisdictionGroup" msprop:Generator_UserTableName="JurisdictionGroup" msprop:Generator_RowDeletedName="JurisdictionGroupRowDeleted" msprop:Generator_RowChangedName="JurisdictionGroupRowChanged" msprop:Generator_RowClassName="JurisdictionGroupRow" msprop:Generator_RowChangingName="JurisdictionGroupRowChanging" msprop:Generator_RowEvArgName="JurisdictionGroupRowChangeEvent" msprop:Generator_RowEvHandlerName="JurisdictionGroupRowChangeEventHandler" msprop:Generator_TableClassName="JurisdictionGroupDataTable" msprop:Generator_TableVarName="tableJurisdictionGroup" msprop:Generator_RowDeletingName="JurisdictionGroupRowDeleting" msprop:Generator_TablePropName="JurisdictionGroup">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JurisdictionGroupId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="JurisdictionGroupId" msprop:Generator_ColumnVarNameInTable="columnJurisdictionGroupId" msprop:Generator_ColumnPropNameInRow="JurisdictionGroupId" msprop:Generator_ColumnPropNameInTable="JurisdictionGroupIdColumn" type="xs:int" />
+              <xs:element name="ApplicationId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ApplicationId" msprop:Generator_ColumnVarNameInTable="columnApplicationId" msprop:Generator_ColumnPropNameInRow="ApplicationId" msprop:Generator_ColumnPropNameInTable="ApplicationIdColumn" type="xs:string" />
+              <xs:element name="DisplayName" msprop:Generator_UserColumnName="DisplayName" msprop:Generator_ColumnVarNameInTable="columnDisplayName" msprop:Generator_ColumnPropNameInRow="DisplayName" msprop:Generator_ColumnPropNameInTable="DisplayNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JurisdictionType" msprop:Generator_UserColumnName="JurisdictionType" msprop:Generator_ColumnVarNameInTable="columnJurisdictionType" msprop:Generator_ColumnPropNameInRow="JurisdictionType" msprop:Generator_ColumnPropNameInTable="JurisdictionTypeColumn" type="xs:int" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:JurisdictionRelation" />
+      <xs:field xpath="mstns:JurisdictionId" />
+      <xs:field xpath="mstns:JurisdictionGroupId" />
+    </xs:unique>
+    <xs:unique name="Jurisdiction_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Jurisdiction" />
+      <xs:field xpath="mstns:JurisdictionId" />
+    </xs:unique>
+    <xs:unique name="JurisdictionGroup_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:JurisdictionGroup" />
+      <xs:field xpath="mstns:JurisdictionGroupId" />
+    </xs:unique>
+    <xs:keyref name="FK_Jurisdiction_JurisdictionRelation" refer="Jurisdiction_Constraint1" msprop:rel_Generator_UserRelationName="FK_Jurisdiction_JurisdictionRelation" msprop:rel_Generator_RelationVarName="relationFK_Jurisdiction_JurisdictionRelation" msprop:rel_Generator_UserChildTable="JurisdictionRelation" msprop:rel_Generator_UserParentTable="Jurisdiction" msprop:rel_Generator_ParentPropName="JurisdictionRow" msprop:rel_Generator_ChildPropName="GetJurisdictionRelationRows">
+      <xs:selector xpath=".//mstns:JurisdictionRelation" />
+      <xs:field xpath="mstns:JurisdictionId" />
+    </xs:keyref>
+    <xs:keyref name="FK_JurisdictionGroup_JurisdictionRelation" refer="JurisdictionGroup_Constraint1" msprop:rel_Generator_UserRelationName="FK_JurisdictionGroup_JurisdictionRelation" msprop:rel_Generator_RelationVarName="relationFK_JurisdictionGroup_JurisdictionRelation" msprop:rel_Generator_UserChildTable="JurisdictionRelation" msprop:rel_Generator_UserParentTable="JurisdictionGroup" msprop:rel_Generator_ParentPropName="JurisdictionGroupRow" msprop:rel_Generator_ChildPropName="GetJurisdictionRelationRows">
+      <xs:selector xpath=".//mstns:JurisdictionRelation" />
+      <xs:field xpath="mstns:JurisdictionGroupId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

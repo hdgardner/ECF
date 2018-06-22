@@ -1,0 +1,75 @@
+﻿/* Dictionary */
+.Dic{
+	border : none;
+}
+
+.DicItem
+{ 
+	border-bottom : 1px solid Silver;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-bottom : 1px solid Silver;
+	border-left : none;
+	border-right : none;
+	border-top : none;
+	color : #003399;
+	font-weight : normal;
+	padding-left : 4px;
+}
+
+.DicItem a
+{ 
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-left : none;
+	border-right : none;
+	border-top : none;
+	color : #003399;
+	font-weight : normal;
+	padding-left : 4px;
+	text-decoration: none;
+}
+
+.DicItem a:hover
+{ 
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-left : none;
+	border-right : none;
+	border-top : none;
+	color : #003399;
+	font-weight : normal;
+	padding-left : 4px;
+	text-decoration: underline;
+}
+.DicHeader{
+	color : Gray;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-bottom : 1px solid Silver;
+	border-left : none;
+	border-right : none;
+	border-top : none;
+	padding-left : 2px;
+	
+}
+
+.DicHeader a{
+	color : Gray;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-left : none;
+	border-right : none;
+	border-top : none;
+	padding-left : 2px;
+	text-decoration: none;
+}
+.DicEditedItem{
+	border : 1px solid Gray;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #003399;
+	font-weight : normal;
+}
+.blockheader-light {
+	font-family: verdana; 
+	border-left:1px solid #aca889;
+	border-right:1px solid #aca889;
+	border-bottom:1px solid #aca889;
+	text-align:left;
+	background-color:White;
+}

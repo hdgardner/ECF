@@ -1,0 +1,122 @@
+@media print {
+
+	#nwtd-pageContent a {
+		color:#000;
+		text-decoration:none;
+	}
+
+	div.need-help,
+	div.nwtd-Menu,
+	img.curves,
+	#nwtd-breadrumb,
+	#nwtd-searchLink,
+	div.nwtd-SearchByPublisher,
+	#nwtd-Menu,
+	#nwtd-submenu,
+	div.footer-links,
+	.buttons
+	{
+		display:none;
+	}
+	.nwtd-defaultPage #MainContentArea 
+	{
+		border-left:none;
+		border-right:none;
+		width: 90%;
+	}
+	
+	#nwtd-pageContent.nwtd-homePageContent, #nwtd-pageContent.nwtd-defaultPageContent {
+		margin:0;
+		padding:0 0 0 0;
+		width:100%;
+		border: 0px;
+	}
+	
+	#nwtd-page {
+	    background-color: url("images-template/wrapper-bground.png");
+		background-repeat:repeat-y;
+		float:left;
+		padding-left:0;
+		padding-right:0;
+		width:99%;
+	}
+	
+	#nwtd-pageHeader {
+		display: none;
+	}
+	
+	#MainContentArea .cart-header h1, #MainContentArea h1.cart-header {
+		float:none;
+		width:100%;
+		border-bottom: 1px solid #000;
+}
+	
+	.order-summary-shipping, .order-summary-billing, .order-summary-order {
+		float:left;
+		padding:10px 0 20px;
+		margin: 0 8px 0 0;
+		width:30%;
+	}
+	
+	.order-summary-shipping th, .order-summary-billing th, .order-summary-order th {
+		background-image:none;
+		background-repeat:repeat-x;
+		color:#FFFFFF;
+		font-size:12px;
+		padding:3px;
+		margin: 0 0 0 0;
+		text-align:left;
+	}
+	
+	#center {
+		margin-left:auto;
+		margin-right:auto;
+		width:100%;
+	}
+
+	table.nwtd-cartview {
+		width:100%;
+		/*border-top: 1px solid #000;*/
+	}
+	
+	table.nwtd-cartview .nwtd-table-header th.col2-summary {
+		width:200px;
+	}
+	
+	table.nwtd-cartview th.col3 {
+		width:100px;
+	}
+	
+	table.nwtd-cartview th.col7 {
+		width:80px;
+	}
+	
+	table.nwtd-cartview th.col5 {
+		width:45px;
+	}
+	
+	table.nwtd-cartview .nwtd-table-header th.col2 {
+		width:150px;
+	}
+	
+	table.nwtd-cartview .nwtd-table-header th.col1 {
+		display: none;
+	}
+	
+	table.nwtd-cartview td.col1 {
+		display: none;
+}
+	
+	#print-logo {
+		display: block;
+	}
+	#sidemenu 
+	{
+		display:none;
+	}
+	table.order-summary-details tr td address {
+		width:140px;
+	}
+	div.nwtd-leftNav {
+		display:none;
+	}

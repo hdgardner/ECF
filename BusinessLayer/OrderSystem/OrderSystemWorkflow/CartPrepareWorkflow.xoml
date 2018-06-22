@@ -1,0 +1,11 @@
+﻿<SequentialWorkflowActivity x:Class="Mediachase.Commerce.Workflow.CartPrepareWorkflow" x:Name="CartPrepareWorkflow" xmlns:ns0="http://schemas.mediachase.com/ecf/50/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<ns0:ValidateLineItemsActivity Warnings="{x:Null}" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" x:Name="validateLineItemsActivity1" />
+	<ns0:CheckInventoryActivity Description="Checks Inventory and removes items if needed." Warnings="{x:Null}" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" x:Name="checkInventoryActivity1" />
+	<ns0:ShipmentSplitActivity x:Name="shipmentSplitActivity1" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" />
+	<ns0:ProcessShipmentsActivity x:Name="processShipmentsActivity1" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" />
+	<ns0:RemoveDiscountsActivity Warnings="{x:Null}" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" x:Name="removeDiscountsActivity1" />
+	<ns0:CalculateTotalsActivity x:Name="calculateTotalsActivity2" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" />
+	<ns0:CalculateDiscountsActivity Warnings="{x:Null}" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" x:Name="calculateDiscountsActivity1" />
+	<ns0:CalculateTaxActivity x:Name="calculateTaxActivity1" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" />
+	<ns0:CalculateTotalsActivity x:Name="calculateTotalsActivity1" OrderGroup="{ActivityBind CartPrepareWorkflow,Path=OrderGroup}" />
+</SequentialWorkflowActivity>

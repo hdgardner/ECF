@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Catalog_Save_File" xml:space="preserve">
+    <value>ファイル保存</value>
+  </data>
+  <data name="Catalog_Import_Warning" xml:space="preserve">
+    <value>インポートを開始する前に常にＥＣＦのデータベースをバックアップすることをお勧めします。</value>
+  </data>
+  <data name="Catalog_Import_Instructions" xml:space="preserve">
+    <value>カタログをインポートするには、以下の欄に表示されているカタログファイルを選択するか新しいカタログをインポートしたのち、インポート開始ボタンをクリックしてください。</value>
+  </data>
+  <data name="Catalog_Add_New_File" xml:space="preserve">
+    <value>新ファイル追加</value>
+  </data>
+  <data name="Catalog_Upload_File" xml:space="preserve">
+    <value>アップロードファイル</value>
+  </data>
+  <data name="Catalog_Uploaded_File" xml:space="preserve">
+    <value>アップロード済みのファイル</value>
+  </data>
+  <data name="Catalog_Upload_Wait" xml:space="preserve">
+    <value>しばらくお待ちください。アップロードが開始します。</value>
+  </data>
+  <data name="Catalog_Upload_Info" xml:space="preserve">
+    <value>ファイルをアップロード中です。しばらくお待ちください。</value>
+  </data>
+  <data name="Catalog_Import_Files_Available" xml:space="preserve">
+    <value>インポート可能なファイル</value>
+  </data>
+  <data name="Catalog_Choose_Mapping_File" xml:space="preserve">
+    <value>マッピングファイルを選択してください。</value>
+  </data>
+  <data name="Catalog_Choose_Catalog" xml:space="preserve">
+    <value>インポートするカタログを選択してください。</value>
+  </data>
+  <data name="Catalog_Edit_Existing_Mapping_File" xml:space="preserve">
+    <value>既存のマッピングファイル編集</value>
+  </data>
+  <data name="Catalog_Load_Mapping_File" xml:space="preserve">
+    <value>マッピングファイルのアップロード</value>
+  </data>
+  <data name="Catalog_MetaClass_Language" xml:space="preserve">
+    <value>メタクラスー言語</value>
+  </data>
+  <data name="Catalog_Mapping_Type" xml:space="preserve">
+    <value>マッピング種類</value>
+  </data>
+  <data name="Meta_Class" xml:space="preserve">
+    <value>メタクラス</value>
+  </data>
+  <data name="Catalog_Data_File_CSV_Adjustment" xml:space="preserve">
+    <value>データファイル及びＣＳＶファイルの調整</value>
+  </data>
+  <data name="Catalog_Data_File" xml:space="preserve">
+    <value>データファイル</value>
+  </data>
+  <data name="Catalog_Text_Qualifier" xml:space="preserve">
+    <value>テキスト権限</value>
+  </data>
+  <data name="Catalog_Save_Mapping_File" xml:space="preserve">
+    <value>マッピングファイルを保存</value>
+  </data>
+  <data name="Catalog_Enter_File_Name" xml:space="preserve">
+    <value>ファイル名を記入してください。</value>
+  </data>
+  <data name="Catalog_About_To_Export" xml:space="preserve">
+    <value>今からカタログがエクスポートされます。</value>
+  </data>
+  <data name="Catalog_Click_Button_To_Start" xml:space="preserve">
+    <value>スタートボタンをクリックしてください。</value>
+  </data>
+  <data name="Catalog_Exported_Files" xml:space="preserve">
+    <value>エクスポート済みファイル一覧</value>
+  </data>
+  <data name="Catalog_Exporting_Catalog" xml:space="preserve">
+    <value>カタログのエクスポート</value>
+  </data>
+  <data name="Catalog_Base_Weight" xml:space="preserve">
+    <value>基本重量</value>
+  </data>
+  <data name="Catalog_Default_Currency" xml:space="preserve">
+    <value>デフォルトの通貨</value>
+  </data>
+  <data name="Catalog_Default_Language" xml:space="preserve">
+    <value>デフォルトの言語</value>
+  </data>
+  <data name="Catalog_In_Kilograms" xml:space="preserve">
+    <value>キログラム表示</value>
+  </data>
+  <data name="Catalog_In_Pounds" xml:space="preserve">
+    <value>ポンド表示</value>
+  </data>
+  <data name="Catalog_Catalog_Name" xml:space="preserve">
+    <value>カタログ名</value>
+  </data>
+  <data name="Catalog_Name_Description" xml:space="preserve">
+    <value>カタログ名の説明</value>
+  </data>
+  <data name="Catalog_Other_Languages" xml:space="preserve">
+    <value>その他の言語</value>
+  </data>
+  <data name="Catalog_Select_Primary_Currency" xml:space="preserve">
+    <value>主要通貨を指定してください。</value>
+  </data>
+  <data name="Catalog_Select_Primary_Language" xml:space="preserve">
+    <value>主要言語をしてしてください。</value>
+  </data>
+  <data name="Catalog_Catalog_Name_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;カタログ名を記入してください。</value>
+  </data>
+  <data name="Catalog_Default_Language_Required" xml:space="preserve">
+    <value>ディフォルトの言語の指定が必要です。</value>
+  </data>
+  <data name="Currency_Name" xml:space="preserve">
+    <value>通貨名</value>
+  </data>
+  <data name="Currency_Name_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;通貨名を記入してください。</value>
+  </data>
+  <data name="Currency_With_Code_Exists" xml:space="preserve">
+    <value>入力された通貨は既に使用されています。</value>
+  </data>
+  <data name="Entry_Enter_Association_Name" xml:space="preserve">
+    <value>アソシエーション 名を記入ください。</value>
+  </data>
+  <data name="Entry_Association_Name_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;アソシエーション名を記入してください。</value>
+  </data>
+  <data name="Entry_Enter_Association_Description" xml:space="preserve">
+    <value>アソシエーション の説明記入欄</value>
+  </data>
+  <data name="Entry_Enter_Association_Sort_Order" xml:space="preserve">
+    <value>ソート順序を記入してください。</value>
+  </data>
+  <data name="Entry_Association_Sort_Order_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;アソシエーション のソート順序を記入してください。</value>
+  </data>
+  <data name="Entry_Save_Changes" xml:space="preserve">
+    <value>編集内容を保存</value>
+  </data>
+  <data name="Entry_Modify_Existing_Association" xml:space="preserve">
+    <value>既存のアソシエーション変更</value>
+  </data>
+  <data name="Catalog_Edit_Details" xml:space="preserve">
+    <value>詳細の編集。</value>
+  </data>
+  <data name="Entry_Modify_Association" xml:space="preserve">
+    <value>アソシエーションの変更</value>
+  </data>
+  <data name="Entry_Pick_Item" xml:space="preserve">
+    <value>アイテム選択</value>
+  </data>
+  <data name="Entry_Add_Item" xml:space="preserve">
+    <value>アイテム追加</value>
+  </data>
+  <data name="Catalog_Name_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;名前を記入してください。</value>
+  </data>
+  <data name="Select_Display_Template" xml:space="preserve">
+    <value>ディスプレーテンプレートの指定</value>
+  </data>
+  <data name="Entry_Code_Exists" xml:space="preserve">
+    <value>入力されたコードは既に使用されています。</value>
+  </data>
+  <data name="Catalog_Invalid_SortOrder_Value" xml:space="preserve">
+    <value>ソート順序の値が不適切です。</value>
+  </data>
+  <data name="Entry_Sort_Order" xml:space="preserve">
+    <value>カテゴリーの入力</value>
+  </data>
+  <data name="Entry_Display_Price" xml:space="preserve">
+    <value>表記値</value>
+  </data>
+  <data name="Entry_Price_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;値段を記入してください。</value>
+  </data>
+  <data name="Entry_Enter_Valid_Display_Price" xml:space="preserve">
+    <value>正しい表示価格を記入してください。</value>
+  </data>
+  <data name="Entry_In_Stock" xml:space="preserve">
+    <value>在庫数</value>
+  </data>
+  <data name="Entry_In_Stock_Quantity_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;在庫量を記入してください。</value>
+  </data>
+  <data name="Entry_Enter_Valid_Quantity" xml:space="preserve">
+    <value>正しい数量を記入してください。</value>
+  </data>
+  <data name="Entry_Min_Quantity" xml:space="preserve">
+    <value>最小量</value>
+  </data>
+  <data name="Entry_Min_Quantity_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;最少量を記入してください。</value>
+  </data>
+  <data name="Entry_Reserved_Quantity_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;予約数を記入してください。</value>
+  </data>
+  <data name="Entry_Max_Quantity" xml:space="preserve">
+    <value>最大量</value>
+  </data>
+  <data name="Entry_Max_Quantity_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;最大量を記入してください。</value>
+  </data>
+  <data name="Entry_Reorder_Min_Qty" xml:space="preserve">
+    <value>最小オーダー量</value>
+  </data>
+  <data name="Entry_Reorder_Min_Qty_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;再オーダー数の最小限を記入してください。</value>
+  </data>
+  <data name="Entry_Merchant" xml:space="preserve">
+    <value>小売商</value>
+  </data>
+  <data name="Entry_Select_Merchant" xml:space="preserve">
+    <value>小売商を指定</value>
+  </data>
+  <data name="Entry_Allow_Preorder" xml:space="preserve">
+    <value>予約を許可</value>
+  </data>
+  <data name="Entry_Weight_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;重量を記入してください。</value>
+  </data>
+  <data name="Entry_Preorder_Qty" xml:space="preserve">
+    <value>予約数</value>
+  </data>
+  <data name="Entry_Preorder_Qty_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;プレオーダー数を記入してください。</value>
+  </data>
+  <data name="Entry_Select_Package" xml:space="preserve">
+    <value>パッケージの指定</value>
+  </data>
+  <data name="Entry_Preorder_Available" xml:space="preserve">
+    <value>プリオーダー可能</value>
+  </data>
+  <data name="Entry_Tax_Category" xml:space="preserve">
+    <value>税金カテゴリー</value>
+  </data>
+  <data name="Entry_Select_Tax_Category" xml:space="preserve">
+    <value>税金カテゴリーの指定</value>
+  </data>
+  <data name="Entry_Allow_Backorder" xml:space="preserve">
+    <value>バックオーダーを許可</value>
+  </data>
+  <data name="Entry_Select_Warehouse" xml:space="preserve">
+    <value>倉庫の指定</value>
+  </data>
+  <data name="Entry_Backorder_Qty" xml:space="preserve">
+    <value>バックオーダー数</value>
+  </data>
+  <data name="Entry_Backorder_Qty_Required" xml:space="preserve">
+    <value>&lt;b&gt;[必須項目]&lt;/b&gt;&lt;br /&gt;受注残数量を記入してください。</value>
+  </data>
+  <data name="Entry_Track_Inventory" xml:space="preserve">
+    <value>在庫トラッキング</value>
+  </data>
+  <data name="Entry_Backorder_Available" xml:space="preserve">
+    <value>バックオーダー可</value>
+  </data>
+  <data name="Entry_Inventory_Status" xml:space="preserve">
+    <value>在庫状況</value>
+  </data>
+  <data name="Entry_Pricing" xml:space="preserve">
+    <value>価格設定</value>
+  </data>
+  <data name="Entry_Find_Item" xml:space="preserve">
+    <value>アイテム検索</value>
+  </data>
+  <data name="Item_Find_Assets" xml:space="preserve">
+    <value>アセットの検索</value>
+  </data>
+  <data name="Item_Add_Asset" xml:space="preserve">
+    <value>アセット 追加</value>
+  </data>
+  <data name="Item_Group_Name" xml:space="preserve">
+    <value>グループ名</value>
+  </data>
+  <data name="Node_Name_Description" xml:space="preserve">
+    <value>カタログノード名の説明</value>
+  </data>
+  <data name="Catalog_Node_With_Code_Exists" xml:space="preserve">
+    <value>入力されたノード名は既に使用されています。</value>
+  </data>
+  <data name="Sale_Type" xml:space="preserve">
+    <value>販売タイプ</value>
+  </data>
+  <data name="Sale_Unit_Price" xml:space="preserve">
+    <value>単価</value>
+  </data>
+  <data name="Catalog_Main_Adjustment" xml:space="preserve">
+    <value>カタログ主調整</value>
+  </data>
+  <data name="Catalog_Entry_Type" xml:space="preserve">
+    <value>記入項目タイプ</value>
+  </data>
+  <data name="Catalog_All_Types" xml:space="preserve">
+    <value>すべてのタイプ</value>
+  </data>
+  <data name="Catalog_Product" xml:space="preserve">
+    <value>製品</value>
+  </data>
+  <data name="Catalog_Variation_Sku" xml:space="preserve">
+    <value>製品ラインアップ/ＳＫＵ</value>
+  </data>
+  <data name="Catalog_Bundle" xml:space="preserve">
+    <value>バンドル</value>
+  </data>
+  <data name="Catalog_Dynamic_Package" xml:space="preserve">
+    <value>ダイナミック パッケージ</value>
+  </data>
+  <data name="Catalog_Additional_Filters" xml:space="preserve">
+    <value>追加フィルター</value>
+  </data>
+  <data name="Catalog_Catalog_Category" xml:space="preserve">
+    <value>カタログ／カテゴリー</value>
+  </data>
+  <data name="Catalog_Keyword" xml:space="preserve">
+    <value>キーワード</value>
+  </data>
+  <data name="Catalog_Apply_Filter" xml:space="preserve">
+    <value>フィルターを適用</value>
+  </data>
+  <data name="Catalog_Fix_The_Following_Problems" xml:space="preserve">
+    <value>以下の問題を修正せずには変更内容を保存できません。</value>
+  </data>
+  <data name="Catalog_Catalog_Entry_Updated_Successfully" xml:space="preserve">
+    <value>記入項目がアップデートされました。</value>
+  </data>
+  <data name="Catalog_Search_By_Keyword" xml:space="preserve">
+    <value>キーワードで検索</value>
+  </data>
+  <data name="Catalog_Filter_By_Language" xml:space="preserve">
+    <value>言語によるフィルター検索</value>
+  </data>
+  <data name="Catalog_Filter_By_Catalog" xml:space="preserve">
+    <value>カタログによるフィルター検索</value>
+  </data>
+  <data name="Catalog_Search_By_Code_Id" xml:space="preserve">
+    <value>コード／ＩＤによる検索</value>
+  </data>
+  <data name="Tax_Category_Name" xml:space="preserve">
+    <value>税金カテゴリー名</value>
+  </data>
+  <data name="Entry_Wrong_Value_Enter_Valid_Integer" xml:space="preserve">
+    <value>&lt;b&gt;誤記入&lt;/b&gt;&lt;br /&gt;整数をご記入ください。</value>
+  </data>
+  <data name="Catalog_Batch_Update" xml:space="preserve">
+    <value>カタログの一括アップデート</value>
+  </data>
+  <data name="Catalog_CSV_Import_Catalog" xml:space="preserve">
+    <value>CSV カタログインポート</value>
+  </data>
+  <data name="Catalog_Entry_Search" xml:space="preserve">
+    <value>カタログ検索</value>
+  </data>
+  <data name="Catalog_Export_Catalog" xml:space="preserve">
+    <value>カタログエクスポート</value>
+  </data>
+  <data name="Catalog_Import_Catalog" xml:space="preserve">
+    <value>カタログのインポート</value>
+  </data>
+  <data name="Catalog_List" xml:space="preserve">
+    <value>カタログリスト</value>
+  </data>
+  <data name="Catalog_Management" xml:space="preserve">
+    <value>カタログマネジメント</value>
+  </data>
+  <data name="Catalog_Move_Link_To_Folder" xml:space="preserve">
+    <value>フォルダーへ移動／リンク付け</value>
+  </data>
+  <data name="Catalog_New_Bundle" xml:space="preserve">
+    <value>新しいバンドル</value>
+  </data>
+  <data name="Catalog_New_Catalog" xml:space="preserve">
+    <value>新しいカタログ</value>
+  </data>
+  <data name="Catalog_New_Category_Node" xml:space="preserve">
+    <value>新しいカテゴリー／ノード</value>
+  </data>
+  <data name="Catalog_New_Dynamic_Package" xml:space="preserve">
+    <value>新しいダイナミックパッケージ</value>
+  </data>
+  <data name="Catalog_New_Package" xml:space="preserve">
+    <value>新しいパッケージ</value>
+  </data>
+  <data name="Catalog_New_Product" xml:space="preserve">
+    <value>新しい製品</value>
+  </data>
+  <data name="Catalog_New_Variation_Sku" xml:space="preserve">
+    <value>新 製品ラインアップ/ＳＫＵ</value>
+  </data>
+  <data name="Catalog_System" xml:space="preserve">
+    <value>カタログシステム</value>
+  </data>
+  <data name="Currency_New_Currency" xml:space="preserve">
+    <value>新通貨</value>
+  </data>
+  <data name="MetaClass_Export_MetaData" xml:space="preserve">
+    <value>メタデータエクスポート</value>
+  </data>
+  <data name="MetaClass_Import_MetaData" xml:space="preserve">
+    <value>メタデータをインポート</value>
+  </data>
+  <data name="MetaClass_New_Meta_Class" xml:space="preserve">
+    <value>新しいメタクラス</value>
+  </data>
+  <data name="MetaField_New_Meta_Field" xml:space="preserve">
+    <value>新しいメタフィールド</value>
+  </data>
+  <data name="Meta_Classes" xml:space="preserve">
+    <value>メタクラス</value>
+  </data>
+  <data name="Meta_Fields" xml:space="preserve">
+    <value>メタフィールド</value>
+  </data>
+  <data name="Tax_Categories" xml:space="preserve">
+    <value>税金カテゴリー</value>
+  </data>
+  <data name="Meta_Data" xml:space="preserve">
+    <value>メタデータ</value>
+  </data>
+  <data name="Catalog_Associations" xml:space="preserve">
+    <value>アソシエーションズ</value>
+  </data>
+  <data name="Catalog_Association_Id" xml:space="preserve">
+    <value>カタログアソシエーションズのＩｄ番号</value>
+  </data>
+  <data name="Catalog_Catalog_Batch_Update" xml:space="preserve">
+    <value>一括アップデート</value>
+  </data>
+  <data name="Catalog_Catalog_Edit" xml:space="preserve">
+    <value>カタログの編集</value>
+  </data>
+  <data name="Catalog_Catalog_Entry_Search" xml:space="preserve">
+    <value>記入項目検索</value>
+  </data>
+  <data name="Catalog_Catalog_List" xml:space="preserve">
+    <value>カタログリスト</value>
+  </data>
+  <data name="Catalog_Edit_Command" xml:space="preserve">
+    <value>コマンドの編集</value>
+  </data>
+  <data name="Catalog_Entry_Sale_Price" xml:space="preserve">
+    <value>記入価格</value>
+  </data>
+  <data name="Catalog_Node_Edit" xml:space="preserve">
+    <value>カタログノード編集</value>
+  </data>
+  <data name="Catalog_Product_Edit" xml:space="preserve">
+    <value>製品 編集</value>
+  </data>
+  <data name="Catalog_Variations_SKUs" xml:space="preserve">
+    <value>製品ラインアップ/ＳＫＵ</value>
+  </data>
+  <data name="Warehouse_Edit" xml:space="preserve">
+    <value>倉庫編集</value>
+  </data>
+  <data name="Warehouse_List" xml:space="preserve">
+    <value>倉庫リスト</value>
+  </data>
+  <data name="Entry_Bundle_Items" xml:space="preserve">
+    <value>バンドルした製品</value>
+  </data>
+  <data name="Entry_Dynamic_Package_Edit" xml:space="preserve">
+    <value>ダイナミックパッケージの編集</value>
+  </data>
+  <data name="Entry_Id" xml:space="preserve">
+    <value>記入項目ＩＤ</value>
+  </data>
+  <data name="Entry_Item_Code" xml:space="preserve">
+    <value>アイテムコード</value>
+  </data>
+  <data name="Entry_Package_Items" xml:space="preserve">
+    <value>パッケージアイテム</value>
+  </data>
+  <data name="Entry_Pricing_Inventory" xml:space="preserve">
+    <value>在庫品価格設定</value>
+  </data>
+  <data name="Entry_Product_Bundle_Edit" xml:space="preserve">
+    <value>製品バンドル編集</value>
+  </data>
+  <data name="Entry_Product_Package_Edit" xml:space="preserve">
+    <value>製品パッケージ 編集</value>
+  </data>
+  <data name="Entry_Sale_Price_Id" xml:space="preserve">
+    <value>販売価格ＩＤ</value>
+  </data>
+  <data name="Entry_Sale_Type" xml:space="preserve">
+    <value>販売 タイプ</value>
+  </data>
+  <data name="Entry_Variation_SKU_Edit" xml:space="preserve">
+    <value>Variation/SKU Edit</value>
+  </data>
+  <data name="Product_Associations" xml:space="preserve">
+    <value>製品アソシエーションズ</value>
+  </data>
+  <data name="Catalog_CSV_Import" xml:space="preserve">
+    <value>CSV インポート</value>
+  </data>
+  <data name="Catalog_Entry_Association_View" xml:space="preserve">
+    <value>カタログのアソシエーション入力項目一覧ーアソシエーションの入力</value>
+  </data>
+  <data name="Catalog_Entry_Sale_Price_View" xml:space="preserve">
+    <value>記入項目一覧 - 販売価格</value>
+  </data>
+  <data name="Catalog_Mapping_File" xml:space="preserve">
+    <value>マッピングファイル</value>
+  </data>
+  <data name="Catalog_Move_Copy_To_Folder" xml:space="preserve">
+    <value>フォルダーへ移動／コピー</value>
+  </data>
+  <data name="Catalog_Node_List" xml:space="preserve">
+    <value>ノードリスト</value>
+  </data>
+  <data name="Currency_Edit" xml:space="preserve">
+    <value>通貨編集</value>
+  </data>
+  <data name="Entry_Assets_List" xml:space="preserve">
+    <value>アセット リスト</value>
+  </data>
+  <data name="Meta_Class_Edit" xml:space="preserve">
+    <value>メタクラスの編集</value>
+  </data>
+  <data name="Tax_Categories_List" xml:space="preserve">
+    <value>税金カテゴリー一覧</value>
+  </data>
+  <data name="Tax_Category_Edit" xml:space="preserve">
+    <value>税金カテゴリー編集</value>
+  </data>
+  <data name="Currency_Add_Rate" xml:space="preserve">
+    <value>レート追加</value>
+  </data>
+  <data name="Catalog_Edit_Currency_Rate" xml:space="preserve">
+    <value>為替相場の編集</value>
+  </data>
+  <data name="Currency_CurrencyRateId" xml:space="preserve">
+    <value>通貨レートＩＤ</value>
+  </data>
+  <data name="Currency_Rates" xml:space="preserve">
+    <value>為替相場</value>
+  </data>
+  <data name="Currency_ToCurrencyId" xml:space="preserve">
+    <value>To 通貨ＩＤ</value>
+  </data>
+  <data name="Currency_Average_Rate" xml:space="preserve">
+    <value>平均値</value>
+  </data>
+  <data name="Currency_End_Of_Day_Rate" xml:space="preserve">
+    <value>今日の最終レート</value>
+  </data>
+  <data name="Currency_From" xml:space="preserve">
+    <value>From 通貨</value>
+  </data>
+  <data name="Currency_Rate_Date" xml:space="preserve">
+    <value>為替相場取得日</value>
+  </data>
+  <data name="Currency_To" xml:space="preserve">
+    <value>To 通貨</value>
+  </data>
+</root>

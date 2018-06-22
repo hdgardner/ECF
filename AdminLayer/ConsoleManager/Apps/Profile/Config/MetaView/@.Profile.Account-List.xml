@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="NewAccount" text="{SharedStrings:New}" imageUrl="~/apps/profile/images/newacc.png" commandName="cmdProfileNewAccount" permissions="profile:acc:mng:create"/>
+			<Splitter id="ActionsSplitter" permissions="profile:acc:mng:delete"/>
+			<Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" permissions="profile:acc:mng:delete">
+				<Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdProfileDeleteAccount" permissions="profile:acc:mng:delete"/>
+        <Button id="UnlockSelected" text="{SharedStrings:Unlock_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/approve.png" commandName="cmdProfileUnlockAccount" permissions="profile:acc:mng:edit"/>
+			</Menu>
+		</add>
+	</Toolbar>
+	<Commands>
+		<add>
+			<Command id="cmdProfileNewAccount">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSProfileClient.NewAccount()</ClientScript>
+			</Command>
+			<Command id="cmdProfileDeleteAccount">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Profile.CommandHandlers.AccountDeleteHandler, Mediachase.ConsoleManager</Handler>
+				<UpdatePanelIds>panelMainListView</UpdatePanelIds>
+			</Command>
+      <Command id="cmdProfileUnlockAccount">
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+        <BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+        <ConfirmationText>{CommerceManager:UnlockSelectedAccountsConfirmation}</ConfirmationText>
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Profile.CommandHandlers.AccountUnlockHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+      </Command>
+    </add>
+	</Commands>
+</MetaView>

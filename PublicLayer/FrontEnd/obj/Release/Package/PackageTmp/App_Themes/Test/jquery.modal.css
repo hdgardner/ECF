@@ -1,0 +1,32 @@
+﻿.jquery-modal-container{
+	padding:0;
+	border:solid 1px #666;
+	background:#fff;
+	z-index:999;
+	display:block;
+}
+
+.jquery-modal-container * {
+	z-index:999;
+}
+
+.jquery-modal-overlay{
+	z-index:1;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	display:block;
+	background-color:#fff;
+}
+
+.jquery-modal-container h1{
+	font-size:12px;
+	font-family:Arial;
+	margin:0;
+	padding:3px;
+	color:#fff;
+	background:#0000ff;
+} 
+
+

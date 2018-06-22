@@ -1,0 +1,3 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LanguageList.ascx.cs" Inherits="Mediachase.Commerce.Manager.Content.Dictionaries.LanguageList" %>
+<%@ Register Src="~/Apps/Core/Controls/EcfListViewControl.ascx" TagName="EcfListViewControl" TagPrefix="core" %>
+<core:EcfListViewControl id="MyListView" runat="server" DataKey="LangId" AppId="Content" ViewId="Languages-List" ShowTopToolbar="true"></core:EcfListViewControl>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" commandName="cmdBlankPermissions" permissions="catalog:ctlg:entries:mng:delete,catalog:ctlg:entries:mng:create">
+				<Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdCatalogDelete" permissions="catalog:ctlg:entries:mng:delete"/>
+				<Button id="CloneSelected" text="{SharedStrings:Clone_Selected}	Clone Selected" imageUrl="~/App_Themes/Main/Images/toolbar/copy.gif" commandName="cmdCatalogCopy" permissions="catalog:ctlg:entries:mng:create"/>
+			</Menu>
+		</add>
+	</Toolbar>
+
+	<Commands>
+		<add>
+			<Command id="cmdBlankPermissions">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogDelete">
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.CatalogEntryDeleteHandler, Mediachase.ConsoleManager</Handler>
+				<UpdatePanelIds>panelMainListView</UpdatePanelIds>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogCopy">
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.CloneSelectedItemsHandler, Mediachase.ConsoleManager</Handler>
+				<UpdatePanelIds>panelMainListView</UpdatePanelIds>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

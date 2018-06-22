@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quartz xmlns="http://quartznet.sourceforge.net/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" overwrite-existing-jobs="true">
+	<job>
+		<job-detail>
+			<name>SearchIndexJob</name>
+			<group>all</group>
+			<description>This job builds search indexes.</description>
+			<job-type>Mediachase.Search.SearchIndexJob, Mediachase.SearchIndexJob</job-type>
+			<volatile>false</volatile>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job-detail>
+		<trigger>
+			<simple>
+				<name>SearchIndexJobTrigger</name>
+				<group>SearchIndexJobGroup</group>
+				<description>Fires SearchIndex Job</description>
+				<misfire-instruction>SmartPolicy</misfire-instruction>
+				<volatile>false</volatile>
+				<job-name>SearchIndexJob</job-name>
+				<job-group>eCommerceFramework</job-group>
+				<repeat-count>RepeatIndefinitely</repeat-count>
+				<repeat-interval>300000</repeat-interval>
+			</simple>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>PaymentPlanJob</name>
+			<group>all</group>
+			<description>This job processes recurring payments.</description>
+			<job-type>Mediachase.Commerce.Services.PaymentPlanJob, Mediachase.Commerce.Services.PaymentPlanJob</job-type>
+			<volatile>false</volatile>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job-detail>
+		<trigger>
+			<simple>
+				<name>PaymentPlanJobTrigger</name>
+				<group>eCommerceFramework</group>
+				<description>Fires Payment Plan Job</description>
+				<misfire-instruction>SmartPolicy</misfire-instruction>
+				<volatile>false</volatile>
+				<job-name>PaymentPlanJob</job-name>
+				<job-group>eCommerceFramework</job-group>
+				<repeat-count>RepeatIndefinitely</repeat-count>
+				<repeat-interval>300000</repeat-interval>
+			</simple>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>RotateEncryptionJob</name>
+			<group>all</group>
+			<description>This job rotate symmetric keys.</description>
+			<job-type>Mediachase.Encryption.RotateEncryptionJob, Mediachase.RotateEncryptionJob</job-type>
+			<volatile>false</volatile>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>RotateEncryptionJobCron</name>
+				<group>eCommerceFramework</group>
+				<job-name>RotateEncryptionJob</job-name>
+				<cron-expression>0 0 6 1 */3 ?</cron-expression>
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>RemoveExpiredPromoReservationsJob</name>
+			<group>all</group>
+			<description>This job cancels expired promotion reservations.</description>
+			<job-type>Mediachase.Commerce.Services.RemoveExpiredPromoReservationsJob, Mediachase.Commerce.Services.RemoveExpiredPromoReservationsJob</job-type>
+			<volatile>false</volatile>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job-detail>
+		<trigger>
+			<simple>
+				<name>RemoveExpiredPromoReservationsJobTrigger</name>
+				<group>eCommerceFramework</group>
+				<description>Fires Expired Reservations Job</description>
+				<misfire-instruction>SmartPolicy</misfire-instruction>
+				<volatile>false</volatile>
+				<job-name>RemoveExpiredPromoReservationsJob</job-name>
+				<job-group>eCommerceFramework</job-group>
+				<repeat-count>RepeatIndefinitely</repeat-count>
+				<repeat-interval>300000</repeat-interval>
+			</simple>
+		</trigger>
+	</job>
+</quartz>
+

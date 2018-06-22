@@ -1,0 +1,31 @@
+﻿#readyToBuy { width:250px; float:right;  margin-right: 5px; background:url(images/purchase/background.gif) bottom left #EFE7D8; text-align:center; }
+#readyToBuy div { text-align:left; margin:0 9px; color:#525252; }
+#readyToBuy #readyTitle { background:url(images/purchase/header.gif) 0 0 no-repeat #595955; text-align:center; padding:5px 0; margin:0 0 6px 0; font:bold 14px tahoma; color:#fff; }
+#prodPrices { margin-bottom:5px; }
+#prodPrices td { text-align:left; padding:2px 0 2px 19px; color:#000; font-size:12px; }
+#prodPrices .yourPrice { background-color:#fff;}
+#prodPrices .yourPrice td { border-top:1px solid #B2AB98; font-size:15px; font-weight:bold; padding-top:5px; }
+#prodPrices .yourPrice .price { color:#039; }
+#prodPrices .shipping td { background-color:#fff; padding:0 0 5px 0; width:230px; text-align:center; font-size:11px; color:#900; }
+
+#readyToBuy #prodColorOptions { font-size:11px; padding-left:0px; }
+#readyToBuy #prodColorOptions span { font-weight:bold; margin-bottom:3px; display:block; }
+#readyToBuy #prodColorOptions select { font-size:11px; padding:1px 0; margin-bottom:7px; }
+
+#readyToBuy #prodRecomend { width: 220px; padding:3px 5px; font-size:11px; background-color:#ffffff; border:1px solid #B2AB98; margin-bottom:8px !important; }
+#readyToBuy #prodRecomend span { padding-left:2px; font-weight:bold;  }
+#readyToBuy #prodRecomend .price { font-weight:bold; color:#039; font-size:11px; }
+#readyToBuy #prodRecomend a { font-size:11px; } 
+
+#readyToBuy #prodQty { margin-bottom:7px !important; font-size:11px; color:#000; }
+#readyToBuy #prodQty select { font-size:11px; padding:1px 0; }
+#readyToBuy #prodQty label { margin-right:20px; }
+#readyToBuy #prodButton { margin:0 !important; padding-bottom:1px; }
+#readyToBuy #prodButton div { background:url(images/purchase/lbutton.gif) 0 0 no-repeat black; margin:0 10px;}
+#readyToBuy #prodButton div a { display:block; text-align:center; font:bold 15px tahoma; color:#fff !important; background:url(images/purchase/rbutton.gif) top right no-repeat; text-decoration:none; line-height:29px; }
+#readyToBuy #wishButton { margin:0 !important; padding-bottom:1px; }
+#readyToBuy #wishButton div { margin:0 10px;}
+#readyToBuy #wishButton div a { display:block; text-align:center; font:bold 12px tahoma; text-decoration:underline; line-height:29px; }
+
+#readyToBuy #shipAddresses { background:url(images/purchase/footer.gif) bottom left no-repeat; margin:0 !important; padding-bottom:10px; }
+#readyToBuy #shipAddresses .saddresses { }

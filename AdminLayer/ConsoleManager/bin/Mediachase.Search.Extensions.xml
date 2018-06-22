@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mediachase.Search.Extensions</name>
+    </assembly>
+    <members>
+        <member name="M:Mediachase.Search.Extensions.Indexers.BaseIndexBuilder.OnEvent(System.String,System.Double)">
+            <summary>
+            Called when [event].
+            </summary>
+            <param name="message">The message.</param>
+            <param name="percentage">The percentage.</param>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.BaseIndexBuilder.AddField(Lucene.Net.Documents.Document,Mediachase.MetaDataPlus.Configurator.MetaField,System.Collections.Hashtable)">
+            <summary>
+            Adds the field.
+            </summary>
+            <param name="doc">The doc.</param>
+            <param name="metaField">The meta field.</param>
+            <param name="metaObject">The meta object.</param>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.BaseIndexBuilder.ConvertStringToSortable(System.String)">
+            <summary>
+            Converts the string to sortable.
+            </summary>
+            <param name="input">The input.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.BaseIndexBuilder.ConvertStringToSortable(System.Decimal)">
+            <summary>
+            Converts the string to sortable.
+            </summary>
+            <param name="input">The input.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.Indexers.BaseIndexBuilder.Manager">
+            <summary>
+            Gets or sets the manager.
+            </summary>
+            <value>The manager.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.Indexers.BaseIndexBuilder.Indexer">
+            <summary>
+            Gets or sets the manager.
+            </summary>
+            <value>The manager.</value>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.ProfileIndexBuilder.BuildIndex(System.Boolean)">
+            <summary>
+            Builds the index.
+            </summary>
+            <param name="rebuild">if set to <c>true</c> [rebuild].</param>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.ProfileIndexBuilder.GetTotalRecords">
+            <summary>
+            Gets the total records.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.ProfileIndexBuilder.IndexAccount(Mediachase.Search.IndexBuilder,Mediachase.Commerce.Profile.Account)">
+            <summary>
+            Indexes the catalog entry dto.
+            </summary>
+            <param name="indexer">The indexer.</param>
+            <param name="account">The account.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.AbstractSearchCriteria.Add(Mediachase.Search.SearchFilter)">
+            <summary>
+            Adds the specified filter.
+            </summary>
+            <param name="filter">The filter.</param>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.AbstractSearchCriteria.Add(System.String,Mediachase.Search.ISearchFilterValue)">
+            <summary>
+            Adds the specified filter.
+            </summary>
+            <param name="field"></param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.AbstractSearchCriteria.ChangeState">
+            <summary>
+            Changes the state.
+            </summary>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.AbstractSearchCriteria.IsModified">
+            <summary>
+            Gets a value indicating whether this instance is modified.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is modified; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.AbstractSearchCriteria.Filters">
+            <summary>
+            Gets the filters.
+            </summary>
+            <value>The filters.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.AbstractSearchCriteria.Scope">
+            <summary>
+            Gets the scope.
+            </summary>
+            <value>The scope.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.AbstractSearchCriteria.Locale">
+            <summary>
+            Gets or sets the locale.
+            </summary>
+            <value>The locale.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.AbstractSearchCriteria.KeyField">
+            <summary>
+            Gets the key field.
+            </summary>
+            <value>The key field.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.AbstractSearchCriteria.ActiveFilterValues">
+            <summary>
+            Gets the active filter values.
+            </summary>
+            <value>The active filter values.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.AbstractSearchCriteria.ActiveFilterFields">
+            <summary>
+            Gets the active filter fields.
+            </summary>
+            <value>The active filter fields.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.AbstractSearchCriteria.CacheKey">
+            <summary>
+            Gets the cache key.
+            </summary>
+            <value>The cache key.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.AbstractSearchCriteria.Query">
+            <summary>
+            Gets the build query.
+            </summary>
+            <value>The build query.</value>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.CatalogIndexBuilder.BuildIndex(System.Boolean)">
+            <summary>
+            Builds the index.
+            </summary>
+            <param name="rebuild">if set to <c>true</c> [rebuild].</param>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.CatalogIndexBuilder.GetTotalRecords">
+            <summary>
+            Gets the total records.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.CatalogIndexBuilder.IndexCatalogEntryDto(Mediachase.Search.IndexBuilder,Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogEntryRow,System.String,System.String[])">
+            <summary>
+            Indexes the catalog entry dto.
+            </summary>
+            <param name="indexer">The indexer.</param>
+            <param name="entryRow">The entry row.</param>
+            <param name="defaultCurrency">The default currency.</param>
+            <param name="languages">The languages.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.CatalogIndexBuilder.BuildPath(Lucene.Net.Documents.Document,Mediachase.Commerce.Catalog.Dto.CatalogDto,Mediachase.Commerce.Catalog.Dto.CatalogNodeDto,System.Int32)">
+            <summary>
+            Builds the path.
+            </summary>
+            <param name="doc">The doc.</param>
+            <param name="catalog">The catalog.</param>
+            <param name="catalogNode">The catalog node.</param>
+            <param name="level">The level.</param>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.CatalogIndexBuilder.AddPriceFields(Lucene.Net.Documents.Document,Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogEntryRow,System.String)">
+            <summary>
+            Adds the price fields.
+            </summary>
+            <param name="doc">The doc.</param>
+            <param name="entryRow">The entry row.</param>
+            <param name="defaultCurrency">The default currency.</param>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.CatalogIndexBuilder.GetPrice(Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogEntryRow,System.String,System.String)">
+            <summary>
+            Gets the price.
+            </summary>
+            <param name="entryRow">The entry row.</param>
+            <param name="languageCode">The language code.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.CatalogIndexBuilder.BuildPath(System.Int32,System.Int32)">
+            <summary>
+            Builds the path.
+            </summary>
+            <param name="catalogId">The catalog id.</param>
+            <param name="catalogNodeId">The catalog node id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.Indexers.CatalogIndexBuilder.BuildPath(Lucene.Net.Documents.Document,System.Int32,System.Int32)">
+            <summary>
+            Builds the path.
+            </summary>
+            <param name="doc">The doc.</param>
+            <param name="catalogId">The catalog id.</param>
+            <param name="catalogNodeId">The catalog node id.</param>
+        </member>
+        <member name="M:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.AddQuery(System.String,Lucene.Net.Search.BooleanQuery,System.Collections.Specialized.StringCollection)">
+            <summary>
+            Adds the query.
+            </summary>
+            <param name="fieldName">Name of the field.</param>
+            <param name="query">The query.</param>
+            <param name="filter">The filter.</param>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.DefaultSortOrder">
+            <summary>
+            Gets the default sort order.
+            </summary>
+            <value>The default sort order.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.Sort">
+            <summary>
+            Gets or sets the sort.
+            </summary>
+            <value>The sort.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.IsFuzzySearch">
+            <summary>
+            Gets or sets a value indicating whether this instance is fuzzy search.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is fuzzy search; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.FuzzyMinSimilarity">
+            <summary>
+            Gets or sets the fuzzy min similarity.
+            </summary>
+            <value>The fuzzy min similarity.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.CatalogNames">
+            <summary>
+            Gets or sets the catalog names.
+            </summary>
+            <value>The catalog names.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.CatalogNodes">
+            <summary>
+            Gets or sets the catalog node codes.
+            </summary>
+            <value>The catalog node code.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.SearchPhrase">
+            <summary>
+            Gets or sets the search phrase.
+            </summary>
+            <value>The search phrase.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.SearchIndex">
+            <summary>
+            Gets or sets the indexes of the search.
+            </summary>
+            <value>The index of the search.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.ClassTypes">
+            <summary>
+            Gets or sets the class types.
+            </summary>
+            <value>The class types.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.StartDate">
+            <summary>
+            Gets or sets the start date.
+            </summary>
+            <value>The start date.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.EndDate">
+            <summary>
+            Gets or sets the end date.
+            </summary>
+            <value>The end date.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.Scope">
+            <summary>
+            Gets the scope.
+            </summary>
+            <value>The scope.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.Query">
+            <summary>
+            Gets the build query.
+            </summary>
+            <value>The build query.</value>
+        </member>
+        <member name="P:Mediachase.Search.Extensions.CatalogEntrySearchCriteria.CacheKey">
+            <summary>
+            Gets the cache key.
+            </summary>
+            <value>The cache key.</value>
+        </member>
+    </members>
+</doc>

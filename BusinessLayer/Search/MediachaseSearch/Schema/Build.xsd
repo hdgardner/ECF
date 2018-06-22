@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="Status">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NeverStarted"/>
+			<xs:enumeration value="Completed"/>
+			<xs:enumeration value="PartiallyCompleted"/>
+			<xs:enumeration value="Started"/>
+			<xs:enumeration value="Failed"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="Build">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="LastBuildDate" type="xs:dateTime" />
+				<xs:element name="Status" type="Status" />
+				<xs:element name="Indexer" type="xs:string" />
+				<xs:element name="Properties">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="Property">
+								<xs:complexType>
+									<xs:attribute name="name" type="xs:string" use="required" />
+									<xs:attribute name="value" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

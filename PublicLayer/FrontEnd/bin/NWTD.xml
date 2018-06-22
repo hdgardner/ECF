@@ -1,0 +1,1026 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NWTD</name>
+    </assembly>
+    <members>
+        <member name="T:NWTD.Search.Extensions.Indexers.CatalogIndexBuilder">
+            <summary>
+            A custom indexer that accounts for Grade ranges. 
+            It provides the ability to index grades in such a way that grade ranges (e.g. k-8) can be indexed so that they would be returned in searches for grades within the range (e.g. grade 6).
+            Use this indexer for NWTD search indexing rather than the built-in one.
+            </summary>
+        </member>
+        <member name="M:NWTD.Search.Extensions.Indexers.CatalogIndexBuilder.AddField(Lucene.Net.Documents.Document,Mediachase.MetaDataPlus.Configurator.MetaField,System.Collections.Hashtable)">
+            <summary>
+            Adds a field to the search index
+            </summary>
+            <param name="doc"></param>
+            <param name="metaField"></param>
+            <param name="metaObject"></param>
+        </member>
+        <member name="M:NWTD.Search.Extensions.Indexers.CatalogIndexBuilder.AddGradeFields(Lucene.Net.Documents.Document,Mediachase.MetaDataPlus.Configurator.MetaField,System.Collections.Hashtable)">
+            <summary>
+            Adds a "grade" field to the search index
+            </summary>
+            <param name="doc"></param>
+            <param name="metaField"></param>
+            <param name="metaObject"></param>
+        </member>
+        <member name="M:NWTD.Search.Extensions.Indexers.CatalogIndexBuilder.parseGradeRange(System.String)">
+            <summary>
+            parses a grade range from a string
+            </summary>
+            <param name="gradeRange">The grade range string. E.g. "K-6" or "PS"</param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Search.Extensions.Indexers.CatalogIndexBuilder.parseGradeNumber(System.Int32)">
+            <summary>
+            Converts a grade number to a string.
+            </summary>
+            <param name="gradeNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Search.Extensions.Indexers.CatalogIndexBuilder.parseGradeName(System.String)">
+            <summary>
+            converts a grade name to an integer
+            </summary>
+            <param name="gradeName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NWTD.Web.UI.UserControls.InfoManagerUserControl">
+            <summary>
+            A user control that can be used in ECF to display data retrieved from NWTD's InfoManager service.
+            </summary>
+        </member>
+        <member name="P:NWTD.Web.UI.UserControls.InfoManagerUserControl.Client">
+            <summary>
+            The web service client we'll use to get the data
+            </summary>
+        </member>
+        <member name="P:NWTD.Web.UI.UserControls.InfoManagerUserControl.Organization">
+            <summary>
+            The Current User's organization.
+            </summary>
+        </member>
+        <member name="T:NWTD.InfoManager.Depository">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.Depository.NWTD">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.Depository.MSSD">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.Publisher">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.aliasCode">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.code">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.corporationCode">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.enabledMSSD">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.enabledMSSDSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.enabledNWTD">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.enabledNWTDSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.name">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.sboId">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.shortName">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Publisher.url">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderPayment">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.Amount">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.AmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.AuthorizationCode">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.Date">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.DateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.Id">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.MethodName">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.PaymentMethod">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.PaymentMethodSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.Status">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderPayment.ValidationCode">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.PaymentMethod">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.PaymentMethod.PurchaseOrder">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.PaymentMethod.PurchaseOrderWithVoucher">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.PaymentMethod.CreditCard">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.PaymentMethod.Check">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.PaymentMethod.Deferred">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.InvoiceAddress">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceAddress.Line1">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceAddress.Line2">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.InvoiceHeader">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.Address">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.AmountApplied">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.AmountAppliedSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.AmountOwed">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.AmountOwedSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.AmountTotal">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.AmountTotalSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.BOL">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.BusinessPartnerId">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.CartonCount">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.CartonCountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.Comment">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.CustomerReferenceNumber">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.FreightCharge">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.FreightChargeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.InvoiceDate">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.InvoiceDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.ShipDate">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.ShipDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.ShipmentNumber">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.ShipmentWeight">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.ShipmentWeightSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.ShippedBy">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.ShippingMethod">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.Status">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.TaxCharge">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.TaxChargeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.TrackingHyperLinks">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceHeader.TrackingNums">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.Invoice">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Invoice.Header">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Invoice.Id">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Invoice.Lines">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.InvoiceLine">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.DocumentDetailLine">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.Comment">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.CopyrightYear">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.Discount">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.DiscountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.DocVisOrderNum">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.DocVisOrderNumSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.ExtendedPrice">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.ExtendedPriceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.GratisQuantity">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.GratisQuantitySpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.Id">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.ItemCode">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.ItemName">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.ItemType">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.ListPrice">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.ListPriceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.OrderDiscount">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.OrderDiscountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.Price">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.PriceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.Quantity">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.QuantitySpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.Reserved1">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.Reserved2">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.Response">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.DocumentDetailLine.Status">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceLine.InvoiceId">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.InvoiceLine.OrderId">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.OperationResult">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OperationResult.additionalData">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OperationResult.code">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OperationResult.codeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OperationResult.message">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OperationResult.subSytem">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderLine">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderLine.Invoice">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderAddress">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.AddressLine1">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.AddressLine2">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.AddressType">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.AddressTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.City">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.Company">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.Email">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.Fax">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.FirstName">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.Id">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.LastName">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.Name">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.Phone1">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.Phone2">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.State">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderAddress.Zip">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.AddressType">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.AddressType.Unknown">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.AddressType.Shipping">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.AddressType.Billing">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderContact">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderHeader">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.Addresses">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.BusinessPartnerId">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.BusinessPartnerName">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.Comment">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.Contact">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.CreatedTime">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.CreatedTimeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.CustomerReferenceNumber">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.DiscountAmount">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.DiscountAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.ProcessedTime">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.ProcessedTimeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.ShippingTotal">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.ShippingTotalSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.SubTotal">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.SubTotalSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.TaxTotal">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.TaxTotalSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.Total">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.TotalSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.OrderHeader.WebConfirmationNumber">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.Order">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Order.Header">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Order.Id">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Order.Lines">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Order.Name">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Order.Payments">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Order.Reserved1">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Order.Reserved2">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Order.Source">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Order.SourceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.Order.Status">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderSource">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSource.FAX">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSource.MAIL">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSource.PHN">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSource.EML">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSource.WEB">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSource.DATA">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSource.RE">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSource.UKN">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.RepPhone">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepPhone.areaCode">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepPhone.extension">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepPhone.name">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepPhone.postfix">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepPhone.prefix">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepPhone.type">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepPhone.typeSpecified">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.RepresentativePhoneType">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.RepresentativePhoneType.Business">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.RepresentativePhoneType.Other">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.RepresentativePhoneType.BusinessFax">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.RepresentativePhoneType.Home">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.RepEmailAddress">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepEmailAddress.address">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepEmailAddress.type">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepEmailAddress.typeSpecified">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.EmailType">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.EmailType.Primary">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.EmailType.Alternate1">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.EmailType.Alternate2">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.RepAddress">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepAddress.city">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepAddress.line1">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepAddress.line2">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepAddress.state">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.RepAddress.zipCode">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.PubRepresentative">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.PubRepresentative.address">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.PubRepresentative.emails">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.PubRepresentative.firstName">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.PubRepresentative.lastName">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.PubRepresentative.phones">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.PubRepresentative.territory">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.PubRepresentativesSearchResult">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.PubRepresentativesSearchResult.publisher">
+            <remarks/>
+        </member>
+        <member name="P:NWTD.InfoManager.PubRepresentativesSearchResult.representatives">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderSearchResultSortMode">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSearchResultSortMode.CreateDate">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSearchResultSortMode.OrderNumber">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSearchResultSortMode.CustRefNumber">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSearchResultSortMode.ShipToName">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSearchResultSortMode.ShippedStatus">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.OrderSearchResultSortMode.WebConfirmNum">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.SortDirection">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.SortDirection.Ascending">
+            <remarks/>
+        </member>
+        <member name="F:NWTD.InfoManager.SortDirection.Descending">
+            <remarks/>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderHeaderDataSet">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderHeaderDataSet.OrderHeadersDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderHeaderDataSet.OrderHeadersRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:NWTD.InfoManager.OrderHeaderDataSet.OrderHeadersRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:NWTD.Profile">
+            <summary>
+            A utility class for dealing with custom NWTD customer-based functionality. 
+            This class required certain NWTD-specific metat data to be configured in ECF
+            </summary>
+        </member>
+        <member name="F:NWTD.Profile.PRICING_STATE_GROUP">
+            <summary>
+            The session key used to store a business partner price group
+            </summary>
+        </member>
+        <member name="F:NWTD.Profile.PRICING_BP_GROUP">
+            <summary>
+            The session key used to store a businessparter ID for pricing purposes
+            </summary>
+        </member>
+        <member name="M:NWTD.Profile.GetDepositoryByState(System.String)">
+            <summary>
+            Gets the Depository associated with a State
+            </summary>
+            <param name="State">The two-letter abbreviated name of the sate</param>
+            <returns>NWTD.Profile.Depository</returns>
+        </member>
+        <member name="M:NWTD.Profile.GetCustomerDepository(Mediachase.Commerce.Profile.Account)">
+            <summary>
+            Gets the depository associated with an Account (based on that Account's business partner)
+            </summary>
+            <param name="Account">The account for which depsitory you want to know</param>
+            <returns>NWTD.Profile.Depository</returns>
+        </member>
+        <member name="M:NWTD.Profile.AssignActiveCart(Mediachase.Commerce.Profile.Account,Mediachase.Commerce.Orders.Cart)">
+            <summary>
+            Sets the acctive cart for a supplied customer
+            </summary>
+            <param name="Account"></param>
+            <param name="Cart"></param>
+        </member>
+        <member name="M:NWTD.Profile.EnsureCustomerCart">
+            <summary>
+            Makes sure that the current customer has an active cart
+            </summary>
+        </member>
+        <member name="M:NWTD.Profile.EnsureCustomerCart(Mediachase.Commerce.Profile.Account)">
+            <summary>
+            Makes sure that the supplied customer has an active cart.
+            </summary>
+            <param name="Account"></param>
+        </member>
+        <member name="M:NWTD.Profile.EnsureCustomerCart(System.Guid)">
+            <summary>
+            Makes sure that the supplied customer has an active cart.
+            </summary>
+            <param name="UserId"></param>
+        </member>
+        <member name="M:NWTD.Profile.GetUserState(Mediachase.Commerce.Profile.Account)">
+            <summary>
+            Gets the US state that the customer is part of. 
+            Requires that the user is associated with an Orgnaization have a metafield called "BusinessPartnerState" that is set.
+            Otherwise you'll get an empty string
+            </summary>
+            <param name="UserAccount"></param>
+            <returns>A string representation of the user's US state. Empty if the customer has none.</returns>
+        </member>
+        <member name="M:NWTD.Profile.GetUserBusinessPartnerID(Mediachase.Commerce.Profile.Account)">
+            <summary>
+            Gets the business partner ID associated with a customer. This is actually the Organization associed with the user's meta field value of the "BusinessPartnerID" metafield.
+            </summary>
+            <param name="UserAccount"></param>
+            <returns>The business partner ID. If none exists, returns an empty string.</returns>
+        </member>
+        <member name="M:NWTD.Profile.GetUserBusinessPartnerPriceGroup(Mediachase.Commerce.Profile.Account)">
+            <summary>
+            NWTD has customer-based price groups that are stored as metadata against a customer's Orgnaization
+            </summary>
+            <param name="UserAccount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Profile.SetSaleInformation">
+            <summary>
+            Sets the current user's price group into the session. ECF uses this information to do price calucations
+            </summary>
+        </member>
+        <member name="M:NWTD.Profile.SetSaleInformation(System.Guid)">
+            <summary>
+            Sets the current user's price group into the session. ECF uses this information to do price calucations
+            </summary>
+            <param name="UserId"></param>
+        </member>
+        <member name="M:NWTD.Profile.SetSaleInformation(Mediachase.Commerce.Profile.Account)">
+            <summary>
+            Sets the current user's price group into the session. ECF uses this information to do price calucations
+            </summary>
+            <param name="Account"></param>
+        </member>
+        <member name="P:NWTD.Profile.CurrentUserLevel">
+            <summary>
+            Retrieves the NWTD User level of the currently logged in user
+            </summary>
+        </member>
+        <member name="P:NWTD.Profile.BusinessPartner">
+            <summary>
+            The Business Partner of which the the current user is a member
+            </summary>
+        </member>
+        <member name="P:NWTD.Profile.BusinessPartnerState">
+            <summary>
+            The state in which the current users's business parter belongs to
+            </summary>
+        </member>
+        <member name="P:NWTD.Profile.BusinessPartnerID">
+            <summary>
+            The NWTD Identifier for the current user's business partner
+            </summary>
+        </member>
+        <member name="P:NWTD.Profile.ActiveCart">
+            <summary>
+            The name of the current user's active cart
+            </summary>
+        </member>
+        <member name="P:NWTD.Profile.CustomerDepository">
+            <summary>
+            The Depository associated with the currently logged in customer
+            </summary>
+        </member>
+        <member name="T:NWTD.Catalog">
+            <summary>
+            A utility class for handling some very custom aspects to NWTD's catalog such as status codes and other data that's stored in ECF metadata.
+            </summary>
+        </member>
+        <member name="M:NWTD.Catalog.GradeName(System.Int32)">
+            <summary>
+            Returns a text representaion of a grade number.
+            </summary>
+            <param name="grade">The grade number to be checked.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Catalog.IsEntryAvailable(Mediachase.Commerce.Catalog.Objects.Entry)">
+            <summary>
+            Whether the supplied entry is available for the current customer.
+            Takes into account State availablity flags and Depository Avaialbity Flags
+            </summary>
+            <param name="entry"></param>
+            <returns></returns>
+        </member>
+        <member name="P:NWTD.Catalog.UserStateAvailablityField">
+            <summary>
+            The field that's used to determine state availabilty for the current user.
+            E.G. "StateAvaiol_NV"
+            Can be used for search filters
+            </summary>
+        </member>
+        <member name="T:NWTD.Catalog.Grades">
+            <summary>
+            A list of grades that a catalog item could have. This enum can be used for determining order.
+            </summary>
+        </member>
+        <member name="T:NWTD.Controls.DepositoryControl">
+            <summary>
+            You can inherit fromt his control and have a control that stores a setting for the depository it pertains to.
+            </summary>
+        </member>
+        <member name="M:NWTD.Controls.DepositoryControl.SetParamInfo(System.Object)">
+            <summary>
+            Grabs the parameter information from the CMS Control Settings
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="P:NWTD.Controls.DepositoryControl.Depository">
+            <summary>
+            The Depository we'll be passing when we get the list
+            </summary>
+        </member>
+        <member name="T:NWTD.Web.UI.ClientScript">
+            <summary>
+            A Utility class for adding all the scripts reuqired for NWTD to run.
+            </summary>
+        </member>
+        <member name="M:NWTD.Web.UI.ClientScript.AddRequiredScripts(System.Web.UI.Page)">
+            <summary>
+            Adds all the required client script to a page at runtime
+            </summary>
+            <param name="Page"></param>
+        </member>
+        <member name="T:NWTD.Orders.Cart">
+            <summary>
+            NWTD has a lot of things it does with carts that go beyond ECF's default functionality.
+            A Utility Class that contains static methods and constants for workign with NWTD-specific funtionality such as calculating cart totals and and creating mutliple user carts.
+            </summary>
+        </member>
+        <member name="M:NWTD.Orders.Cart.GetUserCarts(System.Guid,System.Boolean)">
+            <summary>
+            Returns a list of Carts associated with a user.
+            </summary>
+            <param name="UserID">The ID of the user</param>
+            <param name="ActiveOnly">Whether to get only active carts</param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Orders.Cart.LineItemTotal(Mediachase.Commerce.Orders.LineItem)">
+            <summary>
+            Calculates the total of a line item, including sales and gratis
+            </summary>
+            <param name="lineItem">The line item to total</param>
+            <returns>The total in decimal form</returns>
+        </member>
+        <member name="M:NWTD.Orders.Cart.CartTotal(Mediachase.Commerce.Orders.Cart)">
+            <summary>
+            Calculates the subtotal of a cart, including and gratis
+            </summary>
+            <param name="cart">The cart for which the total is being calculated</param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Orders.Cart.CartTotal(Mediachase.Commerce.Orders.Cart,System.Boolean,System.Boolean)">
+            <summary>
+            Calculates the total of a cart, including and gratis
+            </summary>
+            <param name="cart">The cart for which the total is being calculated</param>
+            <param name="IncludeTax">Whether to include tax in the caculation</param>
+            <param name="IncludeShipping">Whether to include shipping in the calculation</param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Orders.Cart.CartTax(Mediachase.Commerce.Orders.Cart)">
+            <summary>
+            Calculates the estimated tax of the cart, based on the first line item found that has a shipping address
+            </summary>
+            <param name="cart">The cart for which the tax is being estimated</param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Orders.Cart.CartShippingCharge(Mediachase.Commerce.Orders.Cart)">
+            <summary>
+            Calculate the shipping charge based on the cart's owner's organization
+            </summary>
+            <param name="cart">The cart being examined</param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Orders.Cart.FindCartShippingAddress(Mediachase.Commerce.Orders.Cart)">
+            <summary>
+            Searches a cart's line items for a shipping address. Returns the first address found.
+            </summary>
+            <param name="cart">The cart being examined</param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Orders.Cart.CreateCart(Mediachase.Commerce.Profile.Account,System.String)">
+            <summary>
+            Creates a new cart for the supplied customer with the supplied name. 
+            This method does some additional things beyond ECF's cart creation code, 
+            so it's very importand that NWTD carts are created this way.
+            </summary>
+            <param name="Account"></param>
+            <param name="CartName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Orders.Cart.GenerateOrderNumber(Mediachase.Commerce.Orders.Cart)">
+            <summary>
+            Generates an Order number from the cart following NWTDs custom conventions
+            </summary>
+            <param name="cart"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NWTD.Orders.Cart.AssignTotals(Mediachase.Commerce.Orders.Cart@)">
+            <summary>
+            Assigns totals to a cart.
+            </summary>
+            <param name="Cart"></param>
+        </member>
+        <member name="M:NWTD.Orders.Cart.CartCanBeEdited(Mediachase.Commerce.Orders.Cart)">
+            <summary>
+            Finds out whether a cart can be edited (submitted carts can't).
+            </summary>
+            <param name="Cart">The cart to investigate</param>
+            <returns></returns>
+        </member>
+        <member name="P:NWTD.Orders.Cart.Reminder">
+            <summary>
+            Returns whether the current customer shoudl receive prompt to choose an active cart. 
+            This wil be based on whether the user has established a new session
+            </summary>
+        </member>
+        <member name="P:NWTD.Orders.Cart.CurrentCustomerCarts">
+            <summary>
+            Returns a list of active Carts the current customer has created.
+            </summary>
+        </member>
+    </members>
+</doc>

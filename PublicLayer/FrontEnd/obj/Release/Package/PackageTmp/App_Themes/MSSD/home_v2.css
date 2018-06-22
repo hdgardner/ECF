@@ -1,0 +1,293 @@
+.nwtd-homePage{
+
+}
+
+
+
+.nwtd-homePage #MainContentArea {
+/*	padding-top:10px;*/
+	padding-bottom:10px;
+}
+
+.nwtd-homePage .homeBoxCol2{
+	float:left;
+	width: 307px;
+	margin:0 25px;
+	
+}
+.nwtd-homePage .homeBoxCol3{
+	float:left;
+	width: 307px;
+}
+
+.nwtd-homePage .homeBox1, 
+.nwtd-homePage .homeBox2, 
+.nwtd-homePage .homeBox3 {
+	float:left;
+}
+
+.nwtd-homePage .homeBox1 h3, 
+.nwtd-homePage .homeBox3 h3 {
+	font-size:18px;
+	color:#0d56a5;
+	font-family: Arial;
+	margin: 0 0 0 0;
+	padding: 3px 0 20px 0;
+}
+
+.nwtd-homePage .homeBox2 h3 {
+	font-size:18px;
+	color:#ffffcc;
+	font-family: Arial;
+	margin: 0 0 0 0;
+	padding: 0 0 20px 0;
+}
+
+.nwtd-homePage .homeBox1 {
+	background-image:url(images-template/home-feature-1.png);
+	background-repeat:no-repeat;
+	width:276px;
+	height:185px;
+	margin: 0 0 0 0;
+	padding: 8px 17px 14px 17px;
+}
+
+.nwtd-homePage .homeBox1 LABEL {
+	font-size: 11px;
+	margin: 0 0 0 0;
+	padding: 0 10px 0 0;
+	line-height: 20px;
+}
+
+.nwtd-homePage .homeBox1 INPUT.text,
+.nwtd-homePage .homeBox1 INPUT.nwtd-search-keyword,
+.nwtd-homePage .homeBox1 .nwtd-SearchByPublisher SELECT,
+.nwtd-defaultPage INPUT.nwtd-search-keyword,
+.nwtd-defaultPage .nwtd-SearchByPublisher SELECT,
+.nwtd-detailsPage .nwtd-SearchByPublisher SELECT {
+	border: 1px solid #999;
+	height: 17px;
+	width: 175px;
+	margin: 0 0 0 0;
+}
+
+.nwtd-defaultPage #nwtd-Menu INPUT.nwtd-search-keyword {
+	width: 140px;
+	margin: 0 3px 0 3px;
+}
+
+.nwtd-defaultPage #nwtd-Menu .nwtd-SearchByPublisher LABEL {
+	font-size: 12px;
+	margin: 3px 5px 0 0;
+	float: left;
+}
+
+.nwtd-homePage .homeBox1 INPUT.nwtd-search-keyword {
+	margin: 14px 0 14px 0;
+}
+
+.nwtd-homePage .homeBox1 .nwtd-SearchByPublisher SELECT {
+	margin: 14px 0 0 0;
+}
+
+.nwtd-homePage .homeBox1 td.home1-check input {
+	margin: 0 3px 0 72px;
+	padding: 0 0 0 0;
+}
+
+p.search-txt {
+	text-align: center;
+}
+
+#nwtd-pageContent p.search-txt a {
+	font-size:11px !important;
+}
+
+.nwtd-SearchByPublisher {
+	width: 180px;
+	margin: auto;
+}
+
+.nwtd-defaultPageContent .nwtd-SearchByPublisher {
+	width: auto;
+	margin: auto;
+	float: left;
+}
+
+
+
+.nwtd-homePage .homeBox1 input.login-btn {
+	background-image: url(images-template/login-btn.png);
+	width: 48px;
+	height: 21px;
+	background-color:transparent;
+	color:#fff;
+	border:0px;
+	padding:0;
+	font-size:10px;
+	font-weight:bold;
+	text-indent: -9999px;
+	color: transparent;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.nwtd-homePage .homeBox1 input.search-btn,
+.nwtd-defaultPage input.search-btn {
+	background-image: url(images-template/search-btn.png);
+	width: 55px;
+	height: 21px;
+	background-color:transparent;
+	color:#fff;
+	border:0px;
+	padding:0;
+	font-size:10px;
+	font-weight:bold;
+	text-indent: -9999px;
+	color: transparent;
+	text-transform: capitalize;
+	margin: 10px 0 0 0;
+	float: right;
+	cursor: pointer;
+}
+
+.nwtd-defaultPage #nwtd-Menu input.search-btn {
+	background-image: url(images-template/menu-search-btn.png);
+}
+
+.nwtd-defaultPage input.search-btn {
+	margin: 0 0 0 0;
+	float: none;
+}
+
+.nwtd-homePage .homeBox1 td.home1-check LABEL {
+	font-weight: normal;
+}
+
+.nwtd-homePage .homeBox2 {	
+	background-image:url(images-template/home-feature-2.png);
+	background-repeat:no-repeat;
+	width:273px;
+	height:185px;
+	margin: 2px 0 0 0;
+	padding: 8px 17px 14px 17px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.nwtd-homePage .homeBox2 .create-new-cart-btn	{
+	margin: 0 0 0 0;
+	padding: 10px 0 10px 0;
+}
+
+.nwtd-homePage .homeBox3 {	
+	background-image:url(images-template/home-feature-3.png);
+	background-repeat:no-repeat;
+	width:273px;
+	height:185px;
+	margin: 0 0 0 0;
+	padding: 8px 17px 14px 17px;
+}
+
+.nwtd-homePage .homeBox3 ul {
+	list-style-type:none;
+	margin-left:7px;
+}
+
+.nwtd-homePage .homeBox3 ul li {
+	background-image:url(images-template/quicklinks-bullet.png);
+	background-repeat:no-repeat;
+	background-position:0 1px;
+	padding-left:9px;
+	font-weight: bold;
+}
+	
+.nwtd-homePage .homeBox1 td 
+{
+	vertical-align:top;
+}
+.nwtd-homePage .homeBox1 td label,
+.nwtd-homePage .homeBox1 td input
+{
+	display:inline;
+}
+.nwtd-homePage p {
+	margin-bottom:0px;
+}
+div.nwtd-homePageContent #MainContentArea {
+	padding-bottom:0px;
+}
+div.nwtd-homePageContent select,
+div.nwtd-homePageContent input {
+	display:block;
+	clear:both;
+	margin-bottom:5px;
+}
+div.nwtd-homePageContent td select,
+div.nwtd-homePageContent td input {
+	display:inherit;
+	clear:inherit;
+	margin-bottom:inherit;
+}
+.nwtd-homePage .homeBox1 input[type=button], .nwtd-homePage .homeBox1 .nwtd-button-white {
+	background-color:#006bb7;
+	color:#fff;
+	border:1px solid #ccc;
+	padding:3px;
+	padding-top:3px;
+	font-size:11px;
+	font-weight:bold;
+	margin-top:10px;
+	height:24px;
+	line-height:12px;
+	margin-bottom:0px;
+}
+
+/* 
+   On 10/10/17, Heath implemented the following slideshow style logic, in combination with javascript/html 
+    logic in NWTDHomeTemplate.ascx, to replace the outdated flash control that was originally being used 
+    I renamed this css from home.css to home_v2.css so browser caching is not a factor (right click -> rename -> the end)
+   NOTE: All modifications below that are associated with this change are labeled with "hdg 10/10/17" 
+         
+*/
+
+/* Homepage block containing both the proudly serving and new slideshow images (hdg 10/10/17) */
+.main_block
+{
+ 	width: 974px;
+    height: 254px;
+ 	margin: 0 0 0 0;
+	padding: 0 0 0 0; 
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px #E2E2E2 solid;   
+}
+/* Container for static image located in left side of homepage main_block (hdg 10/10/17) */
+.static_pic
+{
+    width: 413px;
+    height: 254px;
+    margin: 0 0 0 0;
+	padding: 0 0 0 0; 
+	float: left;
+	border-radius: 8px;
+	overflow: hidden;
+}
+/* Container for slideshow images located in right side of homepage main_block (hdg 10/10/17) */
+.slide_pics
+{
+    width: 561px;
+    height: 254px;
+    margin: 0 0 0 0;
+	padding: 0 0 0 0; 
+	float: left;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* Specific formatting for slideshow images located in slide_pics block (hdg 10/10/17) */
+#slideshow > div
+{
+    position: absolute;
+    border-radius: 8px;
+    overflow: hidden;
+}

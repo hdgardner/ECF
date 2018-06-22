@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Mediachase.Commerce.Catalog.Objects.RelationInfo" Collapsed="true">
+    <Position X="2" Y="12.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAFAAAAAAAAAAAAQEAAAAgAAAAAE=</HashCode>
+      <FileName>Catalog\Objects\Association.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.SiteCatalogs" Collapsed="true">
+    <Position X="2.75" Y="2" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\SiteCatalogs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Catalog" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.CatalogNode" Collapsed="true">
+    <Position X="11.25" Y="4.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAgAAIGAAVoAQwACAQpAAFAAIgAkEUAAg=</HashCode>
+      <FileName>Catalog\Objects\CatalogNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ancestors" />
+      <Property Name="Children" />
+      <Property Name="ItemAttributes" />
+      <Property Name="ParentNode" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Assets" />
+      <Property Name="SeoInfo" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.Entry" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="7.5" />
+    <TypeIdentifier>
+      <HashCode>AJEhQAAYABiQhCCQGGBBoBQwAAAAJAAFCAAgAkAEAQI=</HashCode>
+      <FileName>Catalog\Objects\Entry.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Entries" />
+      <Property Name="Inventory" />
+      <Property Name="ItemAttributes" />
+      <Property Name="Nodes" />
+      <Property Name="ParentEntry" />
+      <Property Name="RelationInfo" />
+      <Property Name="SalePrices" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Assets" />
+      <Property Name="Associations" />
+      <Property Name="SeoInfo" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.EntryAssociations" Collapsed="true">
+    <Position X="2.25" Y="14.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Catalog\Objects\EntryAssociations.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Association" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.EntryRelationType">
+    <Position X="9.75" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIgAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\EntryRelationType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.EntryType">
+    <Position X="9.75" Y="9.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAAAAAAAAAAAQAAAAAAAAAAQAAIAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\EntryType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.Image" Collapsed="true">
+    <Position X="3" Y="9" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAGBAAAAAAAAAAAoEQAAAACAAAACAIAAIAQABA=</HashCode>
+      <FileName>Catalog\Objects\Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.Images" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAABQAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\Images.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[System.String]" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Image" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.Inventory" Collapsed="true">
+    <Position X="2" Y="19.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAEAAAgAERAAACAAICQAAAhAAAEAKACgSAAAAI=</HashCode>
+      <FileName>Catalog\Objects\Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.ItemAsset" Collapsed="true">
+    <Position X="7.75" Y="6.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAQAAAABAAAAAAAQAAAAAEAAAgAAAAQAE=</HashCode>
+      <FileName>Catalog\Objects\ItemAsset.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.ItemAttribute" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAABAEAAAAIAQAAAAAAAAAAQAwAAAABAA=</HashCode>
+      <FileName>Catalog\Objects\ItemAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.ItemAttributes" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAiABAAAACAAIACAAAAAAAAiAAEBUCAggABYQAAoE=</HashCode>
+      <FileName>Catalog\Objects\ItemAttributes.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Files" />
+      <Property Name="this[System.String]" />
+      <Property Name="Weight" />
+      <Property Name="Images" />
+      <Property Name="ListPrice" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Attribute" />
+      <Property Name="Image" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.ItemFile" Collapsed="true">
+    <Position X="3" Y="10.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAABIAAAACIAQAAAAAAAQAASAwAABABAA=</HashCode>
+      <FileName>Catalog\Objects\ItemFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.ItemFiles" Collapsed="true">
+    <Position X="2.75" Y="9.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAEEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\ItemFiles.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[System.String]" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="File" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.Price" Collapsed="true">
+    <Position X="3" Y="18.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAQAAAAABAAQAAAQCAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\Price.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.Association" Collapsed="true">
+    <Position X="2" Y="13.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAIAQABAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\RelationInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EntryAssociations" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.SalePrice" Collapsed="true">
+    <Position X="2.75" Y="17.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAAAAAAAAAAAAAABAACAAgAAACIAAAABgAQMAAAAA=</HashCode>
+      <FileName>Catalog\Objects\SalePrice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UnitPrice" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.SalePrices" Collapsed="true">
+    <Position X="2" Y="16.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Catalog\Objects\SalePrices.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="SalePrice" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.Seo" Collapsed="true">
+    <Position X="7.75" Y="5.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAAAAAgAEAAAAAAAAAAAIAAAAAEDAAAAAAEgAA=</HashCode>
+      <FileName>Catalog\Objects\Seo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Objects.SiteCatalog" Collapsed="true">
+    <Position X="0.75" Y="1" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAIAQAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Catalog\Objects\SiteCatalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Mediachase.Commerce.Catalog.Objects.CatalogNodes" Collapsed="true">
+    <Position X="9.75" Y="3" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Catalog\Objects\CatalogNodes.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="CatalogNode" />
+    </ShowAsCollectionAssociation>
+  </Struct>
+  <Struct Name="Mediachase.Commerce.Catalog.Objects.Entries" Collapsed="true">
+    <Position X="0.75" Y="3" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAQAwAAAAAAAAAACAAAACAAAAAAAgBAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\Entries.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[System.Int32]" />
+      <Property Name="this[System.String]" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Entry" />
+    </ShowAsCollectionAssociation>
+  </Struct>
+  <Struct Name="Mediachase.Commerce.Catalog.Objects.EntryAssociation" Collapsed="true">
+    <Position X="2.75" Y="15.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQBQBAAAAAEAAAAAAAAAAAgAAAAAAUAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\EntryAssociation.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Mediachase.Commerce.Catalog.Objects.NonNegativeIntegerWithUnits" Collapsed="true">
+    <Position X="2.75" Y="11.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAgAAAAAAAAAAAAAAAEAAgAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\NonNegativeIntegerWithUnits.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Mediachase.Commerce.Catalog.Objects.ItemType">
+    <Position X="9.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAAAAAAAAAAAQADQAAAAAAAQAAIAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Objects\ItemType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

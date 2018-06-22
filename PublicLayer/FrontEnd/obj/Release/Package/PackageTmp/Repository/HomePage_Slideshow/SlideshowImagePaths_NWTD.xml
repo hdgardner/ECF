@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<imagePaths>
+  <image id="StaticHomePageImage" path="~/Repository/HomePage_Slideshow/ProudlyservingNWTD.jpg" state="" ></image>
+  <image id="SlideshowImage1" path="~/Repository/HomePage_Slideshow/AK12.jpg" ></image>
+  <image id="SlideshowImage2" path="~/Repository/HomePage_Slideshow/OR9.jpg" ></image>
+  <image id="SlideshowImage3" path="~/Repository/HomePage_Slideshow/WA9.jpg" ></image>
+  <image id="SlideshowImage4" path="~/Repository/HomePage_Slideshow/OR8.jpg" ></image>
+  <image id="SlideshowImage5" path="~/Repository/HomePage_Slideshow/WA21.jpg" ></image>
+  <image id="SlideshowImage6" path="~/Repository/HomePage_Slideshow/AK3.jpg" ></image>
+  <image id="SlideshowImage7" path="~/Repository/HomePage_Slideshow/NWTDBuilding.jpg" ></image>
+</imagePaths>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Button id="NewMetaField" text="{SharedStrings:New_Meta_Field}" imageUrl="~/App_Themes/Default/Images/metafield.gif" commandName="cmdOrderNewMetaField"/>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdOrderNewMetaField">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>javascript:CSManagementClient.ChangeView('Order', 'MetaField-New','fieldnamespace=Mediachase.Commerce.Orders.System')</ClientScript>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

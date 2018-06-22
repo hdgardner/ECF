@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Mediachase.Commerce.Catalog.CatalogContext" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAgAAAACEAAAAAAAAAAAAAABAIAAAAAA=</HashCode>
+      <FileName>Catalog\CatalogContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Impl.CatalogContextImpl" Collapsed="true">
+    <Position X="1.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEBAAAAAABJCBgAwgAEgkBAKgAAAEAMCwAAQAAACA=</HashCode>
+      <FileName>Catalog\Impl\SiteContextImpl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Impl.CatalogContextProxyImpl" Collapsed="true">
+    <Position X="1.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEBAAAAAABJCBgAwgAEgkBAKgAAAEAMCxAAQAAACA=</HashCode>
+      <FileName>Catalog\Impl\SiteContextProxyImpl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogAssociationDto" Collapsed="true">
+    <Position X="1.25" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAwAgAAJABAAIQAAQgAgCQBgAIQAAIAkABFA=</HashCode>
+      <FileName>Catalog\Dto\CatalogAssociationDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto" Collapsed="true">
+    <Position X="3.25" Y="4" Width="1.75" />
+    <NestedTypes>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogLanguageDataTable" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogLanguageRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogSecurityRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogLanguageRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.SiteCatalogRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.SiteCatalogRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogSecurityRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogSecurityRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogSecurityDataTable" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.SiteCatalogRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.SiteCatalogDataTable" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogDataTable" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogDto.CatalogLanguageRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgAMAEEAAwAAAAJAFAICQAAJAAkCUBgAAAABIgEABBA=</HashCode>
+      <FileName>Catalog\Dto\CatalogDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Dto.WarehouseDto" Collapsed="true">
+    <Position X="5.25" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAAQAAAAQgCQBgACAAAEAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto" Collapsed="true">
+    <Position X="5.25" Y="4" Width="1.75" />
+    <NestedTypes>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogItemAssetRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.SalePriceRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogItemSeoRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.InventoryDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogEntryRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogItemAssetDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.MerchantRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogAssociationRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.MerchantDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.VariationRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogAssociationRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.MerchantRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogItemAssetRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.InventoryRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogAssociationDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.VariationRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogEntryRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogAssociationRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogEntryRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogItemSeoRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogItemAssetRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogItemSeoRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.MerchantRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.InventoryRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.SalePriceRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.SalePriceDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Catalog\Dto\CatalogEntryDto.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.InventoryRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.SalePriceRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogItemSeoDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.VariationDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.CatalogEntryDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogEntryDto.VariationRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gRAAgCEAC4AggAJABEBCQAAAAAhCwBhgAQAEwgGBFRA=</HashCode>
+      <FileName>Catalog\Dto\CatalogEntryDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogLogDto" Collapsed="true">
+    <Position X="1.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAwAAAQJABAAAQAAAAAgCQBgAIAAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogNodeDto" Collapsed="true">
+    <Position X="3.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAABAAwAAgAJABEAAQAAAAAgSQBggABAAAgEgFBA=</HashCode>
+      <FileName>Catalog\Dto\CatalogNodeDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogRelationDto" Collapsed="true">
+    <Position X="5.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gCAAAAAAAwAAAAJABAggwAAAAAlCQBggAQAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Dto.CatalogTaxDto" Collapsed="true">
+    <Position X="1.25" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEwAAAAJABAAgQAAAAAgCQBgAAAAAAAEgBBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Dto.CurrencyDto" Collapsed="true">
+    <Position X="3.25" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAwAAAAJABAAAQCAACAgDQBkAAAAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.CatalogConfiguration" Collapsed="true">
+    <Position X="2.75" Y="7.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAEEQEgAAAAAAFAAQAAAAAAAgCAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\CatalogConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cache" />
+      <Property Name="Connection" />
+      <Property Name="EncodingSettings" />
+      <Property Name="Events" />
+      <Property Name="Instance" />
+      <Property Name="Roles" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.CatalogConnection" Collapsed="true">
+    <Position X="1" Y="8.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIQAAAAAAAAAAAIAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\CatalogConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.CacheConfiguration" Collapsed="true">
+    <Position X="4.75" Y="8.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAQAAGAAAAAAAEAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Catalog\CatalogConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.EncodingSettings" Collapsed="true">
+    <Position X="1" Y="9.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAARAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\CatalogConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.RoleCollection" Collapsed="true">
+    <Position X="1" Y="10.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\CatalogConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[System.Int32]" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.RoleDefinition" Collapsed="true">
+    <Position X="1.25" Y="11.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Catalog\CatalogConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.CatalogRoles" Collapsed="true">
+    <Position X="1.25" Y="12.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AACABAAAAAAQgAAAAACAAAAAAAAAAAAAAAIAAAIAAAg=</HashCode>
+      <FileName>Catalog\CatalogConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Engine.Events.EventCollection" Collapsed="true">
+    <Position X="4.75" Y="9.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Events\EventConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[System.Int32]" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Mediachase.Commerce.Engine.Events.EventDefinition" Collapsed="true">
+    <Position X="5.5" Y="10.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Events\EventConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Managers.CatalogResponseGroup" Collapsed="true">
+    <Position X="4.25" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAACA=</HashCode>
+      <FileName>Catalog\Managers\ResponseGroups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Managers.CatalogNodeResponseGroup" Collapsed="true">
+    <Position X="4.25" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAACA=</HashCode>
+      <FileName>Catalog\Managers\ResponseGroups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Managers.CatalogEntryResponseGroup" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="2.25" />
+    <NestedTypes>
+      <Enum Name="Mediachase.Commerce.Catalog.Managers.CatalogEntryResponseGroup.ResponseGroup" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Catalog\Managers\ResponseGroups.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAACA=</HashCode>
+      <FileName>Catalog\Managers\ResponseGroups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.Managers.CatalogRelationResponseGroup" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAACA=</HashCode>
+      <FileName>Catalog\Managers\ResponseGroups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Commerce.Catalog.EventContext" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Mediachase.Commerce.Catalog.EventContext.EntryEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Catalog\EventContext.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Mediachase.Commerce.Catalog.EventContext.NodeEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Catalog\EventContext.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Mediachase.Commerce.Catalog.EventContext.CatalogEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Catalog\EventContext.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Mediachase.Commerce.Catalog.EventContext.AssociationEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Catalog\EventContext.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Mediachase.Commerce.Catalog.EventContext.RelationEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Catalog\EventContext.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAABAgiqAQIEAAkAAABAEAAAAAQAIAEIRAAYAAAAAAI=</HashCode>
+      <FileName>Catalog\EventContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="Mediachase.Commerce.Catalog.ICatalogSystem" Collapsed="true">
+    <Position X="1" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEBAAAAAABJCBgAwgAEgkBAKgAAAEAMCwAAQAAACA=</HashCode>
+      <FileName>Catalog\ICatalogSystem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

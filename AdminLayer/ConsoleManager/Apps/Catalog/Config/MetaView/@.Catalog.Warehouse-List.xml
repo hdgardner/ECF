@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Button id="NewWarehouse" text="{SharedStrings:New_Warehouse}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdCatalogNewWarehouse" permissions="catalog:admin:warehouses:mng:create"/>
+      <Splitter id="ActionsSplitter"/>
+      <Menu id="ActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" permissions="catalog:admin:warehouses:mng:delete">
+        <Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdCatalogDeleteWarehouse" permissions="catalog:admin:warehouses:mng:delete"/>
+      </Menu>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdCatalogNewWarehouse">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Catalog', 'Warehouse-Edit')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      
+      <Command id="cmdCatalogDeleteWarehouse">
+        <BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+        <ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.WarehouseDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

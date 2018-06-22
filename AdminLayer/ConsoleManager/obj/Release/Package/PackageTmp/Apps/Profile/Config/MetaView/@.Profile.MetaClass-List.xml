@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Menu id="ActionsSplitButton" text="{SharedStrings:Create_New}" imageUrl="~/App_Themes/Default/Images/new.png">
+        <Button id="NewMetaClass" text="{SharedStrings:New_Meta_Class}" imageUrl="~/App_Themes/Default/Images/metaclass.gif" commandName="cmdProfileNewMetaClass" permissions="profile:admin:meta:cls:mng:create"/>
+        <Button id="NewMetaField" text="{SharedStrings:New_Meta_Field}" imageUrl="~/App_Themes/Default/Images/metafield.gif" commandName="cmdProfileNewMetaField" permissions="profile:admin:meta:fld:mng:create"/>
+      </Menu>
+      <Splitter id="ActionsSplitter"/>
+      <Menu id="ImportExportSplitButton" text="{SharedStrings:Import_Export}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif">
+        <Button id="ImportMetaData" text="{SharedStrings:Import_MetaData}" imageUrl="~/App_Themes/Main/Images/toolbar/import.png" commandName="cmdProfileImportMetaData" permissions="profile:admin:meta:cls:mng:edit"/>
+        <Button id="ExportMetaData" text="{SharedStrings:Export_MetaData}" imageUrl="~/App_Themes/Main/Images/toolbar/export.png" commandName="cmdProfileExportMetaData" permissions="profile:admin:meta:cls:mng:edit"/>
+      </Menu>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdProfileNewMetaClass">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSCoreClient.CreateMetaClass('Profile', 'MetaClass-Edit', 'Mediachase.Commerce.Profile', 'Mediachase.Commerce.Profile.System', 'MetaFields-Edit')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdProfileNewMetaField">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSCoreClient.CreateMetaField('Profile', 'MetaField-New', 'Mediachase.Commerce.Profile.System')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+
+      <Command id="cmdProfileImportMetaData">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSCoreClient.ImportMetaData('Profile')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdProfileExportMetaData">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSCoreClient.ExportMetaData('Profile')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

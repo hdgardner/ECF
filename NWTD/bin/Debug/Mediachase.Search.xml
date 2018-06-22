@@ -1,0 +1,862 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mediachase.Search</name>
+    </assembly>
+    <members>
+        <member name="M:Mediachase.Search.SearchSort.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchSort"/> class.
+            </summary>
+            <param name="fieldName">Name of the field.</param>
+            <param name="isDescending">if set to <c>true</c> [is descending].</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchSort.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchSort"/> class.
+            </summary>
+            <param name="fieldName">Name of the field.</param>
+        </member>
+        <member name="P:Mediachase.Search.SearchSort.FieldName">
+            <summary>
+            Gets or sets the name of the field.
+            </summary>
+            <value>The name of the field.</value>
+        </member>
+        <member name="P:Mediachase.Search.SearchSort.IsDescending">
+            <summary>
+            Gets or sets a value indicating whether this instance is descending.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is descending; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Mediachase.Search.SearchCommon.GetDescription(System.String,Mediachase.Search.Descriptions)">
+            <summary>
+            Gets the description.
+            </summary>
+            <param name="descs">The descs.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchCommon.CreateQuery(System.String,Mediachase.Search.ISearchFilterValue)">
+            <summary>
+            Creates the query.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchCommon.CreateQuery(System.String,Mediachase.Search.RangeValue)">
+            <summary>
+            Creates the query.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchCommon.CreateQuery(System.String,Mediachase.Search.PriceRangeValue)">
+            <summary>
+            Creates the query.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchCommon.ConvertToSearchable(System.String)">
+            <summary>
+            Converts to searchable.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchCommon.CreateQuery(System.String,Mediachase.Search.SimpleValue)">
+            <summary>
+            Creates the query.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Mediachase.Search.ISearchFilterValue.Descriptions">
+            <summary>
+            Gets or sets the descriptions.
+            </summary>
+            <value>The descriptions.</value>
+        </member>
+        <member name="P:Mediachase.Search.ISearchFilterValue.key">
+            <summary>
+            Gets or sets the key.
+            </summary>
+            <value>The key.</value>
+        </member>
+        <member name="T:Mediachase.Search.SearchFilter">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SearchFilter.Descriptions">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SearchFilter.Values">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SearchFilter.field">
+            <remarks/>
+        </member>
+        <member name="T:Mediachase.Search.Descriptions">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.Descriptions.Description">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.Descriptions.defaultLocale">
+            <remarks/>
+        </member>
+        <member name="T:Mediachase.Search.Description">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.Description.locale">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.Description.Value">
+            <remarks/>
+        </member>
+        <member name="T:Mediachase.Search.SimpleValue">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SimpleValue.Descriptions">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SimpleValue.key">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SimpleValue.value">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SimpleValue.numeric">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SimpleValue.locale">
+            <remarks/>
+        </member>
+        <member name="T:Mediachase.Search.PriceRangeValue">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.PriceRangeValue.Descriptions">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.PriceRangeValue.key">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.PriceRangeValue.locale">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.PriceRangeValue.lowerbound">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.PriceRangeValue.upperbound">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.PriceRangeValue.lowerboundincluded">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.PriceRangeValue.upperboundincluded">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.PriceRangeValue.currency">
+            <remarks/>
+        </member>
+        <member name="T:Mediachase.Search.RangeValue">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.RangeValue.Descriptions">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.RangeValue.key">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.RangeValue.locale">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.RangeValue.lowerbound">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.RangeValue.upperbound">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.RangeValue.lowerboundincluded">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.RangeValue.upperboundincluded">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.RangeValue.numeric">
+            <remarks/>
+        </member>
+        <member name="T:Mediachase.Search.SearchFilterValues">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SearchFilterValues.RangeValue">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SearchFilterValues.PriceRangeValue">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.SearchFilterValues.SimpleValue">
+            <remarks/>
+        </member>
+        <member name="T:Mediachase.Search.SearchConfiguration">
+            <summary>
+            Implemented as a thread-safe singleton class
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.SearchConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="P:Mediachase.Search.SearchConfiguration.Instance">
+            <summary>
+            Singleton instance
+            </summary>
+            <value>The instance.</value>
+        </member>
+        <member name="P:Mediachase.Search.SearchConfiguration.Indexers">
+            <summary>
+            Gets the indexers.
+            </summary>
+            <value>The indexers.</value>
+        </member>
+        <member name="T:Mediachase.Search.IndexerCollection">
+            <summary>
+            Implements the operations for the work flow collection. (Inherits <see cref="T:System.Configuration.ConfigurationElementCollection"/>.)
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.IndexerCollection.CreateNewElement">
+            <summary>
+            When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement"></see>.
+            </summary>
+            <returns>
+            A new <see cref="T:System.Configuration.ConfigurationElement"></see>.
+            </returns>
+        </member>
+        <member name="M:Mediachase.Search.IndexerCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for a specified configuration element when overridden in a derived class.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"></see> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"></see> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"></see>.
+            </returns>
+        </member>
+        <member name="P:Mediachase.Search.IndexerCollection.Item(System.Int32)">
+            <summary>
+            Gets or sets the <see cref="!:Mediachase.Commerce.Engine.Search.IndexerDefinition"/> at the specified index.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Mediachase.Search.IndexerDefinition">
+            <summary>
+            Implements operations for the work flow definition. (Inherits <see cref="T:System.Configuration.ConfigurationElement"/>.)
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.IndexerDefinition.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="!:WorkflowDefinition"/> class.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.IndexerDefinition.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the <see cref="T:System.Configuration.ConfigurationElement"/> object is read-only.
+            </summary>
+            <returns>
+            true if the <see cref="T:System.Configuration.ConfigurationElement"/> object is read-only; otherwise, false.
+            </returns>
+        </member>
+        <member name="P:Mediachase.Search.IndexerDefinition.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Mediachase.Search.IndexerDefinition.ClassName">
+            <summary>
+            Gets or sets the name of the class.
+            </summary>
+            <value>The name of the class.</value>
+        </member>
+        <member name="P:Mediachase.Search.IndexerDefinition.BasePath">
+            <summary>
+            Gets or sets the base path. The path were indexer will store application specific index folders. Each application
+            will have it's own folder created.
+            </summary>
+            <value>The base path.</value>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuilder.#ctor(System.String,System.Boolean,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="physicalIndexDir">Location of the index files.</param>
+            <param name="rebuildIndex">Flag to indicate if the index should be rebuilt.
+            NOTE: you can not update or delete content when rebuilding the index.</param>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuilder.AddDocument(Lucene.Net.Documents.Document)">
+            <summary>
+            Adds the document.
+            </summary>
+            <param name="doc">The doc.</param>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuilder.DeleteContent(System.String,System.String)">
+            <summary>
+            Delete existing content from the search index.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuilder.Delete(Lucene.Net.Index.IndexReader,Lucene.Net.Index.Term)">
+            <summary>
+            Deletes the specified reader.
+            </summary>
+            <param name="reader">The reader.</param>
+            <param name="term">The term.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuilder.GetLastBuildDate">
+            <summary>
+            Gets the last build date.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuilder.GetBuildConfig">
+            <summary>
+            Gets the build config.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuilder.SaveBuild(Mediachase.Search.Status)">
+            <summary>
+            Saves the build.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuilder.Close">
+            <summary>
+            Closes this instance.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuilder.Close(System.Boolean)">
+            <summary>
+            Close the IndexWriter (saves the index).
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuilder.InitIndexWriter">
+            <summary>
+            Inits the index writer.
+            </summary>
+        </member>
+        <member name="P:Mediachase.Search.IndexBuilder.RebuildIndex">
+            <summary>
+            Gets a value indicating whether [rebuild index].
+            </summary>
+            <value><c>true</c> if [rebuild index]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Mediachase.Search.Facet.Group">
+            <summary>
+            Gets or sets the group.
+            </summary>
+            <value>The group.</value>
+        </member>
+        <member name="P:Mediachase.Search.Facet.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Mediachase.Search.Facet.Count">
+            <summary>
+            Gets or sets the count.
+            </summary>
+            <value>The count.</value>
+        </member>
+        <member name="P:Mediachase.Search.Facet.Key">
+            <summary>
+            Gets or sets the Key.
+            </summary>
+            <value>The URL.</value>
+        </member>
+        <member name="M:Mediachase.Search.SearchSortField.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchSortField"/> class.
+            </summary>
+            <param name="fieldName">Name of the field.</param>
+            <param name="isDescending">if set to <c>true</c> [is descending].</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchSortField.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchSortField"/> class.
+            </summary>
+            <param name="fieldName">Name of the field.</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchSortField.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="P:Mediachase.Search.SearchSortField.FieldName">
+            <summary>
+            Gets or sets the name of the field.
+            </summary>
+            <value>The name of the field.</value>
+        </member>
+        <member name="P:Mediachase.Search.SearchSortField.IsDescending">
+            <summary>
+            Gets or sets a value indicating whether this instance is descending.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is descending; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Mediachase.Search.SearchResults.GetIntResults(System.Int32,System.Int32)">
+            <summary>
+            Gets the int results.
+            </summary>
+            <param name="startIndex">The start index.</param>
+            <param name="recordsToRetrieve">The records to retrieve.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchResults.GetSimilarWords(System.String,System.String)">
+            <summary>
+            Gets the similar words.
+            </summary>
+            <param name="fieldName">Name of the field.</param>
+            <param name="word">The word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchResults.#ctor(Lucene.Net.Index.IndexReader,Lucene.Net.Search.Hits,Mediachase.Search.ISearchCriteria)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchResults"/> class.
+            </summary>
+            <param name="reader">The reader.</param>
+            <param name="hits">The hits.</param>
+            <param name="criteria">The criteria.</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchResults.GetFilterCount(Lucene.Net.Index.IndexReader,System.Collections.BitArray,Mediachase.Search.FacetGroup,System.String,Mediachase.Search.SimpleValue[])">
+            <summary>
+            Gets the filter count.
+            </summary>
+            <param name="reader">The reader.</param>
+            <param name="baseArray">The base array.</param>
+            <param name="facetGroup">The facet group.</param>
+            <param name="filterField">The filter field.</param>
+            <param name="values">The values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchResults.GetFilterCount(Lucene.Net.Index.IndexReader,System.Collections.BitArray,Mediachase.Search.FacetGroup,System.String,Mediachase.Search.RangeValue[])">
+            <summary>
+            Gets the filter count.
+            </summary>
+            <param name="reader">The reader.</param>
+            <param name="baseArray">The base array.</param>
+            <param name="facetGroup">The facet group.</param>
+            <param name="filterField">The filter field.</param>
+            <param name="values">The values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchResults.GetFilterCount(Lucene.Net.Index.IndexReader,System.Collections.BitArray,Mediachase.Search.FacetGroup,System.String,Mediachase.Search.PriceRangeValue[])">
+            <summary>
+            Gets the filter count.
+            </summary>
+            <param name="reader">The reader.</param>
+            <param name="baseArray">The base array.</param>
+            <param name="facetGroup">The facet group.</param>
+            <param name="filterField">The filter field.</param>
+            <param name="values">The values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchResults.GetFacetHitCount(System.Collections.BitArray,System.Collections.BitArray)">
+            <summary>
+            Gets the facet hit count.
+            </summary>
+            <param name="baseBitSet">The base bit set.</param>
+            <param name="filterBitSet">The filter bit set.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Mediachase.Search.SearchResults.TotalCount">
+            <summary>
+            Gets the total count.
+            </summary>
+            <value>The total count.</value>
+        </member>
+        <member name="P:Mediachase.Search.SearchResults.FacetGroups">
+            <summary>
+            Gets the facet groups.
+            </summary>
+            <value>The facet groups.</value>
+        </member>
+        <member name="T:Mediachase.Search.IndexNotFoundException">
+            <summary>
+            Exception is generated when no existing indexes are found.
+            </summary>
+        </member>
+        <member name="T:Mediachase.Search.SearchException">
+            <summary>
+            Base class for all the search exceptions generated by the Mediachase Search explicitly.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.SearchException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchException"/> class.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.SearchException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchException"/> class.
+            </summary>
+            <param name="info">The info.</param>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:Mediachase.Search.IndexNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.IndexNotFoundException"/> class.
+            </summary>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:Mediachase.Search.IndexNotFoundException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.IndexNotFoundException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="T:Mediachase.Search.IndexBuildException">
+            <summary>
+            Exception is generated when index build error occurs.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuildException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.IndexBuildException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:Mediachase.Search.IndexBuildException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.IndexBuildException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="P:Mediachase.Search.FacetGroup.FieldName">
+            <summary>
+            Gets or sets the name of the field.
+            </summary>
+            <value>The name of the field.</value>
+        </member>
+        <member name="P:Mediachase.Search.FacetGroup.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Mediachase.Search.FacetGroup.Facets">
+            <summary>
+            Gets or sets the facets.
+            </summary>
+            <value>The facets.</value>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.OnSearchMessage(System.Object,Mediachase.Search.SearchEventArgs)">
+            <summary>
+            Called when [search message].
+            </summary>
+            <param name="source">The source.</param>
+            <param name="args">The <see cref="T:Mediachase.Search.SearchEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.OnSearchIndexMessage(System.Object,Mediachase.Search.SearchIndexEventArgs)">
+            <summary>
+            Called when [search index message].
+            </summary>
+            <param name="source">The source.</param>
+            <param name="args">The <see cref="T:Mediachase.Search.SearchIndexEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.RaiseSearchIndexEvent(System.Object,Mediachase.Search.SearchIndexEventArgs)">
+            <summary>
+            Raises the search index event.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="args">The <see cref="T:Mediachase.Search.SearchIndexEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.RaiseSearchEvent(System.Object,Mediachase.Search.SearchEventArgs)">
+            <summary>
+            Raises the search event.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="args">The <see cref="T:Mediachase.Search.SearchEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.Search(Mediachase.Search.ISearchCriteria)">
+            <summary>
+            Searches the specified criteria.
+            </summary>
+            <param name="criteria">The criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.BuildIndex(System.Boolean)">
+            <summary>
+            Builds the index.
+            </summary>
+            <param name="rebuild">if set to <c>true</c> [rebuild].</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchManager"/> class.
+            </summary>
+            <param name="appName">Name of the app.</param>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.GetApplicationPath(Mediachase.Search.IndexerDefinition)">
+            <summary>
+            Gets the application path.
+            </summary>
+            <param name="indexer">The indexer.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.CheckConfiguration">
+            <summary>
+            Checks the configuration.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.CheckIndexes">
+            <summary>
+            Checks the indexes and throws FileNotFoundException exception if no idexers found.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.SearchManager.HasWriteAccess(System.IO.DirectoryInfo)">
+            <summary>
+            Determines whether [has write access] [the specified index dir].
+            </summary>
+            <param name="indexDir">The index dir.</param>
+            <returns>
+            	<c>true</c> if [has write access] [the specified index dir]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:Mediachase.Search.SearchManager.SyncObject">
+            <summary>
+            Gets the sync object. Used to synchronize threads.
+            </summary>
+            <value>The sync object.</value>
+        </member>
+        <member name="P:Mediachase.Search.SearchManager.Analyzer">
+            <summary>
+            Gets or sets the analyzer.
+            </summary>
+            <value>The analyzer.</value>
+        </member>
+        <member name="T:Mediachase.Search.SearchMessageHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.SearchEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="P:Mediachase.Search.SearchEventArgs.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>The message.</value>
+        </member>
+        <member name="M:Mediachase.Search.SearchIndexEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchIndexEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.SearchIndexEventArgs.#ctor(System.String,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.SearchIndexEventArgs"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="percentage">The percentage.</param>
+        </member>
+        <member name="P:Mediachase.Search.SearchIndexEventArgs.CompletedPercentage">
+            <summary>
+            Gets or sets the completed percentage.
+            </summary>
+            <value>The completed percentage.</value>
+        </member>
+        <member name="T:Mediachase.Search.ClassInfo">
+            <summary>
+            Implements operations for and represents commerce class information.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Search.ClassInfo.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.ClassInfo"/> class.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Mediachase.Search.ClassInfo.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Search.ClassInfo"/> class.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Mediachase.Search.ClassInfo.CreateInstance">
+            <summary>
+            Creates the instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Mediachase.Search.ClassInfo.Type">
+            <summary>
+            Gets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="P:Mediachase.Search.ClassInfo.DefaultConstructor">
+            <summary>
+            Gets the default constructor.
+            </summary>
+            <value>The default constructor.</value>
+        </member>
+        <member name="T:Mediachase.Search.Build">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.Build.LastBuildDate">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.Build.Status">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.Build.Indexer">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.Build.Properties">
+            <remarks/>
+        </member>
+        <member name="T:Mediachase.Search.Status">
+            <remarks/>
+        </member>
+        <member name="F:Mediachase.Search.Status.NeverStarted">
+            <remarks/>
+        </member>
+        <member name="F:Mediachase.Search.Status.Completed">
+            <remarks/>
+        </member>
+        <member name="F:Mediachase.Search.Status.PartiallyCompleted">
+            <remarks/>
+        </member>
+        <member name="F:Mediachase.Search.Status.Started">
+            <remarks/>
+        </member>
+        <member name="F:Mediachase.Search.Status.Failed">
+            <remarks/>
+        </member>
+        <member name="T:Mediachase.Search.BuildProperty">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.BuildProperty.name">
+            <remarks/>
+        </member>
+        <member name="P:Mediachase.Search.BuildProperty.value">
+            <remarks/>
+        </member>
+        <member name="M:Mediachase.Search.ISearchCriteria.Add(Mediachase.Search.SearchFilter)">
+            <summary>
+            Adds the specified filter.
+            </summary>
+            <param name="filter">The filter.</param>
+        </member>
+        <member name="M:Mediachase.Search.ISearchCriteria.Add(System.String,Mediachase.Search.ISearchFilterValue)">
+            <summary>
+            Adds the specified filter.
+            </summary>
+            <param name="filter">The filter.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="P:Mediachase.Search.ISearchCriteria.Filters">
+            <summary>
+            Gets the filters.
+            </summary>
+            <value>The filters.</value>
+        </member>
+        <member name="P:Mediachase.Search.ISearchCriteria.ActiveFilterValues">
+            <summary>
+            Gets the active filter values.
+            </summary>
+            <value>The active filter values.</value>
+        </member>
+        <member name="P:Mediachase.Search.ISearchCriteria.ActiveFilterFields">
+            <summary>
+            Gets the active filter fields.
+            </summary>
+            <value>The active filter fields.</value>
+        </member>
+        <member name="P:Mediachase.Search.ISearchCriteria.Sort">
+            <summary>
+            Gets the sorts.
+            </summary>
+            <value>The sorts.</value>
+        </member>
+        <member name="P:Mediachase.Search.ISearchCriteria.Scope">
+            <summary>
+            Gets the scope.
+            </summary>
+            <value>The scope.</value>
+        </member>
+        <member name="P:Mediachase.Search.ISearchCriteria.KeyField">
+            <summary>
+            Gets the key field.
+            </summary>
+            <value>The key field.</value>
+        </member>
+        <member name="P:Mediachase.Search.ISearchCriteria.Locale">
+            <summary>
+            Gets or sets the locale.
+            </summary>
+            <value>The locale.</value>
+        </member>
+        <member name="P:Mediachase.Search.ISearchCriteria.CacheKey">
+            <summary>
+            Gets the cache key.
+            </summary>
+            <value>The cache key.</value>
+        </member>
+        <member name="P:Mediachase.Search.ISearchCriteria.Query">
+            <summary>
+            Gets the query.
+            </summary>
+            <value>The query.</value>
+        </member>
+        <member name="M:Mediachase.Search.ISearchIndexBuilder.BuildIndex(System.Boolean)">
+            <summary>
+            Builds the index.
+            </summary>
+            <param name="rebuild">if set to <c>true</c> the full rebuild will be done, if not. The last build date will be used.</param>
+        </member>
+        <member name="P:Mediachase.Search.ISearchIndexBuilder.Manager">
+            <summary>
+            Gets or sets the manager.
+            </summary>
+            <value>The manager.</value>
+        </member>
+        <member name="P:Mediachase.Search.ISearchIndexBuilder.Indexer">
+            <summary>
+            Gets or sets the build indexer.
+            </summary>
+            <value>The build indexer.</value>
+        </member>
+    </members>
+</doc>

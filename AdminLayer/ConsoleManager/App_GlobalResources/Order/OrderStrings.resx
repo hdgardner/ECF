@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Order_Country_Name_Required" xml:space="preserve">
+    <value>&lt;b&gt;Required Field Missing&lt;/b&gt;&lt;br /&gt;A Country Name is required.</value>
+  </data>
+  <data name="Order_Payment_Plan" xml:space="preserve">
+    <value>Payment Plan</value>
+  </data>
+  <data name="Order_Purchase_Order" xml:space="preserve">
+    <value>Purchase Order</value>
+  </data>
+  <data name="Order_Shopping_Cart" xml:space="preserve">
+    <value>Shopping Cart</value>
+  </data>
+  <data name="Payment_ACH_Payments" xml:space="preserve">
+    <value>ACH Payments</value>
+  </data>
+  <data name="Payment_Authorize_Net_Configure_Account" xml:space="preserve">
+    <value>Configure Authorize.Net Account</value>
+  </data>
+  <data name="Payment_Authorize_Net_Get_Account" xml:space="preserve">
+    <value>Get an Authorize.Net account at &lt;a target="_blank" href="http://www.authorizenet.com"&gt;www.authorizenet.com&lt;/a&gt;.</value>
+  </data>
+  <data name="Payment_ECX" xml:space="preserve">
+    <value>ECX</value>
+  </data>
+  <data name="Payment_Fast_Transact" xml:space="preserve">
+    <value>Fast Transact</value>
+  </data>
+  <data name="Payment_IBiz_E_Payment_Integrator_Configure" xml:space="preserve">
+    <value>Configure IBiz E-Payment Integrator Component</value>
+  </data>
+  <data name="Payment_IBiz_E_Payment_Integrator_Get" xml:space="preserve">
+    <value>Get IBiz E-Payment Integrator from &lt;a target="_blank" href="http://www.nsoftware.com"&gt;www.nsoftware.com&lt;/a&gt;. You will find more documentation on how to configure it there also.</value>
+  </data>
+  <data name="Payment_iTransact_RediCharge_HTML" xml:space="preserve">
+    <value>iTransact RediCharge HTML</value>
+  </data>
+  <data name="Payment_Merchant_Anywhere" xml:space="preserve">
+    <value>Merchant Anywhere (Transaction Central)</value>
+  </data>
+  <data name="Payment_Merchant_Partners" xml:space="preserve">
+    <value>Merchant Partners</value>
+  </data>
+  <data name="Payment_MPCS" xml:space="preserve">
+    <value>MPCS</value>
+  </data>
+  <data name="Payment_NetBilling" xml:space="preserve">
+    <value>NetBilling</value>
+  </data>
+  <data name="Payment_Options" xml:space="preserve">
+    <value>Payment Options</value>
+  </data>
+  <data name="Payment_Options_Required" xml:space="preserve">
+    <value>Payment option must be selected.</value>
+  </data>
+  <data name="Payment_Payments_Gateway" xml:space="preserve">
+    <value>Payments Gateway</value>
+  </data>
+  <data name="Payment_Pick_A_Gateway" xml:space="preserve">
+    <value>Pick a Gateway</value>
+  </data>
+  <data name="Payment_Planet_Payment" xml:space="preserve">
+    <value>Planet Payment</value>
+  </data>
+  <data name="Payment_Processing_Url_Required" xml:space="preserve">
+    <value>'Processing Url' must not be left blank.</value>
+  </data>
+  <data name="Payment_RTWare" xml:space="preserve">
+    <value>RTWare</value>
+  </data>
+  <data name="Payment_TrustCommerce" xml:space="preserve">
+    <value>TrustCommerce</value>
+  </data>
+  <data name="Payment_USA_ePay" xml:space="preserve">
+    <value>USA ePay</value>
+  </data>
+  <data name="Payment_User_Required" xml:space="preserve">
+    <value>'User' must not be left blank.</value>
+  </data>
+  <data name="Order_New_Shipment" xml:space="preserve">
+    <value>New Shipment</value>
+  </data>
+  <data name="Gateway_Authorize_Net" xml:space="preserve">
+    <value>Authorize.Net</value>
+  </data>
+  <data name="Gateway_DPI_Link" xml:space="preserve">
+    <value>DPI Link</value>
+  </data>
+  <data name="Gateway_eProcessing" xml:space="preserve">
+    <value>eProcessing</value>
+  </data>
+  <data name="Order_Configure_IBiz_E_Payment_Integrator_Component" xml:space="preserve">
+    <value>Configure IBiz E-Payment Integrator Component</value>
+  </data>
+  <data name="Order_Pick_a_Gateway" xml:space="preserve">
+    <value>Pick a Gateway</value>
+  </data>
+  <data name="Gateway_GoRealTime" xml:space="preserve">
+    <value>GoRealTime</value>
+  </data>
+  <data name="Gateway_IBill_Processing_Plus" xml:space="preserve">
+    <value>IBill Processing Plus</value>
+  </data>
+  <data name="Gateway_Intellipay_ExpertLink" xml:space="preserve">
+    <value>Intellipay ExpertLink</value>
+  </data>
+  <data name="Gateway_Iongate" xml:space="preserve">
+    <value>Iongate</value>
+  </data>
+  <data name="Gateway_iTransact_RediCharge_HTML" xml:space="preserve">
+    <value>iTransact RediCharge HTML</value>
+  </data>
+  <data name="Gateway_NetBilling" xml:space="preserve">
+    <value>NetBilling</value>
+  </data>
+  <data name="Gateway_Verisign_PayFlow_Pro" xml:space="preserve">
+    <value>Verisign PayFlow Pro</value>
+  </data>
+  <data name="Gateway_Payready_Link" xml:space="preserve">
+    <value>Payready Link</value>
+  </data>
+  <data name="Gateway_NOVAs_Viaklix" xml:space="preserve">
+    <value>NOVA's Viaklix</value>
+  </data>
+  <data name="Gateway_USA_ePay" xml:space="preserve">
+    <value>USA ePay</value>
+  </data>
+  <data name="Gateway_Plug_n_Pay" xml:space="preserve">
+    <value>Plug 'n Pay</value>
+  </data>
+  <data name="Gateway_Planet_Payment" xml:space="preserve">
+    <value>Planet Payment</value>
+  </data>
+  <data name="Gateway_MPCS" xml:space="preserve">
+    <value>MPCS</value>
+  </data>
+  <data name="Gateway_RTWare" xml:space="preserve">
+    <value>RTWare</value>
+  </data>
+  <data name="Gateway_ECX" xml:space="preserve">
+    <value>ECX</value>
+  </data>
+  <data name="Gateway_Bank_of_America" xml:space="preserve">
+    <value>Bank of America</value>
+  </data>
+  <data name="Gateway_Innovative_Gateway" xml:space="preserve">
+    <value>Innovative Gateway</value>
+  </data>
+  <data name="Gateway_Merchant_Anywhere_Transaction_Central" xml:space="preserve">
+    <value>Merchant Anywhere (Transaction Central)</value>
+  </data>
+  <data name="Gateway_SkipJack" xml:space="preserve">
+    <value>SkipJack</value>
+  </data>
+  <data name="Gateway_ECHOnline" xml:space="preserve">
+    <value>ECHOnline</value>
+  </data>
+  <data name="Gateway_3DSI_EC_Linx" xml:space="preserve">
+    <value>3DSI EC-Linx</value>
+  </data>
+  <data name="Gateway_TrustCommerce" xml:space="preserve">
+    <value>TrustCommerce</value>
+  </data>
+  <data name="Gateway_PSIGate" xml:space="preserve">
+    <value>PSIGate</value>
+  </data>
+  <data name="Gateway_PayFuse_XML" xml:space="preserve">
+    <value>PayFuse XML</value>
+  </data>
+  <data name="Gateway_PayFlowLink" xml:space="preserve">
+    <value>PayFlowLink</value>
+  </data>
+  <data name="Gateway_Paymentech_Orbital_Gateway" xml:space="preserve">
+    <value>Paymentech Orbital Gateway</value>
+  </data>
+  <data name="Gateway_LinkPoint" xml:space="preserve">
+    <value>LinkPoint</value>
+  </data>
+  <data name="Gateway_Moneris_eSelect_Plus" xml:space="preserve">
+    <value>Moneris eSelect Plus</value>
+  </data>
+  <data name="Gateway_uSight_Gateway" xml:space="preserve">
+    <value>uSight Gateway</value>
+  </data>
+  <data name="Gateway_Fast_Transact" xml:space="preserve">
+    <value>Fast Transact</value>
+  </data>
+  <data name="Gateway_NetworkMerchants" xml:space="preserve">
+    <value>NetworkMerchants</value>
+  </data>
+  <data name="Gateway_Ogone_DirectLink" xml:space="preserve">
+    <value>Ogone DirectLink</value>
+  </data>
+  <data name="Gateway_Concord_EFSNet" xml:space="preserve">
+    <value>Concord EFSNet</value>
+  </data>
+  <data name="Gateway_Payment_Resources_International_PRIGate" xml:space="preserve">
+    <value>Payment Resources International PRIGate</value>
+  </data>
+  <data name="Gateway_Protx" xml:space="preserve">
+    <value>Protx</value>
+  </data>
+  <data name="Gateway_Optimal_Payments_FirePay" xml:space="preserve">
+    <value>Optimal Payments / FirePay</value>
+  </data>
+  <data name="Gateway_Merchant_Partners" xml:space="preserve">
+    <value>Merchant Partners</value>
+  </data>
+  <data name="Gateway_CyberCash" xml:space="preserve">
+    <value>CyberCash</value>
+  </data>
+  <data name="Gateway_FirstData_CardService_International" xml:space="preserve">
+    <value>FirstData / CardService International</value>
+  </data>
+  <data name="Gateway_YourPay" xml:space="preserve">
+    <value>YourPay</value>
+  </data>
+  <data name="Gateway_ACH_Payments" xml:space="preserve">
+    <value>ACH Payments</value>
+  </data>
+  <data name="Gateway_Payments_Gateway" xml:space="preserve">
+    <value>Payments Gateway</value>
+  </data>
+  <data name="Gateway_Cyber_Source" xml:space="preserve">
+    <value>Cyber Source</value>
+  </data>
+  <data name="Gateway_Eway" xml:space="preserve">
+    <value>Eway</value>
+  </data>
+  <data name="Gateway_Go_EMerchant" xml:space="preserve">
+    <value>Go EMerchant</value>
+  </data>
+  <data name="Gateway_Pay_Stream" xml:space="preserve">
+    <value>Pay Stream</value>
+  </data>
+  <data name="Gateway_Trans_First" xml:space="preserve">
+    <value>Trans First</value>
+  </data>
+  <data name="Gateway_Chase" xml:space="preserve">
+    <value>Chase</value>
+  </data>
+  <data name="Order_Get_IBiz_E_Payment_Integrator" xml:space="preserve">
+    <value>Get IBiz E-Payment Integrator from &lt;a target="_blank" href="http://www.nsoftware.com"&gt;www.nsoftware.com&lt;/a&gt;. You will find more documentation on how to configure it there also.</value>
+  </data>
+  <data name="Order_Payment_Options" xml:space="preserve">
+    <value>Payment Options</value>
+  </data>
+  <data name="Payment_Merchant_Login" xml:space="preserve">
+    <value>Merchant Login</value>
+  </data>
+  <data name="Payment_Merchant_Password" xml:space="preserve">
+    <value>Merchant Password</value>
+  </data>
+  <data name="Payment_Transaction_Key" xml:space="preserve">
+    <value>Transaction Key</value>
+  </data>
+  <data name="Payment_Secret_Hash" xml:space="preserve">
+    <value>Secret Hash</value>
+  </data>
+  <data name="Payment_Gateway_URL" xml:space="preserve">
+    <value>Payment Gateway URL (used for testing)</value>
+  </data>
+  <data name="Payment_SSL_User_Id" xml:space="preserve">
+    <value>SSL User Id</value>
+  </data>
+  <data name="Payment_Referer" xml:space="preserve">
+    <value>Referer</value>
+  </data>
+  <data name="Payment_Test_Mode" xml:space="preserve">
+    <value>Test Mode</value>
+  </data>
+  <data name="Payment_Sale" xml:space="preserve">
+    <value>Sale</value>
+  </data>
+  <data name="Payment_Authorization_Only" xml:space="preserve">
+    <value>Authorization Only</value>
+  </data>
+  <data name="Payment_Merchant_Alias" xml:space="preserve">
+    <value>Merchant Alias</value>
+  </data>
+  <data name="Payment_SSLCert_Store" xml:space="preserve">
+    <value>SSLCert Store</value>
+  </data>
+  <data name="Payment_SSLCert_Subject" xml:space="preserve">
+    <value>SSLCert Subject</value>
+  </data>
+  <data name="Payment_SSLCert_Encoded" xml:space="preserve">
+    <value>SSLCert Encoded</value>
+  </data>
+  <data name="Payment_Related_Security_Key" xml:space="preserve">
+    <value>Related Security Key</value>
+  </data>
+  <data name="Payment_Related_Vendor_TX_Code" xml:space="preserve">
+    <value>Related Vendor TX Code</value>
+  </data>
+  <data name="Payment_Related_TX_Auth_No" xml:space="preserve">
+    <value>Related TX Auth No</value>
+  </data>
+  <data name="Payment_Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="Payment_Merchant_ID" xml:space="preserve">
+    <value>Merchant ID</value>
+  </data>
+  <data name="Payment_Customer_ID" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <data name="Payment_Zone_ID" xml:space="preserve">
+    <value>Zone ID</value>
+  </data>
+  <data name="Payment_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Order_Management" xml:space="preserve">
+    <value>Order Management</value>
+  </data>
+  <data name="Order_List" xml:space="preserve">
+    <value>Order List</value>
+  </data>
+  <data name="Order_Search" xml:space="preserve">
+    <value>Order Search</value>
+  </data>
+  <data name="Order_View" xml:space="preserve">
+    <value>Order View</value>
+  </data>
+  <data name="Order_View_Address" xml:space="preserve">
+    <value>Order View - Address</value>
+  </data>
+  <data name="Order_View_LineItem" xml:space="preserve">
+    <value>Order View - LineItem</value>
+  </data>
+  <data name="Order_View_Payment" xml:space="preserve">
+    <value>Order View - Payment</value>
+  </data>
+  <data name="Order_View_Shipment" xml:space="preserve">
+    <value>Order View - Shipment</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Edit_Command" xml:space="preserve">
+    <value>Edit Command</value>
+  </data>
+  <data name="File_Name" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>IsActive</value>
+  </data>
+  <data name="IsDefault" xml:space="preserve">
+    <value>IsDefault</value>
+  </data>
+  <data name="Last_Modified" xml:space="preserve">
+    <value>Last Modified</value>
+  </data>
+  <data name="Last_Updated" xml:space="preserve">
+    <value>Last Updated</value>
+  </data>
+  <data name="LineItemId" xml:space="preserve">
+    <value>LineItemId</value>
+  </data>
+  <data name="List_Price" xml:space="preserve">
+    <value>List Price</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Path" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="PaymentId" xml:space="preserve">
+    <value>PaymentId</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="SortOrder" xml:space="preserve">
+    <value>SortOrder</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="System_Name" xml:space="preserve">
+    <value>System Name</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="OrderGroupAddressId" xml:space="preserve">
+    <value>OrderGroupAddressId</value>
+  </data>
+  <data name="Ordering" xml:space="preserve">
+    <value>Ordering</value>
+  </data>
+  <data name="Friendly_Name" xml:space="preserve">
+    <value>Friendly name</value>
+  </data>
+  <data name="Jurisdiction_Group_Configure_Price_Per_Weight" xml:space="preserve">
+    <value>Configure Price Per Weight for Jurisdiction Group</value>
+  </data>
+  <data name="Payment_Attributes_Description" xml:space="preserve">
+    <value>determines which additional attributes will be associated with a payment</value>
+  </data>
+  <data name="Payment_For_Description" xml:space="preserve">
+    <value>amount that this payment is for</value>
+  </data>
+  <data name="Payment_Method" xml:space="preserve">
+    <value>Payment Method</value>
+  </data>
+  <data name="Payment_Name_Description" xml:space="preserve">
+    <value>payment name that will displayed to a customer</value>
+  </data>
+  <data name="Payment_Status_Description" xml:space="preserve">
+    <value>status of the current payment</value>
+  </data>
+  <data name="Payment_Type" xml:space="preserve">
+    <value>Payment Type</value>
+  </data>
+  <data name="Payment_API_User" xml:space="preserve">
+    <value>API UserId</value>
+  </data>
+  <data name="Cart_List" xml:space="preserve">
+    <value>Shopping Carts List</value>
+  </data>
+  <data name="Order_By_Status" xml:space="preserve">
+    <value>Orders by Status</value>
+  </data>
+  <data name="PaymentPlan_List" xml:space="preserve">
+    <value>Payment Plans List</value>
+  </data>
+  <data name="Country_With_Code_Exists" xml:space="preserve">
+    <value>Country with the specified code already exists</value>
+  </data>
+  <data name="JurisdictionGroup_With_Code_Exists" xml:space="preserve">
+    <value>Jurisdiction Group with the specified code already exists</value>
+  </data>
+  <data name="Jurisdiction_With_Code_Exists" xml:space="preserve">
+    <value>Jurisdiction with the specified code already exists</value>
+  </data>
+  <data name="Tax_With_Name_Exists" xml:space="preserve">
+    <value>Tax with the specified name already exists.</value>
+  </data>
+  <data name="Package_Name_Exists" xml:space="preserve">
+    <value>Package with specified name already exists.</value>
+  </data>
+  <data name="RecurringMethod_Authorize" xml:space="preserve">
+    <value>Authorize</value>
+  </data>
+  <data name="RecurringMethod_Internal" xml:space="preserve">
+    <value>Internal</value>
+  </data>
+  <data name="RecurringPayment_CancelStatus" xml:space="preserve">
+    <value>Cancel Status</value>
+  </data>
+  <data name="RecurringPayment_CancelStatus_Required" xml:space="preserve">
+    <value>CancelStatus is required</value>
+  </data>
+  <data name="RecurringPayment_Select_CancelStatus" xml:space="preserve">
+    <value>select cancel status</value>
+  </data>
+  <data name="Recurring_Method" xml:space="preserve">
+    <value>Recurring Method</value>
+  </data>
+  <data name="Recurring_Payments" xml:space="preserve">
+    <value>Recurring Payments</value>
+  </data>
+  <data name="Regular_Authorize_Payments" xml:space="preserve">
+    <value>Regular Payments</value>
+  </data>
+  <data name="Jurisdictions" xml:space="preserve">
+    <value>Jurisdictions</value>
+  </data>
+  <data name="Jurisdictions_In_The_Group" xml:space="preserve">
+    <value>Jurisdictions in the group</value>
+  </data>
+  <data name="Jurisdiction_Edit" xml:space="preserve">
+    <value>Jurisdiction Edit</value>
+  </data>
+  <data name="Jurisdiction_Group" xml:space="preserve">
+    <value>Jurisdiction Group</value>
+  </data>
+  <data name="Jurisdiction_Groups" xml:space="preserve">
+    <value>Jurisdiction Groups</value>
+  </data>
+  <data name="Jurisdiction_Groups_Edit" xml:space="preserve">
+    <value>Jurisdiction Group Edit</value>
+  </data>
+  <data name="select_jurisdiction_group" xml:space="preserve">
+    <value>select jursidiction group</value>
+  </data>
+  <data name="Country_Edit" xml:space="preserve">
+    <value>Country Edit</value>
+  </data>
+  <data name="CountryRegions" xml:space="preserve">
+    <value>Country Regions</value>
+  </data>
+  <data name="Payment_Method_Edit" xml:space="preserve">
+    <value>Payment Method Edit</value>
+  </data>
+  <data name="Shipping_Method_Edit" xml:space="preserve">
+    <value>Shipping Method Edit</value>
+  </data>
+  <data name="Shipping_Package_Edit" xml:space="preserve">
+    <value>Shipping Package Edit</value>
+  </data>
+  <data name="Shipping_Provider_Edit" xml:space="preserve">
+    <value>Shipping Provider Edit</value>
+  </data>
+  <data name="Tax_Edit" xml:space="preserve">
+    <value>Tax Edit</value>
+  </data>
+  <data name="New_Payment" xml:space="preserve">
+    <value>New Payment</value>
+  </data>
+  <data name="Tax_Add_Value" xml:space="preserve">
+    <value>Add Tax Value</value>
+  </data>
+</root>

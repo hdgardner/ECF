@@ -1,0 +1,1064 @@
+2012-05-11 12:00:32,034 [1988] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 12:00:32,206 [1988] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 12:02:06,917 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 12:02:07,899 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 12:03:39,553 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 12:03:40,426 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 12:08:51,203 [1988] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 12:08:51,328 [1988] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 12:09:18,161 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 12:09:18,177 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 12:23:13,006 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 12:23:13,427 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 12:23:37,405 [1988] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 12:23:37,421 [1988] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 12:42:10,391 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 12:42:10,438 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 12:42:59,938 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 12:43:00,250 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 12:43:58,425 [1988] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 12:43:58,471 [1988] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 13:10:28,660 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 13:10:28,754 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 13:10:53,980 [2128] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 13:10:54,105 [2128] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 13:10:58,317 [2128] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 13:10:58,333 [2128] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 13:18:32,729 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 13:18:32,853 [2036] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 13:18:39,733 [2128] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 13:18:39,749 [2128] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-11 13:19:33,944 [2128] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-11 13:19:34,085 [2128] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-14 13:23:41,748 [2656] ERROR Mediachase.Search.SearchManager - No search indexers found for "CatalogEntryIndexer" indexer.
+Mediachase.Search.IndexNotFoundException: No search indexers found for "CatalogEntryIndexer" indexer. ---> System.IO.FileNotFoundException: no segments* file found in Lucene.Net.Store.SimpleFSDirectory@C:\ECF50\SearchIndex\eCommerceFramework\CatalogEntryIndexer: files: _8dm.cfs
+   at Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit)
+   at Lucene.Net.Index.IndexReader.Open(String path, Boolean readOnly)
+   at Lucene.Net.Search.IndexSearcher..ctor(String path)
+   at Mediachase.Search.SearchManager.Search(ISearchCriteria criteria)
+   --- End of inner exception stack trace ---
+2012-05-14 13:24:20,578 [2656] ERROR Mediachase.Search.SearchManager - No search indexers found for "CatalogEntryIndexer" indexer.
+Mediachase.Search.IndexNotFoundException: No search indexers found for "CatalogEntryIndexer" indexer. ---> System.IO.FileNotFoundException: no segments* file found in Lucene.Net.Store.SimpleFSDirectory@C:\ECF50\SearchIndex\eCommerceFramework\CatalogEntryIndexer: files: _8dm.cfs
+   at Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit)
+   at Lucene.Net.Index.IndexReader.Open(String path, Boolean readOnly)
+   at Lucene.Net.Search.IndexSearcher..ctor(String path)
+   at Mediachase.Search.SearchManager.Search(ISearchCriteria criteria)
+   --- End of inner exception stack trace ---
+2012-05-14 13:33:11,945 [2656] ERROR Mediachase.Search.SearchManager - No search indexers found for "CatalogEntryIndexer" indexer.
+Mediachase.Search.IndexNotFoundException: No search indexers found for "CatalogEntryIndexer" indexer. ---> System.IO.FileNotFoundException: no segments* file found in Lucene.Net.Store.SimpleFSDirectory@C:\ECF50\SearchIndex\eCommerceFramework\CatalogEntryIndexer: files: _8dm.cfs
+   at Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit)
+   at Lucene.Net.Index.IndexReader.Open(String path, Boolean readOnly)
+   at Lucene.Net.Search.IndexSearcher..ctor(String path)
+   at Mediachase.Search.SearchManager.Search(ISearchCriteria criteria)
+   --- End of inner exception stack trace ---
+2012-05-16 12:17:35,994 [3248] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Mediachase.Search.Extensions.AbstractSearchCriteria.Add(String field, ISearchFilterValue value)
+   at Mediachase.Cms.Website.Templates.NWTD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-05-16 12:22:21,749 [3032] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentException: CustomerId parameter can't be null or empty
+Parameter name: customerId
+   at Mediachase.Commerce.Orders.OrderContext.CreateCart(String name, Guid customerId)
+   at Mediachase.Commerce.Orders.OrderContext.GetCart(String name, Guid customerId)
+   at NWTD.Orders.Cart.CreateCart(Account Account, String CartName)
+   at NWTD.Profile.EnsureCustomerCart(Account Account)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.Cart.get_SelectedCartName()
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.Cart.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-05-16 12:22:49,674 [3032] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-16 12:22:51,624 [3032] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-16 12:22:55,649 [3032] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-16 12:22:55,665 [3032] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-16 12:22:56,008 [3248] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentException: CustomerId parameter can't be null or empty
+Parameter name: customerId
+   at Mediachase.Commerce.Orders.OrderContext.CreateCart(String name, Guid customerId)
+   at Mediachase.Commerce.Orders.OrderContext.GetCart(String name, Guid customerId)
+   at NWTD.Orders.Cart.CreateCart(Account Account, String CartName)
+   at NWTD.Profile.EnsureCustomerCart(Account Account)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.Cart.get_SelectedCartName()
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.Cart.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-05-18 11:24:20,743 [3120] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-18 11:24:22,194 [3120] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-18 11:24:26,765 [4012] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-18 11:24:26,874 [4012] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-18 11:24:45,985 [4012] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-18 11:24:46,000 [4012] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 09:39:32,729 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 09:39:34,383 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 09:39:38,205 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 09:39:38,205 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 09:42:06,894 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 09:42:06,956 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 09:42:57,002 [3304] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 09:42:57,252 [3304] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 09:43:03,570 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 09:43:03,695 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 09:44:46,892 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 09:44:47,110 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 09:45:02,102 [3212] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 09:45:02,102 [3212] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 09:45:07,282 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 09:45:07,282 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 09:52:51,382 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 09:52:51,506 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 09:53:30,991 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 09:53:31,007 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:03:38,006 [3812] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:03:38,178 [3812] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:03:44,091 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:03:44,091 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:04:28,099 [3952] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:04:28,099 [3952] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:04:52,452 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:04:52,514 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:08:30,984 [2168] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:08:31,046 [2168] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:08:36,725 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:08:36,740 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:09:32,434 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:09:32,575 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:09:38,846 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:09:38,862 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:10:45,990 [3396] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:10:46,115 [3396] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:10:52,355 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:10:52,371 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:11:38,268 [3556] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:11:38,283 [3556] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:11:44,804 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:11:44,820 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:20:03,474 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:20:03,537 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:20:27,796 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:20:27,811 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:20:48,482 [2400] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:20:48,497 [2400] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:20:56,360 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:20:56,376 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:21:51,633 [1532] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:21:51,757 [1532] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:28:42,410 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:28:42,535 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:30:32,471 [3452] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:30:32,643 [3452] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:30:37,245 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:30:37,245 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:31:13,547 [2072] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:31:13,563 [2072] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:31:23,157 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:31:23,157 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:33:32,828 [3428] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:33:33,000 [3428] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:33:39,162 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:33:39,178 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:35:57,337 [3908] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:35:57,461 [3908] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:36:01,751 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:36:01,751 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:36:37,071 [3820] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:36:37,087 [3820] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:36:50,768 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:36:50,768 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:37:30,908 [3644] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:37:31,064 [3644] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:37:36,353 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:37:36,368 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:38:12,234 [2336] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:38:12,249 [2336] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:39:04,792 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:39:04,855 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:40:15,244 [3916] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NWTD.Profile.GetDepositoryByState(String State)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.Checkout.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-05-21 10:40:31,718 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:40:31,843 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:40:36,273 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:40:36,305 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:41:16,835 [772] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:41:16,913 [772] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:41:24,838 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:41:24,853 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:42:08,535 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:42:08,644 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 10:42:13,995 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 10:42:13,995 [3968] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:09:12,610 [1160] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:09:13,328 [1160] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:09:22,688 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:09:22,704 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:09:59,193 [2196] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:09:59,209 [2196] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:10:07,836 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:10:07,852 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:10:29,568 [2928] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:10:29,677 [2928] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:10:47,118 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:10:47,196 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:11:27,508 [2200] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:11:27,508 [2200] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:11:33,031 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:11:33,093 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:12:19,879 [1820] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:12:19,894 [1820] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:12:28,787 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:12:28,787 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:13:08,521 [1644] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:13:08,630 [1644] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:13:13,139 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:13:13,154 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:14:03,388 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:14:03,466 [3916] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:14:17,038 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:14:17,116 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:14:57,756 [1704] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:14:57,771 [1704] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:15:04,792 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:15:04,870 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:16:22,280 [3996] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:16:22,482 [3996] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:16:31,640 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:16:31,640 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:17:05,306 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:17:05,306 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:17:12,061 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:17:12,061 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:17:46,070 [1520] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:17:46,179 [1520] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:17:50,048 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:17:50,079 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:18:53,495 [3420] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:18:53,636 [3420] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:19:01,888 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:19:01,904 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:19:38,893 [1788] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:19:38,955 [1788] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:19:45,211 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:19:45,227 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:20:29,298 [1632] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:20:29,407 [1632] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:20:34,041 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:20:34,087 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:21:19,641 [3280] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:21:19,656 [3280] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:21:24,337 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:21:24,352 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:22:10,842 [1380] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:22:10,951 [1380] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:22:15,803 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:22:15,818 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:22:57,628 [2372] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:22:57,690 [2372] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:23:10,170 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:23:10,170 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:23:19,890 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:23:19,952 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:24:02,651 [3400] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:24:02,713 [3400] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:24:08,080 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:24:08,095 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:24:47,221 [1740] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:24:47,331 [1740] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:24:54,554 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:24:54,585 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:25:34,709 [3412] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:25:34,709 [3412] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:25:47,580 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:25:47,751 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:25:49,748 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:25:49,764 [3688] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 11:27:18,468 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 11:27:18,531 [4040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:10:39,627 [2940] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:10:41,125 [2940] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:11:01,952 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:11:01,967 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:11:26,070 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:11:26,086 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:11:38,270 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:11:38,285 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:12:07,240 [2940] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:12:07,318 [2940] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:12:21,530 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:12:21,608 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:12:38,472 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:12:38,487 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:12:55,773 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:12:55,851 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:13:08,737 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:13:08,799 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:13:20,687 [2940] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:13:20,702 [2940] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:14:39,735 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:14:40,780 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:15:26,396 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:15:26,412 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:16:26,614 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:16:26,692 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 13:16:35,397 [604] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-21 13:16:35,412 [604] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-21 14:36:51,786 [3828] FATAL Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Web.HttpException: An error occurred while communicating with the remote host. The error code is 0x80070057.
+   at System.Web.Hosting.ISAPIWorkerRequestInProcForIIS6.FlushCore(Byte[] status, Byte[] header, Int32 keepConnected, Int32 totalBodySize, Int32 numBodyFragments, IntPtr[] bodyFragments, Int32[] bodyFragmentLengths, Int32 doneWithSession, Int32 finalStatus, Boolean& async)
+   at System.Web.Hosting.ISAPIWorkerRequest.FlushCachedResponse(Boolean isFinal)
+   at System.Web.HttpResponse.Flush(Boolean finalFlush)
+   at System.Web.HttpResponse.End()
+   at Mediachase.Cms.WebUtility.CmsUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at Mediachase.Cms.WebUtility.Commerce.CatalogUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2012-05-22 13:51:08,994 [2396] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 13:51:10,164 [2396] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 13:51:32,567 [2772] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 13:51:32,582 [2772] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 16:39:45,121 [4060] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 16:39:45,542 [4060] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 16:41:18,272 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 16:41:18,506 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 16:50:07,303 [4060] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 16:50:07,427 [4060] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 16:50:45,849 [4060] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 16:50:45,864 [4060] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 17:02:34,432 [4060] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 17:02:34,619 [4060] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 17:02:46,304 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 17:02:46,366 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 17:11:55,504 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 17:11:55,629 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 17:12:58,858 [4060] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 17:12:59,279 [4060] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 17:18:31,367 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 17:18:31,429 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 17:18:38,715 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 17:18:38,730 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 17:24:50,584 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 17:24:50,771 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-22 17:25:28,430 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-22 17:25:28,555 [2596] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:12:09,428 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:12:10,192 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:12:15,871 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:12:15,886 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:12:45,138 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:12:45,138 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:17:06,899 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:17:07,149 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:21:33,481 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:21:33,543 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:23:06,756 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:23:06,990 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:23:50,032 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:23:50,048 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:23:53,464 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:23:53,527 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:25:18,378 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:25:18,487 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:27:39,110 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:27:39,359 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:27:43,509 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:27:43,524 [3692] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-23 09:28:17,034 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-23 09:28:17,050 [3816] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 10:28:13,854 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 10:28:15,195 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 10:29:53,041 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 10:29:53,525 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 10:33:53,101 [2508] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 10:33:53,164 [2508] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 10:49:23,919 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 10:49:24,419 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 10:51:20,548 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 10:51:20,985 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 10:53:54,229 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 10:53:54,868 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 10:56:19,453 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 10:56:19,937 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 10:56:56,380 [2508] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 10:56:56,396 [2508] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 10:57:33,977 [2508] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 10:57:34,477 [2508] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 10:58:38,797 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 10:58:39,359 [3856] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 11:42:44,103 [3892] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 11:42:45,273 [3892] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 14:36:59,933 [3396] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 14:37:00,370 [3396] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 14:41:44,860 [3396] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 14:41:44,922 [3396] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 15:47:18,742 [4020] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 15:47:19,710 [4020] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 15:47:54,202 [3864] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 15:47:54,218 [3864] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 16:00:03,696 [3864] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 16:00:03,930 [3864] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 16:07:31,835 [3864] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 16:07:32,038 [3864] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 16:24:19,239 [4020] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 16:24:19,489 [4020] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-29 16:24:36,352 [3864] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-29 16:24:36,602 [3864] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 08:14:36,707 [3344] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 08:14:37,424 [3344] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 08:14:48,281 [2692] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 08:14:48,344 [2692] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 08:41:03,749 [3984] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 08:41:04,264 [3984] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 08:46:04,483 [3984] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 08:46:04,546 [3984] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 08:46:45,559 [3984] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 08:46:45,684 [3984] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 11:45:34,746 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 11:45:35,806 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 11:45:54,137 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 11:45:54,153 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 12:10:04,691 [2540] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 12:10:04,753 [2540] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 12:10:09,714 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 12:10:09,729 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 12:13:10,902 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 12:13:10,965 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 12:13:23,664 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 12:13:23,789 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 12:13:32,058 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 12:13:32,058 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 12:15:39,018 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 12:15:39,143 [2860] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-30 12:15:43,355 [2540] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-30 12:15:43,371 [2540] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 07:59:48,813 [2608] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 07:59:49,265 [2608] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 07:59:54,398 [2912] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 07:59:54,398 [2912] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 09:24:34,957 [3644] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 09:24:35,550 [3644] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 09:24:45,504 [1500] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 09:24:45,519 [1500] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 09:26:35,872 [3644] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 09:26:35,950 [3644] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 09:27:21,256 [3644] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 09:27:21,506 [3644] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 09:27:38,730 [1500] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 09:27:38,792 [1500] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 16:02:08,166 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 16:02:08,650 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 16:02:47,963 [3380] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 16:02:48,135 [3380] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 16:14:04,790 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 16:14:04,852 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 16:14:54,821 [3380] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 16:14:54,992 [3380] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 16:33:24,180 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 16:33:24,242 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 16:33:56,349 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 16:33:56,552 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 16:34:00,904 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 16:34:00,982 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 16:45:27,445 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 16:45:28,131 [3424] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-05-31 16:46:06,321 [3380] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-05-31 16:46:06,336 [3380] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-01 14:29:43,268 [1784] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at System.Web.HttpValueCollection.ThrowIfMaxHttpCollectionKeysExceeded()
+   at System.Web.HttpValueCollection.FillFromEncodedBytes(Byte[] bytes, Encoding encoding)
+   at System.Web.HttpRequest.FillInFormCollection()
+2012-06-01 14:31:55,014 [1784] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-01 14:31:55,498 [1784] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-01 14:31:59,320 [1784] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-01 14:31:59,351 [1784] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-01 14:32:09,164 [3984] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-01 14:32:09,180 [3984] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-04 07:47:01,911 [3608] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-04 07:47:03,331 [3608] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-04 07:47:08,495 [3608] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-04 07:47:08,510 [3608] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-04 11:49:31,698 [2676] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-04 11:49:32,618 [2676] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-04 11:49:47,985 [3776] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-04 11:49:47,985 [3776] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-04 12:00:14,890 [2676] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-04 12:00:14,952 [2676] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-04 12:01:00,615 [3776] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-04 12:01:00,880 [3776] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-04 12:38:36,818 [3776] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-04 12:38:37,723 [3776] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-04 12:38:55,398 [3776] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-04 12:38:55,492 [3776] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-04 15:19:13,463 [3968] FATAL Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Web.HttpException: An error occurred while communicating with the remote host. The error code is 0x80070057.
+   at System.Web.Hosting.ISAPIWorkerRequestInProcForIIS6.FlushCore(Byte[] status, Byte[] header, Int32 keepConnected, Int32 totalBodySize, Int32 numBodyFragments, IntPtr[] bodyFragments, Int32[] bodyFragmentLengths, Int32 doneWithSession, Int32 finalStatus, Boolean& async)
+   at System.Web.Hosting.ISAPIWorkerRequest.FlushCachedResponse(Boolean isFinal)
+   at System.Web.HttpResponse.Flush(Boolean finalFlush)
+   at System.Web.HttpResponse.End()
+   at Mediachase.Cms.WebUtility.CmsUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at Mediachase.Cms.WebUtility.Commerce.CatalogUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2012-06-06 08:28:46,272 [2848] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-06 08:28:47,146 [2848] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-06 08:28:54,119 [2848] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-06 08:28:54,135 [2848] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-06 10:41:38,254 [3820] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-06 10:41:38,706 [3820] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-06 10:43:15,165 [3820] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-06 10:43:15,274 [3820] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-06 10:43:27,754 [3548] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-06 10:43:27,770 [3548] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-06 10:44:30,983 [3548] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-06 10:44:31,045 [3548] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-06 10:49:24,709 [3548] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-06 10:49:24,771 [3548] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-06 10:51:58,903 [3548] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-06 10:51:59,028 [3548] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-06 13:52:23,433 [1788] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-06 13:52:23,916 [1788] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-07 11:26:31,747 [892] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-07 11:26:32,184 [892] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-07 13:09:58,816 [3380] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-07 13:09:59,269 [3380] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 09:55:01,948 [3164] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 09:55:02,479 [3164] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 09:55:56,409 [584] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 09:55:56,597 [584] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 10:51:03,554 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 10:51:03,975 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 10:51:16,534 [3840] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 10:51:16,549 [3840] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 10:51:42,961 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 10:51:42,976 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 11:06:09,785 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 11:06:10,035 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 11:06:22,905 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 11:06:22,921 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 11:19:59,840 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 11:20:01,228 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 11:23:21,491 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 11:23:22,131 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 11:23:35,594 [3840] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 11:23:35,750 [3840] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 11:23:46,203 [3840] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 11:23:46,234 [3840] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 11:23:55,594 [3840] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 11:23:55,625 [3840] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 11:24:05,173 [3840] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 11:24:05,204 [3840] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-08 11:25:38,760 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-08 11:25:38,838 [3764] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:11:00,167 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:11:01,680 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:11:41,492 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:11:41,882 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:21:19,896 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:21:20,067 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:21:45,371 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:21:45,449 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:32:57,658 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:32:57,721 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:33:29,670 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:33:29,811 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:33:35,521 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:33:35,521 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:45:14,640 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:45:14,968 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:45:59,803 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:45:59,819 [1068] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:46:05,123 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:46:05,139 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:50:32,812 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:50:32,874 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-12 10:52:42,421 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-12 10:52:42,655 [3620] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-14 08:52:22,549 [1080] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-14 08:52:23,064 [1080] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-15 12:55:32,671 [1988] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-15 12:55:33,139 [1988] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-19 07:25:17,266 [964] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-19 07:25:18,467 [964] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-19 09:10:39,046 [1144] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-19 09:10:39,530 [1144] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-19 13:31:03,527 [3912] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-19 13:31:03,980 [3912] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-19 13:31:19,034 [3912] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-19 13:31:19,050 [3912] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-19 13:31:42,638 [2824] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-19 13:31:43,122 [2824] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-19 13:32:06,788 [2824] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-19 13:32:06,850 [2824] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-20 09:23:28,085 [3284] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-20 09:23:28,647 [3284] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-20 09:28:10,032 [3284] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-20 09:28:10,406 [3284] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-20 09:28:51,513 [3284] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-20 09:28:51,529 [3284] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-20 10:01:58,902 [828] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-20 10:01:59,775 [828] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-20 10:10:05,683 [828] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-20 10:10:05,746 [828] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-20 10:27:36,812 [3296] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-20 10:27:36,999 [3296] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-25 08:31:57,558 [3800] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-25 08:31:58,915 [3800] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-26 11:55:57,543 [308] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at System.Web.HttpValueCollection.ThrowIfMaxHttpCollectionKeysExceeded()
+   at System.Web.HttpValueCollection.FillFromEncodedBytes(Byte[] bytes, Encoding encoding)
+   at System.Web.HttpRequest.FillInFormCollection()
+2012-06-26 11:56:05,187 [308] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at System.Web.HttpValueCollection.ThrowIfMaxHttpCollectionKeysExceeded()
+   at System.Web.HttpValueCollection.FillFromEncodedBytes(Byte[] bytes, Encoding encoding)
+   at System.Web.HttpRequest.FillInFormCollection()
+2012-06-26 11:56:14,407 [308] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at System.Web.HttpValueCollection.ThrowIfMaxHttpCollectionKeysExceeded()
+   at System.Web.HttpValueCollection.FillFromEncodedBytes(Byte[] bytes, Encoding encoding)
+   at System.Web.HttpRequest.FillInFormCollection()
+2012-06-26 11:56:23,689 [308] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at System.Web.HttpValueCollection.ThrowIfMaxHttpCollectionKeysExceeded()
+   at System.Web.HttpValueCollection.FillFromEncodedBytes(Byte[] bytes, Encoding encoding)
+   at System.Web.HttpRequest.FillInFormCollection()
+2012-06-26 11:56:31,536 [308] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at System.Web.HttpValueCollection.ThrowIfMaxHttpCollectionKeysExceeded()
+   at System.Web.HttpValueCollection.FillFromEncodedBytes(Byte[] bytes, Encoding encoding)
+   at System.Web.HttpRequest.FillInFormCollection()
+2012-06-26 11:57:49,928 [3948] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-26 11:57:50,396 [3948] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-26 11:58:36,106 [308] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-26 11:58:36,122 [308] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-26 11:58:47,198 [308] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-26 11:58:47,229 [308] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-28 13:41:47,368 [1420] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-28 13:41:47,960 [1420] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-28 14:39:10,071 [2364] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-28 14:39:10,554 [2364] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-29 07:49:41,737 [2864] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-29 07:49:42,813 [2864] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-29 07:50:18,086 [3228] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-29 07:50:18,102 [3228] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-29 11:17:45,551 [808] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-29 11:17:45,988 [808] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-06-29 11:23:23,142 [808] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-06-29 11:23:23,204 [808] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 07:55:14,838 [1208] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 07:55:33,403 [2072] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 07:59:47,051 [1208] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 07:59:52,590 [2072] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 08:00:09,797 [1208] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 08:00:43,135 [1208] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 08:01:38,049 [2072] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 08:01:49,343 [2072] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 08:31:12,588 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.EnsureCustomerCart(Account Account)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Catalog.SearchResults.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 08:31:13,181 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.EnsureCustomerCart(Account Account)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Catalog.SearchResults.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 08:35:16,595 [2652] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntries(CatalogEntryDto dto, Entry parent, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntries(Int32[] catalogEntries, Boolean cacheResults, TimeSpan cacheTimeout, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Commerce.Catalog.Impl.CatalogContextImpl.GetCatalogEntries(Int32[] catalogEntries, Boolean cacheResults, TimeSpan cacheTimeout, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.WebUtility.Search.SearchFilterHelper.SearchEntries(CatalogEntrySearchCriteria criteria, Int32 startIndex, Int32 recordsToRetrieve, Int32& count, CatalogEntryResponseGroup responseGroup, Boolean cacheResults, TimeSpan cacheTimeout)
+   at Mediachase.Cms.Website.Templates.MSSD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

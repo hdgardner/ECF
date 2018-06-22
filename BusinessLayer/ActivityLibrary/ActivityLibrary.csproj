@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72EBBDC7-A5C2-4A3F-9A16-4B048387479E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mediachase.Commerce.Workflow.Activities</RootNamespace>
+    <AssemblyName>Mediachase.Commerce.Workflow.Activities</AssemblyName>
+    <ProjectTypeGuids>{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Components\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Components\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e" />
+    <Reference Include="Mediachase.DataProvider, Version=5.0.0.40917, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mediachase.MetaDataPlus, Version=2.0.2456.29893, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\Mediachase.MetaDataPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cart\CalculateTaxActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\CalculateTaxActivity.Designer.cs">
+      <DependentUpon>CalculateTaxActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\CalculateDiscountsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\CalculateDiscountsActivity.Designer.cs">
+      <DependentUpon>CalculateDiscountsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\CheckInventoryActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\CheckInventoryActivity.Designer.cs">
+      <DependentUpon>CheckInventoryActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\AdjustInventoryActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\AdjustInventoryActivity.Designer.cs">
+      <DependentUpon>AdjustInventoryActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\RecordPromotionUsageActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\RecordPromotionUsageActivity.Designer.cs">
+      <DependentUpon>RecordPromotionUsageActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\RemoveDiscountsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\RemoveDiscountsActivity.Designer.cs">
+      <DependentUpon>RemoveDiscountsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\ValidateLineItemsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\ValidateLineItemsActivity.Designer.cs">
+      <DependentUpon>ValidateLineItemsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\ProcessHandlingActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\ProcessHandlingActivity.Designer.cs">
+      <DependentUpon>ProcessHandlingActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\ProcessShipmentsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\ProcessShipmentsActivity.Designer.cs">
+      <DependentUpon>ProcessShipmentsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\ProcessPaymentActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\ProcessPaymentActivity.Designer.cs">
+      <DependentUpon>ProcessPaymentActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Cart\CalculateTotalsActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\CalculateTotalsActivity.Designer.cs">
+      <DependentUpon>CalculateTotalsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\ShipmentSplitActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cart\ShipmentSplitActivity.Designer.cs">
+      <DependentUpon>ShipmentSplitActivity.cs</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommerceLib\CommerceLib.csproj">
+      <Project>{B4B057C4-75A1-4CCD-93ED-09F554D8660F}</Project>
+      <Name>CommerceLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <Import Project="$(MSBuildToolsPath)\Workflow.Targets" />
+</Project>

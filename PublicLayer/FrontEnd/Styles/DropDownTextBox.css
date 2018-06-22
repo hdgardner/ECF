@@ -1,0 +1,41 @@
+﻿#text 
+{
+ 
+    width:450px; 
+    height:350px; 
+     background-image:url(teaparty.jpg);
+
+ 
+}
+.text 
+{
+    filter: alpha(opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    -moz-opacity: 0.50; 
+    opacity:0.5;
+}
+  .normalDiv
+  {
+        border:0;
+        padding:0;
+        background-color:transparent;
+         font-family: Verdana;
+        font-size: 14px;
+       
+  }
+
+ .editLine
+  {
+        white-space:normal;
+        border:0;
+        border:none;
+        padding:0;
+        background-color:#00afea;
+        overflow:hidden;
+        font-family: Verdana;
+        font-size: 14px;
+      
+        text-align:center;
+    }
+    
+

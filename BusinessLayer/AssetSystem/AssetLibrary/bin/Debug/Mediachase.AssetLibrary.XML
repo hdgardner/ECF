@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mediachase.AssetLibrary</name>
+    </assembly>
+    <members>
+        <member name="P:Mediachase.Ibn.Library.Configuration.LocationRuleElement.Extension">
+            <summary>
+            Gets or sets the extension.
+            </summary>
+            <value>The extension.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.LocationRuleElement.MimeType">
+            <summary>
+            Gets or sets the type of the MIME.
+            </summary>
+            <value>The type of the MIME.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.LocationRuleElement.MaxSize">
+            <summary>
+            Gets or sets the size of the max.
+            </summary>
+            <value>The size of the max.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.LocationRuleElement.StorageProvider">
+            <summary>
+            Gets or sets the storage provider.
+            </summary>
+            <value>The storage provider.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.LocationRuleElement.DownloadProfile">
+            <summary>
+            Gets or sets the download profile.
+            </summary>
+            <value>The download profile.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.FileLibraryLocationSection.Locations">
+            <summary>
+            Gets the locations.
+            </summary>
+            <value>The locations.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.DownloadFilterElement.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.DownloadFilterElement.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.LibraryRequestHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Enables processing of HTTP Web requests by a custom HttpHandler that implements the <see cref="T:System.Web.IHttpHandler"></see> interface.
+            </summary>
+            <param name="context">An <see cref="T:System.Web.HttpContext"></see> object that provides references to the intrinsic server objects (for example, Request, Response, Session, and Server) used to service HTTP requests.</param>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.LibraryRequestHandler.IsReusable">
+            <summary>
+            Gets a value indicating whether another request can use the <see cref="T:System.Web.IHttpHandler"></see> instance.
+            </summary>
+            <value></value>
+            <returns>true if the <see cref="T:System.Web.IHttpHandler"></see> instance is reusable; otherwise, false.</returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Folder.GetTreeService">
+            <summary>
+            Gets the tree service.
+            </summary>
+            <value>The tree service.</value>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Folder.Move(Mediachase.Ibn.Library.Folder,System.Int32)">
+            <summary>
+            Moves the specified folder.
+            </summary>
+            <param name="folder">The folder.</param>
+            <param name="newParentId">The new parent id.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Folder.Move(System.Int32,System.Int32)">
+            <summary>
+            Moves the specified folder id.
+            </summary>
+            <param name="folderId">The folder id.</param>
+            <param name="newParentId">The new parent id.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Folder.CopyRecursive(System.Int32,System.Int32)">
+            <summary>
+            Copies the specified folder id.
+            </summary>
+            <param name="folderId">The folder id.</param>
+            <param name="parentId">The parent id.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.IFolderElementExtension.Initialize(Mediachase.Ibn.Library.Configuration.FolderElementExtensionElement)">
+            <summary>
+            Initializes the specified param.
+            </summary>
+            <param name="param">The param.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.IFolderElementExtension.Process(Mediachase.Ibn.Library.FolderElement)">
+            <summary>
+            Processes the specified element.
+            </summary>
+            <param name="element">The element.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.PdfFolderElementExtension.Initialize(Mediachase.Ibn.Library.Configuration.FolderElementExtensionElement)">
+            <summary>
+            Initializes the specified param.
+            </summary>
+            <param name="param">The param.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.PdfFolderElementExtension.Process(Mediachase.Ibn.Library.FolderElement)">
+            <summary>
+            Processes the specified element.
+            </summary>
+            <param name="element">The element.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.ImageFolderElementExtension.Initialize(Mediachase.Ibn.Library.Configuration.FolderElementExtensionElement)">
+            <summary>
+            Initializes the specified param.
+            </summary>
+            <param name="param">The param.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.ImageFolderElementExtension.Process(Mediachase.Ibn.Library.FolderElement)">
+            <summary>
+            Processes the specified element.
+            </summary>
+            <param name="element">The element.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.GetBlobInfo">
+            <summary>
+            Gets the BLOB info.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.FindFolderByPattern(Mediachase.Ibn.Library.Folder,System.String,System.Char,System.String)">
+            <summary>
+            Finds the last folder.
+            </summary>
+            <param name="folder">The folder.</param>
+            <param name="path">The path.</param>
+            <param name="delim">The delim.</param>
+            <param name="pattern">The pattern.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.GetElementsByPath(System.String)">
+            <summary>
+            Gets the element by path.
+            </summary>
+            <param name="path">The path.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.GetElementPath(System.String)">
+            <summary>
+            Gets the hierarhy.
+            </summary>
+            <param name="delim">The delim.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.Move(Mediachase.Ibn.Library.FolderElement,System.Int32)">
+            <summary>
+            Moves the specified folder element.
+            </summary>
+            <param name="folderElement">The folder element.</param>
+            <param name="newParentId">The new parent id.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.Move(System.Int32,System.Int32)">
+            <summary>
+            Moves the specified folder element id.
+            </summary>
+            <param name="folderElementId">The folder element id.</param>
+            <param name="newParentId">The new parent id.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.Copy(Mediachase.Ibn.Library.FolderElement,System.Int32)">
+            <summary>
+            Copies the specified folder element.
+            </summary>
+            <param name="folderElement">The folder element.</param>
+            <param name="newParentId">The parent id.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.Copy(System.Int32,System.Int32)">
+            <summary>
+            Copies the specified folder element id.
+            </summary>
+            <param name="folderElementId">The folder element id.</param>
+            <param name="parentId">The parent id.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.Delete(Mediachase.Ibn.Library.FolderElement)">
+            <summary>
+            Deletes the specified folder element.
+            </summary>
+            <param name="folderElement">The folder element.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.Delete(System.Int32)">
+            <summary>
+            Deletes the specified folder element id.
+            </summary>
+            <param name="folderElementId">The folder element id.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.OnDeleting">
+            <summary>
+            Called when [deleting].
+            </summary>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.Create(System.Int32,System.String,System.IO.Stream,System.Guid)">
+            <summary>
+            Creates the specified parent id.
+            </summary>
+            <param name="parentId">The parent id.</param>
+            <param name="fileName">Name of the file.</param>
+            <param name="srcStream">The SRC stream.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.WriteToStream(System.IO.Stream,System.IO.Stream,System.Int64,System.Int64,System.Guid)">
+            <summary>
+            Writes to stream.
+            </summary>
+            <param name="dstStream">The DST stream.</param>
+            <param name="srcStream">The SRC stream.</param>
+            <param name="startOffset">The start offset.</param>
+            <param name="length">The length.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.GetUrl">
+            <summary>
+            Gets the URL.
+            </summary>
+            <param name="downloadProfile">The download profile.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.TryRecognizeStorageProvider(Mediachase.Ibn.Library.FolderElement,System.String,System.String,System.Int64,System.String@)">
+            <summary>
+            Tries the recognize storage provider.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="fileName">Name of the file.</param>
+            <param name="contentType">Type of the content.</param>
+            <param name="fileSize">Size of the file.</param>
+            <param name="providerName">Name of the provider.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.TryRecognizeStorageProvider(Mediachase.Ibn.Library.FolderElement,System.String,System.String,System.Int64,System.String@,System.String@)">
+            <summary>
+            Tries the recognize provider.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="fileName">Name of the file.</param>
+            <param name="contentType">Type of the content.</param>
+            <param name="fileSize">Size of the file.</param>
+            <param name="providerName">Name of the provider.</param>
+            <param name="profileName">Name of the profile.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.FolderElement.GetCfgFolderElementExtension(Mediachase.Ibn.Blob.BlobInfo)">
+            <summary>
+            Gets the folder element type from CFG.
+            </summary>
+            <param name="blobInfo">The BLOB info.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.DownloadFilterBase.Initialize(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initializes the specified ?.
+            </summary>
+            <param name="?">The ?.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.DownloadFilterBase.ProcessFilter(System.Object,Mediachase.Ibn.Blob.BlobProfileDownload.DownloadFilterArgs)">
+            <summary>
+            Processes the filter.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="args">The args.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.DownloadFilterBase.GetFilterByCfgName(System.String)">
+            <summary>
+            Gets the name of the filter by CFG.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.DownloadFilterSection.Filters">
+            <summary>
+            Gets the filters.
+            </summary>
+            <value>The filters.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.FolderElementExtensionElement.MimeType">
+            <summary>
+            Gets or sets the type of the MIME.
+            </summary>
+            <value>The type of the MIME.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.FolderElementExtensionElement.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Configuration.FileLibraryLocationCollection.CreateNewElement">
+            <summary>
+            When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Configuration.FileLibraryLocationCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for a specified configuration element when overridden in a derived class.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.AssetHttpModule.#ctor">
+            <summary>
+            Initializes an instance of this class.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.AssetHttpModule.Dispose">
+            <summary>
+            Disposes of any resources used.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.AssetHttpModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Initializes the module by hooking the application's BeginRequest event if indicated by the config settings.
+            </summary>
+            <param name="application">The HttpApplication this module is bound to.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.AssetHttpModule.Application_BeginRequest(System.Object,System.EventArgs)">
+            <summary>
+            Handles the BeginRequest event of the Application control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.DownloadFilterThumbnail.Initialize(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initializes the specified ?.
+            </summary>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.DownloadFilterThumbnail.ProcessFilter(System.Object,Mediachase.Ibn.Blob.BlobProfileDownload.DownloadFilterArgs)">
+            <summary>
+            Processes the filter.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="args">The args.</param>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Configuration.LocationRuleCollections.CreateNewElement">
+            <summary>
+            When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Configuration.LocationRuleCollections.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for a specified configuration element when overridden in a derived class.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Configuration.DownloadFilterCollection.CreateNewElement">
+            <summary>
+            When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement"></see>.
+            </summary>
+            <returns>
+            A new <see cref="T:System.Configuration.ConfigurationElement"></see>.
+            </returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Configuration.DownloadFilterCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for a specified configuration element when overridden in a derived class.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"></see> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"></see> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"></see>.
+            </returns>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.FolderElementExtensionSection.ElementTypes">
+            <summary>
+            Gets the element types.
+            </summary>
+            <value>The element types.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.FileLibraryLocationElement.Path">
+            <summary>
+            Gets or sets the path.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.Configuration.FileLibraryLocationElement.LocationRules">
+            <summary>
+            Gets the location rules.
+            </summary>
+            <value>The location rules.</value>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Configuration.FolderElementExtensionCollection.CreateNewElement">
+            <summary>
+            When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.Configuration.FolderElementExtensionCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for a specified configuration element when overridden in a derived class.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.AssetConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Ibn.Library.AssetConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.AssetConfiguration.GetRole(System.String)">
+            <summary>
+            Returns class names mapped to the event key (name)
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.AssetConfiguration.Instance">
+            <summary>
+            Singleton instance
+            </summary>
+            <value>The instance.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.AssetConfiguration.Roles">
+            <summary>
+            Configuration element defines the mapping of mapped types to type names specified
+            in configuration file
+            </summary>
+            <value>The mapped types.</value>
+        </member>
+        <member name="T:Mediachase.Ibn.Library.RoleCollection">
+            <summary>
+            Collection of RoleDefinition objects
+            </summary>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.RoleCollection.CreateNewElement">
+            <summary>
+            When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement"></see>.
+            </summary>
+            <returns>
+            A new <see cref="T:System.Configuration.ConfigurationElement"></see>.
+            </returns>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.RoleCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for a specified configuration element when overridden in a derived class.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"></see> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"></see> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"></see>.
+            </returns>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.RoleCollection.Item(System.Int32)">
+            <summary>
+            Gets or sets the <see cref="T:Mediachase.Commerce.WorkflowDefinition"/> at the specified index.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Mediachase.Ibn.Library.RoleDefinition">
+            <summary>
+            Definition of single role element in web.config file
+            </summary>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.RoleDefinition.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Ibn.Library.RoleDefinition"/> class.
+            </summary>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.RoleDefinition.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.RoleDefinition.Value">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="T:Mediachase.Ibn.Library.AssetRoles">
+            <summary>
+            Contains the roles for Asset permissions
+            </summary>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.AssetRoles.AdminRole">
+            <summary>
+            Public string literal for the asset administrators role.
+            </summary>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.AssetRoles.ManagerRole">
+            <summary>
+            Public string literal for the asset managers role.
+            </summary>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.AssetRoles.SchemaManagerRole">
+            <summary>
+            Public string literal for the asset schema managers role.
+            </summary>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.AssetRoles.ViewerRole">
+            <summary>
+            Public string literal for the asset viewers role.
+            </summary>
+        </member>
+        <member name="T:Mediachase.Ibn.Library.AssetContext">
+            <summary>
+            Implements methods for the asset context.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.AssetContext.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mediachase.Ibn.Library.AssetContext"/> class.
+            </summary>
+        </member>
+        <member name="M:Mediachase.Ibn.Library.AssetContext.GetAssetSystemVersion(System.Int32@,System.Int32@,System.Int32@,System.DateTime@)">
+            <summary>
+            Returns 0 if no patches were installed.
+            </summary>
+            <param name="major"></param>
+            <param name="minor"></param>
+            <param name="patch"></param>
+            <param name="installDate"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Mediachase.Ibn.Library.AssetContext.Current">
+            <summary>
+            Gets the current.
+            </summary>
+            <value>The current.</value>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OrderedTest name="orderedtest1" storage="c:\projects\ecf5\main\src\tests\unittests\commercelibtests\orderedtest1.orderedtest" id="b2f79a57-757d-49e4-828e-d759e054d5c5" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Css projectStructure="" iteration="" />
+  <Execution timeOut="2147483647" />
+  <Owners>
+    <Owner name="" />
+  </Owners>
+  <TestLinks>
+    <TestLink id="852486f0-a3bd-c817-f0fe-6998a5684300" name="CatalogSystem_Web_Browse" storage="bin\debug\mediachase.commerce.unittests.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="1c0b631f-60d3-6f2a-7ac7-5f361789a963" name="CatalogSystem_Web_Browse_Take2" storage="bin\debug\mediachase.commerce.unittests.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="6da6ad90-f6aa-26f7-7571-cff835e45d47" name="ContentSystem_Web_Browse" storage="bin\debug\mediachase.commerce.unittests.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="ccd01443-b92a-3fb0-e1be-665848234045" name="MarketingSystem_Web_Browse" storage="bin\debug\mediachase.commerce.unittests.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="722a7e48-96cf-23a2-9afc-f9f6ef31773c" name="OrderSystem_Web_Browse" storage="bin\debug\mediachase.commerce.unittests.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="5b1f8197-7655-5b4a-62fc-d26db6c55a7d" name="Public_Web_Browse_Cart" storage="bin\debug\mediachase.commerce.unittests.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="671a9065-1faa-ae02-e4c9-5df5b984cde7" name="Public_Web_Browse_Categories" storage="bin\debug\mediachase.commerce.unittests.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="76468968-4974-e06c-d905-de81b75060a2" name="Public_Web_Browse_Checkout" storage="bin\debug\mediachase.commerce.unittests.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="175d7dad-48c3-1880-42dd-67e73b416f6f" name="Public_Web_Browse_Products" storage="bin\debug\mediachase.commerce.unittests.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

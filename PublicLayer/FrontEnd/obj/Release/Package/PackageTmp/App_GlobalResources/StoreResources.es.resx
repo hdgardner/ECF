@@ -1,0 +1,1525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="REMIND_TITLE" xml:space="preserve">
+    <value>Recordatorio del usuario y contraseña</value>
+  </data>
+  <data name="BASKET_COUPON_LABEL" xml:space="preserve">
+    <value>Cupón</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_EMAIL_LABEL" xml:space="preserve">
+    <value>Ingresar su dirección de correo electrónico</value>
+  </data>
+  <data name="CHECKOUT_SHIPPINGOPTIONS_PROCEED_GIFTS" xml:space="preserve">
+    <value>Continuar a opciones de regalo</value>
+  </data>
+  <data name="ACCOUNT_ENTER_EMAIL_LABEL" xml:space="preserve">
+    <value>Ingresar nueva dirección de correo electrónico</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_RETURNING_CUSTOMERS_LABEL" xml:space="preserve">
+    <value>Soy un cliente ya registrado,&lt;BR&gt; y mi contraseña es</value>
+  </data>
+  <data name="CART_EDIT_DISCOUNTS" xml:space="preserve">
+    <value>Descuentos</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_EDIT_TITLE" xml:space="preserve">
+    <value>Editar dirección</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_LICENSE_STATE" xml:space="preserve">
+    <value>Estado de licencia</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_WRITE_REVIEW" xml:space="preserve">
+    <value>Escriba su propio Comentario</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_ACCOUNT_NAME" xml:space="preserve">
+    <value>Nombre en la cuenta</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_ACCOUNT_TYPE" xml:space="preserve">
+    <value>Tipo de cuenta</value>
+  </data>
+  <data name="PRODUCT_RATE" xml:space="preserve">
+    <value>Calificar el producto</value>
+  </data>
+  <data name="PRODUCT_ITEM" xml:space="preserve">
+    <value>Artículo#</value>
+  </data>
+  <data name="CHECKOUT_THANKS_ORDER_NUMBER" xml:space="preserve">
+    <value>Su número de pedido es</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_PAYMENT_MESSAGE" xml:space="preserve">
+    <value>Le notificaremos sobre el estado de su pedido utilizando esta dirección de correo electrónico</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_WIZARD_CONFIRM" xml:space="preserve">
+    <value>Confirmación de pedido</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_ITEMS_SUBTOTAL" xml:space="preserve">
+    <value>Artículo(s) subtotal:</value>
+  </data>
+  <data name="ERROR_GENERAL" xml:space="preserve">
+    <value>Error:</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_OPTIONS_LABEL" xml:space="preserve">
+    <value>Opciones de pago</value>
+  </data>
+  <data name="AFFILIATE_TERMS_PROCEED" xml:space="preserve">
+    <value>Continuar</value>
+  </data>
+  <data name="LICENSE_TERMS_CHECK" xml:space="preserve">
+    <value>Tilde aquí para aceptar las condiciones de venta</value>
+  </data>
+  <data name="LICENSE_TERMS_LABEL" xml:space="preserve">
+    <value>Condiciones de venta</value>
+  </data>
+  <data name="ACCOUNT_NEW_INSTRUCTIONS_LABEL" xml:space="preserve">
+    <value>Para registrar una nueva cuenta, haga el favor de proporcionar la siguiente información:</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_LABEL" xml:space="preserve">
+    <value>Registración e Inicio de sesión</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_EMAILPASS_INFO" xml:space="preserve">
+    <value>una vez que la dirección de correo electrónico sea cambiada, la cuenta será deshabilitada y un correo electrónico de activación será enviado a la nueva dirección</value>
+  </data>
+  <data name="ADDRESS_PHONE" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="AFFILIATE_URL" xml:space="preserve">
+    <value>URL Sitio de Internet </value>
+  </data>
+  <data name="ADDRESS_STATE" xml:space="preserve">
+    <value>Estado/Provincia</value>
+  </data>
+  <data name="GENERAL_SAVE_LABEL" xml:space="preserve">
+    <value>Guardar cambios</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CARD_TYPE" xml:space="preserve">
+    <value>Tipo de tarjeta</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CARD_CODE" xml:space="preserve">
+    <value>Código de tarjeta (CVV2, CVC2 o CID)</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CONTINUE_BUTTON_LABEL" xml:space="preserve">
+    <value>Continuar</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_BILLING_INFO" xml:space="preserve">
+    <value>Tu información de facturación</value>
+  </data>
+  <data name="REMIND_NEW_PASSWORD_LABEL" xml:space="preserve">
+    <value>Crear nueva contraseña</value>
+  </data>
+  <data name="GENERAL_CONFIRM_PASSWORD_REQUIRED_ERROR_MESSAGE" xml:space="preserve">
+    <value>Se requiere confirmar contraseña</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_FAILED" xml:space="preserve">
+    <value>Le informamos que la identificación ingresada (login) es inválida. Por favor, le rogamos que verifique si su nombre de usuario y su contraseña personal han ingresado correctamente. Muchas gracias.</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_MESSAGE" xml:space="preserve">
+    <value>Si ya estás registrado ingresá tu nombre de usuario, contraseña y presioná CONFIRMAR.
+Esta cuenta es diferente a la que usás dentro de Autogestión.</value>
+  </data>
+  <data name="ACCOUNT_NO_DOWNLOADS_LABEL" xml:space="preserve">
+    <value>No hay descargas disponibles en este momento</value>
+  </data>
+  <data name="CHECKOUT_ORDER_DATE_NA" xml:space="preserve">
+    <value>Incompleto</value>
+  </data>
+  <data name="ADDRESS_COMPANY" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="ADDRESS_COUNTRY" xml:space="preserve">
+    <value>Pais</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_HELPFUL_REVIEW" xml:space="preserve">
+    <value>¿Le resultó útil este comentario?</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CARDHOLDER_NAME" xml:space="preserve">
+    <value>Nombre del titular</value>
+  </data>
+  <data name="INFO_CALL_FOR_PRICING" xml:space="preserve">
+    <value>Llamar por cotización</value>
+  </data>
+  <data name="CHECKOUT_ORDER_COMPLETED" xml:space="preserve">
+    <value>Completado</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_NEW_VIEW_ADDRESSES" xml:space="preserve">
+    <value>Ver direcciones</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_SERIAL_NUMBER" xml:space="preserve">
+    <value>Número(s) de serie:</value>
+  </data>
+  <data name="ERROR_EMAIL_ALREADY_REGISTERED" xml:space="preserve">
+    <value>Error en la operación: la dirección de correo electrónico ya está registrada</value>
+  </data>
+  <data name="PRODUCT_FEATURES" xml:space="preserve">
+    <value>Características del producto</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_DONOT_PACKING_SHEET" xml:space="preserve">
+    <value>No envolver este artículo</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_ERROR_MESSAGE" xml:space="preserve">
+    <value>Debe seleccionar una dirección de pago</value>
+  </data>
+  <data name="ACCOUNT_ORDERS_ID_LABEL" xml:space="preserve">
+    <value>Identificación del pedido</value>
+  </data>
+  <data name="ADDRESS_FIRSTNAME" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="META_NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ACCOUNT_NEW_FIRSTNAME_LABEL" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="ERROR_CURRENT_PASSWORD_INCORRECT" xml:space="preserve">
+    <value>Error en la operación: la contraseña actual es incorrecta</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_STARS4" xml:space="preserve">
+    <value>Estrellas</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_STARS5" xml:space="preserve">
+    <value>Estrellas</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_STARS2" xml:space="preserve">
+    <value>Estrellas</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_STARS3" xml:space="preserve">
+    <value>Estrellas</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_STARS1" xml:space="preserve">
+    <value>Estrella</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_GIFT_ORDER_QUESTION" xml:space="preserve">
+    <value>¿Comprando un regalo? Tildar esta casilla para ver opciones de regalo antes de finalizar la compra.</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PACKING_SHEET" xml:space="preserve">
+    <value>Preparar este artículo para regalo</value>
+  </data>
+  <data name="ERROR404_MESSAGE1" xml:space="preserve">
+    <value>Lo lamentamos, pero la página que Usted está buscando no existe, está desactualizada o ha ocurrido otro problema.</value>
+  </data>
+  <data name="ERROR404_MESSAGE3" xml:space="preserve">
+    <value>Por favor, haga click en el botón de barra de herramientas "Atrás"para regresar donde estaba o use uno de los siguientes enlaces:</value>
+  </data>
+  <data name="ERROR404_MESSAGE2" xml:space="preserve">
+    <value>Si Usted piensa que hay un error o ha encontrado un enlace roto, por favor envíenos un correo electrónico</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_SUCCESS_MESSAGE" xml:space="preserve">
+    <value>Su cuenta ha sido creada con éxito</value>
+  </data>
+  <data name="ACCOUNT_CUSTOMER_DOWNLOADS_LABEL" xml:space="preserve">
+    <value>Ver Descargas &amp; actualizaciones</value>
+  </data>
+  <data name="ERROR_ACCOUNT_NOT_EXISTS2_2" xml:space="preserve">
+    <value>no existe.</value>
+  </data>
+  <data name="ERROR_ACCOUNT_NOT_EXISTS2_1" xml:space="preserve">
+    <value>Cuenta con dirección</value>
+  </data>
+  <data name="SKU_ADD_TO_CART" xml:space="preserve">
+    <value>Agregar al carro de compras</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENTS_LABEL" xml:space="preserve">
+    <value>Envíos</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_UPDATE_QUANTITIES" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="AFFILIATE_REGISTER_ERROR" xml:space="preserve">
+    <value>La filial no pudo ser registrada</value>
+  </data>
+  <data name="PRODUCT_ADD_CART" xml:space="preserve">
+    <value>Agregar al carro de compras</value>
+  </data>
+  <data name="ACCOUNT_ORDER_HISTORY_INFO_LABEL" xml:space="preserve">
+    <value>Ver compras anteriores</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_TYPE_OTHER_MESSAGE" xml:space="preserve">
+    <value>Utilice esta opción si quiere usar otra forma de pago para sus productos. Por favor, contáctenos luego de confirmar el pedido.</value>
+  </data>
+  <data name="FOOTER_ABOUT_US" xml:space="preserve">
+    <value>Quiénes somos</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_GIFT_QUESTION" xml:space="preserve">
+    <value>¿Su pedido contiene artículos para regalo?</value>
+  </data>
+  <data name="SHOPPING_CART_ESTIMATED_SHIPPING_CALCULATING" xml:space="preserve">
+    <value>calculando...</value>
+  </data>
+  <data name="AFFILIATE_TERMS_AND_CONDITIONS" xml:space="preserve">
+    <value>Términos y condiciones de filiales</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_INFO_LABEL" xml:space="preserve">
+    <value>Información de la cuenta</value>
+  </data>
+  <data name="AFFILIATE_FILLFORM_HEADER" xml:space="preserve">
+    <value>Inscribirse</value>
+  </data>
+  <data name="PRODUCT_YOUR_RATING" xml:space="preserve">
+    <value>Su calificación</value>
+  </data>
+  <data name="ACCOUNT_ORDER_EDIT_SAVE" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_REVIEW" xml:space="preserve">
+    <value>Ingrese su comentario en el espacio debajo.</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_SHIPPING" xml:space="preserve">
+    <value>Costo de Envío</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_WIZARD_PAYMENT" xml:space="preserve">
+    <value>Seleccionar opciones de pago</value>
+  </data>
+  <data name="CHECKOUT_THANKS_EMAIL_CONFIRM" xml:space="preserve">
+    <value>También le enviaremos una confirmación de su pedido por correo electrónico</value>
+  </data>
+  <data name="CUSTOMER_SUPPORT" xml:space="preserve">
+    <value>Soporte de Clientes</value>
+  </data>
+  <data name="LICENSE_AGREEMENT_TITLE" xml:space="preserve">
+    <value>Acuerdo de licencia</value>
+  </data>
+  <data name="GENERAL_SIMILAR_PRODUCTS" xml:space="preserve">
+    <value>Productor similares</value>
+  </data>
+  <data name="LICENSE_AGREEMENT_LABEL" xml:space="preserve">
+    <value>Acuerdo de licencia</value>
+  </data>
+  <data name="PRODUCT_OPTION_NEXT_LABEL" xml:space="preserve">
+    <value>Luego seleccionar {0}</value>
+  </data>
+  <data name="GENERAL_PASSWORD_LABEL" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_DONOT_GIFT_WRAP" xml:space="preserve">
+    <value>No envolver este artículo para regalo.</value>
+  </data>
+  <data name="ACCOUNT_ORDER_BILLING_LABEL" xml:space="preserve">
+    <value>Tu información de facturación</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_GIFT_WRAPPING" xml:space="preserve">
+    <value>Preparar para regalo</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_ERROR_MESSAGE" xml:space="preserve">
+    <value>Debe seleccionar una dirección de envío</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_PRICE_BEFORE_TAX" xml:space="preserve">
+    <value>Precio sin impuestos</value>
+  </data>
+  <data name="PRODUCT_SKU_OUT_OF_STOCK" xml:space="preserve">
+    <value>Agotado</value>
+  </data>
+  <data name="ACCOUNT_PASSWORD_CONFIRM_MUST_MATCH" xml:space="preserve">
+    <value>La entrada en "Confirmar Nueva Contraseña" debe coincidir con la de "Nueva Contraseña"</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_FAILED_MESSAGE" xml:space="preserve">
+    <value>Su cuenta no fue creada. Por favor intente denuevo</value>
+  </data>
+  <data name="SHOPPING_CART_SPECIFY_ADDRESS" xml:space="preserve">
+    <value>Especificar dirección</value>
+  </data>
+  <data name="ACCOUNT_MANAGEMENT_LABEL" xml:space="preserve">
+    <value>Administración de cuenta</value>
+  </data>
+  <data name="BASKET_APPLY_COUPON" xml:space="preserve">
+    <value>Utilizar cupón</value>
+  </data>
+  <data name="ACCOUNT_ORDER_PAYMENT_PROCESSED" xml:space="preserve">
+    <value>Procesado</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NEW_INFO_LABEL" xml:space="preserve">
+    <value>Para crear una nueva cuenta, haga click en "Registrarse"</value>
+  </data>
+  <data name="ACTIVATE_TITLE" xml:space="preserve">
+    <value>Activación de cuenta</value>
+  </data>
+  <data name="PRODUCT_EDITORIAL_REVIEW_HEADER" xml:space="preserve">
+    <value>Comentario Editorial</value>
+  </data>
+  <data name="ACCOUNT_NEW_LASTNAME_LABEL" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_BANK_ACCOUNT_NUMBER" xml:space="preserve">
+    <value>Cuenta bancaria #</value>
+  </data>
+  <data name="GENERAL_SKU_LABEL" xml:space="preserve">
+    <value>SKU </value>
+  </data>
+  <data name="ALTERNATIVE_PHOTOS_LABEL" xml:space="preserve">
+    <value>Fotografías alternativas</value>
+  </data>
+  <data name="GENERAL_TOTAL_LABEL" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="CHECKOUT_ORDER_CONFIRMATION_TITLE" xml:space="preserve">
+    <value>Confirmación de pedido</value>
+  </data>
+  <data name="CHECKOUT_ORDER_CONFIRMATION_LABEL" xml:space="preserve">
+    <value>Confirmación de pedido</value>
+  </data>
+  <data name="ERROR_BLANK_PASSWORD" xml:space="preserve">
+    <value>'Confirmar contraseña' no puede quedar en blanco.</value>
+  </data>
+  <data name="CART_EDIT_SHIPS_TO" xml:space="preserve">
+    <value>Envíos a </value>
+  </data>
+  <data name="BASKET_ITEMS_LABEL" xml:space="preserve">
+    <value>Artículos</value>
+  </data>
+  <data name="FOOTER_RETURN_POLICY" xml:space="preserve">
+    <value>Política de devolución</value>
+  </data>
+  <data name="AFFILIATE_FINISH_THANKYOU" xml:space="preserve">
+    <value>¡Gracias por unirse al programa de filiales!</value>
+  </data>
+  <data name="PRODUCTPAGER_SORT_BY_NAME" xml:space="preserve">
+    <value>Ordenar por nombre</value>
+  </data>
+  <data name="PRODUCT_SEARCH_LABEL" xml:space="preserve">
+    <value>Búsqueda de producto</value>
+  </data>
+  <data name="PRODUCT_SEARCH_TITLE" xml:space="preserve">
+    <value>Búsqueda de producto</value>
+  </data>
+  <data name="SHOPPING_CART_STORE_POLICES" xml:space="preserve">
+    <value>Ver términos del local</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_PROCESSING" xml:space="preserve">
+    <value>Envío #{0}: procesado como del {1:MMMM d, AAAA}</value>
+  </data>
+  <data name="ACCOUNT_ORDER_NUMBER_LABEL" xml:space="preserve">
+    <value>Número de pedido</value>
+  </data>
+  <data name="ERROR_OUTOFSTOCK" xml:space="preserve">
+    <value>Disculpe, uno de los artículos que intentó agregar al carro de compras está agotado. Intente agregando menos artículos.</value>
+  </data>
+  <data name="PRODUCT_OPTION_FIRST_LABEL" xml:space="preserve">
+    <value>Primero seleccionar {0}</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_SHIPPING_TO" xml:space="preserve">
+    <value>Enviar a </value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_EMPTY_CART" xml:space="preserve">
+    <value>El carro de compras está vacío</value>
+  </data>
+  <data name="GENERAL_EMAIL_REQUIRED_ERROR_MESSAGE" xml:space="preserve">
+    <value>Se requiere una dirección de correo electrónico</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NEW_CUSTOMERS_LABEL" xml:space="preserve">
+    <value>Soy un nuevo cliente</value>
+  </data>
+  <data name="PRODUCTPAGER_48ITEMS_PERPAGE" xml:space="preserve">
+    <value>48 elementos por página</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_NEW_TITLE" xml:space="preserve">
+    <value>Nueva dirección</value>
+  </data>
+  <data name="AFFILIATE_FINISH_HEADER" xml:space="preserve">
+    <value>Terminar la registración</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_NEW_ACCOUNT_PASSWORD_LABEL" xml:space="preserve">
+    <value>Contraseña para la nueva cuenta</value>
+  </data>
+  <data name="NO_SHIPMENTS" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="REMIND_MESSAGE" xml:space="preserve">
+    <value>Altonet cuenta con un servicio de ayuda para recuperar su contraseña. Siga los pasos que se le indican y esta le será enviada de manera confidencial a la cuenta de e-mail que registró cuando se hizo ciudadano.</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_TOTAL_BEFORE_TAX" xml:space="preserve">
+    <value>Total sin Impuestos</value>
+  </data>
+  <data name="FOOTER_PRIVACY_POLICY" xml:space="preserve">
+    <value>Política de privacidad</value>
+  </data>
+  <data name="GENERAL_COMPLETED_LABEL" xml:space="preserve">
+    <value>Completado</value>
+  </data>
+  <data name="ACCOUNT_ORDER_EDIT_TITLE" xml:space="preserve">
+    <value>Editar pedido</value>
+  </data>
+  <data name="PRODUCTPAGER_SORT_BY_PRICE" xml:space="preserve">
+    <value>Ordenar por precio</value>
+  </data>
+  <data name="ACCOUNT_NEW_TITLE" xml:space="preserve">
+    <value>Si estás registrado:</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_EDIT_CANCEL" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="CHECKOUT_ORDER_NOT_COMPLETED" xml:space="preserve">
+    <value>No completado</value>
+  </data>
+  <data name="ACCOUNT_NEW_LABEL" xml:space="preserve">
+    <value>Registración &amp; Inicio de sesión</value>
+  </data>
+  <data name="ACCOUNT_POST_TRANSFER_BLANK" xml:space="preserve">
+    <value>Imprimir formulario para giro postal</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_TRACK" xml:space="preserve">
+    <value>Seguimiento del envío</value>
+  </data>
+  <data name="CHECKOUT_THANKS_NONREGISTERED_MESSAGE4" xml:space="preserve">
+    <value>Habilitado para hacer un seguimiento de pedidos en línea y ver el estado de envio y los números de seguimiento actualizados.</value>
+  </data>
+  <data name="CHECKOUT_THANKS_NONREGISTERED_MESSAGE1" xml:space="preserve">
+    <value>¿Desea hacer su próxima compra aún más rápido y ver el estado de su pedido?</value>
+  </data>
+  <data name="CHECKOUT_THANKS_NONREGISTERED_MESSAGE3" xml:space="preserve">
+    <value>así como hacer pedidos en visitas futuras. Cuando usted se registre o inicie la sesión, podrá</value>
+  </data>
+  <data name="CHECKOUT_THANKS_NONREGISTERED_MESSAGE2" xml:space="preserve">
+    <value>Haga click en el enlace ubicado debajo para guardar los datos de facturación y envío </value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_PRICE" xml:space="preserve">
+    <value>Precio</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_SPEED" xml:space="preserve">
+    <value>Tiempo de envío</value>
+  </data>
+  <data name="GENERAL_SHIPPING_LABEL" xml:space="preserve">
+    <value>Envíos</value>
+  </data>
+  <data name="CHECKOUT_BACK_BUTTON" xml:space="preserve">
+    <value>&lt;&lt; Atrás</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_SCALE" xml:space="preserve">
+    <value>En una escala de 1 a 5 estrellas, 5 estrellas siendo el puntaje máximo</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_TITLE" xml:space="preserve">
+    <value>Por favor, ingrese un título para su comentario</value>
+  </data>
+  <data name="BASKET_YOUR_LABEL" xml:space="preserve">
+    <value>Su canasta de compras</value>
+  </data>
+  <data name="RIGHT_MENU_CUSTOMER_SERVICE" xml:space="preserve">
+    <value>ATENCIÖN AL CLIENTE</value>
+  </data>
+  <data name="REMIND_EMAIL_LABEL" xml:space="preserve">
+    <value>Dirección de correo electrónico</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_TITLE" xml:space="preserve">
+    <value>Seleccionar opciones de pago</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PHONE" xml:space="preserve">
+    <value>Confirme su pedido y realice el pago llamándonos.Una vez que el pago haya sido procesado, su pedido podrá ser enviado/descargado.</value>
+  </data>
+  <data name="AFFILIATE_NAME" xml:space="preserve">
+    <value>Nombre de la filial</value>
+  </data>
+  <data name="AFFILIATE_SAVE" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CHECK" xml:space="preserve">
+    <value>Cheque #</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_LABEL" xml:space="preserve">
+    <value>Opciones de pago</value>
+  </data>
+  <data name="ADDRESS_STREET" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="GENERAL_UNKNOWN_ERROR_MESSAGE" xml:space="preserve">
+    <value>Su cuenta no fue creada. Por favor intente nuevamente</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_LABEL" xml:space="preserve">
+    <value>Cambiar dirección de correo electrónico, contraseña e información de contacto</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_TITLE" xml:space="preserve">
+    <value>Modificar dirección de correo electrónico y contraseña</value>
+  </data>
+  <data name="ACCOUNT_ORDER_ITEMS_PURCHASED" xml:space="preserve">
+    <value>Artículos adquiridos</value>
+  </data>
+  <data name="INFO_ORDER_NOT_COMPLETE" xml:space="preserve">
+    <value>Su pedido no está completo. Por favor imprima esta página y llámenos al 323-655-6688 (U.S.) para completar el pedido.</value>
+  </data>
+  <data name="ACCOUNT_PAYMENT_TYPE_LABEL" xml:space="preserve">
+    <value>Tipo de pago</value>
+  </data>
+  <data name="ACCOUNT_DOWNLOADS_LABEL" xml:space="preserve">
+    <value>Descargas</value>
+  </data>
+  <data name="ACCOUNT_LOGOUT_INFO_LABEL" xml:space="preserve">
+    <value>Cerrar la sesión de la cuenta</value>
+  </data>
+  <data name="HOMEPAGE_TITLE" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="ACCOUNT_DOWNLOADS_TITLE" xml:space="preserve">
+    <value>Descargas</value>
+  </data>
+  <data name="FOOTER_ORDERING_HELP" xml:space="preserve">
+    <value>Ayuda para hacer su pedido</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_BUTTON_TEXT" xml:space="preserve">
+    <value>Iniciar la sesión</value>
+  </data>
+  <data name="PRODUCT_VOLUME_DISCOUNT" xml:space="preserve">
+    <value>Incluye descuento por cantidad, agregar al carro de compras para ver el precio.</value>
+  </data>
+  <data name="ERROR_BLANK_EMAIL" xml:space="preserve">
+    <value>'Dirección de correo electrónico' no puede quedar en blanco.</value>
+  </data>
+  <data name="CHECKOUT_THANKS_TOTAL_PAYMENT" xml:space="preserve">
+    <value>Su pago total es</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_CREDIT_CARD" xml:space="preserve">
+    <value>Tarjeta de crédito</value>
+  </data>
+  <data name="FROM_THE_MANUFACTURER" xml:space="preserve">
+    <value>Del fabricante</value>
+  </data>
+  <data name="ERROR_ACCOUNT_NOT_EXISTS" xml:space="preserve">
+    <value>La cuenta no existe</value>
+  </data>
+  <data name="GENERAL_CONFIRM_PASSWORD_LABEL" xml:space="preserve">
+    <value>Repetir contraseña</value>
+  </data>
+  <data name="CHECKOUT_THANKS_KEEP_ORDER_NUMBER" xml:space="preserve">
+    <value>Por favor, conserve el número de pedido para su control</value>
+  </data>
+  <data name="ACCOUNT_INFO_TITLE" xml:space="preserve">
+    <value>Información de la cuenta</value>
+  </data>
+  <data name="GENERAL_REMOVE_LABEL" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GENERAL_EMAIL_REGULAR_EXPRESSION_ERROR_MESSAGE" xml:space="preserve">
+    <value>Por favor, ingrese una dirección de correo electrónico diferente</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_EDIT" xml:space="preserve">
+    <value>Editar dirección</value>
+  </data>
+  <data name="BASKET_PROCEED_CHECKOUT" xml:space="preserve">
+    <value>Continuar a finalización de compra</value>
+  </data>
+  <data name="SHOPPING_CART_ESTIMATED_SHIPPING" xml:space="preserve">
+    <value>Envío estimado</value>
+  </data>
+  <data name="ADDRESS_MIDDLENAME" xml:space="preserve">
+    <value>Segundo nombre</value>
+  </data>
+  <data name="ACCOUNT_ORDER_EDIT_CANCEL" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="GENERAL_IMAGE_LABEL" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="GENERAL_CUSTOMER_REVIEWS_LABEL" xml:space="preserve">
+    <value>Comentarios de clientes</value>
+  </data>
+  <data name="DOWNLOAD_FILE_VERSION" xml:space="preserve">
+    <value>Versión</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CONTINUE_CHECKOUT_LABEL" xml:space="preserve">
+    <value>Continuar con finalizaciòn de compra</value>
+  </data>
+  <data name="CHECKOUT_BILLING_INFO_LABEL" xml:space="preserve">
+    <value>Tu información de facturación</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI1" xml:space="preserve">
+    <value>Recibir ofertas y descuentos para clientes preferenciales.</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI2" xml:space="preserve">
+    <value>No volver a ingresar información de facturación y envío, salvo que cambie.</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI3" xml:space="preserve">
+    <value>Ver estado del pedido en tiempo real</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI4" xml:space="preserve">
+    <value>y muchos más...</value>
+  </data>
+  <data name="MAIN_SHOPPING_BASKET" xml:space="preserve">
+    <value>Ver canasta de compras</value>
+  </data>
+  <data name="PRODUCTPAGER_GRID_VIEW" xml:space="preserve">
+    <value>Ver la grilla</value>
+  </data>
+  <data name="PRODUCTPAGER_PAGE_LABEL" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_MODIFY_ADDRESS" xml:space="preserve">
+    <value>[ Modificar ]</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_METHOD" xml:space="preserve">
+    <value>Método</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_ITEMS_ORDERED" xml:space="preserve">
+    <value>Artículos pedidos</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_BANK_ROUTING_NUMBER" xml:space="preserve">
+    <value>Identificación del banco #</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_EMAIL_LABEL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="YOU_SAVE_LABEL" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="FOOTER_GENERAL_QUESTIONS" xml:space="preserve">
+    <value>Preguntas generales</value>
+  </data>
+  <data name="CHECKOUT_THANKS_ORDER_HISTORY" xml:space="preserve">
+    <value>Historial del pedido</value>
+  </data>
+  <data name="PRODUCT_EVALUATION_DOWNLOAD" xml:space="preserve">
+    <value>Descargar prueba</value>
+  </data>
+  <data name="ERROR_SELECT_PAYMENT_METHOD" xml:space="preserve">
+    <value>Por favor, seleccionar forma de pago</value>
+  </data>
+  <data name="ACCOUNT_CONFIRM_NEW_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Se requiere confirmar la nueva contraseña.</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_GIFT_WRAP" xml:space="preserve">
+    <value>Preparar este artículo para regalo</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_GIFT_NOTE" xml:space="preserve">
+    <value>Ingrese su mensaje de regalo sin cargo para este artículo aquí:</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_MESSAGE" xml:space="preserve">
+    <value>Por favor elija un nombre de usuario y contraseña e ingréselos debajo. Luego de registrarse gozará de muchos beneficios:</value>
+  </data>
+  <data name="ERROR_SEARCHRESULTS_EMPTY" xml:space="preserve">
+    <value>No encontramos resultados que coincidan con su búsqueda</value>
+  </data>
+  <data name="ACCOUNT_EMAIL_SUCCESSFULLY_CHANGED" xml:space="preserve">
+    <value>La dirección de correo electrónico se cambio con éxito.</value>
+  </data>
+  <data name="ACCOUNT_ORDERS_INFO_LABEL" xml:space="preserve">
+    <value>Haga click en un número de pedido abajo para visualizar los detalles de la orden</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_EMAIL" xml:space="preserve">
+    <value>dirección de correo electrónico</value>
+  </data>
+  <data name="CHECKOUT_THANKS_INFO_PAGE" xml:space="preserve">
+    <value>Página de información de la cuenta</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_PACKAGE" xml:space="preserve">
+    <value>1 package via</value>
+  </data>
+  <data name="ERROR404_MESSAGE" xml:space="preserve">
+    <value>404 - Página o URL no encontrada</value>
+  </data>
+  <data name="ERROR_NO_ITEM_IN_BASKET" xml:space="preserve">
+    <value>Ningún artículo en la canasta de compras</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_TITLE" xml:space="preserve">
+    <value>Ingresar contraseña y usuario</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NEW_PASSWORD_LABEL" xml:space="preserve">
+    <value>Nueva contraseña</value>
+  </data>
+  <data name="PRODUCT_CROSS_SELLING_ITEMS_HEADER" xml:space="preserve">
+    <value>A usted también le interesaría</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_DELETE" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_PAYMENT_INFO" xml:space="preserve">
+    <value>Tu información de pago</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_OF" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="GENERAL_YOUR_PRICE_LABEL" xml:space="preserve">
+    <value>Su precio</value>
+  </data>
+  <data name="CHECKOUT_SHIPPINGOPTIONS_LABEL" xml:space="preserve">
+    <value>Opciones de envío</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PLACE_ORDER" xml:space="preserve">
+    <value>Revisar y Confirmar Pedido</value>
+  </data>
+  <data name="CHECKOUT_SHIPPINGOPTIONS_TITLE" xml:space="preserve">
+    <value>Opciones de envío</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_REVIEWER" xml:space="preserve">
+    <value>Calificador</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_REGISTER_LABEL" xml:space="preserve">
+    <value>Registrar</value>
+  </data>
+  <data name="ACCOUNT_REG_COMPLETED_TITLE" xml:space="preserve">
+    <value>Registración completa</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_RATE_NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ERROR_SELECT_OPTION" xml:space="preserve">
+    <value>Por favor seleccione {0}, y luego haga click en agregar a carro de compras.</value>
+  </data>
+  <data name="CURRENCY_CHANGE_LABEL" xml:space="preserve">
+    <value>Cambiar moneda</value>
+  </data>
+  <data name="PRODUCT_OUT_OF_STOCK" xml:space="preserve">
+    <value>El Producto está agotado</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_AVERAGE_RATING" xml:space="preserve">
+    <value>Calificación promedio de clientes: </value>
+  </data>
+  <data name="AFFILIATE_NEW_GUID" xml:space="preserve">
+    <value>Su Identificador de filial</value>
+  </data>
+  <data name="AFFILIATE_NEW_LINK" xml:space="preserve">
+    <value>Su enlace de filial es:</value>
+  </data>
+  <data name="SEARCH_FOR_LABEL" xml:space="preserve">
+    <value>para</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_PASSWORD_LABEL" xml:space="preserve">
+    <value>Cambiar contraseña</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_TOTAL_SHIPMENT" xml:space="preserve">
+    <value>Total para este envío</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_USER_NAME" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="FOOTER_ABOUT_EVERYTHING" xml:space="preserve">
+    <value>Información general</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPPING_LABEL" xml:space="preserve">
+    <value>Tu información de envío</value>
+  </data>
+  <data name="PRODUCT_ACCESSSORIES_HEADER" xml:space="preserve">
+    <value>Accesorios</value>
+  </data>
+  <data name="ACCOUNT_NEW_CUSTOMERS_LABEL" xml:space="preserve">
+    <value>Nuevos clientes</value>
+  </data>
+  <data name="GENERAL_CONFIRM_PASSWORD_ERROR_MESSAGE" xml:space="preserve">
+    <value>La contraseña y la confirmación de contraseña deben coincidir</value>
+  </data>
+  <data name="SHOPPING_CART_EMPTY_LABEL" xml:space="preserve">
+    <value>Su Bolsa de Compras está actualmente vacía.</value>
+  </data>
+  <data name="CATEGORY_SHOP_LABEL" xml:space="preserve">
+    <value>Comprar por categoría</value>
+  </data>
+  <data name="ADDRESS_LASTNAME" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="LICENSES_NAME_HEADER" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_TITLE" xml:space="preserve">
+    <value>Informacón de envío</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_LABEL" xml:space="preserve">
+    <value>Dirección de envío</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_LICENSE_NUMBER" xml:space="preserve">
+    <value>Licencia #</value>
+  </data>
+  <data name="LANGUAGE_CHANGE_LABEL" xml:space="preserve">
+    <value>Cambiar idioma</value>
+  </data>
+  <data name="ACCOUNT_ORDER_DATE_LABEL" xml:space="preserve">
+    <value>Fecha de pedido</value>
+  </data>
+  <data name="LICENSES_TYPE_HEADER" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="LICENSE_PROCEED" xml:space="preserve">
+    <value>Continuar&gt;&gt;</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NOTIFICATION_INFO_LABEL" xml:space="preserve">
+    <value>Todas las noticias del local serán enviadas a esta dirección de correo.</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_INFO_LABEL" xml:space="preserve">
+    <value>Actualizar dirección de correo electrónico, contraseña e información de contacto</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PACKING_SHEET_CHOOSE" xml:space="preserve">
+    <value>Elija un envoltorio para su artículo aquí</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_GIFT_NOTE_LENGTH" xml:space="preserve">
+    <value>Max. 240 caracteres--alrededor de 10 lìneas de texto. Asegúrese de incluir "para" y "de"</value>
+  </data>
+  <data name="ERROR_PAYMENT_INFO_INCORRECT" xml:space="preserve">
+    <value>Por favor, ingrese información de pago correcta</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_HOW_RATE" xml:space="preserve">
+    <value>¿Cómo califica éste artículo?</value>
+  </data>
+  <data name="SCRIPT_DISABLED" xml:space="preserve">
+    <value>Script esta deshabilitado en su navegador</value>
+  </data>
+  <data name="LICENSES_SKU_ID_HEADER" xml:space="preserve">
+    <value>Identificación de SKU</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_HEADER" xml:space="preserve">
+    <value>Comentarios de clientes</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_RATE_YES" xml:space="preserve">
+    <value>Si</value>
+  </data>
+  <data name="CHECKOUT_THANKS_CHECK_STATUS" xml:space="preserve">
+    <value>Usted puede ver el estado de su pedido en</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_MESSAGE" xml:space="preserve">
+    <value>Esta planilla le permitirá cambiar su dirección de correo electrónico y contraseña. Por favor utilice una de las planillas apropiadas ubicadas debajo.</value>
+  </data>
+  <data name="GENERAL_ID_LABEL" xml:space="preserve">
+    <value>Identificación</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_SHIP_SEVERAL_ADDRESSES" xml:space="preserve">
+    <value>Enviar artículos a más de una dirección</value>
+  </data>
+  <data name="META_YES" xml:space="preserve">
+    <value>Si</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_ADDRESS_INFO_LABEL" xml:space="preserve">
+    <value>Modificar información de facturación o envío.</value>
+  </data>
+  <data name="ERROR404_LABEL" xml:space="preserve">
+    <value>Página no encontrada</value>
+  </data>
+  <data name="GENERAL_EXTENDED_PRICE_LABEL" xml:space="preserve">
+    <value>Extendido</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_RATING" xml:space="preserve">
+    <value>Calificación</value>
+  </data>
+  <data name="GENERAL_SUBTOTAL_LABEL" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="ACCOUNT_ORDER_LABEL" xml:space="preserve">
+    <value>Detalles del pedido</value>
+  </data>
+  <data name="PRODUCT_PRICE_YOU_SAVE" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="ACCOUNT_ORDER_EMAIL" xml:space="preserve">
+    <value>dirección de correo del pedido</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_ADDRESS_LABEL" xml:space="preserve">
+    <value>Cambiar direcciones de facturación o envío</value>
+  </data>
+  <data name="FOOTER_TERMS_OF_USE" xml:space="preserve">
+    <value>Condiciones de uso</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_SAME_AS_BILLING" xml:space="preserve">
+    <value>Igual a la dirección de facturación</value>
+  </data>
+  <data name="GENERAL_PRICE_LABEL" xml:space="preserve">
+    <value>Precio Activa</value>
+  </data>
+  <data name="ACCOUNT_ORDER_TITLE" xml:space="preserve">
+    <value>Detalles del pedido</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_SHIP_TO_THIS_ADDRESS" xml:space="preserve">
+    <value>Enviar a esta dirección</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NEW_CUSTOMERS_NOTE_LABEL" xml:space="preserve">
+    <value>Crear contraseña más tarde</value>
+  </data>
+  <data name="ACCOUNT_MODIFY_PROFILE" xml:space="preserve">
+    <value>Modificar perfil</value>
+  </data>
+  <data name="ACCOUNT_SHIPPING_ADDRESS_LABEL" xml:space="preserve">
+    <value>Tu información de envío</value>
+  </data>
+  <data name="CHECKOUT_SHIPPINGOPTIONS_PROCEED_PAYMENT" xml:space="preserve">
+    <value>Continuar a opciones de pago</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_NEW_SAVE" xml:space="preserve">
+    <value>Agregar nueva dirección</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_TITLE" xml:space="preserve">
+    <value>Direcciones de la cuenta</value>
+  </data>
+  <data name="ACCOUNT_LOGOUT_LABEL" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_LABEL" xml:space="preserve">
+    <value>Dirección de la cuenta</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_DISCOUNT" xml:space="preserve">
+    <value>Descuento</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_WRITE_REVIEW_1" xml:space="preserve">
+    <value>Escribir un comentario en línea</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_WRITE_REVIEW_2" xml:space="preserve">
+    <value>y comparta sus ideas con otros clientes.</value>
+  </data>
+  <data name="CHECKOUT_SHIPPING_INFO_LABEL" xml:space="preserve">
+    <value>Tu información de envío</value>
+  </data>
+  <data name="GENERAL_DISCOUNT_LABEL" xml:space="preserve">
+    <value>Descuento</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_MANAGEMENT_LABEL" xml:space="preserve">
+    <value>Administración de dirección</value>
+  </data>
+  <data name="GENERAL_CREATED_LABEL" xml:space="preserve">
+    <value>Creado</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_NEW_SHIPPING_ADDRESS" xml:space="preserve">
+    <value>Nueva dirección de envío</value>
+  </data>
+  <data name="GENERAL_SPECIFICATIONS_LABEL" xml:space="preserve">
+    <value>Especificaciones</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_BACK" xml:space="preserve">
+    <value>&lt;&lt; Atrás</value>
+  </data>
+  <data name="ACCOUNT_ORDER_HISTORY_LABEL" xml:space="preserve">
+    <value>Ver historial de pedidos</value>
+  </data>
+  <data name="FOOTER_TRACK_ORDERS" xml:space="preserve">
+    <value>Seguimiento de pedidos</value>
+  </data>
+  <data name="ACCOUNT_ORDER_PAYMENT_NOTPROCESSED" xml:space="preserve">
+    <value>No procesado</value>
+  </data>
+  <data name="BASKET_CONTINUE_SHOPPING" xml:space="preserve">
+    <value>Continuar comprando</value>
+  </data>
+  <data name="ACCOUNT_BILLING_SAME_LABEL" xml:space="preserve">
+    <value>Igual a la dirección de facturación</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CLICK_HERE_LABEL" xml:space="preserve">
+    <value>Click aquí</value>
+  </data>
+  <data name="MAIN_ACCOUNT_INFO" xml:space="preserve">
+    <value>Ver Información de cuenta</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NAME_LABEL" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="RIGHT_MENU_DIRECTORIES" xml:space="preserve">
+    <value>DIRECTORIOS</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_CONTACT_LABEL" xml:space="preserve">
+    <value>Cambiar información de contacto</value>
+  </data>
+  <data name="ERROR_ACCEPT_TERMS" xml:space="preserve">
+    <value>Por favor acepte las condiciones</value>
+  </data>
+  <data name="PRODUCT_REVIEW_WRITE" xml:space="preserve">
+    <value>Escribir un comentario del producto</value>
+  </data>
+  <data name="CHECKOUT_SHIPPINGOPTIONS_NEXT" xml:space="preserve">
+    <value>Continuar a Pago</value>
+  </data>
+  <data name="ERROR_SELECT_SHIPPING_METHOD" xml:space="preserve">
+    <value>Por favor, seleccionar forma de envío</value>
+  </data>
+  <data name="PRODUCT_PRICE_SAVE" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="SHOPPING_CART_DELETE_PRODUCT_TOOLTIP" xml:space="preserve">
+    <value>Eliminar producto(s) del carro de compras</value>
+  </data>
+  <data name="PURCHASE_ADD_ADDRESS" xml:space="preserve">
+    <value>Agregar dirección</value>
+  </data>
+  <data name="PRODUCT_SHIP_TO" xml:space="preserve">
+    <value>Enviar a </value>
+  </data>
+  <data name="ACCOUNT_NEW_REGISTER" xml:space="preserve">
+    <value>Regístrese aquí:</value>
+  </data>
+  <data name="ACCOUNT_NEW_EMAIL_LABEL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FOOTER_AFFILIATE_PROGRAM" xml:space="preserve">
+    <value>Programa de filial</value>
+  </data>
+  <data name="SHOPPING_CART_PRIVACY" xml:space="preserve">
+    <value>Política de privacidad</value>
+  </data>
+  <data name="CHECKOUT_THANKS_TO_HOME" xml:space="preserve">
+    <value>Volver a la página principal</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_PASS_LABEL" xml:space="preserve">
+    <value>Cambiar contraseña</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_FORGOT_PASSWORD_LABEL" xml:space="preserve">
+    <value>¿Olvidaste tu clave?</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CONFIRM_PASSWORD_LABEL" xml:space="preserve">
+    <value>Confirmar nueva contraseña</value>
+  </data>
+  <data name="MAIN_LOGOUT" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="REMIND_NEW_PASSWORD" xml:space="preserve">
+    <value>Enviar nueva contraseña</value>
+  </data>
+  <data name="PRODUCT_SEARCH_NO_RESULTS" xml:space="preserve">
+    <value>No hay ningún artículo que responda a su búsqueda de </value>
+  </data>
+  <data name="GENERAL_QTY_LABEL" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="ERROR_LOGIN_FAILED" xml:space="preserve">
+    <value>Error en el Inicio de sesión</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_PASSWORD" xml:space="preserve">
+    <value>Clave</value>
+  </data>
+  <data name="GENERAL_CATEGORIES_AND_PRODUCTS_LABEL" xml:space="preserve">
+    <value>Categorías; Productos</value>
+  </data>
+  <data name="ACCOUNT_BILLING_ADDRESS_LABEL" xml:space="preserve">
+    <value>Tu información de facturación</value>
+  </data>
+  <data name="GENERAL_WELCOME" xml:space="preserve">
+    <value>Hola</value>
+  </data>
+  <data name="ACCOUNT_ORDERS_TITLE" xml:space="preserve">
+    <value>Historial de pedidos</value>
+  </data>
+  <data name="BASKET_UPDATE" xml:space="preserve">
+    <value>Actualizar canasta</value>
+  </data>
+  <data name="ACCOUNT_ORDERS_LABEL" xml:space="preserve">
+    <value>Historial del pedido</value>
+  </data>
+  <data name="ERROR_ACCOUNT_DISABLED" xml:space="preserve">
+    <value>Cuenta deshabilitada. Utilice el correo electrónico enviado antes para activar su cuenta.</value>
+  </data>
+  <data name="SEARCH_LABEL" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_EMAIL_LABEL" xml:space="preserve">
+    <value>Cambiar dirección de correo electrónico</value>
+  </data>
+  <data name="AFFILIATE_CONTACT_ADDRESS" xml:space="preserve">
+    <value>Dirección de contacto</value>
+  </data>
+  <data name="GENERAL_NAME_LABEL" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="INFO_EMAIL_SENT" xml:space="preserve">
+    <value>El correo electrónico ha sido enviado a la siguiente dirección:</value>
+  </data>
+  <data name="ACCOUNT_CURRENT_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Se requiere la contraseña actual.</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_SEND" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CONTACT" xml:space="preserve">
+    <value>Tilde este casillero si quiere recibir información sobre nuevos productos.</value>
+  </data>
+  <data name="ACCOUNT_EMAIL_FAILED_TO_CHANGE" xml:space="preserve">
+    <value>Falló el cambio de dirección de correo electrónico.</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_WIZARD_SHIPPING" xml:space="preserve">
+    <value>Seleccionar envío</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CURRENT_PASSWORD_LABEL" xml:space="preserve">
+    <value>Contraseña actual</value>
+  </data>
+  <data name="ERROR_INVALID_EMAIL" xml:space="preserve">
+    <value>Debe utilizar una dirección de correo electrónico válida</value>
+  </data>
+  <data name="GENERAL_DESCRIPTION_LABEL" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="GENERAL_ALL_PRODUCTS" xml:space="preserve">
+    <value>Todos los productos</value>
+  </data>
+  <data name="SHOPPING_CART_RETURN_POLICY" xml:space="preserve">
+    <value>Política de devolución y cambio</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_EDIT_SAVE" xml:space="preserve">
+    <value>Guardar dirección</value>
+  </data>
+  <data name="ACCOUNT_CUSTOMER_DOWNLOADS_INFO_LABEL" xml:space="preserve">
+    <value>Descargar instalación, actualizaciones y betas del producto.</value>
+  </data>
+  <data name="PRODUCT_SHIP_TO_SBELSE" xml:space="preserve">
+    <value>Otra persona</value>
+  </data>
+  <data name="GENERAL_OVERVIEW_LABEL" xml:space="preserve">
+    <value>Vista general</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_BANK_NAME" xml:space="preserve">
+    <value>Nombre del banco</value>
+  </data>
+  <data name="AFFILIATE_JOIN_LABEL" xml:space="preserve">
+    <value>Unirse al programa de filiales</value>
+  </data>
+  <data name="FOOTER_CORPORATE_SITE" xml:space="preserve">
+    <value>Sitio de la empresa</value>
+  </data>
+  <data name="MAIN_ACCOUNT_LOGIN" xml:space="preserve">
+    <value>Iniciar la sesión en su cuenta.</value>
+  </data>
+  <data name="CHECKOUT_THANKS_CLICK_ON" xml:space="preserve">
+    <value>y haciendo click en</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_REMEMBER_ME_TEXT" xml:space="preserve">
+    <value>Recordarme la próxima vez</value>
+  </data>
+  <data name="PRODUCTRATING_SIGN_IN" xml:space="preserve">
+    <value>Registrarse para calificar</value>
+  </data>
+  <data name="CHECKOUT_THANKS_LOGIN" xml:space="preserve">
+    <value>Iniciar sesiòn usando la cuenta actual</value>
+  </data>
+  <data name="CHECKOUT_THANKS_LABEL" xml:space="preserve">
+    <value>Gracias por su pedido</value>
+  </data>
+  <data name="GENERAL_TAXES_LABEL" xml:space="preserve">
+    <value>Impuestos</value>
+  </data>
+  <data name="GENERAL_LISTPRICE_LABEL" xml:space="preserve">
+    <value>Precio de lista</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_ADDRESS_SELECT_LABEL" xml:space="preserve">
+    <value>Usar esta dirección</value>
+  </data>
+  <data name="ERROR_REGISTRATION_FAILED" xml:space="preserve">
+    <value>Error en la registración: la dirección de correo electrónico ya está registrada</value>
+  </data>
+  <data name="GENERAL_SKUS_TOTAL_LABEL" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="PRODUCT_LIST_PRICE" xml:space="preserve">
+    <value>Lista de Precios</value>
+  </data>
+  <data name="PRODUCTPAGER_36ITEMS_PERPAGE" xml:space="preserve">
+    <value>36 elementos por página</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PACKING_SHEET_LABEL" xml:space="preserve">
+    <value>Preparar para regalo</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_SEND_TO" xml:space="preserve">
+    <value>Enviar a:</value>
+  </data>
+  <data name="ERROR_PRODUCT_REQUESTED_UNAVAILABLE" xml:space="preserve">
+    <value>El producto seleccionado no está disponible</value>
+  </data>
+  <data name="RIGHT_MENU_MY_INFO" xml:space="preserve">
+    <value>MIS DATOS</value>
+  </data>
+  <data name="ADDRESS_CITY" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="PRODUCTPAGER_LIST_VIEW" xml:space="preserve">
+    <value>Ver lista</value>
+  </data>
+  <data name="ERROR_CC_TRANSACTION" xml:space="preserve">
+    <value>Disculpe, el servidor no pudo realizar la transacción. Error:</value>
+  </data>
+  <data name="PRODUCTPAGER_12ITEMS_PERPAGE" xml:space="preserve">
+    <value>12 elementos por página</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_PROCEED" xml:space="preserve">
+    <value>Continuar a opciones de envío</value>
+  </data>
+  <data name="AFFILIATE_TERMS_CHECK" xml:space="preserve">
+    <value>Acepto los términos y condiciones de filial.</value>
+  </data>
+  <data name="AFFILIATE_TERMS_LABEL" xml:space="preserve">
+    <value>Términos y condiciones de filiales</value>
+  </data>
+  <data name="REMIND_SUBMIT" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="ERROR_PASSWORDS_MUST_MATCH" xml:space="preserve">
+    <value>Las contraseñas deben coincidir</value>
+  </data>
+  <data name="GENERAL_NO_ADDITIONAL_OPTIONS" xml:space="preserve">
+    <value>No hay opciones adicionales disponibles para este artículo.</value>
+  </data>
+  <data name="ACCOUNT_NEW_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Se requiere una nueva contraseña</value>
+  </data>
+  <data name="ADDRESS_FAX" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="ADDRESS_ZIP" xml:space="preserve">
+    <value>Código postal</value>
+  </data>
+  <data name="PRODUCT_DETAILS_LABEL" xml:space="preserve">
+    <value>Ver Detalles del Producto</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_CHANGED_QUANTITIES_MESSAGE" xml:space="preserve">
+    <value>¿Cantidades cambiadas? Presionar</value>
+  </data>
+  <data name="PRODUCT_SHIP_TO_ME" xml:space="preserve">
+    <value>Yo</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CARDHOLDER_LABEL" xml:space="preserve">
+    <value>(como figura en la tarjeta)</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_REMEMBER_LOGIN_LABEL" xml:space="preserve">
+    <value>Recordar usuario</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_NEW_ACCOUNT" xml:space="preserve">
+    <value>Inscribirse a una Nueva Cuenta</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CARD_NUMBER" xml:space="preserve">
+    <value>Número de tarjeta de crédito</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_LABEL" xml:space="preserve">
+    <value>Cambiar</value>
+  </data>
+  <data name="ACCOUNT_BANK_TRANSFER_BLANK" xml:space="preserve">
+    <value>Imprimir comprobante para transferencia bancaria</value>
+  </data>
+  <data name="CHECKOUT_ORDER_CONFIRMATION_BUTTON" xml:space="preserve">
+    <value>Realizar el pedido</value>
+  </data>
+  <data name="BASKET_TITLE" xml:space="preserve">
+    <value>Canasta de compras</value>
+  </data>
+  <data name="CURRENCY_NOTE" xml:space="preserve">
+    <value>*la tasa de cambio es aproximada y está basada en el siguiente valor</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_SEE_ALL_REVIEWS" xml:space="preserve">
+    <value>Ver todas mis calificaciones</value>
+  </data>
+  <data name="MAIN_CREATE_ACCOUNT" xml:space="preserve">
+    <value>Crear nueva cuenta</value>
+  </data>
+  <data name="AFFILIATE_PROGRAM_LABEL" xml:space="preserve">
+    <value>Programa del filiales</value>
+  </data>
+  <data name="BASKET_LABEL" xml:space="preserve">
+    <value>Canasta de compras</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_EXPIRATION_DATE_LABEL" xml:space="preserve">
+    <value>Fecha de vencimiento (MM/AA)</value>
+  </data>
+  <data name="PURCHASE_READY_TO_BUY" xml:space="preserve">
+    <value>¿Está listo para comprar?</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PAYPAL_MESSAGE" xml:space="preserve">
+    <value>Confirme su pedido y realice el pago a través de PayPal. Una vez que el pago haya sido procesado, su pedido podrá ser enviado/descargado.</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_NEW" xml:space="preserve">
+    <value>Haga click aqui para agregar una nueva dirección</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_LOGIN_LABEL" xml:space="preserve">
+    <value>Iniciar la sesión en la cuenta</value>
+  </data>
+  <data name="ACCOUNT_ORDER_STATUS_LABEL" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_NEW_CANCEL" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="PRODUCT_OTHER_LICENSES" xml:space="preserve">
+    <value>Otras licencias</value>
+  </data>
+  <data name="FOOTER_STORE_POLICIES" xml:space="preserve">
+    <value>Polìticas del local</value>
+  </data>
+  <data name="ACCOUNT_ORDER_PAYMENT_LABEL" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_EDIT_VIEW_ADDRESSES" xml:space="preserve">
+    <value>Ver direcciones</value>
+  </data>
+  <data name="ACCOUNT_DUE_BILL_BLANK" xml:space="preserve">
+    <value>Imprimir formulario para factura vencida</value>
+  </data>
+  <data name="DOWNLOAD_FILE_SIZE" xml:space="preserve">
+    <value>Tamaño del archivo</value>
+  </data>
+  <data name="PRODUCTPAGER_24ITEMS_PERPAGE" xml:space="preserve">
+    <value>24 elementos por página</value>
+  </data>
+  <data name="DOWNLOAD_FILE_DATE_ADDED" xml:space="preserve">
+    <value>Fecha agregada</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_TAXES" xml:space="preserve">
+    <value>Impuestos</value>
+  </data>
+  <data name="DOWNLOAD_FILE_DOWNLOADS" xml:space="preserve">
+    <value>Descargas</value>
+  </data>
+  <data name="PRODUCT_SEARCH_RESULTS_LABEL" xml:space="preserve">
+    <value>Resultados de Búsqueda </value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_LICENSE_DOB" xml:space="preserve">
+    <value>Licencia DOB</value>
+  </data>
+  <data name="CHECKOUT_THANKS_REGISTER_NEW" xml:space="preserve">
+    <value>Registrar nueva cuenta</value>
+  </data>
+  <data name="DOWNLOAD_FILE_DETAILS" xml:space="preserve">
+    <value>Detalles del archivo</value>
+  </data>
+  <data name="UNSUBSCRIBE_TITLE" xml:space="preserve">
+    <value>Cancelar la subscripción</value>
+  </data>
+  <data name="REMIND_LABEL" xml:space="preserve">
+    <value>Enviar contraseña</value>
+  </data>
+  <data name="GENERAL_LABEL_MOVISTARACTIVA" xml:space="preserve">
+    <value>MOVISTAR ACTIVA</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_SUCCESS_H1" xml:space="preserve">
+    <value>¡Bienvenido al Movistar Store operado por Altonet S.A. Gracias por registrarse!</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_SUCCESS_LABEL1" xml:space="preserve">
+    <value>Le informamos que se ha creado exitosamente su cuenta personal en el Store de Movistar.</value>
+  </data>
+  <data name="DATOS_TECNICOS_LABEL" xml:space="preserve">
+    <value>Datos Ténicos</value>
+  </data>
+  <data name="PLANES_LABEL" xml:space="preserve">
+    <value>Planes</value>
+  </data>
+  <data name="DESCRIPTION_LABEL" xml:space="preserve">
+    <value>DESCRIPCION</value>
+  </data>
+  <data name="GENERAL_BIRTHDATE_FORMAT_ERROR_MESSAGE" xml:space="preserve">
+    <value>La fecha ingresada no es válida</value>
+  </data>
+  <data name="GENERAL_DOCNUMBER_FORMAT_ERROR_MESSAGE" xml:space="preserve">
+    <value>El número de documento ingresado no es válido</value>
+  </data>
+  <data name="SHOPPING_CART_MULTIPLE_ITEMS_NOT_ALLOWED_ERROR" xml:space="preserve">
+    <value>Sólo se permite un artículo por compra</value>
+  </data>
+  <data name="CHECKOUT_THANKS_OK" xml:space="preserve">
+    <value>¡Su orden de compra ha ingresado exitosamente!</value>
+  </data>
+  <data name="CHECKOUT_THANKS_OK_MESSAGE" xml:space="preserve">
+    <value>Nos comunicameremos vía email. &lt;br&gt;Gracias por comprar en Movistar Compras On Line operado por Altonet S.A.</value>
+  </data>
+  <data name="CHECKOUT_THANKS_ORDER" xml:space="preserve">
+    <value>Orden de Compra</value>
+  </data>
+  <data name="CHECKOUT_AREA_CODE_SELECTION" xml:space="preserve">
+    <value>Seleccione el Código de Área para activar su celular</value>
+  </data>
+  <data name="CHECKOUT_AREACODE_LABEL" xml:space="preserve">
+    <value>Localidad</value>
+  </data>
+  <data name="CHECKOUT_AREACODE_NOTSELECTED_ERROR" xml:space="preserve">
+    <value>* Debe seleccionar un código de área</value>
+  </data>
+  <data name="REMIND_SUCCESS" xml:space="preserve">
+    <value>Le informamos que se ha enviado un e-mail a su dirección, con su nombre de usuario y contraseña</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_NEW_DESCRIPTION" xml:space="preserve">
+    <value>Para realizar una compra deltro del Store de Movistar operado por Altonet, tenés que registrate haciendo click en el siguiente botón</value>
+  </data>
+</root>

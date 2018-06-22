@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Menu id="CreateSplitButton" text="{SharedStrings:Create_New}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdPermissionCheck" permissions="order:mng:create">
+				<Button id="NewPurchaseOrder" text="{SharedStrings:New_Purchase_Order}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdPurchaseOrderNew" permissions="order:mng:create"/>
+				<Button id="NewPaymentPlan" text="{SharedStrings:New_Payment_Plan}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdPaymentPlanNew" permissions="order:mng:create"/>
+				<Button id="NewShoppingCart" text="{SharedStrings:New_Shopping_Cart}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdShoppingCartNew" permissions="order:mng:create"/>
+			</Menu>
+			<Splitter id="ActionsSplitter" commandName="cmdPermissionCheck" permissions="order:mng:create,order:mng:delete"/>
+			<Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" commandName="cmdPermissionCheck" permissions="order:mng:delete">
+				<Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdOrderDelete" permissions="order:mng:delete"/>
+			</Menu>
+		</add>
+	</Toolbar>
+
+	<Commands>
+		<add>
+			<Command id="cmdPermissionCheck">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdPurchaseOrderNew">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSOrderClient.NewPurchaseOrder()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdPaymentPlanNew">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSOrderClient.NewPaymentPlan()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdShoppingCartNew">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSOrderClient.NewShoppingCart()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdOrderDelete">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Order.CommandHandlers.OrderDeleteHandler, Mediachase.ConsoleManager</Handler>
+				<UpdatePanelIds>panelMainListView</UpdatePanelIds>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

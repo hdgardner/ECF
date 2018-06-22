@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Build xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LastBuildDate>2011-11-06T22:37:19.3154847-08:00</LastBuildDate>
+  <Status>Completed</Status>
+  <Properties>
+    <Property name="StartingRecord" value="170500" />
+    <Property name="LastRecordKey" value="13962677" />
+    <Property name="CatalogName" value="NWTD" />
+  </Properties>
+</Build>

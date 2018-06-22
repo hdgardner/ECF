@@ -1,0 +1,48 @@
+﻿.jquery-modal-container{
+	padding:0;
+	/*border:solid 1px #666;*/
+	background:#fff;
+	z-index:999;
+	display:block;
+	position:absolute;
+}
+
+.jquery-modal-container-wrapper {
+
+	/**/
+}
+
+.jquery-modal-overlay{
+	z-index:1;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	display:block;
+	background-color:#fff;
+}
+
+.jquery-modal-container h1{
+	font-size:12px;
+	font-family:Arial;
+	margin:0;
+	padding:4px 3px 3px 8px;
+	color:#fff;
+	background-image: url(images-template/modal-title-bground.png);
+	background-repeat: no-repeat;
+	height: 23px;
+	width: 389px;
+	font-size:18px;
+} 
+
+.jquery-modal-container h1 A {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.jquery-modal-container-wrapper{
+	display:none;	
+}
+
+

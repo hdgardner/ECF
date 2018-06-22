@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Button id="NewMenuItem" text="{SharedStrings:New_Menu_Item}" imageUrl="~/apps/content/images/newmenuitem.png" commandName="cmdContentNewMenuItem" permissions="content:site:menu:mng:create"/>
+      <Splitter id="ActionsSplitter"/>
+      <Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" permissions="content:site:menu:mng:delete">
+        <Button id="DeleteSelected" text="{SharedStrings:Delete}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdContentMenuItemDelete"/>
+      </Menu>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdContentNewMenuItem">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSContentClient.CreateMenuItem()</ClientScript>
+      </Command>
+
+      <Command id="cmdContentMenuItemDelete">
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+        <BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+        <ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+        <CommandType>ServerAction</CommandType>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+        <Handler>Mediachase.Commerce.Manager.Content.CommandHandlers.MenuDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+      </Command>
+
+      <!-- Grid commands -->
+      <Command id="cmdContentGridMenuItemEdit">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSContentClient.EditMenuItem2(params)</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdContentGridMenuItemDelete">
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Content.CommandHandlers.MenuDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

@@ -1,0 +1,10 @@
+﻿<SequentialWorkflowActivity x:Class="Mediachase.Commerce.Workflow.CartValidateWorkflow" x:Name="CartValidateWorkflow" xmlns:ns0="http://schemas.mediachase.com/ecf/50/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<ns0:ValidateLineItemsActivity Warnings="{ActivityBind CartValidateWorkflow,Path=Warnings}" OrderGroup="{ActivityBind CartValidateWorkflow,Path=OrderGroup}" x:Name="validateLineItemsActivity1" />
+	<ns0:RemoveDiscountsActivity Warnings="{x:Null}" OrderGroup="{ActivityBind CartValidateWorkflow,Path=OrderGroup}" x:Name="removeDiscountsActivity1" />
+	<ns0:CalculateTotalsActivity x:Name="calculateTotalsActivity1" OrderGroup="{ActivityBind CartValidateWorkflow,Path=OrderGroup}" />
+	<ns0:CalculateDiscountsActivity Warnings="{ActivityBind CartValidateWorkflow,Path=Warnings}" OrderGroup="{ActivityBind CartValidateWorkflow,Path=OrderGroup}" x:Name="calculateDiscountsActivity1" />
+	<ns0:CalculateTotalsActivity x:Name="calculateTotalsActivity2" OrderGroup="{ActivityBind CartValidateWorkflow,Path=OrderGroup}" />
+	<ns0:RecordPromotionUsageActivity UsageStatus="Reserved" Warnings="{x:Null}" OrderGroup="{ActivityBind CartValidateWorkflow,Path=OrderGroup}" x:Name="recordPromotionUsageActivity1" />
+	<CancellationHandlerActivity x:Name="cancellationHandlerActivity1" />
+	<FaultHandlersActivity x:Name="faultHandlersActivity1" />
+</SequentialWorkflowActivity>

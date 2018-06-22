@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CustomerInfo>
+  <customer>
+    <name>Jack Sparrow</name>
+  </customer>
+  <customer>
+    <name>Anonymous Lurker</name>
+  </customer>
+  <customer>
+    <name>Random Customer</name>
+  </customer>
+  <customer>
+    <name>John Smith</name>
+  </customer>
+  <customer>
+    <name>Thomas Anderson</name>
+  </customer>
+  <customer>
+    <name>Draco Malfoy</name>
+  </customer>
+  <customer>
+    <name>Caroline Kennedy</name>
+  </customer>
+  <customer>
+    <name>Emma Watson</name>
+  </customer>
+  <customer>
+    <name>Josh Keyes</name>
+  </customer>
+  <customer>
+    <name>Marcel Duchamp</name>
+  </customer>
+</CustomerInfo>

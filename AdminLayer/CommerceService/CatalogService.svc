@@ -1,0 +1,1 @@
+<% @ServiceHost Language=C# Debug="true" Service="Mediachase.Commerce.Catalog.WebServices.CatalogWebService, Mediachase.Commerce"%>

@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/NWTD.IntegrationServices.BusinessObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/NWTD.IntegrationServices.BusinessObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/NWTD.IntegrationServices.Common" />
+  <xs:complexType name="PubRepresentative">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address" nillable="true" type="tns:RepAddress" />
+      <xs:element minOccurs="0" name="emails" nillable="true" type="tns:ArrayOfRepEmailAddress" />
+      <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="phones" nillable="true" type="tns:ArrayOfRepPhone" />
+      <xs:element minOccurs="0" name="territory" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PubRepresentative" nillable="true" type="tns:PubRepresentative" />
+  <xs:complexType name="RepAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="line1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="line2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="state" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="zipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RepAddress" nillable="true" type="tns:RepAddress" />
+  <xs:complexType name="ArrayOfRepEmailAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RepEmailAddress" nillable="true" type="tns:RepEmailAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRepEmailAddress" nillable="true" type="tns:ArrayOfRepEmailAddress" />
+  <xs:complexType name="RepEmailAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/NWTD.IntegrationServices.Common" minOccurs="0" name="type" type="q1:EmailType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RepEmailAddress" nillable="true" type="tns:RepEmailAddress" />
+  <xs:complexType name="ArrayOfRepPhone">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RepPhone" nillable="true" type="tns:RepPhone" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRepPhone" nillable="true" type="tns:ArrayOfRepPhone" />
+  <xs:complexType name="RepPhone">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="areaCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="postfix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prefix" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/NWTD.IntegrationServices.Common" minOccurs="0" name="type" type="q2:RepresentativePhoneType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RepPhone" nillable="true" type="tns:RepPhone" />
+  <xs:complexType name="Publisher">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aliasCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="corporationCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="enabledMSSD" type="xs:boolean" />
+      <xs:element minOccurs="0" name="enabledNWTD" type="xs:boolean" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sboId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="shortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Publisher" nillable="true" type="tns:Publisher" />
+  <xs:complexType name="ArrayOfPublisher">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Publisher" nillable="true" type="tns:Publisher" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPublisher" nillable="true" type="tns:ArrayOfPublisher" />
+  <xs:complexType name="PubRepresentativesSearchResult">
+    <xs:sequence>
+      <xs:element name="publisher" nillable="true" type="tns:Publisher" />
+      <xs:element name="representatives" nillable="true" type="tns:ArrayOfPubRepresentative" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PubRepresentativesSearchResult" nillable="true" type="tns:PubRepresentativesSearchResult" />
+  <xs:complexType name="ArrayOfPubRepresentative">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PubRepresentative" nillable="true" type="tns:PubRepresentative" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPubRepresentative" nillable="true" type="tns:ArrayOfPubRepresentative" />
+  <xs:complexType name="ArrayOfOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="tns:Order" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrder" nillable="true" type="tns:ArrayOfOrder" />
+  <xs:complexType name="Order">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:OrderHeader" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lines" nillable="true" type="tns:ArrayOfOrderLine" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Payments" nillable="true" type="tns:ArrayOfOrderPayment" />
+      <xs:element minOccurs="0" name="Reserved1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reserved2" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/NWTD.IntegrationServices.Common" minOccurs="0" name="Source" type="q3:OrderSource" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Order" nillable="true" type="tns:Order" />
+  <xs:complexType name="OrderHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Addresses" nillable="true" type="tns:ArrayOfOrderAddress" />
+      <xs:element minOccurs="0" name="BusinessPartnerId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BusinessPartnerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Contact" nillable="true" type="tns:OrderContact" />
+      <xs:element minOccurs="0" name="CreatedTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CustomerReferenceNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DiscountAmount" type="xs:double" />
+      <xs:element minOccurs="0" name="ProcessedTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ShippingTotal" type="xs:double" />
+      <xs:element minOccurs="0" name="SubTotal" type="xs:double" />
+      <xs:element minOccurs="0" name="TaxTotal" type="xs:double" />
+      <xs:element minOccurs="0" name="Total" type="xs:double" />
+      <xs:element minOccurs="0" name="WebConfirmationNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderHeader" nillable="true" type="tns:OrderHeader" />
+  <xs:complexType name="ArrayOfOrderAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderAddress" nillable="true" type="tns:OrderAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderAddress" nillable="true" type="tns:ArrayOfOrderAddress" />
+  <xs:complexType name="OrderAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/NWTD.IntegrationServices.Common" minOccurs="0" name="AddressType" type="q4:AddressType" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Company" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zip" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderAddress" nillable="true" type="tns:OrderAddress" />
+  <xs:complexType name="OrderContact">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OrderAddress">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrderContact" nillable="true" type="tns:OrderContact" />
+  <xs:complexType name="ArrayOfOrderLine">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderLine" nillable="true" type="tns:OrderLine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderLine" nillable="true" type="tns:ArrayOfOrderLine" />
+  <xs:complexType name="OrderLine">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentDetailLine">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Invoice" nillable="true" type="tns:Invoice" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrderLine" nillable="true" type="tns:OrderLine" />
+  <xs:complexType name="DocumentDetailLine">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CopyrightYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Discount" type="xs:double" />
+      <xs:element minOccurs="0" name="DocVisOrderNum" type="xs:int" />
+      <xs:element minOccurs="0" name="ExtendedPrice" type="xs:double" />
+      <xs:element minOccurs="0" name="GratisQuantity" type="xs:double" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ListPrice" type="xs:double" />
+      <xs:element minOccurs="0" name="OrderDiscount" type="xs:double" />
+      <xs:element minOccurs="0" name="Price" type="xs:double" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:double" />
+      <xs:element minOccurs="0" name="Reserved1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reserved2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Response" nillable="true" type="tns:OperationResult" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentDetailLine" nillable="true" type="tns:DocumentDetailLine" />
+  <xs:complexType name="OperationResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="additionalData" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="code" type="xs:int" />
+      <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="subSytem" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResult" nillable="true" type="tns:OperationResult" />
+  <xs:complexType name="Invoice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:InvoiceHeader" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lines" nillable="true" type="tns:ArrayOfInvoiceLine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Invoice" nillable="true" type="tns:Invoice" />
+  <xs:complexType name="InvoiceHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="tns:InvoiceAddress" />
+      <xs:element minOccurs="0" name="AmountApplied" type="xs:double" />
+      <xs:element minOccurs="0" name="AmountOwed" type="xs:double" />
+      <xs:element minOccurs="0" name="AmountTotal" type="xs:double" />
+      <xs:element minOccurs="0" name="BOL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BusinessPartnerId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CartonCount" type="xs:double" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerReferenceNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FreightCharge" type="xs:double" />
+      <xs:element minOccurs="0" name="InvoiceDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ShipDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ShipmentNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShipmentWeight" type="xs:double" />
+      <xs:element minOccurs="0" name="ShippedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaxCharge" type="xs:double" />
+      <xs:element minOccurs="0" name="TrackingHyperLinks" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrackingNums" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceHeader" nillable="true" type="tns:InvoiceHeader" />
+  <xs:complexType name="InvoiceAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Line1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceAddress" nillable="true" type="tns:InvoiceAddress" />
+  <xs:complexType name="ArrayOfInvoiceLine">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InvoiceLine" nillable="true" type="tns:InvoiceLine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInvoiceLine" nillable="true" type="tns:ArrayOfInvoiceLine" />
+  <xs:complexType name="InvoiceLine">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentDetailLine">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InvoiceLine" nillable="true" type="tns:InvoiceLine" />
+  <xs:complexType name="ArrayOfOrderPayment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderPayment" nillable="true" type="tns:OrderPayment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderPayment" nillable="true" type="tns:ArrayOfOrderPayment" />
+  <xs:complexType name="OrderPayment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:double" />
+      <xs:element minOccurs="0" name="AuthorizationCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MethodName" nillable="true" type="xs:string" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/NWTD.IntegrationServices.Common" minOccurs="0" name="PaymentMethod" type="q5:PaymentMethod" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderPayment" nillable="true" type="tns:OrderPayment" />
+  <xs:complexType name="ArrayOfInvoice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Invoice" nillable="true" type="tns:Invoice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInvoice" nillable="true" type="tns:ArrayOfInvoice" />
+</xs:schema>

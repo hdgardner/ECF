@@ -1,0 +1,49 @@
+/*  The main navigation */
+
+ul.nwtd-menu{
+	margin: 0 0 0 11px;
+	padding:0;
+	clear:left;
+}
+
+li.nwtd-menuItem, li.top-menu-last-column {
+	float:left;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	display:inline;
+	text-align:center;
+	margin-right:3px;
+}
+
+li.nwtd-menuItem a, 
+li.top-menu-last-column a.top-menu-item,
+li.nwtd-menuItem a:visited, 
+li.top-menu-last-column a.top-menu-item:visited {
+	display:block;
+	background-image:url(images-template/btn-bg-off.png);
+	background-repeat:no-repeat;
+	width:105px; 
+	height:20px;
+	padding:0px;
+	font-family:verdana, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+	padding-top:5px;
+}
+/*The login area*/
+.nwtd-loginMenu {
+	color:#fff;
+	padding-top:5px;
+	/*text-align:right;	*/
+	padding-right:8px;
+}
+
+.nwtd-loginMenu a, .nwtd-loginMenu a:visited{
+	/*color:#fff;*/
+}
+li.nwtd-menuItem a:hover, li.top-menu-last-column a.top-menu-item:hover {
+	background-image:url(images-template/btn-bg-on.png);
+}

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PromotionUsageDto" targetNamespace="http://tempuri.org/PromotionUsageDto.xsd" xmlns:mstns="http://tempuri.org/PromotionUsageDto.xsd" xmlns="http://tempuri.org/PromotionUsageDto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ECF50_DEV_MAINConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ECF50_DEV_MAINConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Mediachase.Commerce.Properties.Settings.GlobalReference.Default.ECF50_DEV_MAINConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PromotionUsageDto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PromotionUsageDto" msprop:Generator_DataSetName="PromotionUsageDto" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PromotionUsage" msprop:Generator_UserTableName="PromotionUsage" msprop:Generator_RowDeletedName="PromotionUsageRowDeleted" msprop:Generator_RowChangedName="PromotionUsageRowChanged" msprop:Generator_RowClassName="PromotionUsageRow" msprop:Generator_RowChangingName="PromotionUsageRowChanging" msprop:Generator_RowEvArgName="PromotionUsageRowChangeEvent" msprop:Generator_RowEvHandlerName="PromotionUsageRowChangeEventHandler" msprop:Generator_TableClassName="PromotionUsageDataTable" msprop:Generator_TableVarName="tablePromotionUsage" msprop:Generator_RowDeletingName="PromotionUsageRowDeleting" msprop:Generator_TablePropName="PromotionUsage">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PromotionUsageId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="PromotionUsageId" msprop:Generator_ColumnVarNameInTable="columnPromotionUsageId" msprop:Generator_ColumnPropNameInRow="PromotionUsageId" msprop:Generator_ColumnPropNameInTable="PromotionUsageIdColumn" type="xs:int" />
+              <xs:element name="OrderGroupId" msprop:Generator_UserColumnName="OrderGroupId" msprop:Generator_ColumnVarNameInTable="columnOrderGroupId" msprop:Generator_ColumnPropNameInRow="OrderGroupId" msprop:Generator_ColumnPropNameInTable="OrderGroupIdColumn" type="xs:int" />
+              <xs:element name="CustomerId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="CustomerId" msprop:Generator_ColumnVarNameInTable="columnCustomerId" msprop:Generator_ColumnPropNameInRow="CustomerId" msprop:Generator_ColumnPropNameInTable="CustomerIdColumn" type="xs:string" />
+              <xs:element name="PromotionId" msprop:Generator_UserColumnName="PromotionId" msprop:Generator_ColumnVarNameInTable="columnPromotionId" msprop:Generator_ColumnPropNameInRow="PromotionId" msprop:Generator_ColumnPropNameInTable="PromotionIdColumn" type="xs:int" />
+              <xs:element name="Version" msprop:Generator_UserColumnName="Version" msprop:Generator_ColumnVarNameInTable="columnVersion" msprop:Generator_ColumnPropNameInRow="Version" msprop:Generator_ColumnPropNameInTable="VersionColumn" type="xs:int" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:int" />
+              <xs:element name="LastUpdated" msprop:Generator_UserColumnName="LastUpdated" msprop:Generator_ColumnVarNameInTable="columnLastUpdated" msprop:Generator_ColumnPropNameInRow="LastUpdated" msprop:Generator_ColumnPropNameInTable="LastUpdatedColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PromotionUsage" />
+      <xs:field xpath="mstns:PromotionUsageId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

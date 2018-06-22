@@ -1,0 +1,1614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GENERAL_ID_LABEL" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="GENERAL_REMOVE_LABEL" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="GENERAL_QTY_LABEL" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="GENERAL_SKU_LABEL" xml:space="preserve">
+    <value>Sku</value>
+  </data>
+  <data name="GENERAL_SAVE_LABEL" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
+  <data name="GENERAL_DESCRIPTION_LABEL" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="GENERAL_PRICE_LABEL" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="GENERAL_YOUR_PRICE_LABEL" xml:space="preserve">
+    <value>Your Price</value>
+  </data>
+  <data name="GENERAL_LISTPRICE_LABEL" xml:space="preserve">
+    <value>List Price</value>
+  </data>
+  <data name="GENERAL_DISCOUNT_LABEL" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="GENERAL_EXTENDED_PRICE_LABEL" xml:space="preserve">
+    <value>Extended</value>
+  </data>
+  <data name="GENERAL_SUBTOTAL_LABEL" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="GENERAL_PASSWORD_LABEL" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="GENERAL_CONFIRM_PASSWORD_LABEL" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="GENERAL_CONFIRM_PASSWORD_ERROR_MESSAGE" xml:space="preserve">
+    <value>The Password and Confirmation Password must match.</value>
+  </data>
+  <data name="GENERAL_CONFIRM_PASSWORD_REQUIRED_ERROR_MESSAGE" xml:space="preserve">
+    <value>Confirm Password is required.</value>
+  </data>
+  <data name="GENERAL_EMAIL_REGULAR_EXPRESSION_ERROR_MESSAGE" xml:space="preserve">
+    <value>Please enter a different email address. </value>
+  </data>
+  <data name="GENERAL_EMAIL_REQUIRED_ERROR_MESSAGE" xml:space="preserve">
+    <value>email is required.</value>
+  </data>
+  <data name="GENERAL_UNKNOWN_ERROR_MESSAGE" xml:space="preserve">
+    <value>Your account was not created. Please try again.</value>
+  </data>
+  <data name="GENERAL_TOTAL_LABEL" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="GENERAL_CREATED_LABEL" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="GENERAL_COMPLETED_LABEL" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="GENERAL_SHIPPING_LABEL" xml:space="preserve">
+    <value>Shipping &amp; Handling</value>
+  </data>
+  <data name="GENERAL_TAXES_LABEL" xml:space="preserve">
+    <value>Taxes</value>
+  </data>
+  <data name="GENERAL_CATEGORIES_AND_PRODUCTS_LABEL" xml:space="preserve">
+    <value>Categories &amp;amp; Products</value>
+  </data>
+  <data name="GENERAL_WELCOME" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="GENERAL_NO_ADDITIONAL_OPTIONS" xml:space="preserve">
+    <value>there are no additional options available for this item</value>
+  </data>
+  <data name="GENERAL_IMAGE_LABEL" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="GENERAL_NAME_LABEL" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="GENERAL_OVERVIEW_LABEL" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="GENERAL_SPECIFICATIONS_LABEL" xml:space="preserve">
+    <value>Specifications</value>
+  </data>
+  <data name="GENERAL_CUSTOMER_REVIEWS_LABEL" xml:space="preserve">
+    <value>Customer Reviews</value>
+  </data>
+  <data name="GENERAL_SIMILAR_PRODUCTS" xml:space="preserve">
+    <value>Similar Products</value>
+  </data>
+  <data name="GENERAL_ALL_PRODUCTS" xml:space="preserve">
+    <value>All Products</value>
+  </data>
+  <data name="MAIN_ACCOUNT_LOGIN" xml:space="preserve">
+    <value>Log In to Your Account</value>
+  </data>
+  <data name="MAIN_CREATE_ACCOUNT" xml:space="preserve">
+    <value>Create a New Login</value>
+  </data>
+  <data name="MAIN_LOGOUT" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="MAIN_ACCOUNT_INFO" xml:space="preserve">
+    <value>View Account Info</value>
+  </data>
+  <data name="MAIN_SHOPPING_BASKET" xml:space="preserve">
+    <value>View Shopping Basket</value>
+  </data>
+  <data name="RIGHT_MENU_DIRECTORIES" xml:space="preserve">
+    <value>DIRECTORIES</value>
+  </data>
+  <data name="RIGHT_MENU_CUSTOMER_SERVICE" xml:space="preserve">
+    <value>CUSTOMER SERVICE</value>
+  </data>
+  <data name="RIGHT_MENU_MY_INFO" xml:space="preserve">
+    <value>MY INFO</value>
+  </data>
+  <data name="FOOTER_ABOUT_US" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="FOOTER_ABOUT_EVERYTHING" xml:space="preserve">
+    <value>About Everything</value>
+  </data>
+  <data name="FOOTER_CORPORATE_SITE" xml:space="preserve">
+    <value>Corporate Site</value>
+  </data>
+  <data name="FOOTER_ORDERING_HELP" xml:space="preserve">
+    <value>Ordering Help</value>
+  </data>
+  <data name="FOOTER_TRACK_ORDERS" xml:space="preserve">
+    <value>Track Your Orders</value>
+  </data>
+  <data name="FOOTER_GENERAL_QUESTIONS" xml:space="preserve">
+    <value>General Questions</value>
+  </data>
+  <data name="FOOTER_STORE_POLICIES" xml:space="preserve">
+    <value>Store Policies</value>
+  </data>
+  <data name="FOOTER_PRIVACY_POLICY" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="FOOTER_RETURN_POLICY" xml:space="preserve">
+    <value>Return Policy</value>
+  </data>
+  <data name="FOOTER_TERMS_OF_USE" xml:space="preserve">
+    <value>Terms Of Use</value>
+  </data>
+  <data name="FOOTER_AFFILIATE_PROGRAM" xml:space="preserve">
+    <value>Affiliate Program</value>
+  </data>
+  <data name="FOOTER_COMPARE_PRODUCTS" xml:space="preserve">
+    <value>Compare Products</value>
+  </data>
+  <data name="AFFILIATE_PROGRAM_LABEL" xml:space="preserve">
+    <value>Affiliate Program</value>
+  </data>
+  <data name="AFFILIATE_JOIN_LABEL" xml:space="preserve">
+    <value>Join the Affiliate Program</value>
+  </data>
+  <data name="AFFILIATE_TERMS_AND_CONDITIONS" xml:space="preserve">
+    <value>Affiliate Terms and Conditions</value>
+  </data>
+  <data name="AFFILIATE_TERMS_CHECK" xml:space="preserve">
+    <value>I agree to the Affiliate Terms and Conditions</value>
+  </data>
+  <data name="AFFILIATE_TERMS_LABEL" xml:space="preserve">
+    <value>Affiliate Terms and Conditions</value>
+  </data>
+  <data name="AFFILIATE_TERMS_PROCEED" xml:space="preserve">
+    <value>Proceed</value>
+  </data>
+  <data name="AFFILIATE_FILLFORM_HEADER" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="AFFILIATE_FINISH_HEADER" xml:space="preserve">
+    <value>Finishing Sign Up</value>
+  </data>
+  <data name="AFFILIATE_NAME" xml:space="preserve">
+    <value>Affiliate Name</value>
+  </data>
+  <data name="AFFILIATE_URL" xml:space="preserve">
+    <value>Web Site URL</value>
+  </data>
+  <data name="AFFILIATE_CONTACT_ADDRESS" xml:space="preserve">
+    <value>Contact Address</value>
+  </data>
+  <data name="AFFILIATE_SAVE" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="AFFILIATE_FINISH_THANKYOU" xml:space="preserve">
+    <value>Thank you for joining the Affiliate Program!</value>
+  </data>
+  <data name="AFFILIATE_NEW_GUID" xml:space="preserve">
+    <value>Your Affiliate Identifier</value>
+  </data>
+  <data name="AFFILIATE_NEW_LINK" xml:space="preserve">
+    <value>Your Affiliate Link Is</value>
+  </data>
+  <data name="AFFILIATE_REGISTER_ERROR" xml:space="preserve">
+    <value>Affiliate couldn't be registered.</value>
+  </data>
+  <data name="BASKET_TITLE" xml:space="preserve">
+    <value>Shopping Basket</value>
+  </data>
+  <data name="BASKET_YOUR_LABEL" xml:space="preserve">
+    <value>Your Shopping Basket</value>
+  </data>
+  <data name="BASKET_ITEMS_LABEL" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="BASKET_LABEL" xml:space="preserve">
+    <value>Shopping Basket</value>
+  </data>
+  <data name="BASKET_COUPON_LABEL" xml:space="preserve">
+    <value>Coupon</value>
+  </data>
+  <data name="BASKET_APPLY_COUPON" xml:space="preserve">
+    <value>Apply Coupon</value>
+  </data>
+  <data name="BASKET_UPDATE" xml:space="preserve">
+    <value>Update Basket</value>
+  </data>
+  <data name="BASKET_CONTINUE_SHOPPING" xml:space="preserve">
+    <value>Continue Shopping</value>
+  </data>
+  <data name="BASKET_PROCEED_CHECKOUT" xml:space="preserve">
+    <value>Proceed to Checkout</value>
+  </data>
+  <data name="LICENSE_AGREEMENT_TITLE" xml:space="preserve">
+    <value>License Agreement</value>
+  </data>
+  <data name="LICENSE_AGREEMENT_LABEL" xml:space="preserve">
+    <value>License Agreement</value>
+  </data>
+  <data name="LICENSE_TERMS_LABEL" xml:space="preserve">
+    <value>Terms of sale</value>
+  </data>
+  <data name="LICENSE_TERMS_CHECK" xml:space="preserve">
+    <value>Check here to accept terms of sale</value>
+  </data>
+  <data name="LICENSE_PROCEED" xml:space="preserve">
+    <value>Proceed &gt;&gt;</value>
+  </data>
+  <data name="LICENSE_BACK" xml:space="preserve">
+    <value>&lt;&lt; Back</value>
+  </data>
+  <data name="DOWNLOAD_FILE_DETAILS" xml:space="preserve">
+    <value>File Details</value>
+  </data>
+  <data name="DOWNLOAD_FILE_SIZE" xml:space="preserve">
+    <value>File Size</value>
+  </data>
+  <data name="DOWNLOAD_FILE_DOWNLOADS" xml:space="preserve">
+    <value>Downloads</value>
+  </data>
+  <data name="DOWNLOAD_FILE_VERSION" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="DOWNLOAD_FILE_DATE_ADDED" xml:space="preserve">
+    <value>Date Added</value>
+  </data>
+  <data name="COMPAREBUTTONMODULE_COMPARE_PRODUCTS" xml:space="preserve">
+    <value>Compare products</value>
+  </data>
+  <data name="COMPAREMODULE_PRODUCTS_TO_COMPARE" xml:space="preserve">
+    <value>Products to compare</value>
+  </data>
+  <data name="COMPAREMODULE_CLEAR_COMPARE" xml:space="preserve">
+    <value>Remove all products from comparison folder</value>
+  </data>
+  <data name="COMPAREMODULE_SHOW_COMPARISON_GRID" xml:space="preserve">
+    <value>Show comparison grid</value>
+  </data>
+  <data name="COMPAREPRODUCTSMODULE_CLEAR" xml:space="preserve">
+    <value>Remove all products from comparison</value>
+  </data>
+  <data name="COMPAREPRODUCTSMODULE_COMPARISON_HEADER" xml:space="preserve">
+    <value>Product Comparison</value>
+  </data>
+  <data name="COMPAREPRODUCTSMODULE_PAGETITLE" xml:space="preserve">
+    <value>Compare products</value>
+  </data>
+  <data name="COMPAREPRODUCTSMODULE_PRICE" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="COMPAREPRODUCTSMODULE_PRICE_FROM_TO_STRING" xml:space="preserve">
+    <value>From {0} to {1}</value>
+  </data>
+  <data name="COMPAREPRODUCTSMODULE_REMOVE" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="COMPAREPRODUCTSMODULE_ADDTOCART" xml:space="preserve">
+    <value>Add To Cart</value>
+  </data>
+  <data name="CHECKOUT_BILLING_INFO_LABEL" xml:space="preserve">
+    <value>Your Billing Information</value>
+  </data>
+  <data name="CHECKOUT_SHIPPING_INFO_LABEL" xml:space="preserve">
+    <value>Your Shipping Information</value>
+  </data>
+  <data name="CHECKOUT_BACK_BUTTON" xml:space="preserve">
+    <value>&lt;&lt; Back</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_TITLE" xml:space="preserve">
+    <value>Shipping Info</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_LABEL" xml:space="preserve">
+    <value>Shipping Address</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_NEW_ACCOUNT_PASSWORD_LABEL" xml:space="preserve">
+    <value>New Account Password</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_SAME_AS_BILLING" xml:space="preserve">
+    <value>Same as billing address</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_PROCEED" xml:space="preserve">
+    <value>Proceed To Shipping Options</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_ERROR_MESSAGE" xml:space="preserve">
+    <value>You must select a shipping address</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_SHIP_SEVERAL_ADDRESSES" xml:space="preserve">
+    <value>Ship items to more than one address</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_SHIP_TO_THIS_ADDRESS" xml:space="preserve">
+    <value>Ship to this address</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_NEW_SHIPPING_ADDRESS" xml:space="preserve">
+    <value>New shipping address</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_SEND_TO" xml:space="preserve">
+    <value>Send to:</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_CHANGED_QUANTITIES_MESSAGE" xml:space="preserve">
+    <value>Changed quantities? Press</value>
+  </data>
+  <data name="CHECKOUT_ADDRESS_UPDATE_QUANTITIES" xml:space="preserve">
+    <value>update</value>
+  </data>
+  <data name="CHECKOUT_SHIPPINGOPTIONS_TITLE" xml:space="preserve">
+    <value>Shipping Options</value>
+  </data>
+  <data name="CHECKOUT_SHIPPINGOPTIONS_LABEL" xml:space="preserve">
+    <value>Shipping Options</value>
+  </data>
+  <data name="CHECKOUT_SHIPPINGOPTIONS_PROCEED_GIFTS" xml:space="preserve">
+    <value>Proceed To Gift Options</value>
+  </data>
+  <data name="CHECKOUT_SHIPPINGOPTIONS_PROCEED_PAYMENT" xml:space="preserve">
+    <value>Proceed To Payment Options</value>
+  </data>
+  <data name="CHECKOUT_SHIPPINGOPTIONS_NEXT" xml:space="preserve">
+    <value>Proceed to Payment</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_TITLE" xml:space="preserve">
+    <value>Select Payment Options</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_LABEL" xml:space="preserve">
+    <value>Payment Options</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_OPTIONS_LABEL" xml:space="preserve">
+    <value>Payment Options</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_BACK" xml:space="preserve">
+    <value>&lt;&lt; Back</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PLACE_ORDER" xml:space="preserve">
+    <value>Review &amp; Place Order</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CARDHOLDER_NAME" xml:space="preserve">
+    <value>Cardholder's Name</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CARDHOLDER_LABEL" xml:space="preserve">
+    <value>(as it appears on the card)</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CARD_NUMBER" xml:space="preserve">
+    <value>Credit Card Number</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CARD_TYPE" xml:space="preserve">
+    <value>Card Type</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_EXPIRATION_DATE_LABEL" xml:space="preserve">
+    <value>Expiration Date (MM/YY)</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CARD_CODE" xml:space="preserve">
+    <value>Card Code (CVV2, CVC2 or CID)</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_BANK_ACCOUNT_NUMBER" xml:space="preserve">
+    <value>Bank Account #</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_BANK_ROUTING_NUMBER" xml:space="preserve">
+    <value>Bank Routing #</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_ACCOUNT_TYPE" xml:space="preserve">
+    <value>Account Type</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_BANK_NAME" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_ACCOUNT_NAME" xml:space="preserve">
+    <value>Name on Account</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_LICENSE_NUMBER" xml:space="preserve">
+    <value>License #</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_LICENSE_DOB" xml:space="preserve">
+    <value>License DOB</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_LICENSE_STATE" xml:space="preserve">
+    <value>License State</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_CHECK" xml:space="preserve">
+    <value>Check #</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PAYPAL_MESSAGE" xml:space="preserve">
+    <value>Place your order and pay by PayPal. Once your payment has been received, your order will be shipped/available for download.</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PHONE" xml:space="preserve">
+    <value>Place your order and pay by calling us. Once your payment is processed, your order will be shipped/available for download.</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_DONOT_GIFT_WRAP" xml:space="preserve">
+    <value>Don't gift-wrap this item.</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_GIFT_WRAP" xml:space="preserve">
+    <value>Gift-wrap this item.</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_GIFT_NOTE" xml:space="preserve">
+    <value>Enter your free gift note for this item here</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_GIFT_NOTE_LENGTH" xml:space="preserve">
+    <value>Max. 240 characters--about 10 line(s) of text. Be sure to include "to" and "from."</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PACKING_SHEET_LABEL" xml:space="preserve">
+    <value>Wrapping</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_DONOT_PACKING_SHEET" xml:space="preserve">
+    <value>Don't wrap this item.</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PACKING_SHEET" xml:space="preserve">
+    <value>wrap this item</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_PACKING_SHEET_CHOOSE" xml:space="preserve">
+    <value>Choose a wrapping for this item here</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_GIFT_WRAPPING" xml:space="preserve">
+    <value>Gift Wrapping</value>
+  </data>
+  <data name="CHECKOUT_PAYMENT_TYPE_OTHER_MESSAGE" xml:space="preserve">
+    <value>Use this option if you would like to use another method to pay for our products. Please contact us after the order is placed.</value>
+  </data>
+  <data name="CHECKOUT_ORDER_CONFIRMATION_TITLE" xml:space="preserve">
+    <value>Order Confirmation</value>
+  </data>
+  <data name="CHECKOUT_ORDER_CONFIRMATION_LABEL" xml:space="preserve">
+    <value>Order Confirmation</value>
+  </data>
+  <data name="CHECKOUT_ORDER_CONFIRMATION_BUTTON" xml:space="preserve">
+    <value>Place Order</value>
+  </data>
+  <data name="CHECKOUT_ORDER_COMPLETED" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="CHECKOUT_ORDER_NOT_COMPLETED" xml:space="preserve">
+    <value>Not Completed</value>
+  </data>
+  <data name="CHECKOUT_ORDER_DATE_NA" xml:space="preserve">
+    <value>Incomplete</value>
+  </data>
+  <data name="CHECKOUT_THANKS_LABEL" xml:space="preserve">
+    <value>Thank you for the order</value>
+  </data>
+  <data name="CHECKOUT_THANKS_ORDER_NUMBER" xml:space="preserve">
+    <value>Your order number is</value>
+  </data>
+  <data name="CHECKOUT_THANKS_TOTAL_PAYMENT" xml:space="preserve">
+    <value>Your total payment is</value>
+  </data>
+  <data name="CHECKOUT_THANKS_KEEP_ORDER_NUMBER" xml:space="preserve">
+    <value>Please keep your order number for your records.</value>
+  </data>
+  <data name="CHECKOUT_THANKS_EMAIL_CONFIRM" xml:space="preserve">
+    <value>We'll also be sending you confirmation of your order by email.</value>
+  </data>
+  <data name="CHECKOUT_THANKS_CHECK_STATUS" xml:space="preserve">
+    <value>You can check status of your order by navigating to </value>
+  </data>
+  <data name="CHECKOUT_THANKS_INFO_PAGE" xml:space="preserve">
+    <value>account info page </value>
+  </data>
+  <data name="CHECKOUT_THANKS_CLICK_ON" xml:space="preserve">
+    <value>and clicking on </value>
+  </data>
+  <data name="CHECKOUT_THANKS_ORDER_HISTORY" xml:space="preserve">
+    <value>order history</value>
+  </data>
+  <data name="CHECKOUT_THANKS_NONREGISTERED_MESSAGE1" xml:space="preserve">
+    <value>Want to make your next checkout even speedier and see your order status? </value>
+  </data>
+  <data name="CHECKOUT_THANKS_NONREGISTERED_MESSAGE2" xml:space="preserve">
+    <value>Just click on the link below to save your billing and shipping info as </value>
+  </data>
+  <data name="CHECKOUT_THANKS_NONREGISTERED_MESSAGE3" xml:space="preserve">
+    <value>well as previous order for future visits. When you register or login, you'll be </value>
+  </data>
+  <data name="CHECKOUT_THANKS_NONREGISTERED_MESSAGE4" xml:space="preserve">
+    <value>able to track orders online and see the shipment status and updated tracking numbers.</value>
+  </data>
+  <data name="CHECKOUT_THANKS_REGISTER_NEW" xml:space="preserve">
+    <value>Register new account </value>
+  </data>
+  <data name="CHECKOUT_THANKS_LOGIN" xml:space="preserve">
+    <value>Login using existing account</value>
+  </data>
+  <data name="CHECKOUT_THANKS_TO_HOME" xml:space="preserve">
+    <value>Back to home page</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_SHIPPING_TO" xml:space="preserve">
+    <value>Shipping to</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_PAYMENT_MESSAGE" xml:space="preserve">
+    <value>We will notify you about the status of your order using this email address.</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_ERROR_MESSAGE" xml:space="preserve">
+    <value>You must select a payment address</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_ADDRESS_SELECT_LABEL" xml:space="preserve">
+    <value>Use this address</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_EMPTY_CART" xml:space="preserve">
+    <value>shopping cart is empty</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_GIFT_QUESTION" xml:space="preserve">
+    <value>Does your order contain gift items?</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_GIFT_ORDER_QUESTION" xml:space="preserve">
+    <value>Ordering a gift? Check this box to see gift options before checkout.</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_WIZARD_SHIPPING" xml:space="preserve">
+    <value>Select Shipping</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_WIZARD_PAYMENT" xml:space="preserve">
+    <value>Select Payment Options</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_WIZARD_CONFIRM" xml:space="preserve">
+    <value>Order Confirmation</value>
+  </data>
+  <data name="CHECKOUT_PAYPAL_MODIFY_ADDRESS" xml:space="preserve">
+    <value>[ Modify ]</value>
+  </data>
+  <data name="PURCHASE_ADD_ADDRESS" xml:space="preserve">
+    <value>Add an address</value>
+  </data>
+  <data name="PURCHASE_READY_TO_BUY" xml:space="preserve">
+    <value>Ready to Buy?</value>
+  </data>
+  <data name="CART_EDIT_DISCOUNTS" xml:space="preserve">
+    <value>Discounts</value>
+  </data>
+  <data name="CART_EDIT_SHIPS_TO" xml:space="preserve">
+    <value>ship(s) to</value>
+  </data>
+  <data name="CART_EDIT_EDIT" xml:space="preserve">
+    <value>Edit address</value>
+  </data>
+  <data name="CART_EDIT_ADD_SHIPMENT" xml:space="preserve">
+    <value>Add shipment</value>
+  </data>
+  <data name="CURRENCY_CHANGE_LABEL" xml:space="preserve">
+    <value>Change Currency</value>
+  </data>
+  <data name="ERROR404_LABEL" xml:space="preserve">
+    <value>Page not found</value>
+  </data>
+  <data name="ERROR404_MESSAGE" xml:space="preserve">
+    <value>404 - Page or resource not found</value>
+  </data>
+  <data name="ERROR404_MESSAGE1" xml:space="preserve">
+    <value>We're sorry, but the page you are looking for is either outdated, does not exist, or another type of problem has occurred.</value>
+  </data>
+  <data name="ERROR404_MESSAGE2" xml:space="preserve">
+    <value>If you feel that this is an error or you have encountered a broken link, please notify us at email.</value>
+  </data>
+  <data name="ERROR404_MESSAGE3" xml:space="preserve">
+    <value>Please click on your browser's BACK button to return to where you were, or use one of the following links:</value>
+  </data>
+  <data name="LANGUAGE_CHANGE_LABEL" xml:space="preserve">
+    <value>Change Language</value>
+  </data>
+  <data name="PRODUCT_SEARCH_NO_RESULTS" xml:space="preserve">
+    <value>No Results Match Your Search for </value>
+  </data>
+  <data name="SHOPPING_CART_EMPTY_LABEL" xml:space="preserve">
+    <value>Shopping cart is empty, in order to add item find the product you want to add and click add to cart button. To find a product you can either use search or store directory.</value>
+  </data>
+  <data name="SHOPPING_CART_DELETE_PRODUCT_TOOLTIP" xml:space="preserve">
+    <value>Remove product(s) from the Shopping cart</value>
+  </data>
+  <data name="SHOPPING_CART_ESTIMATED_SHIPPING" xml:space="preserve">
+    <value>Estimated Shipping</value>
+  </data>
+  <data name="SHOPPING_CART_ESTIMATED_SHIPPING_CALCULATING" xml:space="preserve">
+    <value>calculating...</value>
+  </data>
+  <data name="SHOPPING_CART_SPECIFY_ADDRESS" xml:space="preserve">
+    <value>specify address</value>
+  </data>
+  <data name="SHOPPING_CART_STORE_POLICES" xml:space="preserve">
+    <value>Review Store Policies</value>
+  </data>
+  <data name="SHOPPING_CART_RETURN_POLICY" xml:space="preserve">
+    <value>Return and Exchange Policy</value>
+  </data>
+  <data name="SHOPPING_CART_PRIVACY" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="YOU_SAVE_LABEL" xml:space="preserve">
+    <value>You save</value>
+  </data>
+  <data name="ACCOUNT_ACTIVATE_TITLE" xml:space="preserve">
+    <value>Account Activation</value>
+  </data>
+  <data name="ACCOUNT_NEW_TITLE" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ACCOUNT_NEW_LABEL" xml:space="preserve">
+    <value>Registration &amp; Login</value>
+  </data>
+  <data name="ACCOUNT_NEW_CUSTOMERS_LABEL" xml:space="preserve">
+    <value>New Customers</value>
+  </data>
+  <data name="ACCOUNT_NEW_INSTRUCTIONS_LABEL" xml:space="preserve">
+    <value>To register a new account, please provide the following information</value>
+  </data>
+  <data name="ACCOUNT_NEW_FIRSTNAME_LABEL" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="ACCOUNT_NEW_LASTNAME_LABEL" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="ACCOUNT_NEW_EMAIL_LABEL" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="ACCOUNT_NEW_REGISTER" xml:space="preserve">
+    <value>Create new account</value>
+  </data>
+  <data name="ACCOUNT_REG_COMPLETED_TITLE" xml:space="preserve">
+    <value>Registration Complete</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_NEW_ACCOUNT" xml:space="preserve">
+    <value>Sign Up for Your New Account</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_MESSAGE" xml:space="preserve">
+    <value>Please choose user name and password and enter it below. After registration you will enjoy many benefits:</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI1" xml:space="preserve">
+    <value>Receive special offers and preffered customer discounts</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI2" xml:space="preserve">
+    <value>Never have to re-enter your billing and shipping information, unless it changes</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI3" xml:space="preserve">
+    <value>View order status in real-time</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI4" xml:space="preserve">
+    <value>and many more ...</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_SUCCESS_H1" xml:space="preserve">
+    <value>Thank you for signing up!</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_SUCCESS_LABEL1" xml:space="preserve">
+    <value>Your account has been successfully created.</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_SUCCESS_LABEL2" xml:space="preserve">
+    <value>Now you can take advantage of the following benefits:</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_SUCCESS_EMAILVALIDATION_LABEL1" xml:space="preserve">
+    <value>In order to protect your privacy and to ensure that you are the authorized user of this account you need to activate your account. Please go to your email to activate the account.</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_SUCCESS_EMAILVALIDATION_LABEL2" xml:space="preserve">
+    <value>Once you activate your account, take advantage of the following benefits:</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI5" xml:space="preserve">
+    <value>Easy and Fast Checkout</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI5_TEXT" xml:space="preserve">
+    <value>Enter your billing and shipping information and all future checkouts will be only three steps.</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI6" xml:space="preserve">
+    <value>Address Book</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI6_TEXT" xml:space="preserve">
+    <value>For a true time-saver, fill your Address Book with family and friends' addresses so that you never have to enter them again in the future.</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI7" xml:space="preserve">
+    <value>Order History</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI7_TEXT" xml:space="preserve">
+    <value>If you’ve placed an order, you can determine its status, plus check on the order dates and order numbers for items you’ve purchased in the past.</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI8" xml:space="preserve">
+    <value>Forgotten Password</value>
+  </data>
+  <data name="ACCOUNT_REGISTER_LI8_TEXT" xml:space="preserve">
+    <value>Forgot your password? Make sure that you are entering your e-mail address and password exactly as when you registered. Please note that your e-mail name and password are case sensitive.</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_TITLE" xml:space="preserve">
+    <value>Existing customers log in</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_MESSAGE" xml:space="preserve">
+    <value>Please type your user name and password to login. This will allow you to review your previous orders and access certain other pages. If you do not have an account yet, create a new one by clicking create new account link below.</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_BUTTON_TEXT" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_USER_NAME" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_PASSWORD" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_REMEMBER_ME_TEXT" xml:space="preserve">
+    <value>Remember me next time</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_FAILED" xml:space="preserve">
+    <value>Your login attempt has failed. Please try again.</value>
+  </data>
+  <data name="REMIND_TITLE" xml:space="preserve">
+    <value>Remind Password</value>
+  </data>
+  <data name="REMIND_LABEL" xml:space="preserve">
+    <value>Send Password</value>
+  </data>
+  <data name="REMIND_NEW_PASSWORD_LABEL" xml:space="preserve">
+    <value>Create New Password</value>
+  </data>
+  <data name="REMIND_EMAIL_LABEL" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="REMIND_NEW_PASSWORD" xml:space="preserve">
+    <value>Send new password</value>
+  </data>
+  <data name="REMIND_MESSAGE" xml:space="preserve">
+    <value>Enter your Email to receive your password. The password will be emailed to the address specified during registration</value>
+  </data>
+  <data name="REMIND_SUBMIT" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="ACTIVATE_TITLE" xml:space="preserve">
+    <value>Account Activation</value>
+  </data>
+  <data name="CURRENCY_NOTE" xml:space="preserve">
+    <value>* Currency rate is approximate and is based on the following rate</value>
+  </data>
+  <data name="PRODUCT_PRICE_SAVE" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="PRODUCT_PRICE_YOU_SAVE" xml:space="preserve">
+    <value>You Save</value>
+  </data>
+  <data name="PRODUCT_LIST_PRICE" xml:space="preserve">
+    <value>List Price</value>
+  </data>
+  <data name="PRODUCT_VOLUME_DISCOUNT" xml:space="preserve">
+    <value>Includes volume discount, add to cart to find out the price</value>
+  </data>
+  <data name="PRODUCT_SEARCH_TITLE" xml:space="preserve">
+    <value>Product Search</value>
+  </data>
+  <data name="PRODUCT_SEARCH_LABEL" xml:space="preserve">
+    <value>Product Search</value>
+  </data>
+  <data name="PRODUCT_SEARCH_RESULTS_LABEL" xml:space="preserve">
+    <value>Product Search Results</value>
+  </data>
+  <data name="PRODUCT_OUT_OF_STOCK" xml:space="preserve">
+    <value>Product is out of stock</value>
+  </data>
+  <data name="PRODUCT_SKU_OUT_OF_STOCK" xml:space="preserve">
+    <value>Out of stock</value>
+  </data>
+  <data name="PRODUCT_EVALUATION_DOWNLOAD" xml:space="preserve">
+    <value>Download Evaluation</value>
+  </data>
+  <data name="PRODUCT_FEATURES" xml:space="preserve">
+    <value>Product features</value>
+  </data>
+  <data name="PRODUCT_OTHER_LICENSES" xml:space="preserve">
+    <value>Other Licenses</value>
+  </data>
+  <data name="PRODUCT_ADD_CART" xml:space="preserve">
+    <value>Add To Cart</value>
+  </data>
+  <data name="PRODUCT_ITEM" xml:space="preserve">
+    <value>Item#</value>
+  </data>
+  <data name="PRODUCT_SHIP_TO" xml:space="preserve">
+    <value>Ship to</value>
+  </data>
+  <data name="PRODUCT_SHIP_TO_ME" xml:space="preserve">
+    <value>Me</value>
+  </data>
+  <data name="PRODUCT_SHIP_TO_SBELSE" xml:space="preserve">
+    <value>Somebody else</value>
+  </data>
+  <data name="PRODUCT_DETAILS_LABEL" xml:space="preserve">
+    <value>View Product Details</value>
+  </data>
+  <data name="PRODUCT_OPTION_FIRST_LABEL" xml:space="preserve">
+    <value>First select {0}</value>
+  </data>
+  <data name="PRODUCT_OPTION_NEXT_LABEL" xml:space="preserve">
+    <value>Then select {0}</value>
+  </data>
+  <data name="CATEGORY_SHOP_LABEL" xml:space="preserve">
+    <value>Shop By Category</value>
+  </data>
+  <data name="SKU_ADD_TO_CART" xml:space="preserve">
+    <value>Add To Cart</value>
+  </data>
+  <data name="ALTERNATIVE_PHOTOS_LABEL" xml:space="preserve">
+    <value>Alternative photos:</value>
+  </data>
+  <data name="PRODUCT_ACCESSSORIES_HEADER" xml:space="preserve">
+    <value>Accessories</value>
+  </data>
+  <data name="PRODUCT_CROSS_SELLING_ITEMS_HEADER" xml:space="preserve">
+    <value>You might also like</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_HEADER" xml:space="preserve">
+    <value>Customer Reviews</value>
+  </data>
+  <data name="PRODUCT_EDITORIAL_REVIEW_HEADER" xml:space="preserve">
+    <value>Editorial Review</value>
+  </data>
+  <data name="PRODUCT_DOWNLOADS_HEADER" xml:space="preserve">
+    <value>Downloads/Files</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_REVIEWER" xml:space="preserve">
+    <value>Reviewer</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_RATING" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_HELPFUL_REVIEW" xml:space="preserve">
+    <value>Was this review helpful to you?</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_RATE_YES" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_RATE_NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_SEE_ALL_REVIEWS" xml:space="preserve">
+    <value>See all my reviews</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_AVERAGE_RATING" xml:space="preserve">
+    <value>Avg. Customer Review: </value>
+  </data>
+  <data name="PRODUCT_REVIEWS_WRITE_REVIEW_1" xml:space="preserve">
+    <value>Write an online review</value>
+  </data>
+  <data name="PRODUCT_REVIEWS_WRITE_REVIEW_2" xml:space="preserve">
+    <value>and share your thoughts with other customers.</value>
+  </data>
+  <data name="PRODUCT_REVIEW_WRITE" xml:space="preserve">
+    <value>Write a review for product</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_WRITE_REVIEW" xml:space="preserve">
+    <value>Write Your Own Review</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_SCALE" xml:space="preserve">
+    <value>On a scale of 1 to 5 stars, with 5 stars being the best</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_HOW_RATE" xml:space="preserve">
+    <value>How do you rate this item?</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_TITLE" xml:space="preserve">
+    <value>Please enter a title for your review</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_REVIEW" xml:space="preserve">
+    <value>Type your review in the space below</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_SEND" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_STARS5" xml:space="preserve">
+    <value>stars</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_STARS4" xml:space="preserve">
+    <value>stars</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_STARS3" xml:space="preserve">
+    <value>stars</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_STARS2" xml:space="preserve">
+    <value>stars</value>
+  </data>
+  <data name="PRODUCT_REVIEWWRITE_STARS1" xml:space="preserve">
+    <value>star</value>
+  </data>
+  <data name="PRODUCT_RATE" xml:space="preserve">
+    <value>Rate the product</value>
+  </data>
+  <data name="PRODUCT_YOUR_RATING" xml:space="preserve">
+    <value>Your rating</value>
+  </data>
+  <data name="PRODUCTPAGER_PAGE_LABEL" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="PRODUCTPAGER_SORT_BY_PRICE" xml:space="preserve">
+    <value>Sort By Price</value>
+  </data>
+  <data name="PRODUCTPAGER_SORT_BY_NAME" xml:space="preserve">
+    <value>Sort By Name</value>
+  </data>
+  <data name="PRODUCTPAGER_12ITEMS_PERPAGE" xml:space="preserve">
+    <value>12 Items Per Page</value>
+  </data>
+  <data name="PRODUCTPAGER_24ITEMS_PERPAGE" xml:space="preserve">
+    <value>24 Items Per Page</value>
+  </data>
+  <data name="PRODUCTPAGER_36ITEMS_PERPAGE" xml:space="preserve">
+    <value>36 Items Per Page</value>
+  </data>
+  <data name="PRODUCTPAGER_48ITEMS_PERPAGE" xml:space="preserve">
+    <value>48 Items Per Page</value>
+  </data>
+  <data name="PRODUCTPAGER_GRID_VIEW" xml:space="preserve">
+    <value>Grid View</value>
+  </data>
+  <data name="PRODUCTPAGER_LIST_VIEW" xml:space="preserve">
+    <value>List View</value>
+  </data>
+  <data name="PRODUCTRATING_SIGN_IN" xml:space="preserve">
+    <value>sign in to rate</value>
+  </data>
+  <data name="UNSUBSCRIBE_TITLE" xml:space="preserve">
+    <value>Unsubscribe</value>
+  </data>
+  <data name="ADDRESS_FIRSTNAME" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="ADDRESS_MIDDLENAME" xml:space="preserve">
+    <value>Middle Name</value>
+  </data>
+  <data name="ADDRESS_LASTNAME" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="ADDRESS_COMPANY" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="ADDRESS_STREET" xml:space="preserve">
+    <value>Street Address</value>
+  </data>
+  <data name="ADDRESS_CITY" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ADDRESS_ZIP" xml:space="preserve">
+    <value>Zip</value>
+  </data>
+  <data name="ADDRESS_STATE" xml:space="preserve">
+    <value>State/Province</value>
+  </data>
+  <data name="ADDRESS_COUNTRY" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ADDRESS_PHONE" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="ADDRESS_FAX" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_TITLE" xml:space="preserve">
+    <value>Account Addresses</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_LABEL" xml:space="preserve">
+    <value>Account Address</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_EDIT" xml:space="preserve">
+    <value>Edit Address</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_NEW_TITLE" xml:space="preserve">
+    <value>New Address</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_NEW" xml:space="preserve">
+    <value>Click here to add a new address</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_NEW_SAVE" xml:space="preserve">
+    <value>Add new address</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_NEW_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_EDIT_TITLE" xml:space="preserve">
+    <value>Edit Address</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_EDIT_SAVE" xml:space="preserve">
+    <value>Save address</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_EDIT_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_EDIT_VIEW_ADDRESSES" xml:space="preserve">
+    <value>View addresses</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_MANAGEMENT_LABEL" xml:space="preserve">
+    <value>Address Management</value>
+  </data>
+  <data name="ACCOUNT_ADDRESS_NEW_VIEW_ADDRESSES" xml:space="preserve">
+    <value>View addresses</value>
+  </data>
+  <data name="ACCOUNT_SHIPPING_ADDRESS_LABEL" xml:space="preserve">
+    <value>Your Shipping Information</value>
+  </data>
+  <data name="ACCOUNT_BILLING_ADDRESS_LABEL" xml:space="preserve">
+    <value>Your Billing Information</value>
+  </data>
+  <data name="ACCOUNT_BILLING_SAME_LABEL" xml:space="preserve">
+    <value>Same as billing address</value>
+  </data>
+  <data name="ACCOUNT_DOWNLOADS_LABEL" xml:space="preserve">
+    <value>Downloads</value>
+  </data>
+  <data name="ACCOUNT_NO_DOWNLOADS_LABEL" xml:space="preserve">
+    <value>no downloads available at the moment</value>
+  </data>
+  <data name="ACCOUNT_ACTIVATION_ACTIVATED_LABEL" xml:space="preserve">
+    <value>Congratulations! Your account has been activated.</value>
+  </data>
+  <data name="ACCOUNT_ACTIVATION_LINK_LABEL1" xml:space="preserve">
+    <value>To login, go to </value>
+  </data>
+  <data name="ACCOUNT_ACTIVATION_LINK_LABEL2" xml:space="preserve">
+    <value>login page.</value>
+  </data>
+  <data name="ACCOUNT_ACTIVATION_ERROR_ACTIVATED" xml:space="preserve">
+    <value>Where was an error during activation. Your account has not been activated.</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_LABEL" xml:space="preserve">
+    <value>Registration &amp; Login</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_CONTACT_LABEL" xml:space="preserve">
+    <value>Change Contact Info</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CONTACT" xml:space="preserve">
+    <value>Check here if you want to be contacted about new product updates</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_PASS_LABEL" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_EMAIL_LABEL" xml:space="preserve">
+    <value>Change Email</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_EMAILPASS_INFO" xml:space="preserve">
+    <value>once email is changed, account will be disabled and activation email will be send to new address</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_EMAIL_LABEL" xml:space="preserve">
+    <value>Enter your email address</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CURRENT_PASSWORD_LABEL" xml:space="preserve">
+    <value>Current Password</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NEW_PASSWORD_LABEL" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CONFIRM_PASSWORD_LABEL" xml:space="preserve">
+    <value>Confirm New Password</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_LABEL" xml:space="preserve">
+    <value>change</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CHANGE_PASSWORD_LABEL" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_INFO_LABEL" xml:space="preserve">
+    <value>Account Info</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NAME_LABEL" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_LOGIN_LABEL" xml:space="preserve">
+    <value>Sign in to the account</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_REMEMBER_LOGIN_LABEL" xml:space="preserve">
+    <value>Remember Login</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NEW_CUSTOMERS_LABEL" xml:space="preserve">
+    <value>I am a new customer</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NEW_CUSTOMERS_NOTE_LABEL" xml:space="preserve">
+    <value>You'll create a password later</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CONTINUE_CHECKOUT_LABEL" xml:space="preserve">
+    <value>continue with checkout</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NOTIFICATION_INFO_LABEL" xml:space="preserve">
+    <value>All store notifications will be sent to this email address</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_NEW_INFO_LABEL" xml:space="preserve">
+    <value>To create a new account, click Register</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_REGISTER_LABEL" xml:space="preserve">
+    <value>register</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_FORGOT_PASSWORD_LABEL" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CLICK_HERE_LABEL" xml:space="preserve">
+    <value>Click here</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_RETURNING_CUSTOMERS_LABEL" xml:space="preserve">
+    <value>I am a returning customer,&lt;BR&gt; and my password is</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_SUCCESS_MESSAGE" xml:space="preserve">
+    <value>Thank you for signing up!&lt;BR&gt;Your account has been successfully created.</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_ACTIVATE_MESSAGE" xml:space="preserve">
+    <value>Thank you for signing up!&lt;BR&gt;In order to protect your your privacy and to ensure that you are the authorized &lt;BR&gt;user of this account you need to activate your account.&lt;BR&gt;Please go to your email to activate the account.</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_FAILED_MESSAGE" xml:space="preserve">
+    <value>Your account was not created. Please try again.</value>
+  </data>
+  <data name="ACCOUNT_REGISTRATION_CONTINUE_BUTTON_LABEL" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="ACCOUNT_INFO_TITLE" xml:space="preserve">
+    <value>Account Info</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_TITLE" xml:space="preserve">
+    <value>Modify email &amp; Password</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_MESSAGE" xml:space="preserve">
+    <value>This form will allow you to change email or password. Please use one of the appropriate forms below.</value>
+  </data>
+  <data name="ACCOUNT_DOWNLOADS_TITLE" xml:space="preserve">
+    <value>Downloads</value>
+  </data>
+  <data name="ACCOUNT_ORDER_TITLE" xml:space="preserve">
+    <value>Order Details</value>
+  </data>
+  <data name="ACCOUNT_ORDERS_TITLE" xml:space="preserve">
+    <value>Order History</value>
+  </data>
+  <data name="ACCOUNT_ORDER_EDIT_TITLE" xml:space="preserve">
+    <value>Order Edit</value>
+  </data>
+  <data name="ACCOUNT_ORDER_EDIT_SAVE" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ACCOUNT_ORDER_EDIT_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ACCOUNT_ORDER_EMAIL" xml:space="preserve">
+    <value>Order Email</value>
+  </data>
+  <data name="ACCOUNT_MANAGEMENT_LABEL" xml:space="preserve">
+    <value>Account Management</value>
+  </data>
+  <data name="ACCOUNT_ORDER_HISTORY_LABEL" xml:space="preserve">
+    <value>View Order History</value>
+  </data>
+  <data name="ACCOUNT_ORDER_HISTORY_INFO_LABEL" xml:space="preserve">
+    <value>Review your past purchases</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_ADDRESS_LABEL" xml:space="preserve">
+    <value>Change Billing or Shipping Addresses</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_ADDRESS_INFO_LABEL" xml:space="preserve">
+    <value>Modify your billing or shipping information</value>
+  </data>
+  <data name="ACCOUNT_CUSTOMER_DOWNLOADS_LABEL" xml:space="preserve">
+    <value>View Downloads &amp; Updates</value>
+  </data>
+  <data name="ACCOUNT_CUSTOMER_DOWNLOADS_INFO_LABEL" xml:space="preserve">
+    <value>Download product installations, updates and betas</value>
+  </data>
+  <data name="ACCOUNT_LOGOUT_LABEL" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="ACCOUNT_LOGOUT_INFO_LABEL" xml:space="preserve">
+    <value>Sign out from the account</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_LABEL" xml:space="preserve">
+    <value>Change email, Password and Contact Info</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_EMAIL_LABEL" xml:space="preserve">
+    <value>Change email</value>
+  </data>
+  <data name="ACCOUNT_CHANGE_INFO_LABEL" xml:space="preserve">
+    <value>Update your email address, password and contact information</value>
+  </data>
+  <data name="ACCOUNT_ENTER_EMAIL_LABEL" xml:space="preserve">
+    <value>Enter new email</value>
+  </data>
+  <data name="ACCOUNT_EMAIL_FAILED_TO_CHANGE" xml:space="preserve">
+    <value>Failed to change email.</value>
+  </data>
+  <data name="ACCOUNT_EMAIL_SUCCESSFULLY_CHANGED" xml:space="preserve">
+    <value>email has been sucessfully changed.</value>
+  </data>
+  <data name="ACCOUNT_CURRENT_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Current password is required.</value>
+  </data>
+  <data name="ACCOUNT_PASSWORD_CONFIRM_MUST_MATCH" xml:space="preserve">
+    <value>The Confirm New Password must match the New Password entry.</value>
+  </data>
+  <data name="ACCOUNT_NEW_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>New Password is required.</value>
+  </data>
+  <data name="ACCOUNT_CONFIRM_NEW_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Confirm New Password is required.</value>
+  </data>
+  <data name="ACCOUNT_ORDER_LABEL" xml:space="preserve">
+    <value>Order Details</value>
+  </data>
+  <data name="ACCOUNT_ORDER_NUMBER_LABEL" xml:space="preserve">
+    <value>Order Number</value>
+  </data>
+  <data name="ACCOUNT_ORDER_DATE_LABEL" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="ACCOUNT_ORDER_PAYMENT_LABEL" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="ACCOUNT_ORDER_PAYMENT_PROCESSED" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="ACCOUNT_ORDER_PAYMENT_NOTPROCESSED" xml:space="preserve">
+    <value>Not Processed</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENTS_LABEL" xml:space="preserve">
+    <value>Shipments</value>
+  </data>
+  <data name="ACCOUNT_ORDER_ITEMS_PURCHASED" xml:space="preserve">
+    <value>Items purchased</value>
+  </data>
+  <data name="ACCOUNT_ORDER_STATUS_LABEL" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ACCOUNT_ORDER_BILLING_LABEL" xml:space="preserve">
+    <value>Your Billing Information</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPPING_LABEL" xml:space="preserve">
+    <value>Your Shipping Information</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_TRACK" xml:space="preserve">
+    <value>Track shipment</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_PACKAGE" xml:space="preserve">
+    <value>1 package via</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_PROCESSING" xml:space="preserve">
+    <value>Shipment #{0}: processing as of {1:MMMM d, yyyy}</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_SPEED" xml:space="preserve">
+    <value>Shipping Speed</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_ITEMS_ORDERED" xml:space="preserve">
+    <value>Items Ordered</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_PRICE" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_OF" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_SERIAL_NUMBER" xml:space="preserve">
+    <value>Serial number(s)</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_ITEMS_SUBTOTAL" xml:space="preserve">
+    <value>Item(s) Subtotal</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_SHIPPING" xml:space="preserve">
+    <value>Shipping &amp;amp; Handling</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SHIPMENT_TOTAL_SHIPMENT" xml:space="preserve">
+    <value>Total for this Shipment</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_PAYMENT_INFO" xml:space="preserve">
+    <value>Your Payment Information</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_METHOD" xml:space="preserve">
+    <value>Method</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_CREDIT_CARD" xml:space="preserve">
+    <value>Credit Card</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_BILLING_INFO" xml:space="preserve">
+    <value>Your Billing Information</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_DISCOUNT" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_TAXES" xml:space="preserve">
+    <value>Taxes</value>
+  </data>
+  <data name="ACCOUNT_ORDER_SKUS_SHIPMENT_DISCOUNT" xml:space="preserve">
+    <value>Shipment discount</value>
+  </data>
+  <data name="ACCOUNT_PAYMENT_TYPE_LABEL" xml:space="preserve">
+    <value>Payment Type</value>
+  </data>
+  <data name="ACCOUNT_ORDERS_LABEL" xml:space="preserve">
+    <value>Order History</value>
+  </data>
+  <data name="ACCOUNT_ORDERS_INFO_LABEL" xml:space="preserve">
+    <value>Click on an order number below to review all details of that order</value>
+  </data>
+  <data name="ACCOUNT_ORDERS_ID_LABEL" xml:space="preserve">
+    <value>Order Id</value>
+  </data>
+  <data name="ACCOUNT_MODIFY_PROFILE" xml:space="preserve">
+    <value>Modify Profile</value>
+  </data>
+  <data name="ACCOUNT_BANK_TRANSFER_BLANK" xml:space="preserve">
+    <value>Print Bank transfer blank</value>
+  </data>
+  <data name="ACCOUNT_POST_TRANSFER_BLANK" xml:space="preserve">
+    <value>Print Post transfer blank</value>
+  </data>
+  <data name="ACCOUNT_DUE_BILL_BLANK" xml:space="preserve">
+    <value>Print due bill blank</value>
+  </data>
+  <data name="GENERAL_SKUS_TOTAL_LABEL" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="NEWS_VIEW_TITLE" xml:space="preserve">
+    <value>News View</value>
+  </data>
+  <data name="NEWS_ARCHIVE_TITLE" xml:space="preserve">
+    <value>News Archive</value>
+  </data>
+  <data name="NEWSVIEW_ARCHIVE" xml:space="preserve">
+    <value>News Archive</value>
+  </data>
+  <data name="NEWSARCHIVE_TITLE" xml:space="preserve">
+    <value>News Archive</value>
+  </data>
+  <data name="NEWSARCHIVE_TODAYNEWS" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="NEWSARCHIVE_YESTERDAY" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="NEWSARCHIVE_WEEK" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="NEWSARCHIVE_DETAILS" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="TOPNEWS_NEWS" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="TOPNEWS_NEWSARCHIVE" xml:space="preserve">
+    <value>See other news</value>
+  </data>
+  <data name="TOPNEWS_DETAILS" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="NEWSCATEGORY_DETAILS" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="POLL_VOTE" xml:space="preserve">
+    <value>Vote</value>
+  </data>
+  <data name="POLL_VIEW_RESULTS" xml:space="preserve">
+    <value>Show results</value>
+  </data>
+  <data name="HOMEPAGE_TITLE" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="INFO_EMAIL_SENT" xml:space="preserve">
+    <value>email has been sent to the following address:</value>
+  </data>
+  <data name="NO_SHIPMENTS" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="INFO_ORDER_NOT_COMPLETE" xml:space="preserve">
+    <value>Your Order is not complete. Please print this page and call us 323-655-6688 (U.S.) to complete the order.</value>
+  </data>
+  <data name="INFO_CALL_FOR_PRICING" xml:space="preserve">
+    <value>Call for pricing</value>
+  </data>
+  <data name="CUSTOMER_SUPPORT" xml:space="preserve">
+    <value>Customer Support</value>
+  </data>
+  <data name="FROM_THE_MANUFACTURER" xml:space="preserve">
+    <value>From the Manufacturer</value>
+  </data>
+  <data name="SEARCH_LABEL" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SEARCH_FOR_LABEL" xml:space="preserve">
+    <value>for</value>
+  </data>
+  <data name="META_YES" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="META_NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="LICENSES_SKU_ID_HEADER" xml:space="preserve">
+    <value>SkuID</value>
+  </data>
+  <data name="LICENSES_NAME_HEADER" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="LICENSES_TYPE_HEADER" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ERROR_ACCEPT_TERMS" xml:space="preserve">
+    <value>Please accept the terms</value>
+  </data>
+  <data name="ERROR_PRODUCT_REQUESTED_UNAVAILABLE" xml:space="preserve">
+    <value>Product you requested is not available</value>
+  </data>
+  <data name="ERROR_SELECT_SHIPPING_METHOD" xml:space="preserve">
+    <value>Please Select Shipping method</value>
+  </data>
+  <data name="ERROR_SELECT_PAYMENT_METHOD" xml:space="preserve">
+    <value>Please Select Payment method</value>
+  </data>
+  <data name="ERROR_NO_ITEM_IN_BASKET" xml:space="preserve">
+    <value>No Items in Shopping Basket</value>
+  </data>
+  <data name="ERROR_PAYMENT_INFO_INCORRECT" xml:space="preserve">
+    <value>Please enter correct payment information</value>
+  </data>
+  <data name="ERROR_REGISTRATION_FAILED" xml:space="preserve">
+    <value>Registration failed:  That email address is already registered</value>
+  </data>
+  <data name="ERROR_ACCOUNT_NOT_EXISTS" xml:space="preserve">
+    <value>Account doesn't exist</value>
+  </data>
+  <data name="ERROR_ACCOUNT_NOT_EXISTS2_1" xml:space="preserve">
+    <value>Account with address</value>
+  </data>
+  <data name="ERROR_ACCOUNT_NOT_EXISTS2_2" xml:space="preserve">
+    <value>doesn't exist.</value>
+  </data>
+  <data name="ERROR_EMAIL_ALREADY_REGISTERED" xml:space="preserve">
+    <value>Operation failed:  This email address is already registered</value>
+  </data>
+  <data name="ERROR_CURRENT_PASSWORD_INCORRECT" xml:space="preserve">
+    <value>Operation failed:  The current password is incorrect</value>
+  </data>
+  <data name="ERROR_BLANK_PASSWORD" xml:space="preserve">
+    <value>'ConfirmPassword' must not be left blank.</value>
+  </data>
+  <data name="ERROR_BLANK_EMAIL" xml:space="preserve">
+    <value>'email' must not be left blank.</value>
+  </data>
+  <data name="ERROR_PASSWORDS_MUST_MATCH" xml:space="preserve">
+    <value>Passwords must match</value>
+  </data>
+  <data name="ERROR_INVALID_EMAIL" xml:space="preserve">
+    <value>Must use a valid email address.</value>
+  </data>
+  <data name="ERROR_LOGIN_FAILED" xml:space="preserve">
+    <value>Login Failed!</value>
+  </data>
+  <data name="ERROR_ACCOUNT_DISABLED" xml:space="preserve">
+    <value>Account Disabled. Use the email sent earlier to activate your account.</value>
+  </data>
+  <data name="ERROR_GENERAL" xml:space="preserve">
+    <value>Error:</value>
+  </data>
+  <data name="ERROR_SELECT_OPTION" xml:space="preserve">
+    <value>Please select {0}, then click Add to Wish List.</value>
+  </data>
+  <data name="ERROR_SEARCHRESULTS_EMPTY" xml:space="preserve">
+    <value>We found no results that closely match your search.</value>
+  </data>
+  <data name="ERROR_OUTOFSTOCK" xml:space="preserve">
+    <value>Sorry, one of the items you tried to add ran out of stock. Try to add fewer items.</value>
+  </data>
+  <data name="SCRIPT_DISABLED" xml:space="preserve">
+    <value>Script is disabled in your browser</value>
+  </data>
+</root>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <ActionSet Name="Default" CSS-Hover="On" CSS="Off">
+    <Actions>
+      <Action Event="onmouseover" Code="var _uh=$find('MediachaseCmsUtil'); if(_uh!=null) _uh.HighlightOn(this);"/>
+      <Action Event="onmouseleave" Code="var _uh=$find('MediachaseCmsUtil'); if(_uh!=null) _uh.HighlightOff(this);"/>
+      <Action Event="onmouseout" Code="var _uh=$find('MediachaseCmsUtil'); if(_uh!=null) _uh.HighlightOff(this);"/>
+    </Actions>
+    <Menu ImageUrl="/public/images/down.gif">
+      <MenuItems>
+        <Item Text="Info+click" ImageUrl="/public/images/move.gif" Code="javascript:alert(111);"  Tooltip="1">
+          <Deny role="Designer"/>
+          <Allow role="Administrator"/>
+        </Item>
+        <Item Text="Info" ImageUrl="/public/images/xp-copy.gif" Tooltip="2">
+          <Deny role="Designer"/>
+          <Allow role="Administrator"/>
+        </Item>
+        <Item Text="Info" ImageUrl="/public/images/newuser.gif" Tooltip="3">
+          <Deny role="Designer"/>
+          <Allow role="Administrator"/>
+        </Item>
+      </MenuItems>
+    </Menu>
+  </ActionSet>
+   
+  <ActionSet Name="NoneMenu"  CSS-Hover="On" CSS="Off">
+    <Actions>
+      <Action Event="onmouseover" Code="var _uh=$find('MediachaseCmsUtil'); if(_uh!=null) _uh.HighlightOn(this);"/>
+      <Action Event="onmouseleave" Code="var _uh=$find('MediachaseCmsUtil'); if(_uh!=null) _uh.HighlightOff(this);"/>
+      <Action Event="onmouseout" Code="var _uh=$find('MediachaseCmsUtil'); if(_uh!=null) _uh.HighlightOff(this);"/>
+    </Actions>
+    <Menu ImageUrl="">
+      <MenuItems></MenuItems>
+    </Menu>
+  </ActionSet>
+  
+  <ActionSet Name="AS_Menu" CSS-Hover="On" CSS="Off">
+    <Actions>
+      <Action Event="onmouseover" Code="var _uh=$find('MediachaseCmsUtil'); if(_uh!=null) _uh.HighlightOn(this);"/>
+      <Action Event="onmouseleave" Code="var _uh=$find('MediachaseCmsUtil'); if(_uh!=null) _uh.HighlightOff(this);"/>
+      <Action Event="onmouseout" Code="var _uh=$find('MediachaseCmsUtil'); if(_uh!=null) _uh.HighlightOff(this);"/>
+    </Actions>
+    <Menu ImageUrl="/public/images/down.gif">
+      <MenuItems>
+        <Item Text="Info+click" ImageUrl="/public/images/move.gif" Code="javascript:HorizontalMenu('1');"  Tooltip="Настройка меню">
+          <Deny role="Designer"/>
+          <Allow role="Administrator"/>
+        </Item>
+      </MenuItems>
+    </Menu>
+  </ActionSet>
+  
+</Items>

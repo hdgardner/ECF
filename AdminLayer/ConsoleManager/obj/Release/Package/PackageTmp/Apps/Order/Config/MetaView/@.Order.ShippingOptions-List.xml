@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Button id="New" text="{SharedStrings:New}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdOrderNewShippingOption" permissions="order:admin:shipping:providers:mng:create"/>
+      <Splitter id="ActionsSplitter"/>
+      <Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" permissions="order:admin:shipping:providers:mng:delete">
+        <Button id="DeleteSelected" text="{SharedStrings:Delete}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdOrderShippingOptionDelete" permissions="order:admin:shipping:providers:mng:delete"/>
+      </Menu>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdOrderNewShippingOption">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSOrderClient.NewShippingOption()</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdOrderShippingOptionDelete">
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+        <BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+        <ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Order.CommandHandlers.ShippingOptionDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+
+      <!-- Grid commands -->
+      <Command id="cmdOrderGridShippingOptionEdit">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSOrderClient.EditShippingOption2(params)</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdOrderGridShippingOptionDelete">
+        <ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Order.CommandHandlers.ShippingOptionDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

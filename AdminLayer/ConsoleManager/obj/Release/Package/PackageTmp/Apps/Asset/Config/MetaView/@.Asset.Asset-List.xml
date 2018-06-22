@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Menu id="ActionsSplitButton" text="{SharedStrings:Create_New}" imageUrl="~/App_Themes/Default/Images/new.png" permissions="asset:mng:create">
+        <Button id="NewFolder" text="{SharedStrings:New_Folder}" imageUrl="~/App_Themes/Main/images/toolbar/newfolder.gif " commandName="cmdAssetNewFolder" permissions="asset:mng:create"/>
+        <Button id="NewFile" text="{SharedStrings:New_File}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdAssetNewFile" permissions="asset:mng:create"/>
+        <Button id="UploadMultipleFiles" text="{AssetStrings:Upload_Multiple_Files}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdAssetUploadMultipleFiles" permissions="asset:mng:create"/>
+      </Menu>
+      <Splitter id="ActionsSplitter"/>
+      <Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" commandName="cmdAssetMoreActions">
+        <Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdAssetDelete" permissions="asset:mng:delete"/>
+        <Button id="MoveCopySelected" text="{SharedStrings:Move_Copy}" imageUrl="~/App_Themes/Main/Images/toolbar/movetofolder.gif" commandName="cmdAssetMoveCopy" permissions="asset:mng:edit"/>
+      </Menu>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdAssetNewFolder">
+        <CommandType>OpenFrameModalPopup</CommandType>
+        <Url>~/Apps/Core/Controls/DialogPage.aspx?_a=Asset&amp;_v=Asset-NewFolder&amp;Id={QueryString:Id}</Url>
+        <Width>440</Width>
+        <Height>100</Height>
+        <PopupTitle>New Folder</PopupTitle>
+        <Drag>True</Drag>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdAssetNewFile">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSAssetClient.NewFile()</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdAssetUploadMultipleFiles">
+        <CommandType>OpenFrameModalPopup</CommandType>
+        <Url>~/Apps/Core/Controls/DialogPage.aspx?_a=Asset&amp;_v=Asset-FileUpload&amp;Id={QueryString:Id}</Url>
+        <Width>440</Width>
+        <Height>200</Height>
+        <PopupTitle>Add Files</PopupTitle>
+        <Drag>True</Drag>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+
+      <Command id="cmdAssetMoreActions">
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+
+      <Command id="cmdAssetDelete">
+        <BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+        <ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Asset.CommandHandlers.DeleteSelectedItemsHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      
+      <Command id="cmdAssetMoveCopy">
+        <BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+        <CommandType>OpenFrameModalPopup</CommandType>
+        <Url>~/Apps/Core/Controls/DialogPage.aspx?_a=Asset&amp;_v=Asset-MoveCopy</Url>
+        <Width>440</Width>
+        <Height>200</Height>
+        <PopupTitle>Move/Copy to Folder</PopupTitle>
+        <Drag>True</Drag>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      
+      <!-- Add to allow the right asset view -->
+      <Command id="cmdAssetGridItemEdit">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSAssetClient.OpenItem2(params)</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

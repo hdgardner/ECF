@@ -1,0 +1,6 @@
+JurisdictionName,StateProvinceCode,CountryCode,ZipPostalCodeStart,ZipPostalCodeEnd,City,District,County,GeoCode,JurisdictionCode,JurisdictionGroupName,JurisdictionGroupCode,TaxNativeName,TaxName,SortOrder,LanguageCode,TaxCategory,Percentage,AffectiveDate
+California - General,California,US,Null,Null,Null,Null,Null,Null,California-Gen,California General Sales Group,CA-Gen-Group,California General Tax 9%,CA Gen Tax 9%,1,en-US,General Sales,9,1/1/2009
+California - Luxury,California,US,Null,Null,Null,Null,Null,Null,California-Lux,California Luxury Sales Group,CA-Lux-Group,California Luxury Tax 9%,CA Lux Tax 9%,1,en-US,Luxury Items,9,1/1/2009
+Massachusetts - General,Massachusetts,US,Null,Null,Null,Null,Null,Null,Massachusetts-Gen,Massachusetts General Sales Group,MA-Gen-Group,Massachusetts General Tax 6%,MA Gen Tax 6%,1,en-US,General Sales,6,1/1/2009
+Massachusetts - Luxury,Massachusetts,US,Null,Null,Null,Null,Null,Null,Massachusetts-Lux,Massachusetts Luxury Sales Group,MA-Lux-Group,Massachusetts Luxury Tax 6%,MA Lux Tax 6%,1,en-US,Luxury Items,6,1/1/2009
+US - Luxury,Null,US,Null,Null,Null,Null,Null,Null,US-Lux,US Tax Group,US-Group,Fedral Luxury Items Tax 3%,US LUX Tax 3%,1,en-US,Luxury Items,4,1/1/2009

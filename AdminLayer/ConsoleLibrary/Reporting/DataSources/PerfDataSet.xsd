@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PerfDataSet" targetNamespace="http://schemas/mediachase.com/ecf/50/reporting/PerfDataSet.xsd" xmlns:mstns="http://schemas/mediachase.com/ecf/50/reporting/PerfDataSet.xsd" xmlns="http://schemas/mediachase.com/ecf/50/reporting/PerfDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PerfDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PerfDataSet" msprop:Generator_DataSetName="PerfDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SalesTable" msprop:Generator_UserTableName="SalesTable" msprop:Generator_RowDeletedName="SalesTableRowDeleted" msprop:Generator_RowChangedName="SalesTableRowChanged" msprop:Generator_RowClassName="SalesTableRow" msprop:Generator_RowChangingName="SalesTableRowChanging" msprop:Generator_RowEvArgName="SalesTableRowChangeEvent" msprop:Generator_RowEvHandlerName="SalesTableRowChangeEventHandler" msprop:Generator_TableClassName="SalesTableDataTable" msprop:Generator_TableVarName="tableSalesTable" msprop:Generator_RowDeletingName="SalesTableRowDeleting" msprop:Generator_TablePropName="SalesTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GrossSales" msprop:Generator_UserColumnName="GrossSales" msprop:Generator_ColumnPropNameInRow="GrossSales" msprop:Generator_ColumnVarNameInTable="columnGrossSales" msprop:Generator_ColumnPropNameInTable="GrossSalesColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NetSales" msprop:Generator_UserColumnName="NetSales" msprop:Generator_ColumnPropNameInRow="NetSales" msprop:Generator_ColumnVarNameInTable="columnNetSales" msprop:Generator_ColumnPropNameInTable="NetSalesColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BillingCurrency" msprop:Generator_UserColumnName="BillingCurrency" msprop:Generator_ColumnVarNameInTable="columnBillingCurrency" msprop:Generator_ColumnPropNameInRow="BillingCurrency" msprop:Generator_ColumnPropNameInTable="BillingCurrencyColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SalesMonthlyTable" msprop:Generator_UserTableName="SalesMonthlyTable" msprop:Generator_RowDeletedName="SalesMonthlyTableRowDeleted" msprop:Generator_RowChangedName="SalesMonthlyTableRowChanged" msprop:Generator_RowClassName="SalesMonthlyTableRow" msprop:Generator_RowChangingName="SalesMonthlyTableRowChanging" msprop:Generator_RowEvArgName="SalesMonthlyTableRowChangeEvent" msprop:Generator_RowEvHandlerName="SalesMonthlyTableRowChangeEventHandler" msprop:Generator_TableClassName="SalesMonthlyTableDataTable" msprop:Generator_TableVarName="tableSalesMonthlyTable" msprop:Generator_RowDeletingName="SalesMonthlyTableRowDeleting" msprop:Generator_TablePropName="SalesMonthlyTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GrossSales" msprop:Generator_UserColumnName="GrossSales" msprop:Generator_ColumnPropNameInRow="GrossSales" msprop:Generator_ColumnVarNameInTable="columnGrossSales" msprop:Generator_ColumnPropNameInTable="GrossSalesColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NetSales" msprop:Generator_UserColumnName="NetSales" msprop:Generator_ColumnPropNameInRow="NetSales" msprop:Generator_ColumnVarNameInTable="columnNetSales" msprop:Generator_ColumnPropNameInTable="NetSalesColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BillingCurrency" msprop:Generator_UserColumnName="BillingCurrency" msprop:Generator_ColumnPropNameInRow="BillingCurrency" msprop:Generator_ColumnVarNameInTable="columnBillingCurrency" msprop:Generator_ColumnPropNameInTable="BillingCurrencyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Month" msprop:Generator_UserColumnName="Month" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnVarNameInTable="columnMonth" msprop:Generator_ColumnPropNameInTable="MonthColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

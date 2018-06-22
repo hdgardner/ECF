@@ -1,0 +1,2 @@
+AssociationName,ParentEntryCode,ChildEntryCode,SortOrder,AssociationType
+CrossSell,UnitTestEntryCode002,UnitTestEntryCode001,0,Optional

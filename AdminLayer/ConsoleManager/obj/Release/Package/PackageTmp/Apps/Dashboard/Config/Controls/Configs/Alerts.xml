@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Uid>54F95808-867C-4250-BA0F-CA79380AA4A1</Uid>
+  <Title>Alerts</Title>
+  <Description></Description>
+  <Path>~/Apps/Dashboard/Modules/AlertsModule.ascx</Path>
+  <Category>MediachaseECF</Category>
+</DynamicControlInfo>

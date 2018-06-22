@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PromotionDto" targetNamespace="http://schemas.mediachase.com/ecf/50/PromotionDto.xsd" xmlns:mstns="http://schemas.mediachase.com/ecf/50/PromotionDto.xsd" xmlns="http://schemas.mediachase.com/ecf/50/PromotionDto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PromotionDto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PromotionDto" msprop:Generator_DataSetName="PromotionDto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Promotion" msprop:Generator_UserTableName="Promotion" msprop:Generator_RowDeletedName="PromotionRowDeleted" msprop:Generator_RowChangedName="PromotionRowChanged" msprop:Generator_RowClassName="PromotionRow" msprop:Generator_RowChangingName="PromotionRowChanging" msprop:Generator_RowEvArgName="PromotionRowChangeEvent" msprop:Generator_RowEvHandlerName="PromotionRowChangeEventHandler" msprop:Generator_TableClassName="PromotionDataTable" msprop:Generator_TableVarName="tablePromotion" msprop:Generator_RowDeletingName="PromotionRowDeleting" msprop:Generator_TablePropName="Promotion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PromotionId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="PromotionId" msprop:Generator_ColumnVarNameInTable="columnPromotionId" msprop:Generator_ColumnPropNameInRow="PromotionId" msprop:Generator_ColumnPropNameInTable="PromotionIdColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApplicationId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ApplicationId" msprop:Generator_ColumnVarNameInTable="columnApplicationId" msprop:Generator_ColumnPropNameInRow="ApplicationId" msprop:Generator_ColumnPropNameInTable="ApplicationIdColumn" type="xs:string" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" />
+              <xs:element name="CouponCode" msprop:Generator_UserColumnName="CouponCode" msprop:Generator_ColumnVarNameInTable="columnCouponCode" msprop:Generator_ColumnPropNameInRow="CouponCode" msprop:Generator_ColumnPropNameInTable="CouponCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OfferAmount" msprop:Generator_UserColumnName="OfferAmount" msprop:Generator_ColumnVarNameInTable="columnOfferAmount" msprop:Generator_ColumnPropNameInRow="OfferAmount" msprop:Generator_ColumnPropNameInTable="OfferAmountColumn" type="xs:decimal" />
+              <xs:element name="OfferType" msprop:Generator_UserColumnName="OfferType" msprop:Generator_ColumnVarNameInTable="columnOfferType" msprop:Generator_ColumnPropNameInRow="OfferType" msprop:Generator_ColumnPropNameInTable="OfferTypeColumn" type="xs:int" />
+              <xs:element name="PromotionGroup" msprop:Generator_UserColumnName="PromotionGroup" msprop:Generator_ColumnVarNameInTable="columnPromotionGroup" msprop:Generator_ColumnPropNameInRow="PromotionGroup" msprop:Generator_ColumnPropNameInTable="PromotionGroupColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CampaignId" msprop:Generator_UserColumnName="CampaignId" msprop:Generator_ColumnVarNameInTable="columnCampaignId" msprop:Generator_ColumnPropNameInRow="CampaignId" msprop:Generator_ColumnPropNameInTable="CampaignIdColumn" type="xs:int" />
+              <xs:element name="ExclusivityType" msprop:Generator_UserColumnName="ExclusivityType" msprop:Generator_ColumnVarNameInTable="columnExclusivityType" msprop:Generator_ColumnPropNameInRow="ExclusivityType" msprop:Generator_ColumnPropNameInTable="ExclusivityTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Priority" msprop:Generator_UserColumnName="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" type="xs:int" />
+              <xs:element name="Created" msprop:Generator_UserColumnName="Created" msprop:Generator_ColumnVarNameInTable="columnCreated" msprop:Generator_ColumnPropNameInRow="Created" msprop:Generator_ColumnPropNameInTable="CreatedColumn" type="xs:dateTime" />
+              <xs:element name="Modified" msprop:Generator_UserColumnName="Modified" msprop:Generator_ColumnVarNameInTable="columnModified" msprop:Generator_ColumnPropNameInRow="Modified" msprop:Generator_ColumnPropNameInTable="ModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_UserColumnName="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PromotionType" msprop:Generator_UserColumnName="PromotionType" msprop:Generator_ColumnPropNameInRow="PromotionType" msprop:Generator_ColumnVarNameInTable="columnPromotionType" msprop:Generator_ColumnPropNameInTable="PromotionTypeColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PerOrderLimit" msprop:Generator_UserColumnName="PerOrderLimit" msprop:Generator_ColumnVarNameInTable="columnPerOrderLimit" msprop:Generator_ColumnPropNameInRow="PerOrderLimit" msprop:Generator_ColumnPropNameInTable="PerOrderLimitColumn" type="xs:int" default="0" />
+              <xs:element name="ApplicationLimit" msprop:Generator_UserColumnName="ApplicationLimit" msprop:Generator_ColumnVarNameInTable="columnApplicationLimit" msprop:Generator_ColumnPropNameInRow="ApplicationLimit" msprop:Generator_ColumnPropNameInTable="ApplicationLimitColumn" type="xs:int" default="0" />
+              <xs:element name="Params" msprop:Generator_UserColumnName="Params" msprop:Generator_ColumnVarNameInTable="columnParams" msprop:Generator_ColumnPropNameInRow="Params" msprop:Generator_ColumnPropNameInTable="ParamsColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CustomerLimit" msprop:Generator_UserColumnName="CustomerLimit" msprop:Generator_ColumnPropNameInRow="CustomerLimit" msprop:Generator_ColumnVarNameInTable="columnCustomerLimit" msprop:Generator_ColumnPropNameInTable="CustomerLimitColumn" type="xs:int" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PromotionCondition" msprop:Generator_UserTableName="PromotionCondition" msprop:Generator_RowDeletedName="PromotionConditionRowDeleted" msprop:Generator_RowChangedName="PromotionConditionRowChanged" msprop:Generator_RowClassName="PromotionConditionRow" msprop:Generator_RowChangingName="PromotionConditionRowChanging" msprop:Generator_RowEvArgName="PromotionConditionRowChangeEvent" msprop:Generator_RowEvHandlerName="PromotionConditionRowChangeEventHandler" msprop:Generator_TableClassName="PromotionConditionDataTable" msprop:Generator_TableVarName="tablePromotionCondition" msprop:Generator_RowDeletingName="PromotionConditionRowDeleting" msprop:Generator_TablePropName="PromotionCondition">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PromotionConditionId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="PromotionConditionId" msprop:Generator_ColumnVarNameInTable="columnPromotionConditionId" msprop:Generator_ColumnPropNameInRow="PromotionConditionId" msprop:Generator_ColumnPropNameInTable="PromotionConditionIdColumn" type="xs:int" />
+              <xs:element name="PromotionId" msprop:Generator_UserColumnName="PromotionId" msprop:Generator_ColumnVarNameInTable="columnPromotionId" msprop:Generator_ColumnPropNameInRow="PromotionId" msprop:Generator_ColumnPropNameInTable="PromotionIdColumn" type="xs:int" />
+              <xs:element name="ExpressionId" msprop:Generator_UserColumnName="ExpressionId" msprop:Generator_ColumnVarNameInTable="columnExpressionId" msprop:Generator_ColumnPropNameInRow="ExpressionId" msprop:Generator_ColumnPropNameInTable="ExpressionIdColumn" type="xs:int" />
+              <xs:element name="CatalogName" msprop:Generator_UserColumnName="CatalogName" msprop:Generator_ColumnVarNameInTable="columnCatalogName" msprop:Generator_ColumnPropNameInRow="CatalogName" msprop:Generator_ColumnPropNameInTable="CatalogNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CatalogNodeId" msprop:Generator_UserColumnName="CatalogNodeId" msprop:Generator_ColumnVarNameInTable="columnCatalogNodeId" msprop:Generator_ColumnPropNameInRow="CatalogNodeId" msprop:Generator_ColumnPropNameInTable="CatalogNodeIdColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CatalogEntryId" msprop:Generator_UserColumnName="CatalogEntryId" msprop:Generator_ColumnVarNameInTable="columnCatalogEntryId" msprop:Generator_ColumnPropNameInRow="CatalogEntryId" msprop:Generator_ColumnPropNameInTable="CatalogEntryIdColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PromotionLanguage" msprop:Generator_UserTableName="PromotionLanguage" msprop:Generator_RowDeletedName="PromotionLanguageRowDeleted" msprop:Generator_RowChangedName="PromotionLanguageRowChanged" msprop:Generator_RowClassName="PromotionLanguageRow" msprop:Generator_RowChangingName="PromotionLanguageRowChanging" msprop:Generator_RowEvArgName="PromotionLanguageRowChangeEvent" msprop:Generator_RowEvHandlerName="PromotionLanguageRowChangeEventHandler" msprop:Generator_TableClassName="PromotionLanguageDataTable" msprop:Generator_TableVarName="tablePromotionLanguage" msprop:Generator_RowDeletingName="PromotionLanguageRowDeleting" msprop:Generator_TablePropName="PromotionLanguage">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PromotionLanguageId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="PromotionLanguageId" msprop:Generator_ColumnVarNameInTable="columnPromotionLanguageId" msprop:Generator_ColumnPropNameInRow="PromotionLanguageId" msprop:Generator_ColumnPropNameInTable="PromotionLanguageIdColumn" type="xs:int" />
+              <xs:element name="DisplayName" msprop:Generator_UserColumnName="DisplayName" msprop:Generator_ColumnVarNameInTable="columnDisplayName" msprop:Generator_ColumnPropNameInRow="DisplayName" msprop:Generator_ColumnPropNameInTable="DisplayNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LanguageCode" msprop:Generator_UserColumnName="LanguageCode" msprop:Generator_ColumnVarNameInTable="columnLanguageCode" msprop:Generator_ColumnPropNameInRow="LanguageCode" msprop:Generator_ColumnPropNameInTable="LanguageCodeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PromotionId" msprop:Generator_UserColumnName="PromotionId" msprop:Generator_ColumnVarNameInTable="columnPromotionId" msprop:Generator_ColumnPropNameInRow="PromotionId" msprop:Generator_ColumnPropNameInTable="PromotionIdColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PromotionPolicy" msprop:Generator_UserTableName="PromotionPolicy" msprop:Generator_RowDeletedName="PromotionPolicyRowDeleted" msprop:Generator_RowChangedName="PromotionPolicyRowChanged" msprop:Generator_RowClassName="PromotionPolicyRow" msprop:Generator_RowChangingName="PromotionPolicyRowChanging" msprop:Generator_RowEvArgName="PromotionPolicyRowChangeEvent" msprop:Generator_RowEvHandlerName="PromotionPolicyRowChangeEventHandler" msprop:Generator_TableClassName="PromotionPolicyDataTable" msprop:Generator_TableVarName="tablePromotionPolicy" msprop:Generator_RowDeletingName="PromotionPolicyRowDeleting" msprop:Generator_TablePropName="PromotionPolicy">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PromotionPolicyId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="PromotionPolicyId" msprop:Generator_ColumnVarNameInTable="columnPromotionPolicyId" msprop:Generator_ColumnPropNameInRow="PromotionPolicyId" msprop:Generator_ColumnPropNameInTable="PromotionPolicyIdColumn" type="xs:int" />
+              <xs:element name="PromotionId" msprop:Generator_UserColumnName="PromotionId" msprop:Generator_ColumnVarNameInTable="columnPromotionId" msprop:Generator_ColumnPropNameInRow="PromotionId" msprop:Generator_ColumnPropNameInTable="PromotionIdColumn" type="xs:int" />
+              <xs:element name="PolicyId" msprop:Generator_UserColumnName="PolicyId" msprop:Generator_ColumnVarNameInTable="columnPolicyId" msprop:Generator_ColumnPropNameInRow="PolicyId" msprop:Generator_ColumnPropNameInTable="PolicyIdColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Promotion" />
+      <xs:field xpath="mstns:PromotionId" />
+    </xs:unique>
+    <xs:unique name="PromotionCondition_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PromotionCondition" />
+      <xs:field xpath="mstns:PromotionConditionId" />
+    </xs:unique>
+    <xs:unique name="PromotionLanguage_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PromotionLanguage" />
+      <xs:field xpath="mstns:PromotionLanguageId" />
+    </xs:unique>
+    <xs:unique name="PromotionPolicy_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PromotionPolicy" />
+      <xs:field xpath="mstns:PromotionPolicyId" />
+    </xs:unique>
+    <xs:keyref name="FK_ecf_mktg-PromotionPolicy_ecf_mktg-Promotion" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_ecf_mktg-PromotionPolicy_ecf_mktg-Promotion" msprop:rel_Generator_RelationVarName="_relationFK_ecf_mktg_PromotionPolicy_ecf_mktg_Promotion" msprop:rel_Generator_UserChildTable="PromotionPolicy" msprop:rel_Generator_UserParentTable="Promotion" msprop:rel_Generator_ParentPropName="PromotionRow" msprop:rel_Generator_ChildPropName="GetPromotionPolicyRows">
+      <xs:selector xpath=".//mstns:PromotionPolicy" />
+      <xs:field xpath="mstns:PromotionId" />
+    </xs:keyref>
+    <xs:keyref name="FK_ecf_mktg-PromotionLanguage_ecf_mktg-Promotion" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_ecf_mktg-PromotionLanguage_ecf_mktg-Promotion" msprop:rel_Generator_RelationVarName="_relationFK_ecf_mktg_PromotionLanguage_ecf_mktg_Promotion" msprop:rel_Generator_UserChildTable="PromotionLanguage" msprop:rel_Generator_UserParentTable="Promotion" msprop:rel_Generator_ParentPropName="PromotionRow" msprop:rel_Generator_ChildPropName="GetPromotionLanguageRows">
+      <xs:selector xpath=".//mstns:PromotionLanguage" />
+      <xs:field xpath="mstns:PromotionId" />
+    </xs:keyref>
+    <xs:keyref name="FK_ecf_mktg-PromotionCondition_ecf_mktg-Promotion" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_ecf_mktg-PromotionCondition_ecf_mktg-Promotion" msprop:rel_Generator_RelationVarName="_relationFK_ecf_mktg_PromotionCondition_ecf_mktg_Promotion" msprop:rel_Generator_UserChildTable="PromotionCondition" msprop:rel_Generator_UserParentTable="Promotion" msprop:rel_Generator_ParentPropName="PromotionRow" msprop:rel_Generator_ChildPropName="GetPromotionConditionRows">
+      <xs:selector xpath=".//mstns:PromotionCondition" />
+      <xs:field xpath="mstns:PromotionId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

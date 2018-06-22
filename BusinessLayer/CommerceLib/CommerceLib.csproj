@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4B057C4-75A1-4CCD-93ED-09F554D8660F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.Commerce</RootNamespace>
+    <AssemblyName>Mediachase.Commerce</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Components\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Design#CA2210;-Microsoft.Design#CA1020;-Microsoft.Design#CA1011;-Microsoft.Design#CA1031;-Microsoft.Design#CA1051;-Microsoft.Design#CA1008;-Microsoft.Design#CA1014;-Microsoft.Design#CA1017;-Microsoft.Design#CA1059;-Microsoft.Design#CA1057;-Microsoft.Design#CA1054;-Microsoft.Design#CA1056;-Microsoft.Design#CA1055;-Microsoft.Design#CA1024;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Performance#CA1815</CodeAnalysisRules>
+    <DocumentationFile>..\..\Components\Mediachase.Commerce.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Components\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821" />
+    <Reference Include="Lucene.Net, Version=2.3.1.2, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Mediachase.DataProvider, Version=5.0.0.27392, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mediachase.MetaDataPlus, Version=2.0.2484.24828, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\Mediachase.MetaDataPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Workflow.Activities, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Workflow.ComponentModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Workflow.Runtime, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Catalog\DataSources\CatalogItemsDataSource.cs" />
+    <Compile Include="Catalog\DataSources\CatalogSearchDataSource.cs" />
+    <Compile Include="Catalog\DataSources\CatalogIndexSearchDataSource.cs" />
+    <Compile Include="Catalog\Data\CatalogAssociationAdmin.cs" />
+    <Compile Include="Catalog\Data\CatalogLogAdmin.cs" />
+    <Compile Include="Catalog\Dto\CatalogAssociationDto.cs">
+      <DependentUpon>CatalogAssociationDto.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalog\Dto\CatalogAssociationDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogAssociationDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\Dto\CatalogLogDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogLogDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\Dto\CatalogTaxDto.Designer.cs">
+      <DependentUpon>CatalogTaxDto.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Catalog\Dto\WarehouseDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WarehouseDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\Events\CatalogEventArgs.cs" />
+    <Compile Include="Catalog\Events\AssociationEventArgs.cs" />
+    <Compile Include="Catalog\Events\RelationEventArgs.cs" />
+    <Compile Include="Catalog\Events\NodeEventArgs.cs" />
+    <Compile Include="Catalog\Events\EntryEventArgs.cs" />
+    <Compile Include="Catalog\EventContext.cs" />
+    <Compile Include="Catalog\Events\ICatalogEventListener.cs" />
+    <Compile Include="Catalog\Exceptions\CircularDependencyException.cs" />
+    <Compile Include="Catalog\ImportExport\CategoryMappingMetaClass.cs" />
+    <Compile Include="Catalog\ImportExport\EntryAssociationMappingMetaClass.cs" />
+    <Compile Include="Catalog\ImportExport\EntryRelationMappingMetaClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Catalog\ImportExport\PricingMappingMetaClass.cs" />
+    <Compile Include="Catalog\ImportExport\VariationMappingMetaClass.cs" />
+    <Compile Include="Catalog\ImportExport\EntryMappingMetaClass.cs" />
+    <Compile Include="Catalog\InventoryStatus.cs" />
+    <Compile Include="Catalog\Loggers\CatalogLogger.cs" />
+    <Compile Include="Catalog\Managers\CatalogLogManager.cs" />
+    <Compile Include="Catalog\Managers\CatalogTaxManager.cs" />
+    <Compile Include="Catalog\Managers\WarehouseManager.cs" />
+    <Compile Include="Catalog\Objects\Association.cs" />
+    <Compile Include="Catalog\Objects\Images.cs" />
+    <Compile Include="Catalog\Objects\RelationInfo.cs" />
+    <Compile Include="Catalog\Objects\ItemAsset.cs" />
+    <Compile Include="Catalog\Objects\EntryAssociation.cs" />
+    <Compile Include="Catalog\Objects\EntryAssociations.cs" />
+    <Compile Include="Catalog\Objects\Inventory.cs" />
+    <Compile Include="Core\DataSources\ApplicationLogDataSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\CommonSettingsAdmin.cs" />
+    <Compile Include="Core\Dto\LogDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Log\Appender\AppDatabaseAppender.cs" />
+    <Compile Include="Core\Managers\LogManager.cs" />
+    <Compile Include="Core\Managers\CommonSettingsManager.cs" />
+    <Compile Include="Core\Log\ApplicationLog.cs" />
+    <Compile Include="Core\Log\ApplicationLogOptions.cs" />
+    <Compile Include="Core\Log\ApplicationLogParameters.cs" />
+    <Compile Include="Engine\Caching\CacheEntries.cs" />
+    <Compile Include="Engine\Caching\CacheEntry.cs" />
+    <Compile Include="Engine\Caching\CacheHelper.cs" />
+    <Compile Include="Engine\Images\ImageProvider.cs" />
+    <Compile Include="Engine\Images\ImageProviderCollection.cs" />
+    <Compile Include="Engine\Images\ImageService.cs" />
+    <Compile Include="Engine\Images\ImageServiceSection.cs" />
+    <Compile Include="Engine\Images\Providers\HandlerImageProvider.cs" />
+    <Compile Include="Engine\Images\Providers\FileImageProvider.cs" />
+    <Compile Include="Engine\Template\Providers\XslTemplateProvider.cs" />
+    <Compile Include="Engine\Template\TemplateProvider.cs" />
+    <Compile Include="Engine\Template\TemplateProviderCollection.cs" />
+    <Compile Include="Engine\Template\TemplateProviderSection.cs" />
+    <Compile Include="Engine\Events\EventConfiguration.cs" />
+    <Compile Include="Catalog\Managers\CatalogAssociationManager.cs" />
+    <Compile Include="Catalog\Objects\ItemFiles.cs" />
+    <Compile Include="Catalog\Objects\SiteCatalog.cs" />
+    <Compile Include="Catalog\Objects\SiteCatalogs.cs" />
+    <Compile Include="Catalog\SaleType.cs" />
+    <Compile Include="Core\CoreConfiguration.cs" />
+    <Compile Include="Core\Data\AppAdmin.cs" />
+    <Compile Include="Core\Data\CoreDataHelper.cs" />
+    <Compile Include="Core\Dto\AppDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Core\AppContext.cs" />
+    <Compile Include="Catalog\CatalogResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\Data\CatalogAdmin.cs" />
+    <Compile Include="Catalog\Data\CatalogNodeAdmin.cs" />
+    <Compile Include="Catalog\Data\CatalogEntryAdmin.cs" />
+    <Compile Include="Catalog\Data\CatalogRelationAdmin.cs" />
+    <Compile Include="Catalog\Data\CurrencyAdmin.cs" />
+    <Compile Include="Catalog\CatalogCache.cs" />
+    <Compile Include="Catalog\CatalogConfiguration.cs" />
+    <Compile Include="Catalog\Dto\CatalogEntryDto.cs">
+      <DependentUpon>CatalogEntryDto.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalog\Dto\CatalogNodeDto.cs">
+      <DependentUpon>CatalogNodeDto.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalog\Dto\CurrencyDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CurrencyDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\Exceptions\CatalogException.cs" />
+    <Compile Include="Catalog\ICatalogSystem.cs" />
+    <Compile Include="Catalog\Impl\SiteContextImpl.cs" />
+    <Compile Include="Catalog\Managers\CatalogRelationManager.cs" />
+    <Compile Include="Catalog\Managers\CurrencyManager.cs" />
+    <Compile Include="Catalog\Managers\DtoToObjectMapper.cs" />
+    <Compile Include="Catalog\Dto\CatalogDto.cs">
+      <DependentUpon>CatalogDto.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalog\Dto\CatalogEntryDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogEntryDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\Dto\CatalogNodeDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogNodeDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\Dto\CatalogRelationDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogRelationDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\Managers\ObjectHelper.cs" />
+    <Compile Include="Catalog\Objects\Seo.cs" />
+    <Compile Include="Catalog\Objects\EntryRelationType.cs" />
+    <Compile Include="Catalog\Objects\EntryType.cs" />
+    <Compile Include="Catalog\Exceptions\InvalidObjectException.cs" />
+    <Compile Include="Catalog\Objects\ItemFile.cs" />
+    <Compile Include="Catalog\Managers\ResponseGroups.cs" />
+    <Compile Include="Catalog\Exceptions\AccessDeniedException.cs" />
+    <Compile Include="Catalog\Search\CatalogSearch.cs" />
+    <Compile Include="Catalog\Search\CatalogSearchOptions.cs" />
+    <Compile Include="Catalog\Search\CatalogSearchParameters.cs" />
+    <Compile Include="Catalog\Security\PermissionRecord.cs" />
+    <Compile Include="Catalog\CatalogContext.cs" />
+    <Compile Include="Catalog\Data\CatalogDataHelper.cs" />
+    <Compile Include="Catalog\Managers\CatalogEntryManager.cs" />
+    <Compile Include="Catalog\Managers\CatalogManager.cs" />
+    <Compile Include="Catalog\Managers\CatalogNodeManager.cs" />
+    <Compile Include="Catalog\Dto\CatalogDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\Objects\Image.cs" />
+    <Compile Include="Catalog\Objects\Entry.cs" />
+    <Compile Include="Catalog\Objects\ItemAttribute.cs" />
+    <Compile Include="Catalog\Objects\ItemAttributes.cs" />
+    <Compile Include="Catalog\Objects\Entries.cs" />
+    <Compile Include="Catalog\Objects\ItemType.cs" />
+    <Compile Include="Catalog\Objects\NonNegativeIntegerWithUnits.cs" />
+    <Compile Include="Catalog\Objects\SalePrice.cs" />
+    <Compile Include="Catalog\Objects\SalePrices.cs" />
+    <Compile Include="Catalog\Objects\Price.cs" />
+    <Compile Include="Catalog\Objects\CatalogNode.cs" />
+    <Compile Include="Catalog\Objects\CatalogNodes.cs" />
+    <Compile Include="Catalog\WebServices\CatalogWebService.cs" />
+    <Compile Include="Catalog\Impl\SiteContextProxyImpl.cs" />
+    <Compile Include="Core\Managers\AppManager.cs" />
+    <Compile Include="Engine\Events\FrameworkEventArgs.cs" />
+    <Compile Include="Engine\SchedulerService.cs" />
+    <Compile Include="Engine\Template\TemplateService.cs" />
+    <Compile Include="Engine\WorkflowManager.cs" />
+    <Compile Include="Engine\WorkflowResults.cs" />
+    <Compile Include="Engine\WorkflowStatus.cs" />
+    <Compile Include="Marketing\Data\PromotionUsageAdmin.cs" />
+    <Compile Include="Marketing\Dto\PromotionUsageDto.cs">
+      <DependentUpon>PromotionUsageDto.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Marketing\Dto\PromotionUsageDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PromotionUsageDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marketing\IPromotionEntryPopulate.cs" />
+    <Compile Include="Marketing\Objects\GiftPromotionReward.cs" />
+    <Compile Include="Marketing\Objects\PromotionResult.cs" />
+    <Compile Include="Marketing\Objects\PromotionReward.cs" />
+    <Compile Include="Marketing\Objects\PromotionItemRecord.cs" />
+    <Compile Include="Marketing\PromotionEntriesSet.cs" />
+    <Compile Include="Marketing\PromotionContext.cs" />
+    <Compile Include="Marketing\PromotionEntry.cs" />
+    <Compile Include="Marketing\PromotionUsageStatus.cs" />
+    <Compile Include="Orders\DataSources\OrderDataSource.cs" />
+    <Compile Include="Orders\Dto\JurisdictionDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JurisdictionDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\Dto\TaxDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaxDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\Exceptions\GatewayNotRespondingException.cs" />
+    <Compile Include="Orders\Exceptions\OrderException.cs" />
+    <Compile Include="Orders\Exceptions\PaymentException.cs" />
+    <Compile Include="Orders\ImportExport\OrdersImportExportException.cs" />
+    <Compile Include="Orders\ImportExport\TaxImportExport.cs" />
+    <Compile Include="Orders\Management\PaymentSuccessAuditEvent.cs" />
+    <Compile Include="Orders\Managers\JurisdictionManager.cs" />
+    <Compile Include="Orders\Managers\TaxManager.cs" />
+    <Compile Include="Orders\OrderCache.cs" />
+    <Compile Include="Orders\InvoicePayment.cs" />
+    <Compile Include="Orders\OrderStorageBase.cs" />
+    <Compile Include="Orders\OtherPayment.cs" />
+    <Compile Include="Orders\GiftCardPayment.cs" />
+    <Compile Include="Orders\CashCardPayment.cs" />
+    <Compile Include="Orders\IPaymentGateway.cs" />
+    <Compile Include="Orders\IShippingGateway.cs" />
+    <Compile Include="FrameworkContext.cs" />
+    <Compile Include="Catalog\ImportExport\CatalogImportExport.cs" />
+    <Compile Include="Marketing\ExpressionCategory.cs" />
+    <Compile Include="Marketing\ExclusionType.cs" />
+    <Compile Include="Marketing\Managers\SegmentManager.cs" />
+    <Compile Include="Marketing\Managers\PromotionManager.cs" />
+    <Compile Include="Marketing\Managers\PolicyManager.cs" />
+    <Compile Include="Marketing\Managers\ExpressionManager.cs" />
+    <Compile Include="Marketing\MarketingCache.cs" />
+    <Compile Include="Marketing\Data\CampaignAdmin.cs" />
+    <Compile Include="Marketing\Data\SegmentAdmin.cs" />
+    <Compile Include="Marketing\Data\PromotionAdmin.cs" />
+    <Compile Include="Marketing\Data\PolicyAdmin.cs" />
+    <Compile Include="Marketing\Data\ExpressionAdmin.cs" />
+    <Compile Include="Marketing\Data\MarketingDataHelper.cs" />
+    <Compile Include="Marketing\Dto\CampaignDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CampaignDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marketing\Dto\ExpressionDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpressionDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marketing\Dto\PolicyDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PolicyDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marketing\Dto\PromotionDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PromotionDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marketing\Dto\SegmentDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SegmentDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marketing\Managers\CampaignManager.cs" />
+    <Compile Include="Marketing\PromotionFilter.cs" />
+    <Compile Include="Marketing\PromotionGroup.cs" />
+    <Compile Include="Marketing\PromotionStatus.cs" />
+    <Compile Include="Marketing\PromotionType.cs" />
+    <Compile Include="Marketing\IExpressionValidator.cs" />
+    <Compile Include="Marketing\MarketingContext.cs" />
+    <Compile Include="Marketing\MarketingConfiguration.cs" />
+    <Compile Include="Marketing\Objects\PromotionItem.cs" />
+    <Compile Include="Marketing\Objects\PromotionItemCollection.cs" />
+    <Compile Include="Marketing\ValidationResult.cs" />
+    <Compile Include="Orders\Cart.cs" />
+    <Compile Include="Orders\Dto\CountryDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountryDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\Dto\OrderStatusDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderStatusDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\Dto\PaymentMethodDto.cs">
+      <DependentUpon>PaymentMethodDto.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Orders\Dto\ShippingMethodDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShippingMethodDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\LineItemDiscountCollection.cs" />
+    <Compile Include="Orders\Managers\CountryManager.cs" />
+    <Compile Include="Orders\Managers\OrderStatusManager.cs" />
+    <Compile Include="Orders\Managers\PaymentManager.cs" />
+    <Compile Include="Orders\Managers\ShippingManager.cs" />
+    <Compile Include="Orders\OrderDataHelper.cs" />
+    <Compile Include="Orders\OrderFormDiscountCollection.cs" />
+    <Compile Include="Orders\PaymentType.cs" />
+    <Compile Include="Orders\Search\OrderSearchOptions.cs" />
+    <Compile Include="Orders\Search\OrderSearchParameters.cs" />
+    <Compile Include="Orders\Search\OrderSearch.cs" />
+    <Compile Include="Orders\TaxValue.cs" />
+    <Compile Include="Profile\ProfileCache.cs" />
+    <Compile Include="Profile\DataSources\OrganizationSearchDataSource.cs" />
+    <Compile Include="Profile\DataSources\ProfileSearchDataSource.cs" />
+    <Compile Include="Core\Data\LogAdmin.cs" />
+    <Compile Include="Profile\Data\ProfileDataHelper.cs" />
+    <Compile Include="Profile\Data\PermissionAdmin.cs" />
+    <Compile Include="Profile\Dto\PermissionDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PermissionDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Events\AddressEventArgs.cs" />
+    <Compile Include="Profile\Events\PrincipalEventArgs.cs" />
+    <Compile Include="Profile\Events\IProfileEventListener.cs" />
+    <Compile Include="Profile\Loggers\ProfileLogger.cs" />
+    <Compile Include="Profile\Managers\PermissionManager.cs" />
+    <Compile Include="Profile\ProfileStorageBase.cs" />
+    <Compile Include="Profile\Providers\CustomerSqlRoleProvider.cs" />
+    <Compile Include="Profile\Providers\CustomerSqlMembershipProvider.cs" />
+    <Compile Include="Profile\Search\ProfileSearch.cs" />
+    <Compile Include="Profile\Search\ProfileSearchOptions.cs" />
+    <Compile Include="Profile\Search\ProfileSearchParameters.cs" />
+    <Compile Include="Core\Dto\SettingsDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SettingsDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Check.cs" />
+    <Compile Include="Shared\EncryptionManager.cs" />
+    <Compile Include="Shared\Helper.cs" />
+    <Compile Include="Shared\SearchParameters.cs" />
+    <Compile Include="Shared\SearchOptions.cs" />
+    <Compile Include="Orders\ShipmentDiscountCollection.cs" />
+    <Compile Include="Orders\LineItemDiscount.cs" />
+    <Compile Include="Orders\OrderFormDiscount.cs" />
+    <Compile Include="Orders\Discount.cs" />
+    <Compile Include="Orders\PaymentCollection.cs" />
+    <Compile Include="Orders\CreditCardPayment.cs" />
+    <Compile Include="Orders\Dto\PaymentMethodDto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentMethodDto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\ShipmentDiscount.cs" />
+    <Compile Include="Catalog\Security\CatalogScope.cs" />
+    <Compile Include="Catalog\Security\PermissionManager.cs" />
+    <Compile Include="Profile\Account.cs" />
+    <Compile Include="Profile\OrganizationCollection.cs" />
+    <Compile Include="Profile\AccountCollection.cs" />
+    <Compile Include="Profile\CustomerAddress.cs" />
+    <Compile Include="Profile\CustomerAddressCollection.cs" />
+    <Compile Include="Profile\CustomerProfile.cs" />
+    <Compile Include="Profile\Providers\CustomerSqlProfileProvider.cs" />
+    <Compile Include="Profile\Organization.cs" />
+    <Compile Include="Profile\Principal.cs" />
+    <Compile Include="Profile\ProfileDataHelper.cs" />
+    <Compile Include="Profile\ProfileConfiguration.cs" />
+    <Compile Include="Profile\ProfileContext.cs" />
+    <Compile Include="Profile\ProfileResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\CurrencyFormatter.cs" />
+    <Compile Include="Shared\ImageGenerator.cs" />
+    <Compile Include="Shared\ReadOnlyStringCollection.cs" />
+    <Compile Include="Shared\SecurityManager.cs" />
+    <Compile Include="Shared\XmlSerializerSectionHandler.cs" />
+    <Compile Include="Storage\DataOperation.cs" />
+    <Compile Include="Storage\MetaStorageCollectionBase.cs" />
+    <Compile Include="Storage\DataHelper.cs" />
+    <Compile Include="Storage\MetaHelper.cs" />
+    <Compile Include="Storage\MetaStorageBase.cs" />
+    <Compile Include="Storage\SimpleObjectCollectionBase.cs" />
+    <Compile Include="Orders\OrderAddress.cs" />
+    <Compile Include="Orders\OrderAddressCollection.cs" />
+    <Compile Include="Orders\OrderResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\Payment.cs" />
+    <Compile Include="Orders\PaymentPlan.cs" />
+    <Compile Include="Storage\StorageCollectionBase.cs" />
+    <Compile Include="Storage\IStorageObject.cs" />
+    <Compile Include="Shared\ZipHelper.cs" />
+    <Compile Include="WorkflowConfiguration.cs" />
+    <Compile Include="Orders\PurchaseOrder.cs" />
+    <Compile Include="Orders\OrderConfiguration.cs" />
+    <Compile Include="Orders\OrderContext.cs" />
+    <Compile Include="Orders\OrderGroup.cs" />
+    <Compile Include="Orders\OrderForm.cs" />
+    <Compile Include="Orders\OrderFormCollection.cs" />
+    <Compile Include="Orders\LineItem.cs" />
+    <Compile Include="Orders\LineItemCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClassInfo.cs" />
+    <Compile Include="Orders\Shipment.cs" />
+    <Compile Include="Orders\ShipmentCollection.cs" />
+    <Compile Include="Storage\SimpleObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Orders\OrderSystem.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Catalog\CatalogResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatalogResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders\OrderResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>OrderResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile\ProfileResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProfileResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Catalog\Objects\CatalogObjects.cd" />
+    <None Include="Catalog\Dto\CatalogDto.xsc">
+      <DependentUpon>CatalogDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CatalogDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Catalog\Dto\CatalogDto.xss">
+      <DependentUpon>CatalogDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogEntryDto.xsc">
+      <DependentUpon>CatalogEntryDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogEntryDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CatalogEntryDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Catalog\Dto\CatalogEntryDto.xss">
+      <DependentUpon>CatalogEntryDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogNodeDto.xsc">
+      <DependentUpon>CatalogNodeDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogNodeDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CatalogNodeDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Catalog\Dto\CatalogNodeDto.xss">
+      <DependentUpon>CatalogNodeDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogRelationDto.xsc">
+      <DependentUpon>CatalogRelationDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogRelationDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CatalogRelationDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Catalog\Dto\CatalogRelationDto.xss">
+      <DependentUpon>CatalogRelationDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Dto\PaymentMethodDto.xsc">
+      <DependentUpon>PaymentMethodDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Dto\PaymentMethodDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PaymentMethodDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Orders\Dto\PaymentMethodDto.xss">
+      <DependentUpon>PaymentMethodDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Dto\ShippingMethodDto.xsc">
+      <DependentUpon>ShippingMethodDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Dto\ShippingMethodDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShippingMethodDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Orders\Dto\ShippingMethodDto.xss">
+      <DependentUpon>ShippingMethodDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Resources\OrderSystem.mdp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Catalog\Resources\CatalogSystem.mdp" />
+    <None Include="Orders\Dto\CountryDto.xsc">
+      <DependentUpon>CountryDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Dto\CountryDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CountryDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Orders\Dto\CountryDto.xss">
+      <DependentUpon>CountryDto.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Catalog\CatalogSystem.cd" />
+    <None Include="Catalog\Dto\CatalogAssociationDto.xsc">
+      <DependentUpon>CatalogAssociationDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogAssociationDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CatalogAssociationDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Catalog\Dto\CatalogAssociationDto.xss">
+      <DependentUpon>CatalogAssociationDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogLogDto.xsc">
+      <DependentUpon>CatalogLogDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogLogDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CatalogLogDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Catalog\Dto\CatalogLogDto.xss">
+      <DependentUpon>CatalogLogDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CurrencyDto.xsc">
+      <DependentUpon>CurrencyDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CurrencyDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CurrencyDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Catalog\Dto\CurrencyDto.xss">
+      <DependentUpon>CurrencyDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogTaxDto.xsc">
+      <DependentUpon>CatalogTaxDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\CatalogTaxDto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CatalogTaxDto.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Catalog\Dto\CatalogTaxDto.xss">
+      <DependentUpon>CatalogTaxDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\WarehouseDto.xsc">
+      <DependentUpon>WarehouseDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\Dto\WarehouseDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WarehouseDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Catalog\Dto\WarehouseDto.xss">
+      <DependentUpon>WarehouseDto.xsd</DependentUpon>
+    </None>
+    <None Include="Catalog\ImportExport\Catalog.xsd" />
+    <None Include="Core\Dto\AppDto.xsc">
+      <DependentUpon>AppDto.xsd</DependentUpon>
+    </None>
+    <None Include="Core\Dto\AppDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Core\Dto\AppDto.xss">
+      <DependentUpon>AppDto.xsd</DependentUpon>
+    </None>
+    <None Include="Core\Dto\LogDto.xsc">
+      <DependentUpon>LogDto.xsd</DependentUpon>
+    </None>
+    <None Include="Core\Dto\LogDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Core\Dto\LogDto.xss">
+      <DependentUpon>LogDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\CampaignDto.xsc">
+      <DependentUpon>CampaignDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\CampaignDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CampaignDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Marketing\Dto\CampaignDto.xss">
+      <DependentUpon>CampaignDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\ExpressionDto.xsc">
+      <DependentUpon>ExpressionDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\ExpressionDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExpressionDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Marketing\Dto\ExpressionDto.xss">
+      <DependentUpon>ExpressionDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\PolicyDto.xsc">
+      <DependentUpon>PolicyDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\PolicyDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PolicyDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Marketing\Dto\PolicyDto.xss">
+      <DependentUpon>PolicyDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\PromotionDto.xsc">
+      <DependentUpon>PromotionDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\PromotionDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PromotionDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Marketing\Dto\PromotionDto.xss">
+      <DependentUpon>PromotionDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\PromotionUsageDto.xsc">
+      <DependentUpon>PromotionUsageDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\PromotionUsageDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PromotionUsageDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Marketing\Dto\PromotionUsageDto.xss">
+      <DependentUpon>PromotionUsageDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\SegmentDto.xsc">
+      <DependentUpon>SegmentDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Dto\SegmentDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SegmentDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Marketing\Dto\SegmentDto.xss">
+      <DependentUpon>SegmentDto.xsd</DependentUpon>
+    </None>
+    <None Include="Marketing\Marketing.cd" />
+    <None Include="Orders\Dto\JurisdictionDto.xsc">
+      <DependentUpon>JurisdictionDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Dto\JurisdictionDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JurisdictionDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Orders\Dto\JurisdictionDto.xss">
+      <DependentUpon>JurisdictionDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Dto\OrderStatusDto.xsc">
+      <DependentUpon>OrderStatusDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Dto\OrderStatusDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrderStatusDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Orders\Dto\OrderStatusDto.xss">
+      <DependentUpon>OrderStatusDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Dto\TaxDto.xsc">
+      <DependentUpon>TaxDto.xsd</DependentUpon>
+    </None>
+    <None Include="Orders\Dto\TaxDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaxDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Orders\Dto\TaxDto.xss">
+      <DependentUpon>TaxDto.xsd</DependentUpon>
+    </None>
+    <None Include="Profile\Dto\PermissionDto.xsc">
+      <DependentUpon>PermissionDto.xsd</DependentUpon>
+    </None>
+    <None Include="Profile\Dto\PermissionDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PermissionDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Profile\Dto\PermissionDto.xss">
+      <DependentUpon>PermissionDto.xsd</DependentUpon>
+    </None>
+    <None Include="Profile\Resources\ProfileSystem.mdp" />
+    <None Include="Core\Dto\SettingsDto.xsc">
+      <DependentUpon>SettingsDto.xsd</DependentUpon>
+    </None>
+    <None Include="Core\Dto\SettingsDto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SettingsDto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Core\Dto\SettingsDto.xss">
+      <DependentUpon>SettingsDto.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

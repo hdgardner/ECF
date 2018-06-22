@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CatalogRelationDto" targetNamespace="http://schemas.mediachase.com/ecf/50/CatalogRelationDto.xsd" xmlns:mstns="http://schemas.mediachase.com/ecf/50/CatalogRelationDto.xsd" xmlns="http://schemas.mediachase.com/ecf/50/CatalogRelationDto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CatalogRelationDto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CatalogRelationDto" msprop:Generator_DataSetName="CatalogRelationDto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CatalogNodeRelation" msprop:Generator_UserTableName="CatalogNodeRelation" msprop:Generator_RowDeletedName="CatalogNodeRelationRowDeleted" msprop:Generator_RowChangedName="CatalogNodeRelationRowChanged" msprop:Generator_RowClassName="CatalogNodeRelationRow" msprop:Generator_RowChangingName="CatalogNodeRelationRowChanging" msprop:Generator_RowEvArgName="CatalogNodeRelationRowChangeEvent" msprop:Generator_RowEvHandlerName="CatalogNodeRelationRowChangeEventHandler" msprop:Generator_TableClassName="CatalogNodeRelationDataTable" msprop:Generator_TableVarName="tableCatalogNodeRelation" msprop:Generator_RowDeletingName="CatalogNodeRelationRowDeleting" msprop:Generator_TablePropName="CatalogNodeRelation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CatalogId" msprop:Generator_UserColumnName="CatalogId" msprop:Generator_ColumnVarNameInTable="columnCatalogId" msprop:Generator_ColumnPropNameInRow="CatalogId" msprop:Generator_ColumnPropNameInTable="CatalogIdColumn" type="xs:int" />
+              <xs:element name="ParentNodeId" msprop:Generator_UserColumnName="ParentNodeId" msprop:Generator_ColumnVarNameInTable="columnParentNodeId" msprop:Generator_ColumnPropNameInRow="ParentNodeId" msprop:Generator_ColumnPropNameInTable="ParentNodeIdColumn" type="xs:int" />
+              <xs:element name="ChildNodeId" msprop:Generator_UserColumnName="ChildNodeId" msprop:Generator_ColumnVarNameInTable="columnChildNodeId" msprop:Generator_ColumnPropNameInRow="ChildNodeId" msprop:Generator_ColumnPropNameInTable="ChildNodeIdColumn" type="xs:int" />
+              <xs:element name="SortOrder" msprop:Generator_UserColumnName="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NodeEntryRelation" msprop:Generator_UserTableName="NodeEntryRelation" msprop:Generator_RowDeletedName="NodeEntryRelationRowDeleted" msprop:Generator_RowChangedName="NodeEntryRelationRowChanged" msprop:Generator_RowClassName="NodeEntryRelationRow" msprop:Generator_RowChangingName="NodeEntryRelationRowChanging" msprop:Generator_RowEvArgName="NodeEntryRelationRowChangeEvent" msprop:Generator_RowEvHandlerName="NodeEntryRelationRowChangeEventHandler" msprop:Generator_TableClassName="NodeEntryRelationDataTable" msprop:Generator_TableVarName="tableNodeEntryRelation" msprop:Generator_RowDeletingName="NodeEntryRelationRowDeleting" msprop:Generator_TablePropName="NodeEntryRelation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CatalogId" msprop:Generator_UserColumnName="CatalogId" msprop:Generator_ColumnPropNameInRow="CatalogId" msprop:Generator_ColumnVarNameInTable="columnCatalogId" msprop:Generator_ColumnPropNameInTable="CatalogIdColumn" type="xs:int" />
+              <xs:element name="CatalogEntryId" msprop:Generator_UserColumnName="CatalogEntryId" msprop:Generator_ColumnPropNameInRow="CatalogEntryId" msprop:Generator_ColumnVarNameInTable="columnCatalogEntryId" msprop:Generator_ColumnPropNameInTable="CatalogEntryIdColumn" type="xs:int" />
+              <xs:element name="CatalogNodeId" msprop:Generator_UserColumnName="CatalogNodeId" msprop:Generator_ColumnPropNameInRow="CatalogNodeId" msprop:Generator_ColumnVarNameInTable="columnCatalogNodeId" msprop:Generator_ColumnPropNameInTable="CatalogNodeIdColumn" type="xs:int" />
+              <xs:element name="SortOrder" msprop:Generator_UserColumnName="SortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CatalogEntryRelation" msprop:Generator_UserTableName="CatalogEntryRelation" msprop:Generator_RowDeletedName="CatalogEntryRelationRowDeleted" msprop:Generator_RowChangedName="CatalogEntryRelationRowChanged" msprop:Generator_RowClassName="CatalogEntryRelationRow" msprop:Generator_RowChangingName="CatalogEntryRelationRowChanging" msprop:Generator_RowEvArgName="CatalogEntryRelationRowChangeEvent" msprop:Generator_RowEvHandlerName="CatalogEntryRelationRowChangeEventHandler" msprop:Generator_TableClassName="CatalogEntryRelationDataTable" msprop:Generator_TableVarName="tableCatalogEntryRelation" msprop:Generator_RowDeletingName="CatalogEntryRelationRowDeleting" msprop:Generator_TablePropName="CatalogEntryRelation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ParentEntryId" msprop:Generator_UserColumnName="ParentEntryId" msprop:Generator_ColumnPropNameInRow="ParentEntryId" msprop:Generator_ColumnVarNameInTable="columnParentEntryId" msprop:Generator_ColumnPropNameInTable="ParentEntryIdColumn" type="xs:int" />
+              <xs:element name="ChildEntryId" msprop:Generator_UserColumnName="ChildEntryId" msprop:Generator_ColumnPropNameInRow="ChildEntryId" msprop:Generator_ColumnVarNameInTable="columnChildEntryId" msprop:Generator_ColumnPropNameInTable="ChildEntryIdColumn" type="xs:int" />
+              <xs:element name="RelationTypeId" msprop:Generator_UserColumnName="RelationTypeId" msprop:Generator_ColumnPropNameInRow="RelationTypeId" msprop:Generator_ColumnVarNameInTable="columnRelationTypeId" msprop:Generator_ColumnPropNameInTable="RelationTypeIdColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GroupName" msprop:Generator_UserColumnName="GroupName" msprop:Generator_ColumnPropNameInRow="GroupName" msprop:Generator_ColumnVarNameInTable="columnGroupName" msprop:Generator_ColumnPropNameInTable="GroupNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SortOrder" msprop:Generator_UserColumnName="SortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CatalogItemAsset" msprop:Generator_UserTableName="CatalogItemAsset" msprop:Generator_RowDeletedName="CatalogItemAssetRowDeleted" msprop:Generator_TableClassName="CatalogItemAssetDataTable" msprop:Generator_RowChangedName="CatalogItemAssetRowChanged" msprop:Generator_RowClassName="CatalogItemAssetRow" msprop:Generator_RowChangingName="CatalogItemAssetRowChanging" msprop:Generator_RowEvArgName="CatalogItemAssetRowChangeEvent" msprop:Generator_RowEvHandlerName="CatalogItemAssetRowChangeEventHandler" msprop:Generator_TablePropName="CatalogItemAsset" msprop:Generator_TableVarName="tableCatalogItemAsset" msprop:Generator_RowDeletingName="CatalogItemAssetRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CatalogNodeId" msprop:Generator_UserColumnName="CatalogNodeId" msprop:Generator_ColumnPropNameInRow="CatalogNodeId" msprop:Generator_ColumnVarNameInTable="columnCatalogNodeId" msprop:Generator_ColumnPropNameInTable="CatalogNodeIdColumn" type="xs:int" default="0" />
+              <xs:element name="CatalogEntryId" msprop:Generator_UserColumnName="CatalogEntryId" msprop:Generator_ColumnPropNameInRow="CatalogEntryId" msprop:Generator_ColumnVarNameInTable="columnCatalogEntryId" msprop:Generator_ColumnPropNameInTable="CatalogEntryIdColumn" type="xs:int" default="0" />
+              <xs:element name="AssetType" msprop:Generator_UserColumnName="AssetType" msprop:Generator_ColumnPropNameInRow="AssetType" msprop:Generator_ColumnVarNameInTable="columnAssetType" msprop:Generator_ColumnPropNameInTable="AssetTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AssetKey" msprop:Generator_UserColumnName="AssetKey" msprop:Generator_ColumnPropNameInRow="AssetKey" msprop:Generator_ColumnVarNameInTable="columnAssetKey" msprop:Generator_ColumnPropNameInTable="AssetKeyColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GroupName" msprop:Generator_UserColumnName="GroupName" msprop:Generator_ColumnPropNameInRow="GroupName" msprop:Generator_ColumnVarNameInTable="columnGroupName" msprop:Generator_ColumnPropNameInTable="GroupNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SortOrder" msprop:Generator_UserColumnName="SortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CatalogNodeRelation" />
+      <xs:field xpath="mstns:ChildNodeId" />
+      <xs:field xpath="mstns:ParentNodeId" />
+      <xs:field xpath="mstns:CatalogId" />
+    </xs:unique>
+    <xs:unique name="NodeEntryRelation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:NodeEntryRelation" />
+      <xs:field xpath="mstns:CatalogId" />
+      <xs:field xpath="mstns:CatalogNodeId" />
+      <xs:field xpath="mstns:CatalogEntryId" />
+    </xs:unique>
+    <xs:unique name="CatalogEntryRelation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CatalogEntryRelation" />
+      <xs:field xpath="mstns:ParentEntryId" />
+      <xs:field xpath="mstns:ChildEntryId" />
+      <xs:field xpath="mstns:RelationTypeId" />
+    </xs:unique>
+    <xs:unique name="CatalogItemAsset_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CatalogItemAsset" />
+      <xs:field xpath="mstns:CatalogNodeId" />
+      <xs:field xpath="mstns:CatalogEntryId" />
+      <xs:field xpath="mstns:AssetType" />
+      <xs:field xpath="mstns:AssetKey" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

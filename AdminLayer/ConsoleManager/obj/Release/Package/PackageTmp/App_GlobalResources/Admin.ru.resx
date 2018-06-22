@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Actions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Активен</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="AddCommand" xml:space="preserve">
+    <value>Создать новую комманду</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>Админ</value>
+  </data>
+  <data name="AdSystem" xml:space="preserve">
+    <value>Баннерная система</value>
+  </data>
+  <data name="After" xml:space="preserve">
+    <value>После</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Утвердить</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Доступно</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="BackToList" xml:space="preserve">
+    <value>К списку комманд</value>
+  </data>
+  <data name="Banners" xml:space="preserve">
+    <value>Баннеры</value>
+  </data>
+  <data name="BannerSystem" xml:space="preserve">
+    <value>Баннерная система</value>
+  </data>
+  <data name="Before" xml:space="preserve">
+    <value>Перед</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="CategoryAdd" xml:space="preserve">
+    <value>Создание категории</value>
+  </data>
+  <data name="CategoryEdit" xml:space="preserve">
+    <value>Редактирование категории</value>
+  </data>
+  <data name="CategoryList" xml:space="preserve">
+    <value>Список категорий</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Клиенты</value>
+  </data>
+  <data name="Command" xml:space="preserve">
+    <value>Команда</value>
+  </data>
+  <data name="CommandLink" xml:space="preserve">
+    <value>Ссылка</value>
+  </data>
+  <data name="CommandNavigation" xml:space="preserve">
+    <value>Навигация</value>
+  </data>
+  <data name="CommandNone" xml:space="preserve">
+    <value>Без команды</value>
+  </data>
+  <data name="CommandScript" xml:space="preserve">
+    <value>Скрипт</value>
+  </data>
+  <data name="CommandType" xml:space="preserve">
+    <value>Тип команды</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>Контракты</value>
+  </data>
+  <data name="ControlAdd" xml:space="preserve">
+    <value>Создание контрола</value>
+  </data>
+  <data name="ControlEdit" xml:space="preserve">
+    <value>Редактирование контрола</value>
+  </data>
+  <data name="ControlList" xml:space="preserve">
+    <value>Список контролов</value>
+  </data>
+  <data name="Controls" xml:space="preserve">
+    <value>Контролы</value>
+  </data>
+  <data name="CreateField" xml:space="preserve">
+    <value>Создание нового поля</value>
+  </data>
+  <data name="CreateFolder" xml:space="preserve">
+    <value>Создать папку</value>
+  </data>
+  <data name="CreateObject" xml:space="preserve">
+    <value>Создание объекта</value>
+  </data>
+  <data name="CreatePage" xml:space="preserve">
+    <value>Создать страницу</value>
+  </data>
+  <data name="CreationDate" xml:space="preserve">
+    <value>Дата сохдания</value>
+  </data>
+  <data name="CurrentPicture" xml:space="preserve">
+    <value>Текущая картинка</value>
+  </data>
+  <data name="DataAdapter" xml:space="preserve">
+    <value>Адаптер данных</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="DefaultPage" xml:space="preserve">
+    <value>Страница по умолчанию</value>
+  </data>
+  <data name="DefaultTemplate" xml:space="preserve">
+    <value>Шаблон по умолчанию</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DeleteItemMsg" xml:space="preserve">
+    <value>Удалить?</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Dictionary" xml:space="preserve">
+    <value>Справочник</value>
+  </data>
+  <data name="Drafts" xml:space="preserve">
+    <value>Черновики</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="EditCommand" xml:space="preserve">
+    <value>Редактировать комманду</value>
+  </data>
+  <data name="EditDictionary" xml:space="preserve">
+    <value>Редактирование справочника</value>
+  </data>
+  <data name="EditObject" xml:space="preserve">
+    <value>Редактирование объекта</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>Электронный адрес</value>
+  </data>
+  <data name="FieldList" xml:space="preserve">
+    <value>Список полей объекта </value>
+  </data>
+  <data name="FileLibrary" xml:space="preserve">
+    <value>Библиотека файлов</value>
+  </data>
+  <data name="ForApprove" xml:space="preserve">
+    <value>На рассмотрении</value>
+  </data>
+  <data name="FriendlyName" xml:space="preserve">
+    <value>Отображаемое название</value>
+  </data>
+  <data name="FullAccess" xml:space="preserve">
+    <value>Доступна для всех</value>
+  </data>
+  <data name="GlobalSettings" xml:space="preserve">
+    <value>Глобальные настройки</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>История</value>
+  </data>
+  <data name="Icon" xml:space="preserve">
+    <value>Иконка</value>
+  </data>
+  <data name="IconAdd" xml:space="preserve">
+    <value>Создание иконки</value>
+  </data>
+  <data name="IconEdit" xml:space="preserve">
+    <value>Редактирование иконки</value>
+  </data>
+  <data name="IconList" xml:space="preserve">
+    <value>Список иконок</value>
+  </data>
+  <data name="IconMsg1" xml:space="preserve">
+    <value>Максимальный размер изображения 22x22. </value>
+  </data>
+  <data name="IconMsg2" xml:space="preserve">
+    <value>Поддерживаемые формамты gif, png, jpeg, jpg. </value>
+  </data>
+  <data name="IsCreatePage" xml:space="preserve">
+    <value>Создать страницу для данного языка?</value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>Обязательный</value>
+  </data>
+  <data name="KeyWords" xml:space="preserve">
+    <value>Ключевые слова</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="LastVisit" xml:space="preserve">
+    <value>Последнее посещение</value>
+  </data>
+  <data name="Lines" xml:space="preserve">
+    <value>строк</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>Список</value>
+  </data>
+  <data name="ListBack" xml:space="preserve">
+    <value>Вернуться к списку</value>
+  </data>
+  <data name="LoginEnter" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="LoginFail" xml:space="preserve">
+    <value>Введены неверные данные</value>
+  </data>
+  <data name="LoginName" xml:space="preserve">
+    <value>Логин:</value>
+  </data>
+  <data name="LoginPass" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="LoginRemember" xml:space="preserve">
+    <value>Запомнить</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Вход в Mediachase CMS</value>
+  </data>
+  <data name="Logoff" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="MasterPage" xml:space="preserve">
+    <value>Мастер-шаблон</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="MenuItems" xml:space="preserve">
+    <value>Пункты меню</value>
+  </data>
+  <data name="MenuList" xml:space="preserve">
+    <value>Список меню</value>
+  </data>
+  <data name="Modules" xml:space="preserve">
+    <value>Модули</value>
+  </data>
+  <data name="MultChoice" xml:space="preserve">
+    <value>Разрешить выбор нескольких значений</value>
+  </data>
+  <data name="MyWork" xml:space="preserve">
+    <value>&lt;b&gt;&lt;u&gt;Моя работа&lt;/u&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="NavigationCmd" xml:space="preserve">
+    <value>Навигация для страницы</value>
+  </data>
+  <data name="NavPageAdd" xml:space="preserve">
+    <value>Новая навигация для страницы</value>
+  </data>
+  <data name="NavPageBack" xml:space="preserve">
+    <value>Вернуться к списку страниц</value>
+  </data>
+  <data name="NavPageEdit" xml:space="preserve">
+    <value>Редактирование навигации для страницы</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Nullable" xml:space="preserve">
+    <value>Разрешены пустые значения</value>
+  </data>
+  <data name="ObjectName" xml:space="preserve">
+    <value>Имя объекта</value>
+  </data>
+  <data name="Objects" xml:space="preserve">
+    <value>Объекты</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Старый пароль</value>
+  </data>
+  <data name="OpenInBrowser" xml:space="preserve">
+    <value>Открыть в браузере</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Страница</value>
+  </data>
+  <data name="PageSize" xml:space="preserve">
+    <value>Размер страницы</value>
+  </data>
+  <data name="Parameters" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="ParametersValue" xml:space="preserve">
+    <value>Значения параметров через ';'</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>Родитель</value>
+  </data>
+  <data name="ParentFolder" xml:space="preserve">
+    <value>Родительская папка</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Path" xml:space="preserve">
+    <value>Путь</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="Places" xml:space="preserve">
+    <value>Места</value>
+  </data>
+  <data name="Poll" xml:space="preserve">
+    <value>Голосования</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>Свойства</value>
+  </data>
+  <data name="PropertyPage" xml:space="preserve">
+    <value>Страница настроек</value>
+  </data>
+  <data name="Published" xml:space="preserve">
+    <value>Опубликована</value>
+  </data>
+  <data name="QueryString" xml:space="preserve">
+    <value>Обязательный QueryString</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Переместить</value>
+  </data>
+  <data name="RoleAdd" xml:space="preserve">
+    <value>Создание роли</value>
+  </data>
+  <data name="RoleEdit" xml:space="preserve">
+    <value>Редактирование роли</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Роли</value>
+  </data>
+  <data name="Rollback" xml:space="preserve">
+    <value>Откатить</value>
+  </data>
+  <data name="Rollbacked" xml:space="preserve">
+    <value>Отклоненные</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Сервисы</value>
+  </data>
+  <data name="Site" xml:space="preserve">
+    <value>Сайт</value>
+  </data>
+  <data name="SiteAddress" xml:space="preserve">
+    <value>Адрес сайта</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="SMTP" xml:space="preserve">
+    <value>SMTP</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+  <data name="StayOnPage" xml:space="preserve">
+    <value>Остаться на странице</value>
+  </data>
+  <data name="Structure" xml:space="preserve">
+    <value>Структура</value>
+  </data>
+  <data name="TargetFolder" xml:space="preserve">
+    <value>Папка назначения</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="TemplateCreate" xml:space="preserve">
+    <value>Создание шаблона</value>
+  </data>
+  <data name="TemplateEdit" xml:space="preserve">
+    <value>Редактирование шаблона</value>
+  </data>
+  <data name="TemplateList" xml:space="preserve">
+    <value>Список шаблонов</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="Tooltip" xml:space="preserve">
+    <value>Всплывающая подсказка</value>
+  </data>
+  <data name="Tree" xml:space="preserve">
+    <value>Дерево</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Загрузить</value>
+  </data>
+  <data name="Uploaded" xml:space="preserve">
+    <value>Загружен</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Пользователи</value>
+  </data>
+  <data name="UsersAdd" xml:space="preserve">
+    <value>Создание пользователя</value>
+  </data>
+  <data name="UsersEdit" xml:space="preserve">
+    <value>Редактирование пользователя</value>
+  </data>
+  <data name="UsersLeaveEmpty" xml:space="preserve">
+    <value>Оставьте это поле пустым если не хотите менять пароль</value>
+  </data>
+  <data name="UsersReturn" xml:space="preserve">
+    <value>Вернуться к списку пользователей</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Версия</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Просмотр</value>
+  </data>
+  <data name="ViewPage" xml:space="preserve">
+    <value>Страница для просмотра</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Вес</value>
+  </data>
+  <data name="WfAddChain" xml:space="preserve">
+    <value>Добавление цепочки</value>
+  </data>
+  <data name="WfAddState" xml:space="preserve">
+    <value>Добавить состояние</value>
+  </data>
+  <data name="WfBack" xml:space="preserve">
+    <value>Вернуться к списку цепочек</value>
+  </data>
+  <data name="WfBeforeState" xml:space="preserve">
+    <value>Перед состоянием</value>
+  </data>
+  <data name="WfCurrentPosition" xml:space="preserve">
+    <value>Текущее положение</value>
+  </data>
+  <data name="WfEdit" xml:space="preserve">
+    <value>Редактировать элементы цепочки</value>
+  </data>
+  <data name="WfEditChain" xml:space="preserve">
+    <value>Редактирование цепочки</value>
+  </data>
+  <data name="WfEditState" xml:space="preserve">
+    <value>Редактировать состояние</value>
+  </data>
+  <data name="WfLastState" xml:space="preserve">
+    <value>Последнее состояние</value>
+  </data>
+  <data name="WfList" xml:space="preserve">
+    <value>Список цепочек</value>
+  </data>
+  <data name="WfName" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="WfOrder" xml:space="preserve">
+    <value>Порядок</value>
+  </data>
+  <data name="WfStateList" xml:space="preserve">
+    <value>Список состояний</value>
+  </data>
+  <data name="Workflow" xml:space="preserve">
+    <value>Документооборот</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+</root>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SalesDataSet" targetNamespace="http://tempuri.org/SalesDataSet.xsd" xmlns:mstns="http://tempuri.org/SalesDataSet.xsd" xmlns="http://tempuri.org/SalesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=VM-SQL2005-A;Initial Catalog=ECF50_BETA;Persist Security Info=True;User ID=sa" IsAppSettingsProperty="false" Modifier="Assembly" Name="vm-sql2005-a.ECF50_BETA.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SalesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SalesDataSet" msprop:Generator_DataSetName="SalesDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SalesReport" msprop:Generator_UserTableName="SalesReport" msprop:Generator_RowDeletedName="SalesReportRowDeleted" msprop:Generator_RowChangedName="SalesReportRowChanged" msprop:Generator_RowClassName="SalesReportRow" msprop:Generator_RowChangingName="SalesReportRowChanging" msprop:Generator_RowEvArgName="SalesReportRowChangeEvent" msprop:Generator_RowEvHandlerName="SalesReportRowChangeEventHandler" msprop:Generator_TableClassName="SalesReportDataTable" msprop:Generator_TableVarName="tableSalesReport" msprop:Generator_RowDeletingName="SalesReportRowDeleting" msprop:Generator_TablePropName="SalesReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Period" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumberofOrders" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NumberofOrders" msprop:Generator_ColumnVarNameInTable="columnNumberofOrders" msprop:Generator_ColumnPropNameInRow="NumberofOrders" msprop:Generator_ColumnPropNameInTable="NumberofOrdersColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemsOrdered" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ItemsOrdered" msprop:Generator_ColumnVarNameInTable="columnItemsOrdered" msprop:Generator_ColumnPropNameInRow="ItemsOrdered" msprop:Generator_ColumnPropNameInTable="ItemsOrderedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SubTotal" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SubTotal" msprop:Generator_ColumnVarNameInTable="columnSubTotal" msprop:Generator_ColumnPropNameInRow="SubTotal" msprop:Generator_ColumnPropNameInTable="SubTotalColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Tax" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Tax" msprop:Generator_ColumnVarNameInTable="columnTax" msprop:Generator_ColumnPropNameInRow="Tax" msprop:Generator_ColumnPropNameInTable="TaxColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Shipping" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Shipping" msprop:Generator_ColumnVarNameInTable="columnShipping" msprop:Generator_ColumnPropNameInRow="Shipping" msprop:Generator_ColumnPropNameInTable="ShippingColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Discounts" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Discounts" msprop:Generator_ColumnVarNameInTable="columnDiscounts" msprop:Generator_ColumnPropNameInRow="Discounts" msprop:Generator_ColumnPropNameInTable="DiscountsColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Invoiced" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Invoiced" msprop:Generator_ColumnVarNameInTable="columnInvoiced" msprop:Generator_ColumnPropNameInRow="Invoiced" msprop:Generator_ColumnPropNameInTable="InvoicedColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ShippingReport" msprop:Generator_UserTableName="ShippingReport" msprop:Generator_RowDeletedName="ShippingReportRowDeleted" msprop:Generator_RowChangedName="ShippingReportRowChanged" msprop:Generator_RowClassName="ShippingReportRow" msprop:Generator_RowChangingName="ShippingReportRowChanging" msprop:Generator_RowEvArgName="ShippingReportRowChangeEvent" msprop:Generator_RowEvHandlerName="ShippingReportRowChangeEventHandler" msprop:Generator_TableClassName="ShippingReportDataTable" msprop:Generator_TableVarName="tableShippingReport" msprop:Generator_RowDeletingName="ShippingReportRowDeleting" msprop:Generator_TablePropName="ShippingReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Period" msprop:Generator_UserColumnName="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShippingMethod" msprop:Generator_UserColumnName="ShippingMethod" msprop:Generator_ColumnVarNameInTable="columnShippingMethod" msprop:Generator_ColumnPropNameInRow="ShippingMethod" msprop:Generator_ColumnPropNameInTable="ShippingMethodColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NumberOfOrders" msprop:Generator_UserColumnName="NumberOfOrders" msprop:Generator_ColumnVarNameInTable="columnNumberOfOrders" msprop:Generator_ColumnPropNameInRow="NumberOfOrders" msprop:Generator_ColumnPropNameInTable="NumberOfOrdersColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalShipping" msprop:Generator_UserColumnName="TotalShipping" msprop:Generator_ColumnVarNameInTable="columnTotalShipping" msprop:Generator_ColumnPropNameInRow="TotalShipping" msprop:Generator_ColumnPropNameInTable="TotalShippingColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,154 @@
+﻿/***************************************************/
+/* Container & common elements *********************/
+/************* Assorted containers *************/
+#RibbonContainer {
+	font-family:"Segoe UI","Trebuchet MS",Tahoma,Arial,Helvectica,sans-serif;
+	font-size:11px;
+	width:100%;
+	height:61px;
+	background-color:#bfdbff;
+	background-image:url("../Images/Background.png");
+	background-repeat:repeat-x;
+	display:block;
+	cursor:default;
+	margin:0px 0 0px 00px;
+}
+
+#ToolBarContainer {
+	width:100%;
+	height:92px;
+	background-image:url("../Images/Toolbar/Background.gif");
+	background-repeat:repeat-x;
+}
+
+#ToolBarLeft {
+	width:4px;
+	height:92px;
+	float:left;
+}
+
+#ToolBarMid {
+	width:100%;
+	padding-top:2px;
+	margin: 0 0 0 0px;	
+}
+
+#ToolBarRight {
+	width:5px;
+	height:92px;
+	background-image:url("../Images/ToolBar/Right.png");
+	background-repeat:no-repeat;
+	display: none;
+	float:right;
+}
+
+.ToolBarGroup {
+	height:85px;
+	float:left;
+	margin-right:1px;
+}
+
+.ToolBarGroupLeft {
+	width:4px;
+	height:85px;
+	background-image:url("../Images/ToolBar/GroupLeft.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+
+.Contents {
+	height:85px;
+	background-image:url("../Images/ToolBar/GroupBackground.png");
+	background-repeat:repeat-x;
+	float:left;
+}
+
+.ToolBarGroupRight {
+	width:4px;
+	height:85px;
+	background-image:url("../Images/ToolBar/GroupRight.png");
+	background-repeat:no-repeat;
+	float:left;
+}
+
+.Contents td.Group {
+	text-align:left !important;
+	height:69px !important;
+	padding-top:1px;
+}
+
+/* The basic ToolBar class *************************/
+.ToolBar { text-align:left !important; }
+.ToolBarItem { text-align:left !important;cursor:default; }
+
+
+/************* Ribbon TabStrip *************/
+#TabStripContainer {
+	width:auto;
+	height:23px;
+	margin: 5px 0px 0px 0px;
+	
+}
+
+.TabStrip {
+	color:#15428b;
+	height:23px;
+}
+
+.Tab {
+	height:23px;
+}
+
+.TabHover {
+	height:23px;
+	color:#15428b;
+	background-image:url("../Images/TabStrip/HoverBackground.png");
+	background-repeat:repeat-x;
+}
+
+.SelectedTab {
+	height:23px;
+	color:#15428b;
+	background-image:url("../Images/TabStrip/SelectedBackground.png");
+	background-repeat:repeat-x;
+}
+
+.SelectedTabHover {
+	height:23px;
+	background-image:url("../Images/TabStrip/SelectedHoverBackground.png");
+	background-repeat:repeat-x;
+}
+
+.MenuItem
+{
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  margin:1px;
+  cursor:default; 
+}
+
+
+.MenuItemHover 
+{
+  background-color:#B6BDD2;
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  border:solid 1px #0A246A; 
+  cursor:default; 
+}
+
+
+.MenuItem TR TD IMG,
+.MenuItemHover TR TD IMG
+{
+  padding-left:1px;
+}
+
+.MenuBreak
+{
+  background-image:url(images/menubreakbackground.gif);
+  width:100%;
+  height:1px;
+}

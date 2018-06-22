@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<slideshow randomDisplay='false'>
+	<image src='/Templates/NWTD/Swf/NV1.jpg' link='' inEffect='Slide Left' outEffect='Slide Left'>
+		<caption></caption>
+	</image>
+
+	<image src='/Templates/NWTD/Swf/UT10.jpg' link='' inEffect='Slide Left' outEffect='Slide Left'>
+		<caption></caption>
+	</image>
+	
+	<image src='/Templates/NWTD/Swf/NV8.jpg' link='' inEffect='Slide Left' outEffect='Slide Left'>
+		<caption></caption>
+	</image>
+
+	<image src='/Templates/NWTD/Swf/UT7.jpg' link='' inEffect='Slide Left' outEffect='Slide Left'>
+		<caption></caption>
+	</image>
+</slideshow>

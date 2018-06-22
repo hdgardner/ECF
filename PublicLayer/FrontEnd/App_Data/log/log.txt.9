@@ -1,0 +1,1044 @@
+2012-07-02 08:35:26,190 [2652] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntries(CatalogEntryDto dto, Entry parent, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntries(Int32[] catalogEntries, Boolean cacheResults, TimeSpan cacheTimeout, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Commerce.Catalog.Impl.CatalogContextImpl.GetCatalogEntries(Int32[] catalogEntries, Boolean cacheResults, TimeSpan cacheTimeout, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.WebUtility.Search.SearchFilterHelper.SearchEntries(CatalogEntrySearchCriteria criteria, Int32 startIndex, Int32 recordsToRetrieve, Int32& count, CatalogEntryResponseGroup responseGroup, Boolean cacheResults, TimeSpan cacheTimeout)
+   at Mediachase.Cms.Website.Templates.MSSD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 08:43:30,304 [2652] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntries(CatalogEntryDto dto, Entry parent, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntries(Int32[] catalogEntries, Boolean cacheResults, TimeSpan cacheTimeout, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Commerce.Catalog.Impl.CatalogContextImpl.GetCatalogEntries(Int32[] catalogEntries, Boolean cacheResults, TimeSpan cacheTimeout, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.WebUtility.Search.SearchFilterHelper.SearchEntries(CatalogEntrySearchCriteria criteria, Int32 startIndex, Int32 recordsToRetrieve, Int32& count, CatalogEntryResponseGroup responseGroup, Boolean cacheResults, TimeSpan cacheTimeout)
+   at Mediachase.Cms.Website.Templates.MSSD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 08:43:36,809 [2652] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 08:44:13,705 [2652] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:07:11,852 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:07:13,817 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:07:35,237 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:07:46,126 [2652] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:08:10,743 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:08:53,551 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:09:14,799 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:23:19,815 [2652] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:23:23,949 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:25:48,878 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:26:18,207 [2396] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:26:21,421 [2652] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:50:01,081 [804] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:50:08,819 [2816] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:50:25,028 [2816] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:50:48,273 [804] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:50:53,078 [804] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:50:54,357 [804] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:56:38,098 [2816] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:56:39,565 [804] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 09:57:22,294 [2816] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.AcceptChanges(MetaDataContext context)
+   at Mediachase.Commerce.Storage.MetaStorageBase.AcceptChanges(MetaDataContext context, Boolean saveSystem)
+   at Mediachase.Commerce.Profile.Principal.AcceptChanges()
+   at NWTD.Profile.set_ActiveCart(String value)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ManageCarts.lbGoToCart_Command(Object sender, CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 11:14:42,158 [412] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 11:19:23,734 [412] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 11:20:36,121 [2576] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ComponentModel.LicenseException: Failed to check the license.
+   at Mediachase.Licensing.CommerceLicense.CheckLicensing(Boolean useCache)
+   at Mediachase.Licensing.CommerceLicenseProvider.GetLicense(LicenseContext context, Type type, Object instance, Boolean allowExceptions)
+   at System.ComponentModel.LicenseManager.ValidateInternalRecursive(LicenseContext context, Type type, Object instance, Boolean allowExceptions, License& license, String& licenseKey)
+   at System.ComponentModel.LicenseManager.Validate(Type type, Object instance)
+   at Mediachase.MetaDataPlus.MetaObject.Load(MetaDataContext context, Int32 objectId, MetaClass type)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.GetMetaFieldValues(DataRow row, MetaClass metaClass, ItemAttributes& metaAttributes)
+   at Mediachase.Commerce.Catalog.Managers.ObjectHelper.CreateAttributes(ItemAttributes metaAttributes, DataRow row)
+   at Mediachase.Commerce.Catalog.Objects.Entry..ctor(CatalogEntryRow input)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.LoadEntry(CatalogEntryRow row, Boolean recursive, CatalogEntryResponseGroup responseGroup, StringCollection& entryList)
+   at Mediachase.Commerce.Catalog.Managers.CatalogEntryManager.GetCatalogEntry(String code, CatalogEntryResponseGroup responseGroup)
+   at Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.CartItemModule.BindFields()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-07-02 12:12:56,379 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 12:12:56,535 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 12:18:29,327 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 12:18:29,951 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 12:18:35,925 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 12:18:36,003 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 12:27:41,111 [3028] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 12:27:42,094 [3028] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 12:27:50,487 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 12:27:50,565 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 12:34:33,126 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 12:34:33,188 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 12:34:38,695 [3028] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 12:34:38,711 [3028] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 13:30:29,251 [772] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 13:30:31,107 [772] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 13:30:39,485 [772] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 13:30:39,516 [772] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 13:30:47,020 [772] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 13:30:47,035 [772] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 13:30:54,461 [772] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 13:30:54,477 [772] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 13:31:02,043 [772] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 13:31:02,059 [772] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 13:31:09,375 [772] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 13:31:09,453 [772] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 13:31:16,786 [772] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 13:31:16,817 [772] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-02 13:39:35,767 [772] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-02 13:39:37,483 [772] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-03 07:43:56,954 [1712] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-03 07:43:57,391 [1712] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-03 07:44:06,283 [1712] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-03 07:44:06,283 [1712] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-03 13:18:07,812 [2648] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-03 13:18:08,265 [2648] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-03 13:20:12,679 [2648] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-03 13:20:12,741 [2648] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-03 13:20:29,854 [2684] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-03 13:20:29,854 [2684] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-03 13:53:12,342 [2684] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-03 13:53:12,404 [2684] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-03 13:53:16,866 [2684] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-03 13:53:16,944 [2684] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-03 14:32:41,168 [764] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-03 14:32:41,667 [764] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 08:12:03,814 [2940] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 08:12:04,282 [2940] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 08:12:22,831 [2940] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 08:12:22,847 [2940] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 08:12:51,645 [1540] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 08:12:51,942 [1540] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 08:45:54,200 [2884] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 08:45:54,652 [2884] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 08:47:29,566 [2884] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 08:47:29,644 [2884] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 09:54:47,542 [1576] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 09:54:47,994 [1576] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 09:55:34,624 [1576] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 09:55:34,702 [1576] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 10:04:54,571 [420] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 10:04:54,634 [420] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 10:05:00,905 [420] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 10:05:00,921 [420] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 10:25:40,364 [420] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 10:25:40,427 [420] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 10:25:49,366 [1576] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 10:25:49,506 [1576] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 11:43:16,488 [2796] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 11:43:16,909 [2796] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 12:01:34,118 [1212] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 12:01:34,181 [1212] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 12:04:17,986 [2796] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 12:04:18,797 [2796] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 12:35:39,344 [2796] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 12:35:39,546 [2796] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-05 12:36:46,285 [1212] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-05 12:36:46,347 [1212] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-06 07:57:56,133 [2136] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-06 07:57:56,585 [2136] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-06 07:59:00,984 [2136] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-06 07:59:01,062 [2136] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-06 08:17:01,562 [2136] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-06 08:17:01,624 [2136] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-06 08:18:02,058 [872] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-06 08:18:02,229 [872] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-06 08:18:09,358 [2136] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-06 08:18:09,374 [2136] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-10 08:33:57,464 [2484] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-10 08:33:58,478 [2484] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-11 09:40:37,676 [2948] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-11 09:40:38,128 [2948] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-11 09:41:04,493 [2384] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-11 09:41:04,493 [2384] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-11 11:44:47,072 [2884] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-11 11:44:47,633 [2884] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-11 12:25:04,511 [2884] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-11 12:25:04,885 [2884] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-12 09:26:27,404 [2376] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-12 09:26:27,918 [2376] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-12 12:13:57,030 [1056] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-12 12:13:57,919 [1056] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-12 12:15:11,007 [2424] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-12 12:15:11,116 [2424] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-13 07:06:28,723 [1052] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-13 07:06:29,160 [1052] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-13 10:55:55,367 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-13 10:55:57,333 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-13 10:57:47,487 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-13 10:57:49,172 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-13 10:59:28,610 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-13 10:59:29,764 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-13 11:01:08,843 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-13 11:01:10,528 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-16 12:03:48,086 [1052] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-16 12:03:49,303 [1052] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-16 12:04:01,939 [876] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-16 12:04:01,955 [876] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-17 09:08:29,052 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-17 09:08:29,832 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-17 09:18:34,164 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-17 09:18:34,226 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-17 09:19:50,013 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-17 09:19:50,076 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-17 09:20:30,622 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-17 09:20:30,793 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-17 09:28:49,650 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-17 09:28:49,713 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-17 09:29:02,786 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-17 09:29:02,911 [1768] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-18 13:35:40,892 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-18 13:35:41,438 [3040] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-18 13:35:59,596 [2200] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-18 13:35:59,612 [2200] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-19 08:44:16,447 [2908] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-19 08:44:16,947 [2908] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-19 09:50:38,024 [1276] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-19 09:50:38,460 [1276] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-19 09:52:39,253 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-19 09:52:39,362 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-19 09:55:30,866 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-19 09:55:31,303 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-19 09:57:03,017 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-19 09:57:03,563 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-19 09:57:17,931 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-19 09:57:18,197 [2712] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-24 09:55:37,666 [2176] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-24 09:55:38,852 [2176] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-07-24 09:56:02,409 [2176] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-07-24 09:56:02,424 [2176] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-08-21 16:56:30,928 [3924] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Mediachase.Search.Extensions.AbstractSearchCriteria.Add(String field, ISearchFilterValue value)
+   at Mediachase.Cms.Website.Templates.NWTD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-08-21 16:57:50,828 [3924] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Mediachase.Search.Extensions.AbstractSearchCriteria.Add(String field, ISearchFilterValue value)
+   at Mediachase.Cms.Website.Templates.NWTD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-08-21 16:58:21,991 [3924] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Mediachase.Search.Extensions.AbstractSearchCriteria.Add(String field, ISearchFilterValue value)
+   at Mediachase.Cms.Website.Templates.NWTD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-08-21 17:01:57,525 [2928] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Mediachase.Search.Extensions.AbstractSearchCriteria.Add(String field, ISearchFilterValue value)
+   at Mediachase.Cms.Website.Templates.NWTD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-08-21 17:02:33,717 [2928] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Mediachase.Search.Extensions.AbstractSearchCriteria.Add(String field, ISearchFilterValue value)
+   at Mediachase.Cms.Website.Templates.NWTD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-08-21 17:05:37,775 [1984] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Mediachase.Search.Extensions.AbstractSearchCriteria.Add(String field, ISearchFilterValue value)
+   at Mediachase.Cms.Website.Templates.NWTD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-08-22 13:05:01,440 [2520] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Mediachase.Search.Extensions.AbstractSearchCriteria.Add(String field, ISearchFilterValue value)
+   at Mediachase.Cms.Website.Templates.NWTD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-08-22 16:27:31,950 [3508] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Mediachase.Search.Extensions.AbstractSearchCriteria.Add(String field, ISearchFilterValue value)
+   at Mediachase.Cms.Website.Templates.NWTD.Modules.BookSearchControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-08-23 10:11:21,044 [2200] DEBUG Mediachase.Commerce.Orders.Cart - Starting the workflow "CartValidate".
+2012-08-23 10:11:25,793 [2200] DEBUG Mediachase.Commerce.Orders.Cart - Workflow "CartValidate" finished.
+2012-08-28 16:38:25,070 [2068] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.Data.SqlClient.SqlException: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient....).
+2012-08-28 16:38:25,319 [2068] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Web.HttpException: The file '/Error.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at Mediachase.Cms.WebUtility.CmsUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at Mediachase.Cms.WebUtility.Commerce.CatalogUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2012-08-28 16:39:14,902 [2068] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.Data.SqlClient.SqlException: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient....).
+2012-08-28 16:39:14,933 [2068] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Web.HttpException: The file '/Error.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at Mediachase.Cms.WebUtility.CmsUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at Mediachase.Cms.WebUtility.Commerce.CatalogUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2012-08-28 16:42:01,610 [2068] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.Data.SqlClient.SqlException: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient....).
+2012-08-28 16:42:01,626 [2068] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Web.HttpException: The file '/Error.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at Mediachase.Cms.WebUtility.CmsUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at Mediachase.Cms.WebUtility.Commerce.CatalogUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2012-08-28 16:42:46,786 [2068] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.Data.SqlClient.SqlException: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient....).
+2012-08-28 16:42:46,802 [2068] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Web.HttpException: The file '/Error.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at Mediachase.Cms.WebUtility.CmsUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at Mediachase.Cms.WebUtility.Commerce.CatalogUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2012-08-28 16:43:00,298 [2068] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.Data.SqlClient.SqlException: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient....).
+2012-08-28 16:43:00,330 [2068] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Web.HttpException: The file '/Error.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at Mediachase.Cms.WebUtility.CmsUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at Mediachase.Cms.WebUtility.Commerce.CatalogUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2012-08-28 16:46:03,921 [640] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.Data.SqlClient.SqlException: The EXECUTE permission was denied on the object 'ufn_OrderShipStatus', database 'NWTD_DATAMART', schema 'dbo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient....).
+2012-08-28 16:46:04,015 [640] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Web.HttpException: The file '/Error.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at Mediachase.Cms.WebUtility.CmsUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at Mediachase.Cms.WebUtility.Commerce.CatalogUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2012-08-29 15:09:53,853 [1208] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 209.162.210.206:80
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+2012-08-29 15:09:53,994 [1208] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Web.HttpException: The file '/Error.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at Mediachase.Cms.WebUtility.CmsUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at Mediachase.Cms.WebUtility.Commerce.CatalogUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2012-08-30 09:47:07,855 [3424] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Data.ConstraintException: Failed to enable constraints. One or more rows contain values violating non-null, unique, or foreign-key constraints.
+   at System.Data.DataTable.EnableConstraints()
+   at System.Data.DataTable.set_EnforceConstraints(Boolean value)
+   at System.Data.DataTable.ReadXml(XmlReader reader, XmlReadMode mode, Boolean denyResolving)
+   at System.Data.DataTable.ReadXmlSerializable(XmlReader reader)
+   at System.Data.DataTable.System.Xml.Serialization.IXmlSerializable.ReadXml(XmlReader reader)
+   at System.Xml.Serialization.XmlSerializationReader.ReadSerializable(IXmlSerializable serializable, Boolean wrappedAny)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderIOrderInfoManager.Read35_SearchOrderHeadersResponse()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.ArrayOfObjectSerializer6.Deserialize(XmlSerializationReader reader)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+2012-08-30 09:47:08,120 [3424] ERROR Mediachase.Cms.WebUtility.CmsHttpModule - Front end encountered unhandled error.
+System.Web.HttpException: The file '/Error.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at Mediachase.Cms.WebUtility.CmsUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at Mediachase.Cms.WebUtility.Commerce.CatalogUriHandler.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

@@ -1,0 +1,61 @@
+Changes to the DB required to make our code work:
+
+Create a Book Meta Class, and add the necessary Meta fields:
+"Year"
+"ISBN10"
+"ISBN13"
+"Grade"
+"Publisher"
+"Type"
+
+This can be done through catalog import...
+
+
+Add a Meta Field to Line Items called "Gratis"
+This will not be stored in a catalog export...
+
+Add a Meta Fielt to the Principal->Organization Meta Class called "BusinessPartnerState"
+
+
+Cart
+
+Create a page called Cart/view.aspx and add our custom Cart Viewer control (the "My Shopping Carts" control will point here... Adding a new item to a cart will link to here too)
+Create a page called Cart/manage.aspx and add our custom Cart Manager control.
+
+Add to the user profile part of web.config file an "ActiveCart" key.
+Add to the SalePriceTypes of the ecf.catalog.config an entry for "StateGroup"
+
+mediachase.Search.config (in the Commerce Manager AND in the frontend site)
+- set search index directory
+- change indexer to user our custom indexer (this helps with Grade)
+
+searchFilters.config (in Public_Layer/FrontEnt/App_Data/)
+- ass all our custom search filters
+
+In the CMS, the appropriate templates must be added (e.g. the "Book" template)
+
+To Discuss with Team:
+
+- States/Districts/Schools data. Can we get a web service for this?
+- On the Registration page, why is it school OR district. Why not district->school
+- Active/Submitted shopping carts pages:
+	- Shouldn't the status of the "submitted" carts be "submitted"?
+	- We need a way from at least the "Active Carts" page to create/delete/rename carts. I suggest a footer row.
+	
+catalog.config in both the Admin Layer and the Public layer
+add the keys for each sale type.
+
+XML Files that must be merged on upgrade:
+
+AdminLayer\ConsoleManager\connectionStrings.config
+AdminLayer\ConsoleManager\ecf.catalog.config Price Groups
+AdminLayer\ConsoleManager\mediachase.search.config Search Index Location
+AdminLayer\ConsoleManager\Web.config Templates directory
+AdminLayer\ConsoleManager\library.Storage.config Uploads directory
+
+C:\Clients\NWTD\PublicLayer\FrontEnd\App_Data\searchFilters.config search facets
+PublicLayer\FrontEnd\connectionStrings.config
+PublicLayer\FrontEnd\ecf.catalog.config Price Groups
+PublicLayer\FrontEnd\library.Storage.config blob storage location
+PublicLayer\FrontEnd\mediachase.Search.config search index location
+PublicLayer\FrontEnd\Web.config WCF Services

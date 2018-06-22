@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<Block id="Block_1">
+		<Placeholder id="Block_1.Placeholder_1">
+			<add>
+				<Control id="Block_1.Placeholder_1.Control_1" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/MetaClassInfo.ascx" />
+			</add>
+		</Placeholder>
+	</Block>
+	<add>
+		<Block id="Block_2" name="Fields">
+			<Placeholder id="Block_2.Placeholder_1">
+				<Control id="Block_2.Placeholder_1.Control_1" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/MetaClassFields.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_2.Placeholder_2" />
+			<Placeholder id="Block_2.Placeholder_3" />
+			<Placeholder id="Block_2.Placeholder_4" />
+		</Block>
+    <Block id="Block_9" name="Forms">
+      <Placeholder id="Block_9.Placeholder_1">
+        <Control id="Block_9.Placeholder_1.Control_1" path="~/Apps/MetaDataBase/MetaUI/Modules/MetaClassViewControls/Forms.ascx" />
+      </Placeholder>
+      <Placeholder id="Block_9.Placeholder_2" />
+      <Placeholder id="Block_9.Placeholder_3" />
+      <Placeholder id="Block_9.Placeholder_4" />
+    </Block>
+    <!--<Block id="triggers" name="Triggers">
+			<Placeholder id="triggers.Placeholder_1">
+				<Control id="triggers.Placeholder_1.Control_1" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/Triggers.ascx" />
+			</Placeholder>
+			<Placeholder id="triggers.Placeholder_2" />
+			<Placeholder id="triggers.Placeholder_3" />
+			<Placeholder id="triggers.Placeholder_4" />
+		</Block>
+		<Block id="Block_6" name="Services">
+			<Placeholder id="Block_6.Placeholder_1">
+				<Control id="Block_6.Placeholder_1.Control_1" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/Services.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_6.Placeholder_2" />
+			<Placeholder id="Block_6.Placeholder_3" />
+			<Placeholder id="Block_6.Placeholder_4" />
+		</Block>-->
+	</add>
+</Layout>

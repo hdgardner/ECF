@@ -1,0 +1,88 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/App_Themes/Default/images/image1.jpg" />
+--%>
+
+
+<asp:Image runat="server" ImageUrl="~/App_Themes/Everything/images/et_zoomin.gif" SkinID="ZoomInImage" />
+
+<asp:ImageButton runat="server" ImageUrl="images/et_addtocart_sm.gif"  SkinId="AddToCartImageButtonSmall" />
+<asp:ImageButton runat="server" ImageUrl="images/et_addtocart_lg.gif"  SkinId="AddToCartImageButtonLarge" />
+
+<asp:GridView borderwidth="0px" CellSpacing="1" gridlines="Horizontal" cellpadding="3" runat="server" BackColor="White" >
+    <HeaderStyle CssClass="ecf-table-header"></HeaderStyle>
+	<RowStyle CssClass="ecf-table-item"></RowStyle>
+	<AlternatingRowStyle CssClass="ecf-table-item-alt"></AlternatingRowStyle>
+</asp:GridView>
+
+<asp:GridView SkinId="ShoppingCart" CssClass="ecf-table" CellSpacing="0" borderstyle="Solid" gridlines="Horizontal" cellpadding="5" runat="server" BackColor="White" >
+    <HeaderStyle CssClass="ecf-table-header"></HeaderStyle>
+	<RowStyle CssClass="ecf-table-item"></RowStyle>
+	<AlternatingRowStyle CssClass="ecf-table-item-alt"></AlternatingRowStyle>
+</asp:GridView>
+
+<asp:GridView SkinID="Associations" borderwidth="0px" CellSpacing="1" gridlines="Horizontal" cellpadding="3" runat="server" BackColor="White" >
+	<RowStyle CssClass="ecf-table-item"></RowStyle>
+</asp:GridView>
+
+
+<asp:GridView SkinId="ChargeOptions" borderwidth="0px" CellSpacing="1" gridlines="Horizontal" cellpadding="3" runat="server" BackColor="White" >
+    <HeaderStyle CssClass="ecf-table-header"></HeaderStyle>
+</asp:GridView>
+
+<asp:GridView SkinId="Downloads" borderwidth="0px" CellSpacing="1" gridlines="Horizontal" cellpadding="3" runat="server" BackColor="White" >
+    <HeaderStyle CssClass="ecf-download-header"></HeaderStyle>
+</asp:GridView>
+
+<asp:GridView SkinId="Versions" BorderColor="silver" CellSpacing="0" BorderWidth="1px" borderstyle="Solid" cellpadding="3" runat="server" BackColor="White" >
+    <HeaderStyle CssClass="ecf-version-header"></HeaderStyle>
+	<RowStyle CssClass="ecf-table-item"></RowStyle>
+	<AlternatingRowStyle CssClass="ecf-table-item-alt"></AlternatingRowStyle>
+</asp:GridView>
+
+<asp:Login runat="server" BorderStyle="None">
+    <LoginButtonStyle   ></LoginButtonStyle>
+    <HyperLinkStyle        Font-Size=".9em" Font-Names="Verdana" font-underline="true" ForeColor="#585880" BackColor="transparent"></HyperLinkStyle>
+    <CheckBoxStyle         CssClass="text" ForeColor="#000000" BorderColor="transparent" BackColor="transparent"></CheckBoxStyle>
+    <InstructionTextStyle  Font-Size=".9em" Font-Names="Verdana" ForeColor="#585880" font-italic="True" BackColor="transparent"></InstructionTextStyle>
+    <FailureTextStyle      Font-Size=".9em" Font-Names="Verdana" ForeColor="#585880"  BackColor="transparent" Font-Bold="True"></FailureTextStyle>
+    <TextBoxStyle          Width="300px"></TextBoxStyle>
+    <TitleTextStyle        Font-Size=".9em" Font-Names="Verdana" Font-Bold="True" ForeColor="#585880" BorderColor="#CCCCCC" BorderWidth="1pt" cssclass="form-header"></TitleTextStyle>
+    <LabelStyle        Width="150px" HorizontalAlign="Left" CssClass="text" ForeColor="#000000" BackColor="transparent"></LabelStyle>
+</asp:Login>
+
+<asp:CreateUserWizard runat="server" BorderStyle="None">
+    <HyperLinkStyle        Font-Size=".9em" Font-Names="Verdana" font-underline="true" ForeColor="#585880" BackColor="transparent"></HyperLinkStyle>
+    <InstructionTextStyle  Font-Size=".9em" Font-Names="Verdana" ForeColor="#585880" font-italic="True" BackColor="transparent"></InstructionTextStyle>
+    <TextBoxStyle          Width="300px"></TextBoxStyle>
+    <TitleTextStyle        Font-Size=".9em" Font-Names="Verdana" Font-Bold="True" ForeColor="#585880" BorderColor="#CCCCCC" BorderWidth="1pt" cssclass="form-header"></TitleTextStyle>
+    <LabelStyle        Width="150px" HorizontalAlign="Left" CssClass="text" ForeColor="#000000" BackColor="transparent"></LabelStyle>
+</asp:CreateUserWizard>
+
+<asp:PasswordRecovery runat="server" Width="400px" BorderStyle="None">
+    <HyperLinkStyle        Font-Size=".9em" Font-Names="Verdana" font-underline="true" ForeColor="#585880" BackColor="transparent"></HyperLinkStyle>
+    <InstructionTextStyle  Font-Size=".9em" Font-Names="Verdana" ForeColor="#585880" font-italic="True" BackColor="transparent"></InstructionTextStyle>
+    <TextBoxStyle          Width="300px"></TextBoxStyle>
+    <TitleTextStyle        Font-Size=".9em" Font-Names="Verdana" Font-Bold="True" ForeColor="#585880" BorderColor="#CCCCCC" BorderWidth="1pt" cssclass="form-header"></TitleTextStyle>
+    <LabelStyle        Width="150px" HorizontalAlign="Left" CssClass="text" ForeColor="#000000" BackColor="transparent"></LabelStyle>
+</asp:PasswordRecovery>
+
+<asp:ChangePassword runat="server" BorderStyle="None">
+    <HyperLinkStyle        Font-Size=".9em" Font-Names="Verdana" font-underline="true" ForeColor="#585880" BackColor="transparent"></HyperLinkStyle>
+    <InstructionTextStyle  Font-Size=".9em" Font-Names="Verdana" ForeColor="#585880" font-italic="True" BackColor="transparent"></InstructionTextStyle>
+    <FailureTextStyle      Font-Size=".9em" Font-Names="Verdana" ForeColor="#585880"  BackColor="transparent" Font-Bold="True"></FailureTextStyle>
+    <TextBoxStyle          Width="300px"></TextBoxStyle>
+    <TitleTextStyle        Font-Size=".9em" Font-Names="Verdana" Font-Bold="True" ForeColor="#585880" BorderColor="#CCCCCC" BorderWidth="1pt" cssclass="form-header"></TitleTextStyle>
+    <LabelStyle        Width="150px" HorizontalAlign="Left" CssClass="text" ForeColor="#000000" BackColor="transparent"></LabelStyle>
+</asp:ChangePassword>

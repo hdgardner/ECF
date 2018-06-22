@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OakTree.Web.UI</name>
+    </assembly>
+    <members>
+        <member name="T:OakTree.Web.UI.WebControls.SWFObject">
+            <summary>
+            Summary description for SWFObject
+            </summary>
+            
+        </member>
+        <member name="M:OakTree.Web.UI.ControlHelper.FindTargetControl(System.String,System.Web.UI.Control,System.Boolean)">
+            <summary>
+            Enables you to find a client control by id from the same page as the control passed
+            </summary>
+            <param name="controlID">The ID of the control to find.</param>
+            <param name="control">The control from which you are looking.</param>
+            <param name="searchNamingContainers">Whether to climb up the control tree and search.</param>
+            <returns></returns>
+        </member>
+        <member name="M:OakTree.Web.UI.ControlHelper.RegisterControlInClientScript(System.Web.UI.ClientScriptManager,System.Web.UI.Control)">
+            <summary>
+            Registers informationa bout a server-side control into the OakTree.Web.UI.WebControls JavaScript namespace
+            </summary>
+            <param name="ClientScriptManager"></param>
+            <param name="Control">The control to register</param>
+        </member>
+        <member name="M:OakTree.Web.UI.ControlHelper.RegisterControlInClientScript(System.Web.UI.ClientScriptManager,System.Web.UI.Control,System.String)">
+            <summary>
+            Registers informationa bout a server-side control into the OakTree.Web.UI.WebControls JavaScript namespace
+            </summary>
+            <param name="ClientScriptManager"></param>
+            <param name="Control">The control to register</param>
+            <param name="Data">Any additional data you'd like to provide to the client script. This should be in JSON format</param>
+        </member>
+        <member name="M:OakTree.Web.UI.ControlHelper.RegisterControlInClientScript(System.Web.UI.ClientScriptManager,System.Web.UI.Control,System.String,System.String)">
+            <summary>
+            Registers informationa bout a server-side control into the OakTree.Web.UI.WebControls JavaScript namespace
+            </summary>
+            <param name="ClientScriptManager"></param>
+            <param name="Control">The control to register</param>
+            <param name="ControlTypeName">The typename of the control</param>
+            <param name="Data">Any additional data you'd like to provide to the client script. This should be in JSON format</param>
+        </member>
+        <member name="M:OakTree.Web.UI.ControlHelper.ResolveUrl(System.String)">
+            <summary>
+            Returns a site relative HTTP path from a partial path starting out with a ~.
+            Same syntax that ASP.Net internally supports but this method can be used
+            outside of the Page framework.
+            
+            Works like Control.ResolveUrl including support for ~ syntax
+            but returns an absolute URL.
+            </summary>
+            <param name="originalUrl">Any Url including those starting with ~</param>
+            <returns>relative url</returns>
+        </member>
+        <member name="M:OakTree.Web.UI.ControlHelper.ResolveServerUrl(System.String,System.Boolean)">
+            <summary>
+            This method returns a fully qualified absolute server Url which includes
+            the protocol, server, port in addition to the server relative Url.
+            
+            Works like Control.ResolveUrl including support for ~ syntax
+            but returns an absolute URL.
+            </summary>
+            <param name="ServerUrl">Any Url, either App relative or fully qualified</param>
+            <param name="forceHttps">if true forces the url to use https</param>
+            <returns></returns>
+        </member>
+        <member name="M:OakTree.Web.UI.ControlHelper.ResolveServerUrl(System.String)">
+            <summary>
+            This method returns a fully qualified absolute server Url which includes
+            the protocol, server, port in addition to the server relative Url.
+            
+            It work like Page.ResolveUrl, but adds these to the beginning.
+            This method is useful for generating Urls for AJAX methods
+            </summary>
+            <param name="ServerUrl">Any Url, either App relative or fully qualified</param>
+            <returns></returns>
+        </member>
+        <member name="M:OakTree.Web.UI.WebControls.StateSelector.BindStates">
+            <summary>
+            Binds the states from the embeded xml data source to the state dropdown. Don't call this method before all properties have been set (e.d. don't call this from a setter)
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:OakTree.Web.UI.ControlResources" -->
+        <member name="M:OakTree.Web.UI.ControlResources.GetResourceStream(System.String)">
+            <summary>
+            Gets the resource by name
+            </summary>
+            <param name="ResourceName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OakTree.Web.UI.WebControls.PhoneNumberField">
+            <summary>
+            A field for collecting phone number data
+            </summary>
+        </member>
+    </members>
+</doc>

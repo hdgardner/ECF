@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3983BF32-EB5B-4B1A-AD8C-5CE3A26F8271}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.Cms.WebUtility</RootNamespace>
+    <AssemblyName>Mediachase.Cms.WebUtility</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Components\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Components\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e" />
+    <Reference Include="ComponentArt.Web.UI, Version=2007.1.1617.3, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.2.2, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Mediachase.MetaDataPlus, Version=2.0.2615.20933, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\Mediachase.MetaDataPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActionSet\Action.cs" />
+    <Compile Include="ActionSet\ActionSet.cs" />
+    <Compile Include="ActionSet\IActionSetProvider.cs" />
+    <Compile Include="ActionSet\Menu.cs" />
+    <Compile Include="ActionSet\MenuItem.cs" />
+    <Compile Include="ActionSet\XmlActionSetProvider.cs" />
+    <Compile Include="AntiRobotImage.cs" />
+    <Compile Include="BaseControls\BaseEntryTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseControls\BaseNodeTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Commerce\CatalogImageHandler.cs" />
+    <Compile Include="Commerce\MarketingHttpModule.cs" />
+    <Compile Include="Controls\ARWrapper.cs" />
+    <Compile Include="BaseControls\BaseList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseControls\BaseLocalizableControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseControls\BaseLocalizableMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CmsHttpModule.cs" />
+    <Compile Include="CmsUriHandler.cs" />
+    <Compile Include="CmsPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseControls\BaseStoreUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseControls\BaseView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Commerce\CatalogUriHandler.cs" />
+    <Compile Include="Commerce\PromotionHelper.cs" />
+    <Compile Include="Commerce\IPaymentOption.cs" />
+    <Compile Include="Commerce\CartHelper.cs" />
+    <Compile Include="Commerce\StoreHelper.cs" />
+    <Compile Include="CommonHelper.cs" />
+    <Compile Include="BaseControls\BaseTemplateUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\SearchFilterHelper.cs" />
+    <Compile Include="Search\SearchConfig.cs" />
+    <Compile Include="Search\SelectedFilter.cs" />
+    <Compile Include="UI\Controls\ButtonDropDownList.cs" />
+    <Compile Include="UI\Controls\ButtonTextBox.cs" />
+    <Compile Include="Controls\DataGridExtended.cs" />
+    <Compile Include="UI\Controls\CmsHyperLink.cs" />
+    <Compile Include="UI\Controls\CmsPagerField.cs" />
+    <Compile Include="DataAdapter\DataAdapterBase.cs" />
+    <Compile Include="ResourceHandler\FileSystemResourceProvider.cs" />
+    <Compile Include="ResourceHandler\IResourceProvider.cs" />
+    <Compile Include="ResourceHandler\ResourceHandler.cs" />
+    <Compile Include="Ssl\Collections\SecureWebPageDirectory.cs" />
+    <Compile Include="Ssl\Collections\SecureWebPageDirectoryCollection.cs" />
+    <Compile Include="Ssl\Collections\SecureWebPageFile.cs" />
+    <Compile Include="Ssl\Collections\SecureWebPageFileCollection.cs" />
+    <Compile Include="Ssl\Collections\SecureWebPageItem.cs" />
+    <Compile Include="Ssl\Collections\SecureWebPageItemCollection.cs" />
+    <Compile Include="Ssl\SecureWebPageSectionHandler.cs" />
+    <Compile Include="Ssl\SecureWebPageSettings.cs" />
+    <Compile Include="Ssl\SslFilter.cs" />
+    <Compile Include="Ssl\SSLHelper.cs" />
+    <Compile Include="UI\Controls\BaseErrorControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\BaseStaticWrapper.cs" />
+    <Compile Include="UI\Controls\CmsNumericPagerField.cs" />
+    <Compile Include="UI\Controls\CmsPlaceHolder.cs" />
+    <Compile Include="Controls\PluginPlaceHolder.cs" />
+    <Compile Include="Interfaces\IForumChangeControl.cs" />
+    <Compile Include="Interfaces\IMasterPage.cs" />
+    <Compile Include="Interfaces\IPropertyPage.cs" />
+    <Compile Include="Interfaces\IPublicTemplate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Controls\BaseStaticUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\CreditCardValidator.cs" />
+    <Compile Include="UI\Controls\GlobalRadioButton.cs" />
+    <Compile Include="UI\Controls\ICmsDataAdapter.cs" />
+    <Compile Include="UI\Controls\MetaImage.cs" />
+    <Compile Include="UI\Controls\PlaceHolderManager.cs" />
+    <Compile Include="UI\Controls\SysErrorControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\ThemedHyperLink.cs" />
+    <Compile Include="UI\Controls\ThemedImage.cs" />
+    <Compile Include="UI\Controls\ThemedImageButton.cs" />
+    <Compile Include="UI\ErrorManager.cs" />
+    <Compile Include="CatalogSiteMapProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessLayer\CommerceLib\CommerceLib.csproj">
+      <Project>{B4B057C4-75A1-4CCD-93ED-09F554D8660F}</Project>
+      <Name>CommerceLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessLayer\ContentSystem\CmsLibrary\CmsLibrary.csproj">
+      <Project>{0C869D5B-A6B1-4C7E-BEFF-E4563F5F40BA}</Project>
+      <Name>CmsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessLayer\Search\MediachaseSearch\MediachaseSearch.csproj">
+      <Project>{75017C03-AB25-47E4-9B54-B37BDFC65882}</Project>
+      <Name>MediachaseSearch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessLayer\Search\SearchExtensions\SearchExtensions.csproj">
+      <Project>{CA13D371-4A42-4D19-B351-D32D3B7DE97D}</Project>
+      <Name>SearchExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Button id="NewMetaField" text="{CatalogStrings:MetaField_New_Meta_Field}" imageUrl="~/App_Themes/Default/Images/metafield.gif" commandName="cmdCatalogNewMetaField" permissions="catalog:admin:meta:fld:mng:create"/>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdCatalogNewMetaField">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>javascript:CSManagementClient.ChangeView('Catalog', 'MetaField-New','fieldnamespace=Mediachase.Commerce.Catalog')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

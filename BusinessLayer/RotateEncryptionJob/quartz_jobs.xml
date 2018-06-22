@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quartz xmlns="http://quartznet.sourceforge.net/JobSchedulingData"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 				version="1.0"
+				overwrite-existing-jobs="true">
+
+	<job>
+		<job-detail>
+			<name>RotateEncryptionJob</name>
+			<group>eCommerceFramework</group>
+			<description>This job rotate symmetric keys.</description>
+			<job-type>Mediachase.Encryption.RotateEncryptionJob, Mediachase.RotateEncryptionJob</job-type>
+			<volatile>false</volatile>
+			<durable>true</durable>
+			<recover>false</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>RotateEncryptionJobCron</name>
+				<group>eCommerceFramework</group>
+				<job-name>RotateEncryptionJob</job-name>
+				<cron-expression>0 0 6 1 */3 ?</cron-expression>
+			</cron>
+		</trigger>
+	</job>
+
+</quartz>
+

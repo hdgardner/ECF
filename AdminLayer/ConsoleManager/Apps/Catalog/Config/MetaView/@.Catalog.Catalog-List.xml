@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="NewCategory" text="{CatalogStrings:Catalog_New_Catalog}" imageUrl="~/App_Themes/Main/Images/toolbar/newfolder.gif" commandName="cmdCatalogNewCatalog" permissions="catalog:ctlg:mng:create"/>
+			<Splitter id="ActionsSplitter" commandName="cmdBlankPermissions" permissions="catalog:ctlg:mng:import,catalog:ctlg:mng:export"/>
+			<Menu id="ImportExportSplitButton" text="{SharedStrings:Import_Export}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" commandName="cmdBlankPermissions" permissions="catalog:ctlg:mng:import,catalog:ctlg:mng:export">
+				<Button id="ImportCatalogCSV" text="{CatalogStrings:Catalog_CSV_Import_Catalog}" imageUrl="~/App_Themes/Main/Images/toolbar/import.png" commandName="cmdCatalogCSVImport" permissions="catalog:ctlg:mng:import"/>
+				<Button id="ImportCatalog" text="{CatalogStrings:Catalog_Import_Catalog}" imageUrl="~/App_Themes/Main/Images/toolbar/import.png" commandName="cmdCatalogImport" permissions="catalog:ctlg:mng:import"/>
+				<Button id="ExportCatalog" text="{CatalogStrings:Catalog_Export_Catalog}" imageUrl="~/App_Themes/Main/Images/toolbar/export.png" commandName="cmdCatalogExport" permissions="catalog:ctlg:mng:export"/>
+			</Menu>
+			<Splitter id="ActionsSplitter" commandName="cmdBlankPermissions" permissions="catalog:ctlg:mng:delete"/>
+			<Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" commandName="cmdCatalogMoreActionsCatalog" permissions="catalog:ctlg:mng:delete">
+				<Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdCatalogDeleteCatalog" permissions="catalog:ctlg:mng:delete"/>
+			</Menu>
+		</add>
+	</Toolbar>
+
+	<Commands>
+		<add>
+			<Command id="cmdBlankPermissions">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogNewCatalog">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.CreateCatalog()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogCSVImport">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.CSVImportCatalog()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogImport">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.ImportCatalog()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogExport">
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.ExportCatalog(params)</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+
+			<Command id="cmdCatalogMoreActionsCatalog">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+
+			<Command id="cmdCatalogDeleteCatalog">
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.CatalogDeleteHandler, Mediachase.ConsoleManager</Handler>
+				<UpdatePanelIds>panelMainListView</UpdatePanelIds>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+
+			<!-- Grid commands -->
+			<Command id="cmdCatalogGridEdit">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.EditCatalog(params)</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+      <Command id="cmdCatalogGridCatalogExport">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSCatalogClient.ExportCatalog2(params)</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+		</add>
+	</Commands>
+</MetaView>

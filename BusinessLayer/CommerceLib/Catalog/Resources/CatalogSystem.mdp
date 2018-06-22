@@ -1,0 +1,70 @@
+<MetaDataPlusBackup version="1.0">
+	<!-- System Meta Classes -->
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Catalog.System</Namespace>
+		<Name>CatalogNode</Name>
+		<FriendlyName>Catalog Node</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>CatalogNode</TableName>
+		<Description>Contains basic information about catalog nodes</Description>
+		<IsSystem>true</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>		
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Catalog.System</Namespace>
+		<Name>CatalogEntry</Name>
+		<FriendlyName>Catalog Entry</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>CatalogEntry</TableName>
+		<Description>CatalogEntry Class</Description>
+		<IsSystem>true</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+		<Attributes></Attributes>
+	</MetaClass>	
+	<!-- System Meta Classes -->
+
+	<!-- Extended Classes -->
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Catalog.User</Namespace>
+		<Name>CatalogNodeEx</Name>
+		<FriendlyName>Default Catalog Node</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>CatalogNode</ParentClass>
+		<TableName>CatalogNodeEx</TableName>
+		<Description>Catalog Node Extended Class</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>		
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Catalog.User</Namespace>
+		<Name>CatalogEntryEx</Name>
+		<FriendlyName>Default Catalog Entry</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>CatalogEntry</ParentClass>
+		<TableName>CatalogEntryEx</TableName>
+		<Description>Catalog Entry Extended Class</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>		
+	</MetaClass>
+
+</MetaDataPlusBackup>

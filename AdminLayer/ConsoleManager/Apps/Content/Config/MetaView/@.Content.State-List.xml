@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Button id="NewWorkflowState" text="{SharedStrings:Add_State}" imageUrl="~/App_Themes/Default/Images/new.gif" commandName="cmdContentNewWorkflowState" permissions="content:admin:workflow:mng:create"/>
+      <Splitter id="ActionsSplitter"/>
+      <Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" permissions="content:admin:workflow:mng:create">
+        <Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdContentWorkflowStateDelete"/>
+      </Menu>
+      <Button id="ViewWorkflowList" align="Right" text="{SharedStrings:Back_to_Workflow_List}" imageUrl="~/App_Themes/Default/Images/cancel.gif" commandName="cmdContentWorkflowList"/>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdContentNewWorkflowState">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSContentClient.NewWorkflowState()</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+
+      <Command id="cmdContentWorkflowStateDelete">
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+        <BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+        <ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Content.CommandHandlers.WorkflowStateDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdContentWorkflowList">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Content', 'Workflow-List')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+
+      <!-- Grid commands -->
+      <Command id="cmdContentGridWorkflowStateEdit">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSContentClient.EditWorkflowState(params)</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdContentGridWorkflowStateDelete">
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Content.CommandHandlers.WorkflowStateDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

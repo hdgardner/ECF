@@ -1,0 +1,7 @@
+How to bring up NWTD from scratch (ECF 5.0)
+
+1. Create the necessary ECF databases by running the install scripts as per MediaChase's instruccions
+2. Make sure the connectionstring.config files are set up, and pointing to the right DB
+3. Import the NWTD catalog data zip file through ECF's admin UI
+4. Import the NWTD metadata exports through ECF's admin UI
+5. Import the NWTD site export through ECF's admin UI

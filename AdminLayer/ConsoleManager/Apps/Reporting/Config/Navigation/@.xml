@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+  <Tabs id="mainTag">
+    <add>
+      <Tab id="navTabReporting" text="{ReportingStrings:Reporting}" order="130"  contentType="default" imageUrl="~/Apps/Reporting/images/module.png" configUrl="" enableHandler="">
+        <Link id="Sales" text="{ReportingStrings:Sales}" order="10" iconUrl="~/Apps/Reporting/images/report-group.png" iconCss="treeIcon">
+          <Link id="SalesReport" text="{ReportingStrings:Sales_Report}" order="10" iconUrl="~/Apps/Reporting/images/report.png" iconCss="treeIcon" command="SalesReportCommand"/>
+          <Link id="ShippingReport" text="{ReportingStrings:Shipping_Report}" order="20" iconUrl="~/Apps/Reporting/images/report.png" iconCss="treeIcon" command="ShippingReportCommand"/>
+          <!--
+				<Link id="TaxReport" text="{ReportingStrings:Tax_Report}" iconUrl="~/Apps/Reporting/images/report.png" iconCss="treeIcon"/>
+				-->
+        </Link>
+        <Link id="Products" text="{ReportingStrings:Products}" order="20" iconUrl="~/Apps/Reporting/images/report-group.png" iconCss="treeIcon">
+          <Link id="BestSellers" text="{ReportingStrings:Best_Sellers_Report}" order="10" iconUrl="~/Apps/Reporting/images/report.png" iconCss="treeIcon" command ="BestSellersReportCommand"/>
+          <!--
+				<Link id="MostViewed" text="{ReportingStrings:Most_Viewed_Report}" iconUrl="~/Apps/Reporting/images/report.png" iconCss="treeIcon"/>
+				-->
+          <Link id="LowStock" text="{ReportingStrings:Low_Stock_Report}" order="20" iconUrl="~/Apps/Reporting/images/report.png" iconCss="treeIcon" command="LowStockReportCommand"/>
+        </Link>
+        <!--
+			<Link id="Customers" text="{ReportingStrings:Customers}" iconUrl="~/Apps/Reporting/images/report-group.png" iconCss="treeIcon">
+				<Link id="NewAccounts" text="{ReportingStrings:New_Accounts_Report}" iconUrl="~/Apps/Reporting/images/report.png" iconCss="treeIcon" command ="NewAccountsReportCommand" />
+				<Link id="CustomerOrderTotals" text="{ReportingStrings:Customers_By_Orders_Total_Report}" iconUrl="~/Apps/Reporting/images/report.png" iconCss="treeIcon" command ="CustomerOrderTotalsReportCommand"/>
+				<Link id="CustomerNumOrders" text="{ReportingStrings:Customers_By_Number_Of_Orders_Report}" iconUrl="~/Apps/Reporting/images/report.png" iconCss="treeIcon" command ="CustomerNumOrdersReportCommand"/>
+			</Link>
+			-->
+      </Tab>
+    </add>
+  </Tabs>
+  <Commands>
+    <add>
+      <Command id="SalesReportCommand">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Reporting', 'Sales')</ClientScript>
+      </Command>
+      <Command id="LowStockReportCommand">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Reporting', 'LowStock')</ClientScript>
+      </Command>
+      <Command id="BestSellersReportCommand">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Reporting', 'BestSellers')</ClientScript>
+      </Command>
+      <Command id="ShippingReportCommand">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Reporting', 'Shipping')</ClientScript>
+      </Command>
+      <Command id="NewAccountsReportCommand">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Reporting', 'NewAccounts')</ClientScript>
+      </Command>
+      <Command id="CustomerOrderTotalsReportCommand">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Reporting', 'CustomerOrderTotals')</ClientScript>
+      </Command>
+      <Command id="CustomerNumOrdersReportCommand">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Reporting', 'CustomerNumOrders')</ClientScript>
+      </Command>
+    </add>
+  </Commands>
+</Navigation>

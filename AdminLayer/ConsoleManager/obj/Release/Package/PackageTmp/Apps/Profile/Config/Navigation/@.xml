@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+  <Tabs id="mainTag" sort="order" sortDataType="number" sortSubNodes="true">
+    <add>
+      <Tab id="navTabCustomerManagement" text="{ProfileStrings:Customer_Management}" order="40"  contentType="default" imageUrl="~/Apps/Profile/images/module.png" configUrl="" enableHandler="Mediachase.Commerce.Manager.Profile.CommandHandlers.ProfileTabEnableHandler, Mediachase.ConsoleManager" enableHandler2="Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager" permissions="profile:acc:mng:view,profile:org:mng:view,profile:roles:mng:view">
+        <Link id="Profile_EntrySearch" text="{ProfileStrings:Account_Search}" order="10" iconUrl="~/App_Themes/Default/images/search_magnifier.png" iconCss="treeIcon" command="cmdProfileAccountSearch" permissions="profile:acc:mng:view"/>
+        <Link id="Profile_Accounts" text="{ProfileStrings:Accounts}" order="20" iconUrl="~/Apps/Profile/images/Profile-Account-List.png" iconCss="treeIcon" command="cmdProfileAccounts" permissions="profile:acc:mng:view"/>
+        <Link id="Profile_Organizations" text="{ProfileStrings:Organizations}" order="30" iconUrl="~/Apps/Profile/images/Profile-Organization-List.png" iconCss="treeIcon" command="cmdProfileOrgaizations" permissions="profile:org:mng:view" />
+        <Link id="Profile_Roles" text="{ProfileStrings:Roles}" order="40" iconUrl="~/Apps/Profile/images/Profile-Roles-List.png" iconCss="treeIcon" command="cmdProfileRoles" permissions="profile:roles:mng:view" />
+      </Tab>
+    </add>  
+    <Tab id="navTabAdmin" create="True">
+      <add afterId="Core_System">
+        <Link id="Core_ProfileSystem" text="{ProfileStrings:Profile_System}" order="40" iconUrl="" iconCss="treeIcon" command="cmdProfileSystemLink">
+          <Link id="Core_ProfileMetaClasses" text="{SharedStrings:Meta_Classes}" order="10" iconUrl="" iconCss="" command="cmdProfileMetaClasses" permissions="profile:admin:meta:cls:mng:view"/>
+          <Link id="Core_ProfileMetaFields" text="{SharedStrings:Meta_Fields}" order="20" iconUrl="" iconCss="" command="cmdProfileMetaFields" permissions="profile:admin:meta:fld:mng:view"/>
+        </Link>
+      </add>
+    </Tab>
+  </Tabs>
+  <Commands>
+    <add>
+      <Command id="cmdProfileSystemLink">
+        <EnableHandler>Mediachase.Commerce.Manager.Profile.CommandHandlers.ProfileSchemaEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdProfileAccountSearch">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Profile', 'Account-SearchList', '')</ClientScript>
+      </Command>
+      <Command id="cmdProfileAccounts">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Profile', 'Account-List', '')</ClientScript>
+      </Command>
+      <Command id="cmdProfileOrgaizations">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Profile', 'Organization-List', '')</ClientScript>
+      </Command>
+      <Command id="cmdProfileRoles">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Profile', 'Roles-List', '')</ClientScript>
+      </Command>
+      <!-- Admin tab commands -->
+      <Command id="cmdProfileMetaClasses">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Profile', 'MetaClass-List', 'namespace=Mediachase.Commerce.Profile&amp;fieldnamespace=Mediachase.Commerce.Profile.System&amp;mfview=MetaField-Edit')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdProfileMetaFields">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Profile', 'MetaFields-List', 'fieldnamespace=Mediachase.Commerce.Profile.System')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</Navigation>

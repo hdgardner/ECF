@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="UpdateButton" text="{SharedStrings:Save_All}" imageUrl="~/App_Themes/Main/Images/toolbar/saveall.png" commandName="cmdCatalogBatchUpdate" permissions="catalog:ctlg:entries:mng:edit"/>
+		</add>
+	</Toolbar>
+
+	<Commands>
+		<add>
+			<Command id="cmdCatalogBatchUpdate">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.CatalogBatchUpdateHandler, Mediachase.ConsoleManager</Handler>
+				<UpdatePanelIds>panelMainListView</UpdatePanelIds>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

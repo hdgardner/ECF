@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0042d1ae-b07c-4fb0-b91d-03ff59606009" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://infomanager.nwtd.com/Infomanagerservice.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="8189c873-fc05-431c-b43b-19d6bdec09c0" SourceId="1" SourceUrl="http://infomanager.nwtd.com/Infomanagerservice.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="a84449ae-7500-4d33-b388-ce47e5ab3509" SourceId="1" SourceUrl="http://infomanager.nwtd.com/Infomanagerservice.svc/mex" />
+    <MetadataFile FileName="NWTD.IntegrationServices.Common.xsd" MetadataType="Schema" ID="ffc87789-f40b-4579-b4fa-8212b9d05c94" SourceId="1" SourceUrl="http://infomanager.nwtd.com/Infomanagerservice.svc/mex" />
+    <MetadataFile FileName="NWTD.IntegrationServices.BusinessObjects.xsd" MetadataType="Schema" ID="f3e2e466-f263-4a5e-91e6-b8456223033e" SourceId="1" SourceUrl="http://infomanager.nwtd.com/Infomanagerservice.svc/mex" />
+    <MetadataFile FileName="OrderHeaderDataSet.xsd" MetadataType="Schema" ID="163fd8ee-26f9-42b6-91b3-d02dd72edc63" SourceId="1" SourceUrl="http://infomanager.nwtd.com/Infomanagerservice.svc/mex" />
+    <MetadataFile FileName="NWTD.IntegrationServices.InfoManager.xsd" MetadataType="Schema" ID="fec99419-17e5-44f3-a062-8ae00834e3c5" SourceId="1" SourceUrl="http://infomanager.nwtd.com/Infomanagerservice.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="b549506b-f493-4dda-a00d-455049c8f79a" SourceId="1" SourceUrl="http://infomanager.nwtd.com/Infomanagerservice.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

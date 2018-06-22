@@ -1,0 +1,139 @@
+<MetaDataPlusBackup version="1.0">
+	<!-- System Meta Classes -->
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Profile.System</Namespace>
+		<Name>CustomerAddress</Name>
+		<FriendlyName>Customer Profile Address</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>CustomerAddress</TableName>
+		<Description>Contains basic customer address fields</Description>
+		<IsSystem>true</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+
+	</MetaClass>
+
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Profile.System</Namespace>
+		<Name>Principal</Name>
+		<FriendlyName>Principal</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>Principal</TableName>
+		<Description>Base class for principals in the system</Description>
+		<IsSystem>true</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+
+	<!-- User Meta Classes -->
+	<!-- Extended Classes -->
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Profile.System</Namespace>
+		<Name>CustomerAddressEx</Name>
+		<FriendlyName>Customer Address Extended</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>CustomerAddress</ParentClass>
+		<TableName>CustomerAddressEx</TableName>
+		<Description>Customer Address Extended Class</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Profile.System</Namespace>
+		<Name>Account</Name>
+		<FriendlyName>Account</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Principal</ParentClass>
+		<TableName>Principal_Account</TableName>
+		<Description>Account Class</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Profile.System</Namespace>
+		<Name>Organization</Name>
+		<FriendlyName>Organization</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Principal</ParentClass>
+		<TableName>Principal_Organization</TableName>
+		<Description>Organization Class</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+
+	<!-- Custom built in meta fields -->
+
+	<!-- Account -->
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Profile.System</Namespace>
+		<Name>ProviderKey</Name>
+		<FriendlyName>Provider Key</FriendlyName>
+		<Description>Specifies external membership provider key</Description>
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>True</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>		
+		<Tag></Tag>
+		<Attributes></Attributes>
+		<OwnerMetaClass>Account</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Profile.System</Namespace>
+		<Name>OrganizationId</Name>
+		<FriendlyName>Organization Id</FriendlyName>
+		<Description>Organization Id</Description>
+		<DataType>Int</DataType>
+		<Length>4</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag></Tag>
+		<Attributes></Attributes>
+		<OwnerMetaClass>Account</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Profile.System</Namespace>
+		<Name>CustomerGroup</Name>
+		<FriendlyName>Customer Group</FriendlyName>
+		<Description>Specifies group customer belongs to, used for tiered pricing</Description>
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>True</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag></Tag>
+		<Attributes></Attributes>
+		<OwnerMetaClass>Account</OwnerMetaClass>
+	</MetaField>
+</MetaDataPlusBackup>

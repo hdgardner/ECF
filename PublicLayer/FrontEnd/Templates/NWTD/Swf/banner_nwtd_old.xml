@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<slideshow randomDisplay='false'>
+	<image src='/Templates/NWTD/Swf/AK3.jpg' link='' inEffect='Slide Left' outEffect='Slide Left'>
+		<caption></caption>
+	</image>
+	
+	<image src='/Templates/NWTD/Swf/WA9.jpg' link='' inEffect='Slide Left' outEffect='Slide Left'>
+		<caption></caption>
+	</image>
+
+	<image src='/Templates/NWTD/Swf/OR9.jpg' link='' inEffect='Slide Left' outEffect='Slide Left'>
+		<caption></caption>
+	</image>
+	
+	<image src='/Templates/NWTD/Swf/AK12.jpg' link='' inEffect='Slide Left' outEffect='Slide Left'>
+		<caption></caption>
+	</image>
+	
+	<image src='/Templates/NWTD/Swf/OR8.jpg' link='' inEffect='Slide Left' outEffect='Slide Left'>
+		<caption></caption>
+	</image>
+	
+	<image src='/Templates/NWTD/Swf/WA21.jpg' link='' inEffect='Slide Left' outEffect='Slide Left'>
+		<caption></caption>
+	</image>
+</slideshow>

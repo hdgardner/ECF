@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LogDto" targetNamespace="http://tempuri.org/LogDto.xsd" xmlns:mstns="http://tempuri.org/LogDto.xsd" xmlns="http://tempuri.org/LogDto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LogDto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LogDto" msprop:Generator_DataSetName="LogDto" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ApplicationLog" msprop:Generator_UserTableName="ApplicationLog" msprop:Generator_RowDeletedName="ApplicationLogRowDeleted" msprop:Generator_RowChangedName="ApplicationLogRowChanged" msprop:Generator_RowClassName="ApplicationLogRow" msprop:Generator_RowChangingName="ApplicationLogRowChanging" msprop:Generator_RowEvArgName="ApplicationLogRowChangeEvent" msprop:Generator_RowEvHandlerName="ApplicationLogRowChangeEventHandler" msprop:Generator_TableClassName="ApplicationLogDataTable" msprop:Generator_TableVarName="tableApplicationLog" msprop:Generator_RowDeletingName="ApplicationLogRowDeleting" msprop:Generator_TablePropName="ApplicationLog">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LogId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="LogId" msprop:Generator_ColumnPropNameInRow="LogId" msprop:Generator_ColumnVarNameInTable="columnLogId" msprop:Generator_ColumnPropNameInTable="LogIdColumn" type="xs:int" />
+              <xs:element name="Operation" msprop:Generator_UserColumnName="Operation" msprop:Generator_ColumnPropNameInRow="Operation" msprop:Generator_ColumnVarNameInTable="columnOperation" msprop:Generator_ColumnPropNameInTable="OperationColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ObjectKey" msprop:Generator_UserColumnName="ObjectKey" msprop:Generator_ColumnPropNameInRow="ObjectKey" msprop:Generator_ColumnVarNameInTable="columnObjectKey" msprop:Generator_ColumnPropNameInTable="ObjectKeyColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ObjectType" msprop:Generator_UserColumnName="ObjectType" msprop:Generator_ColumnPropNameInRow="ObjectType" msprop:Generator_ColumnVarNameInTable="columnObjectType" msprop:Generator_ColumnPropNameInTable="ObjectTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Username" msprop:Generator_UserColumnName="Username" msprop:Generator_ColumnPropNameInRow="Username" msprop:Generator_ColumnVarNameInTable="columnUsername" msprop:Generator_ColumnPropNameInTable="UsernameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Created" msprop:Generator_UserColumnName="Created" msprop:Generator_ColumnPropNameInRow="Created" msprop:Generator_ColumnVarNameInTable="columnCreated" msprop:Generator_ColumnPropNameInTable="CreatedColumn" type="xs:dateTime" />
+              <xs:element name="Succeeded" msprop:Generator_UserColumnName="Succeeded" msprop:Generator_ColumnPropNameInRow="Succeeded" msprop:Generator_ColumnVarNameInTable="columnSucceeded" msprop:Generator_ColumnPropNameInTable="SucceededColumn" type="xs:boolean" />
+              <xs:element name="Notes" msprop:Generator_UserColumnName="Notes" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInTable="NotesColumn" msprop:Generator_ColumnPropNameInRow="Notes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApplicationId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ApplicationId" msprop:Generator_ColumnPropNameInRow="ApplicationId" msprop:Generator_ColumnVarNameInTable="columnApplicationId" msprop:Generator_ColumnPropNameInTable="ApplicationIdColumn" type="xs:string" />
+              <xs:element name="Source" msprop:Generator_UserColumnName="Source" msprop:Generator_ColumnVarNameInTable="columnSource" msprop:Generator_ColumnPropNameInRow="Source" msprop:Generator_ColumnPropNameInTable="SourceColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IPAddress" msprop:Generator_UserColumnName="IPAddress" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IPAddress" msprop:Generator_ColumnPropNameInTable="IPAddressColumn" msprop:Generator_ColumnVarNameInTable="columnIPAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ApplicationLog" />
+      <xs:field xpath="mstns:LogId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

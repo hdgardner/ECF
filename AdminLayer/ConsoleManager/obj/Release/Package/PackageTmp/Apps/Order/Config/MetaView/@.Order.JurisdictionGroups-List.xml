@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Button id="New" text="{SharedStrings:New}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdOrderNewJurisdictionGroup"/>
+      <Splitter id="ActionsSplitter"/>
+      <Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif">
+        <Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdOrderJurisdictionGroupDelete"/>
+      </Menu>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdOrderNewJurisdictionGroup">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSOrderClient.NewJurisdictionGroup()</ClientScript>
+      </Command>
+
+      <Command id="cmdOrderJurisdictionGroupDelete">
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+        <BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+        <ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Order.CommandHandlers.JurisdictionGroupDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+      </Command>
+
+      <!-- Grid commands -->
+      <Command id="cmdOrderGridJurisdictionGroupEdit">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSOrderClient.EditJurisdictionGroup2(params)</ClientScript>
+      </Command>
+
+      <Command id="cmdOrderGridJurisdictionGroupDelete">
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Order.CommandHandlers.JurisdictionGroupDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

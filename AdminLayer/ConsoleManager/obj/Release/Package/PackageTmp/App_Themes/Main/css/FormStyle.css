@@ -1,0 +1,169 @@
+﻿/*
+Name: Form Stylesheet
+Purpose: Used to control styles of various forms and form 
+		controls used in the Console Manager
+*/
+
+BUTTON.GRAD
+{
+	border-right: #7b9ebd 1px solid;
+	padding-right: 5px;
+	border-top: #7b9ebd 1px solid;
+	padding-left: 5px;
+	font-size: 11px;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+	border-left: #7b9ebd 1px solid;
+	cursor: hand;
+	border-bottom: #7b9ebd 1px solid;
+}
+
+#DataForm
+{
+	width: 100%;
+	height: 100%;
+	margin: 5px 5px 5px 5px;
+}
+
+#DataForm
+{
+	width: 100%;
+	color: #000000;
+	border: 0px solid #D7E5F2;
+	border-collapse: collapse;
+}
+
+.DataForm
+{
+	color: #000000;
+	border: 0px solid #D7E5F2;
+	border-collapse: collapse;
+}
+
+#DataForm td
+{
+	padding-left: 4px;
+}
+
+.DataFormContainer
+{
+	margin: 5px 5px 5px 5px;
+	width: 100%;
+	height: 100%;
+}
+
+.FormLabelCell
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	vertical-align: top;
+	color: #3670A7;	
+	background-color: transparent;
+}
+
+.FormSpacerCell
+{
+	border-top: 1px solid #D7E5F2;
+	padding-left: 4px;
+}
+
+.FormSectionCell
+{
+	padding: 4px;
+	color: black;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+
+.FormFieldDescription
+{
+	color: #3670A7;
+	font-style: italic;
+}
+
+.FormFieldCell
+{
+	color: #000000;
+	text-align: left;
+	margin-right: 0px;
+	padding-right: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.Scroll
+{
+	width: 800;
+	height: 100%;
+	overflow: visible;
+}
+
+
+.CalendarImage
+{
+	cursor: pointer;
+}
+
+.FormHighlight
+{
+	background-color: lemonchiffon;
+	z-index: 100;
+}
+
+.FormPopup
+{
+	z-index: 100;
+	position: absolute;
+}
+
+.Hidden
+{
+	visibility: hidden;
+}
+
+.SectionHeader
+{
+	color: #003399;
+	font-family: arial;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.SectionLine
+{
+	background-color: #2254b1;
+}
+
+.DisabledIcon
+{
+	/*filter: gray;*/
+	cursor: pointer;
+	opacity: 0.4;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+}
+
+.CommonContent
+{
+	background-color: White;
+}
+.CommonListHeaderLeftMost
+{
+	background-color: #DFDFDF;
+	font-weight: bold;
+	padding: 6px;
+	text-align: left;
+}
+
+.CommonListCellLeftMost
+{
+	font-family: Arial,Helvetica;
+	padding: 6px;
+}
+
+
+/* BUTTONS */
+
+.ButtonContainer
+{
+	margin: 5px 5px 5px 2px;
+	width: 90%;
+}

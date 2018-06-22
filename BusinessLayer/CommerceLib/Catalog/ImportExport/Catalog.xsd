@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="MetaDataSchema">
+		<xs:sequence>
+			<xs:element name="MetaDataPlusBackup">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="unbounded" name="MetaClass">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Namespace" type="xs:string" />
+									<xs:element name="Name" type="xs:string" />
+									<xs:element name="FriendlyName" type="xs:string" />
+									<xs:element name="MetaClassType" type="xs:string" />
+									<xs:element name="ParentClass" type="xs:string" />
+									<xs:element name="TableName" type="xs:string" />
+									<xs:element name="Description" type="xs:string" />
+									<xs:element name="IsSystem" type="xs:string" />
+									<xs:element name="IsAbstract" type="xs:string" />
+									<xs:element name="FieldListChangedSqlScript" />
+									<xs:element name="Tag" />
+									<xs:element name="Attributes" />
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element maxOccurs="unbounded" name="MetaField">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Namespace" type="xs:string" />
+									<xs:element name="Name" type="xs:string" />
+									<xs:element name="FriendlyName" type="xs:string" />
+									<xs:element name="Description" type="xs:string" />
+									<xs:element name="DataType" type="xs:string" />
+									<xs:element name="Length" type="xs:unsignedShort" />
+									<xs:element name="AllowNulls" type="xs:string" />
+									<xs:element name="SaveHistory" type="xs:string" />
+									<xs:element name="AllowSearch" type="xs:string" />
+									<xs:element name="MultiLanguageValue" type="xs:string" />
+									<xs:element name="IsSystem" type="xs:string" />
+									<xs:element name="Tag" />
+									<xs:element name="Attributes">
+										<xs:complexType>
+											<xs:sequence minOccurs="0">
+												<xs:element maxOccurs="unbounded" name="Attribute">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="Key" type="xs:string" />
+															<xs:element name="Value" type="xs:string" />
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element maxOccurs="unbounded" name="OwnerMetaClass" type="xs:string" />
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="version" type="xs:decimal" use="required" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Package">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string" />
+			<xs:element name="Description" />
+			<xs:element name="Width" type="xs:unsignedByte" />
+			<xs:element name="Length" type="xs:unsignedByte" />
+			<xs:element name="Height" type="xs:unsignedByte" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Warehouse">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string" />
+			<xs:element name="IsActive" type="xs:string" />
+			<xs:element name="IsPrimary" type="xs:string" />
+			<xs:element name="SortOrder" type="xs:unsignedByte" />
+			<xs:element name="Code" type="xs:string" />
+			<xs:element name="FirstName" />
+			<xs:element name="LastName" />
+			<xs:element name="Organization" />
+			<xs:element name="Line1" />
+			<xs:element name="Line2" />
+			<xs:element name="City" />
+			<xs:element name="State" />
+			<xs:element name="CountryCode" />
+			<xs:element name="CountryName" />
+			<xs:element name="PostalCode" />
+			<xs:element name="RegionCode" />
+			<xs:element name="RegionName" />
+			<xs:element name="DaytimePhoneNumber" />
+			<xs:element name="EveningPhoneNumber" />
+			<xs:element name="FaxNumber" />
+			<xs:element name="Email" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="AssociationType">
+		<xs:sequence>
+			<xs:element name="TypeId" type="xs:string" />
+			<xs:element name="Description" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="Catalogs">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="MetaDataScheme" type="MetaDataSchema" />
+				<xs:element name="Dictionaries">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Merchants" />
+							<xs:element name="Packages">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="Package" type="Package" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="TaxCategories" />
+							<xs:element name="Warehouses">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Warehouse" type="Warehouse"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="AssociationTypes">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="AssociationType" type="AssociationType"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Catalog">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Sites">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Site" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Nodes">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="Node">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Name" type="xs:string" />
+													<xs:element name="StartDate" type="xs:string" />
+													<xs:element name="EndDate" type="xs:string" />
+													<xs:element name="IsActive" type="xs:string" />
+													<xs:element name="SortOrder" type="xs:unsignedByte" />
+													<xs:element name="DisplayTemplate" type="xs:string" />
+													<xs:element name="Code" type="xs:string" />
+													<xs:element name="MetaData">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="MetaClass">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="Name" type="xs:string" />
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="MetaFields">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element maxOccurs="unbounded" name="MetaField">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="Name" type="xs:string" />
+																						<xs:element name="Type" type="xs:string" />
+																						<xs:element minOccurs="0" name="FileData">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="DiskFileName" type="xs:string" />
+																									<xs:element name="ContentType" type="xs:string" />
+																									<xs:element name="Name" type="xs:string" />
+																									<xs:element name="CreationTime" type="xs:string" />
+																								</xs:sequence>
+																								<xs:attribute name="language" type="xs:string" use="required" />
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element minOccurs="0" name="Data">
+																							<xs:complexType>
+																								<xs:attribute name="language" type="xs:string" use="required" />
+																								<xs:attribute name="value" type="xs:string" use="required" />
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="ParentNode" />
+													<xs:element name="SeoInfo">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="Seo">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="LanguageCode" type="xs:string" />
+																			<xs:element name="Uri" type="xs:string" />
+																			<xs:element name="Title" />
+																			<xs:element name="Description" />
+																			<xs:element name="Keywords" />
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Entries" />
+							<xs:element name="Relations" />
+							<xs:element name="Associations" />
+						</xs:sequence>
+						<xs:attribute name="name" type="xs:string" use="required" />
+						<xs:attribute name="lastmodified" type="xs:string" use="required" />
+						<xs:attribute name="startDate" type="xs:string" use="required" />
+						<xs:attribute name="endDate" type="xs:string" use="required" />
+						<xs:attribute name="defaultCurrency" type="xs:string" use="required" />
+						<xs:attribute name="weightBase" type="xs:string" use="required" />
+						<xs:attribute name="defaultLanguage" type="xs:string" use="required" />
+						<xs:attribute name="sortOrder" type="xs:unsignedByte" use="required" />
+						<xs:attribute name="isActive" type="xs:string" use="required" />
+						<xs:attribute name="languages" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="Version" type="xs:decimal" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

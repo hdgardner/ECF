@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mcgen xmlns="mediachase.codegen.config" template="Templates\ibn50mcp.aspx">
+	<BusinessObject>
+		<ConnectionString>Data source=.\SQLEXPRESS;Initial catalog=ECF50_Library;User ID=sa;Password=1</ConnectionString>
+		<MetaClass>Folder</MetaClass>
+		<Params>
+			<add key="Namespace" value="Mediachase.Ibn.Library"/>
+		</Params>
+	</BusinessObject>
+</mcgen>

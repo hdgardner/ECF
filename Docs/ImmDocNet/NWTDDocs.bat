@@ -1,0 +1,1 @@
+ImmDocNet.exe ..\..\PublicLayer\FrontEnd\bin\NWTD.xml ..\..\PublicLayer\FrontEnd\bin\NWTD.dll ..\..\PublicLayer\FrontEnd\bin\Mediachase.Cms.Website.xml  ..\..\PublicLayer\FrontEnd\bin\Mediachase.Cms.Website.dll ..\..\PublicLayer\FrontEnd\bin\OakTree.Web.UI.dll ..\..\PublicLayer\FrontEnd\bin\OakTree.Web.UI.xml -od:..\CodeDoc -ForceDelete 

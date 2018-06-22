@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LineItemPrice.ascx.cs" Inherits="Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Catalog.LineItemPrice" %>
+<asp:Literal ID="litPrice" runat="server" />

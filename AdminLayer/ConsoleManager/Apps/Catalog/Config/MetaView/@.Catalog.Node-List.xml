@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Menu id="ActionsSplitButton" text="{SharedStrings:Create_New}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdBlankPermissions" permissions="catalog:ctlg:nodes:mng:create,catalog:ctlg:entries:mng:create">
+				<Button id="NewCategory" text="{CatalogStrings:Catalog_New_Category_Node}" imageUrl="~/App_Themes/Default/Images/Icons/Node.gif" commandName="cmdCatalogNewCategory" permissions="catalog:ctlg:nodes:mng:create"/>
+				<Button id="NewProduct" text="{CatalogStrings:Catalog_New_Product}" imageUrl="~/App_Themes/Default/Images/Icons/Product.gif" commandName="cmdCatalogNewProduct" permissions="catalog:ctlg:entries:mng:create"/>
+				<Button id="NewSKU" text="{CatalogStrings:Catalog_New_Variation_Sku}" imageUrl="~/App_Themes/Default/Images/Icons/Variation.gif" commandName="cmdCatalogNewVariation" permissions="catalog:ctlg:entries:mng:create"/>
+				<Button id="NewPackage" text="{CatalogStrings:Catalog_New_Package}" imageUrl="~/App_Themes/Default/Images/Icons/Package.gif" commandName="cmdCatalogNewPackage" permissions="catalog:ctlg:entries:mng:create"/>
+				<Button id="NewBundle" text="{CatalogStrings:Catalog_New_Bundle}" imageUrl="~/App_Themes/Default/Images/Icons/Bundle.gif" commandName="cmdCatalogNewBundle" permissions="catalog:ctlg:entries:mng:create"/>
+				<Button id="NewDynamicPackage" text="{CatalogStrings:Catalog_New_Dynamic_Package}" imageUrl="~/App_Themes/Default/Images/Icons/DynamicPackage.gif" commandName="cmdCatalogNewDynamicPackage" permissions="catalog:ctlg:entries:mng:create"/>
+			</Menu>
+			<Splitter id="ActionsSplitter"/>
+			<Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" commandName="cmdCatalogMoreActions">
+				<!--
+				<Button id="EditSelected" text="Edit" imageUrl="~/App_Themes/Main/Images/toolbar/properties.gif" commandName="cmdCatalogItemEdit"/>
+				-->
+				<Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdCatalogDelete" permissions="catalog:ctlg:entries:mng:delete,catalog:ctlg:nodes:mng:delete"/>
+				<Button id="CloneSelected" text="{SharedStrings:Clone_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/copy.gif" commandName="cmdCatalogCopy" permissions="catalog:ctlg:entries:mng:edit" />
+				<Button id="MoveLinkToFolder" text="{CatalogStrings:Catalog_Move_Link_To_Folder}" imageUrl="~/App_Themes/Main/Images/toolbar/movetofolder.gif" commandName="cmdCatalogMoveToFolder" permissions="catalog:ctlg:entries:mng:edit"/>
+			</Menu>
+		</add>
+	</Toolbar>
+
+	<Commands>
+		<add>
+			<Command id="cmdBlankPermissions">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogItemEdit">
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.OpenItem2(params)</ClientScript>
+			</Command>			
+			<Command id="cmdCatalogNewCategory">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.CreateNode()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogNewProduct">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.CreateProductItem()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogNewVariation">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.CreateVariationItem()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogNewPackage">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.CreatePackageItem()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogNewBundle">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.CreateProductBundleItem()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogNewDynamicPackage">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.CreateDynPackageItem()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+
+			<Command id="cmdCatalogMoreActions">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+
+			<Command id="cmdCatalogDelete">
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.DeleteSelectedItemsHandler, Mediachase.ConsoleManager</Handler>
+				<UpdatePanelIds>panelMainListView</UpdatePanelIds>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogCopy">
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.CloneSelectedItemsHandler, Mediachase.ConsoleManager</Handler>
+				<UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+			<Command id="cmdCatalogMoveToFolder">
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<Url>~/Apps/Core/Controls/DialogPage.aspx?_a=Catalog&amp;_v=Catalog-MoveCopy</Url>
+				<Width>440</Width>
+				<Height>200</Height>
+				<PopupTitle>Move/Copy to Folder</PopupTitle>
+				<Drag>True</Drag>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+
+			<!-- Grid commands -->
+			<Command id="cmdCatalogGridItemEdit">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCatalogClient.OpenItem2(params)</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+
+		</add>
+	</Commands>
+</MetaView>

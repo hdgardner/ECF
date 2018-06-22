@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CampaignDto" targetNamespace="http://schemas.mediachase.com/ecf/50/CampaignDto.xsd" xmlns:mstns="http://schemas.mediachase.com/ecf/50/CampaignDto.xsd" xmlns="http://schemas.mediachase.com/ecf/50/CampaignDto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CampaignDto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CampaignDto" msprop:Generator_DataSetName="CampaignDto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Campaign" msprop:Generator_UserTableName="Campaign" msprop:Generator_RowDeletedName="CampaignRowDeleted" msprop:Generator_RowChangedName="CampaignRowChanged" msprop:Generator_RowClassName="CampaignRow" msprop:Generator_RowChangingName="CampaignRowChanging" msprop:Generator_RowEvArgName="CampaignRowChangeEvent" msprop:Generator_RowEvHandlerName="CampaignRowChangeEventHandler" msprop:Generator_TableClassName="CampaignDataTable" msprop:Generator_TableVarName="tableCampaign" msprop:Generator_RowDeletingName="CampaignRowDeleting" msprop:Generator_TablePropName="Campaign">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CampaignId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="CampaignId" msprop:Generator_ColumnVarNameInTable="columnCampaignId" msprop:Generator_ColumnPropNameInRow="CampaignId" msprop:Generator_ColumnPropNameInTable="CampaignIdColumn" type="xs:int" />
+              <xs:element name="ApplicationId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ApplicationId" msprop:Generator_ColumnVarNameInTable="columnApplicationId" msprop:Generator_ColumnPropNameInRow="ApplicationId" msprop:Generator_ColumnPropNameInTable="ApplicationIdColumn" type="xs:string" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Created" msprop:Generator_UserColumnName="Created" msprop:Generator_ColumnVarNameInTable="columnCreated" msprop:Generator_ColumnPropNameInRow="Created" msprop:Generator_ColumnPropNameInTable="CreatedColumn" type="xs:dateTime" />
+              <xs:element name="Exported" msprop:Generator_UserColumnName="Exported" msprop:Generator_ColumnVarNameInTable="columnExported" msprop:Generator_ColumnPropNameInRow="Exported" msprop:Generator_ColumnPropNameInTable="ExportedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Modified" msprop:Generator_UserColumnName="Modified" msprop:Generator_ColumnVarNameInTable="columnModified" msprop:Generator_ColumnPropNameInRow="Modified" msprop:Generator_ColumnPropNameInTable="ModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_UserColumnName="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsActive" msprop:Generator_UserColumnName="IsActive" msprop:Generator_ColumnVarNameInTable="columnIsActive" msprop:Generator_ColumnPropNameInRow="IsActive" msprop:Generator_ColumnPropNameInTable="IsActiveColumn" type="xs:boolean" />
+              <xs:element name="IsArchived" msprop:Generator_UserColumnName="IsArchived" msprop:Generator_ColumnVarNameInTable="columnIsArchived" msprop:Generator_ColumnPropNameInRow="IsArchived" msprop:Generator_ColumnPropNameInTable="IsArchivedColumn" type="xs:boolean" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CampaignSegment" msprop:Generator_UserTableName="CampaignSegment" msprop:Generator_RowDeletedName="CampaignSegmentRowDeleted" msprop:Generator_RowChangedName="CampaignSegmentRowChanged" msprop:Generator_RowClassName="CampaignSegmentRow" msprop:Generator_RowChangingName="CampaignSegmentRowChanging" msprop:Generator_RowEvArgName="CampaignSegmentRowChangeEvent" msprop:Generator_RowEvHandlerName="CampaignSegmentRowChangeEventHandler" msprop:Generator_TableClassName="CampaignSegmentDataTable" msprop:Generator_TableVarName="tableCampaignSegment" msprop:Generator_RowDeletingName="CampaignSegmentRowDeleting" msprop:Generator_TablePropName="CampaignSegment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CampaignSegmentId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="CampaignSegmentId" msprop:Generator_ColumnVarNameInTable="columnCampaignSegmentId" msprop:Generator_ColumnPropNameInRow="CampaignSegmentId" msprop:Generator_ColumnPropNameInTable="CampaignSegmentIdColumn" type="xs:int" />
+              <xs:element name="SegmentId" msprop:Generator_UserColumnName="SegmentId" msprop:Generator_ColumnVarNameInTable="columnSegmentId" msprop:Generator_ColumnPropNameInRow="SegmentId" msprop:Generator_ColumnPropNameInTable="SegmentIdColumn" type="xs:int" />
+              <xs:element name="CampaignId" msprop:Generator_UserColumnName="CampaignId" msprop:Generator_ColumnVarNameInTable="columnCampaignId" msprop:Generator_ColumnPropNameInRow="CampaignId" msprop:Generator_ColumnPropNameInTable="CampaignIdColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Campaign" />
+      <xs:field xpath="mstns:CampaignId" />
+    </xs:unique>
+    <xs:unique name="CampaignSegment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CampaignSegment" />
+      <xs:field xpath="mstns:CampaignSegmentId" />
+    </xs:unique>
+    <xs:keyref name="FK_ecf_mktg-CampaignSegment_ecf_mktg-Campaign" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_ecf_mktg-CampaignSegment_ecf_mktg-Campaign" msprop:rel_Generator_RelationVarName="_relationFK_ecf_mktg_CampaignSegment_ecf_mktg_Campaign" msprop:rel_Generator_UserChildTable="CampaignSegment" msprop:rel_Generator_UserParentTable="Campaign" msprop:rel_Generator_ParentPropName="CampaignRow" msprop:rel_Generator_ChildPropName="GetCampaignSegmentRows">
+      <xs:selector xpath=".//mstns:CampaignSegment" />
+      <xs:field xpath="mstns:CampaignId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

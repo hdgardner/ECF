@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif">
+				<Button id="ConvertToPurchaseOrder" text="{SharedStrings:Convert_To_Purchase_Order}" commandName="cmdCartConvertPurchaseOrder"/>
+			</Menu>
+		</add>
+	</Toolbar>
+
+	<Commands>
+		<add>
+			<Command id="cmdCartConvertPurchaseOrder">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Order.CommandHandlers.OrderSendNotificationHandler, Mediachase.ConsoleManager</Handler>
+			</Command>			
+		</add>
+	</Commands>
+</MetaView>

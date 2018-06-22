@@ -1,0 +1,3 @@
+By default temporary image files are created here by the image provider.
+
+Make sure to allow read/write/delete permissions for that folder to IIS Process Account (Network Service)

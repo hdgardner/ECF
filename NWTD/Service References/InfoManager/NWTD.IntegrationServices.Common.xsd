@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/NWTD.IntegrationServices.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/NWTD.IntegrationServices.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="SortDirection">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ascending" />
+      <xs:enumeration value="Descending" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SortDirection" nillable="true" type="tns:SortDirection" />
+  <xs:simpleType name="EmailType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Primary" />
+      <xs:enumeration value="Alternate1" />
+      <xs:enumeration value="Alternate2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EmailType" nillable="true" type="tns:EmailType" />
+  <xs:simpleType name="RepresentativePhoneType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Business" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="BusinessFax" />
+      <xs:enumeration value="Home" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RepresentativePhoneType" nillable="true" type="tns:RepresentativePhoneType" />
+  <xs:simpleType name="OrderSearchResultSortMode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CreateDate" />
+      <xs:enumeration value="OrderNumber" />
+      <xs:enumeration value="CustRefNumber" />
+      <xs:enumeration value="ShipToName" />
+      <xs:enumeration value="ShippedStatus" />
+      <xs:enumeration value="WebConfirmNum" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OrderSearchResultSortMode" nillable="true" type="tns:OrderSearchResultSortMode" />
+  <xs:simpleType name="PaymentMethod">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PurchaseOrder" />
+      <xs:enumeration value="PurchaseOrderWithVoucher" />
+      <xs:enumeration value="CreditCard" />
+      <xs:enumeration value="Check" />
+      <xs:enumeration value="Deferred" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PaymentMethod" nillable="true" type="tns:PaymentMethod" />
+  <xs:simpleType name="Check">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Personal" />
+      <xs:enumeration value="Company" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Check" nillable="true" type="tns:Check" />
+  <xs:simpleType name="CreditCard">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MC" />
+      <xs:enumeration value="VISA" />
+      <xs:enumeration value="AMEX" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CreditCard" nillable="true" type="tns:CreditCard" />
+  <xs:simpleType name="Depository">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NWTD" />
+      <xs:enumeration value="MSSD" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Depository" nillable="true" type="tns:Depository" />
+  <xs:simpleType name="AddressType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Shipping" />
+      <xs:enumeration value="Billing" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AddressType" nillable="true" type="tns:AddressType" />
+  <xs:simpleType name="OrderSource">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FAX" />
+      <xs:enumeration value="MAIL" />
+      <xs:enumeration value="PHN" />
+      <xs:enumeration value="EML" />
+      <xs:enumeration value="WEB" />
+      <xs:enumeration value="DATA" />
+      <xs:enumeration value="RE" />
+      <xs:enumeration value="UKN" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OrderSource" nillable="true" type="tns:OrderSource" />
+</xs:schema>

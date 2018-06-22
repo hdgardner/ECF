@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif">
+				<Button id="SendNotifications" text="{SharedStrings:Send_Notifications}" commandName="cmdOrderSendNotification" permissions="order:mng:notify"/>
+				<Button id="CalculateTotals" text="{SharedStrings:Calculate_Totals}" commandName="cmdPurchaseOrderCalculateTotals"/>
+				<Button id="ProcessPayments" text="{SharedStrings:Process_Payments}" commandName="cmdPurchaseOrderProcessPayment" permissions="order:mng:payments"/>
+			</Menu>
+		</add>
+	</Toolbar>
+
+	<Commands>
+		<add>
+			<Command id="cmdOrderNew">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSOrderClient.NewOrder()</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdOrderSendNotification">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Order.CommandHandlers.OrderSendNotificationHandler, Mediachase.ConsoleManager</Handler>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdPurchaseOrderCalculateTotals">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Order.CommandHandlers.OrderWorkflowHandler, Mediachase.ConsoleManager</Handler>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdPurchaseOrderProcessPayment">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Order.CommandHandlers.OrderWorkflowHandler, Mediachase.ConsoleManager</Handler>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

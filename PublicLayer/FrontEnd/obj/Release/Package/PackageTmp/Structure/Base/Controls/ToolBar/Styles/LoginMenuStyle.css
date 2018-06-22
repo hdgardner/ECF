@@ -1,0 +1,144 @@
+﻿.Toolbar-MenuTopGroup
+{
+  /*background-color:#D9D9E6; */
+  border:solid 0px gray; 
+}
+
+.Toolbar-MenuGroup
+{
+  background-image:url(../images/menu/group_background.gif);
+  background-color:white;
+  border:solid 1px #7E7E81; 
+  cursor:hand;
+}
+
+.Toolbar-TopMenuItem
+{
+  /*background-color:#D9D9E6; */
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  /*border:solid 1px #D9D9E6; */
+  cursor:hand; 
+}
+
+.Toolbar-TopMenuItemHover 
+{
+  background-image:url(../images/menu/item_hover_bg.gif);
+  background-color:#E5E6EF; 
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  border:solid 1px #7C7C94; 
+  cursor:hand; 
+}
+
+.Toolbar-TopMenuItemExpanded
+{
+  background-image:url(../images/menu/top_group_background.gif);
+  background-color:#E5E6EF; 
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  border:solid 1px #7C7C94; 
+  border-bottom-color:#BAB9CD; 
+  cursor:hand; 
+}
+
+.Toolbar-MenuItem
+{
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  margin:1px; 
+  cursor:hand; 
+}
+
+.Toolbar-MenuItemHover 
+{
+  background-color:#FFEEC2; 
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  border:solid 1px #4B4B6F; 
+  cursor:hand; 
+}
+
+.Toolbar-MenuBreak
+{
+  background-image:url(../images/menu/break_bg.gif);
+  width:100%;
+  height:1px;
+}
+
+
+/* Action menu styles */
+.Toolbar-ActionMenu
+{
+ background-image: url(../images/menu/actionmenu_bg.gif);
+  background-repeat: repeat-x;
+   border: 1px solid #95b7f3;
+   background-repeat: repeat-x;
+   background-color: #9ebff6;
+  cursor:default; 
+}
+
+.Toolbar-ActionTopGroup
+{
+	height: 22px;
+}
+
+.Toolbar-ActionMenuGroup
+{
+  background-image:url(../images/menu/group_background.gif);
+  background-color:white;
+  border:solid 1px #7E7E81; 
+  cursor:hand;
+}
+
+.Toolbar-ActionTopMenuItem
+{ 
+   text-decoration: none; 
+   color: #003399;  
+	cursor:hand; 
+}
+
+.Toolbar-ActionTopMenuItemHover 
+{
+   border: 1px solid #2254b1;
+   background: #fee197;
+  cursor:hand;  
+}
+
+.Toolbar-ActionMenuItem
+{
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  margin:1px; 
+  cursor:hand;
+}
+
+.Toolbar-ActionMenuItemHover 
+{
+  background-color:#FFEEC2; 
+  color:black; 
+  font-family:tahoma; 
+  font-size:11px; 
+  border:solid 1px #4B4B6F; 
+  cursor:hand; 
+}
+
+.Toolbar-ActionMenuBreak
+{
+  background-image:url(../images/menu/break_bg.gif);
+  width:100%;
+  height:2px;
+}
+
+.Toolbar-ActionTopMenuBreak
+{
+  background-image:url(../images/menu/black.gif);
+  width:1px;
+  height:20px;
+}

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Mediachase.Cms.Objects.CmsSite">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Objects\CmsSite.cs</FileName>
+      <HashCode>AAAAAAABAAAggAAAAAAAICQQAAAAAAAGAAABQAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Cms.Objects.SiteFolder">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Objects\SiteFolder.cs</FileName>
+      <HashCode>ACAAAAABAJAgAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Cms.Objects.SitePage">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Objects\SitePage.cs</FileName>
+      <HashCode>AAAAAQAAAAAgAgAAAAAAIAAAgIAAAAAEBAIAAAAAgAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="_Name" Hidden="true" />
+      <Field Name="_Title" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="Mediachase.Cms.Objects.SiteMenu">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Objects\SiteMenu.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Cms.Objects.SiteMenuItem">
+    <Position X="3.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Objects\SiteMenuItem.cs</FileName>
+      <HashCode>QIAADAAACDAgGASAEIAASAQAAAAIAAAECAAACAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediachase.Cms.Objects.SiteNode">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Objects\SiteNode.cs</FileName>
+      <HashCode>AAAABAAAAAAAgEAAAAAAIAQAAyAAAAAEAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

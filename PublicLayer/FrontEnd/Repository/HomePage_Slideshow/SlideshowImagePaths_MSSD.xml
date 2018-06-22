@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<imagePaths>
+  <image id="StaticHomePageImage" path="~/Repository/HomePage_Slideshow/ProudlyservingMSSD.jpg" state="" ></image>
+  <image id="SlideshowImage1" path="~/Repository/HomePage_Slideshow/NV1.jpg" ></image>
+  <image id="SlideshowImage2" path="~/Repository/HomePage_Slideshow/UT10.jpg" ></image>
+  <image id="SlideshowImage3" path="~/Repository/HomePage_Slideshow/NV8.jpg" ></image>
+  <image id="SlideshowImage4" path="~/Repository/HomePage_Slideshow/UT7.jpg" ></image>
+  <image id="SlideshowImage5" path="~/Repository/HomePage_Slideshow/MSSDBuilding.jpg" ></image>
+</imagePaths>

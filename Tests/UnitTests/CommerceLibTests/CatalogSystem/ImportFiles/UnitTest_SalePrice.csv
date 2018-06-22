@@ -1,0 +1,2 @@
+ItemCode,SaleType,SaleCode,UnitPrice,Currency,MinQuantity,StartDate,EndDate
+UnitTestEntryCode001,0,,500,USD,0,1/1/2009 0:00,1/1/2019 0:00

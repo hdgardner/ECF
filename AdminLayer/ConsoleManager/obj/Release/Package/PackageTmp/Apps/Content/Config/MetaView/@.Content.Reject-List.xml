@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Menu id="MoreActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" >
+				<Button id="ApproveSelected" text="{SharedStrings:Approve_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/approve.png" commandName="cmdContentVersionApprove" permissions="content:admin:workflow:mng:edit"/>
+				<Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdContentVersionDelete" permissions="content:admin:workflow:mng:delete"/>
+			</Menu>
+		</add>
+	</Toolbar>
+
+	<Commands>
+		<add>
+			<Command id="cmdContentVersionApprove">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<ConfirmationText>Are you sure you want to approve selected version(s)?</ConfirmationText>
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Content.CommandHandlers.VersionApproveHandler, Mediachase.ConsoleManager</Handler>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+			</Command>
+			<Command id="cmdContentVersionDelete">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.CommonEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+				<BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+				<ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Commerce.Manager.Content.CommandHandlers.VersionDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

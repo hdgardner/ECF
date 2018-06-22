@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Button id="NewMetaField" text="{SharedStrings:New_Meta_Field}" imageUrl="~/App_Themes/Default/Images/metafield.gif" commandName="cmdProfileNewMetaField" permissions="profile:admin:meta:fld:mng:create"/>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdProfileNewMetaField">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>javascript:CSManagementClient.ChangeView('Profile', 'MetaField-New','fieldnamespace=Mediachase.Commerce.Profile.System')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

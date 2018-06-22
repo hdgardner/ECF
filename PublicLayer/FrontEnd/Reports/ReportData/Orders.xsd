@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Orders" targetNamespace="http://tempuri.org/Orders.xsd" xmlns:mstns="http://tempuri.org/Orders.xsd" xmlns="http://tempuri.org/Orders.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ECF5_0_200_NWTD_MAINConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ECF5_0_200_NWTD_MAINConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ECF5_0_200_NWTD_MAINConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OrderFormTableAdapter" GeneratorDataComponentClassName="OrderFormTableAdapter" Name="OrderForm" UserDataComponentName="OrderFormTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ECF5_0_200_NWTD_MAINConnectionString (Web.config)" DbObjectName="[ECF5.0.200_NWTD_MAIN].dbo.OrderGroup" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetOrders" GetMethodModifier="Public" GetMethodName="GetOrders" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetOrders" UserSourceName="GetOrders">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     Status, CustomerName, ShippingTotal, TaxTotal, SubTotal, Total
+FROM         OrderGroup</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SubTotal" DataSetColumn="SubTotal" />
+              <Mapping SourceColumn="ShippingTotal" DataSetColumn="ShippingTotal" />
+              <Mapping SourceColumn="TaxTotal" DataSetColumn="TaxTotal" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="CustomerName" DataSetColumn="CustomerName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Orders" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Orders" msprop:Generator_UserDSName="Orders" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OrderForm" msprop:Generator_UserTableName="OrderForm" msprop:Generator_RowDeletedName="OrderFormRowDeleted" msprop:Generator_TableClassName="OrderFormDataTable" msprop:Generator_RowChangedName="OrderFormRowChanged" msprop:Generator_RowClassName="OrderFormRow" msprop:Generator_RowChangingName="OrderFormRowChanging" msprop:Generator_RowEvArgName="OrderFormRowChangeEvent" msprop:Generator_RowEvHandlerName="OrderFormRowChangeEventHandler" msprop:Generator_TablePropName="OrderForm" msprop:Generator_TableVarName="tableOrderForm" msprop:Generator_RowDeletingName="OrderFormRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SubTotal" msprop:Generator_UserColumnName="SubTotal" msprop:Generator_ColumnPropNameInRow="SubTotal" msprop:Generator_ColumnVarNameInTable="columnSubTotal" msprop:Generator_ColumnPropNameInTable="SubTotalColumn" type="xs:decimal" />
+              <xs:element name="ShippingTotal" msprop:Generator_UserColumnName="ShippingTotal" msprop:Generator_ColumnPropNameInRow="ShippingTotal" msprop:Generator_ColumnVarNameInTable="columnShippingTotal" msprop:Generator_ColumnPropNameInTable="ShippingTotalColumn" type="xs:decimal" />
+              <xs:element name="TaxTotal" msprop:Generator_UserColumnName="TaxTotal" msprop:Generator_ColumnPropNameInRow="TaxTotal" msprop:Generator_ColumnVarNameInTable="columnTaxTotal" msprop:Generator_ColumnPropNameInTable="TaxTotalColumn" type="xs:decimal" />
+              <xs:element name="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInTable="TotalColumn" type="xs:decimal" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInTable="StatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerName" msprop:Generator_UserColumnName="CustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

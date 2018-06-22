@@ -1,0 +1,672 @@
+<MetaDataPlusBackup version="1.0">
+	<!-- System Meta Classes -->
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>OrderGroup</Name>
+		<FriendlyName>Order Group</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>OrderGroup</TableName>
+		<Description>Contains basic information about order groups</Description>
+		<IsSystem>true</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>OrderForm</Name>
+		<FriendlyName>Order Form</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>OrderForm</TableName>
+		<Description>OrderForm Class</Description>
+		<IsSystem>true</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>Shipment</Name>
+		<FriendlyName>Shipment</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>Shipment</TableName>
+		<Description>Shipment Class</Description>
+		<IsSystem>true</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<!--
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>ShipmentCharge</Name>
+		<FriendlyName>Shipment Charge</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>ShipmentCharge</TableName>
+		<Description>ShipmentCharge Class</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	-->
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>LineItem</Name>
+		<FriendlyName>LineItem</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>LineItem</TableName>
+		<Description>LineItem Class</Description>
+		<IsSystem>true</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>OrderGroupAddress</Name>
+		<FriendlyName>Order Group Address</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>OrderGroupAddress</TableName>
+		<Description>OrderGroupAddress Class</Description>
+		<IsSystem>true</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>OrderFormPayment</Name>
+		<FriendlyName>Order Form Payment</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>OrderFormPayment</TableName>
+		<Description>OrderFormPayment Class</Description>
+		<IsSystem>true</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>	
+	
+	<!-- User Meta Classes -->
+
+	<!-- Extended Classes -->
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>OrderFormEx</Name>
+		<FriendlyName>Order Form Extended</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>OrderForm</ParentClass>
+		<TableName>OrderFormEx</TableName>
+		<Description>Order Form Extended Class</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>ShipmentEx</Name>
+		<FriendlyName>Shipment Extended</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Shipment</ParentClass>
+		<TableName>ShipmentEx</TableName>
+		<Description>Shipment Extended Class</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<!--
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>ShipmentChargeEx</Name>
+		<FriendlyName>Shipment Charge Extended</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>ShipmentCharge</ParentClass>
+		<TableName>ShipmentChargeEx</TableName>
+		<Description>Shipment Charge Extended Class</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+	</MetaClass>	
+	-->
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>LineItemEx</Name>
+		<FriendlyName>LineItem Extended</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>LineItem</ParentClass>
+		<TableName>LineItemEx</TableName>
+		<Description>LineItem Extended Class</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>OrderGroupAddressEx</Name>
+		<FriendlyName>OrderGroup Address Extended</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>OrderGroupAddress</ParentClass>
+		<TableName>OrderGroupAddressEx</TableName>
+		<Description>OrderGroupAddress Extended Class</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>	
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>CreditCardPayment</Name>
+		<FriendlyName>Credit Card Payment</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>OrderFormPayment</ParentClass>
+		<TableName>OrderFormPayment_CreditCard</TableName>
+		<Description>Information used by credit card payment gateways</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>CashCardPayment</Name>
+		<FriendlyName>Cash Card Payment</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>OrderFormPayment</ParentClass>
+		<TableName>OrderFormPayment_CashCard</TableName>
+		<Description>Information used by cash card types of payment</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>InvoicePayment</Name>
+		<FriendlyName>Invoice Payment</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>OrderFormPayment</ParentClass>
+		<TableName>OrderFormPayment_Invoice</TableName>
+		<Description>Information used by Invoice types of payment</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>GiftCardPayment</Name>
+		<FriendlyName>Gift Card Payment</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>OrderFormPayment</ParentClass>
+		<TableName>OrderFormPayment_GiftCard</TableName>
+		<Description>Information used by Gift Card types of payment</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>OtherPayment</Name>
+		<FriendlyName>Other Payment</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>OrderFormPayment</ParentClass>
+		<TableName>OrderFormPayment_Other</TableName>
+		<Description>Information used by other general types of payment</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>	
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>PurchaseOrder</Name>
+		<FriendlyName>Purchase Order</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>OrderGroup</ParentClass>
+		<TableName>OrderGroup_PurchaseOrder</TableName>
+		<Description>Contains orders that has been submitted into the system</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>ShoppingCart</Name>
+		<FriendlyName>Cart Order Class</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>OrderGroup</ParentClass>
+		<TableName>OrderGroup_ShoppingCart</TableName>
+		<Description>Contains Customer Carts, Wish lists and other lists</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>PaymentPlan</Name>
+		<FriendlyName>Payment Plan</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>OrderGroup</ParentClass>
+		<TableName>OrderGroup_PaymentPlan</TableName>
+		<Description>Contains information specific for Payment Plans</Description>
+		<IsSystem>false</IsSystem>
+		<IsAbstract>false</IsAbstract>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag></Tag>
+		<Attributes></Attributes>
+	</MetaClass>	
+
+	<!-- Custom built in meta fields -->
+
+	<!-- Purchase Order -->
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>TrackingNumber</Name>
+		<FriendlyName>Tracking Number</FriendlyName>
+		<Description>Allows one to specify tracking number for the order</Description>
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>True</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag></Tag>
+		<Attributes></Attributes>
+		<OwnerMetaClass>PurchaseOrder</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>ExpirationDate</Name>
+		<FriendlyName>Expiration Date</FriendlyName>
+		<Description>Specify the Expiration Date for the order</Description>
+		<DataType>DateTime</DataType>
+		<Length>8</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag></Tag>
+		<Attributes></Attributes>
+		<OwnerMetaClass>PurchaseOrder</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>ParentOrderGroupId</Name>
+		<FriendlyName>Parent Order Id</FriendlyName>
+		<Description>This can be used to relate purchase orders to a payment plan or other order.</Description>
+		<DataType>Integer</DataType>
+		<Length>4</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes />
+		<OwnerMetaClass>PurchaseOrder</OwnerMetaClass>
+	</MetaField>	
+
+	<!-- Credit card payment -->
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>CardType</Name>
+		<FriendlyName>Card type</FriendlyName>
+		<Description>Specifies type of the credit card used</Description>
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>		
+		<Tag></Tag>
+		<Attributes></Attributes>
+		<OwnerMetaClass>CreditCardPayment</OwnerMetaClass>
+		<OwnerMetaClass>GiftCardPayment</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>ExpirationMonth</Name>
+		<FriendlyName>Expiration Month</FriendlyName>
+		<Description>2 digits for month when card expires</Description>
+		<DataType>Int</DataType>
+		<Length>4</Length>
+		<AllowNulls>False</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag></Tag>
+		<Attributes></Attributes>
+		<OwnerMetaClass>CreditCardPayment</OwnerMetaClass>
+		<OwnerMetaClass>GiftCardPayment</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>ExpirationYear</Name>
+		<FriendlyName>Expiration Year</FriendlyName>
+		<Description>2 digits for year when card expires</Description>
+		<DataType>Int</DataType>
+		<Length>4</Length>
+		<AllowNulls>False</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag></Tag>
+		<Attributes></Attributes>
+		<OwnerMetaClass>CreditCardPayment</OwnerMetaClass>
+		<OwnerMetaClass>GiftCardPayment</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>CreditCardSecurityCode</Name>
+		<FriendlyName>Card Security Code</FriendlyName>
+		<Description>Card Security Code</Description>
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>		
+		<Tag></Tag>
+		<Attributes></Attributes>
+		<OwnerMetaClass>CreditCardPayment</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>CreditCardNumber</Name>
+		<FriendlyName>Credit Card Number</FriendlyName>
+		<Description>Contains credit card number</Description>
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>		
+		<Tag></Tag>
+		<Attributes></Attributes>
+		<OwnerMetaClass>CreditCardPayment</OwnerMetaClass>
+	</MetaField>
+	
+	<!-- Gift Card -->
+
+	<!-- Cash Card -->
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>CashCardNumber</Name>
+		<FriendlyName>Cash Card Number</FriendlyName>
+		<Description>Contains cash card number</Description>
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes></Attributes>
+		<OwnerMetaClass>CashCardPayment</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>CashCardSecurityCode</Name>
+		<FriendlyName>Cash Card Security Code</FriendlyName>
+		<Description>Card Security Code</Description>
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes></Attributes>
+		<OwnerMetaClass>CashCardPayment</OwnerMetaClass>
+	</MetaField>
+
+	<!-- Invoice -->
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>InvoiceNumber</Name>
+		<FriendlyName>Invoice Number</FriendlyName>
+		<Description />
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes></Attributes>
+		<OwnerMetaClass>InvoicePayment</OwnerMetaClass>
+	</MetaField>
+
+	<!-- Gift Card -->
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>GiftCardNumber</Name>
+		<FriendlyName>Gift Card Number</FriendlyName>
+		<Description />
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes></Attributes>
+		<OwnerMetaClass>GiftCardPayment</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>GiftCardSecurityCode</Name>
+		<FriendlyName>Gift Card Security Code</FriendlyName>
+		<Description />
+		<DataType>ShortString</DataType>
+		<Length>512</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes></Attributes>
+		<OwnerMetaClass>GiftCardPayment</OwnerMetaClass>
+	</MetaField>
+
+	<!-- PaymentPlan -->
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>PlanCycleMode</Name>
+		<FriendlyName>Plan Cycle</FriendlyName>
+		<Description>Cycles mode is used to define period for recurring payments. Can be day, week, month, year or custom.</Description>
+		<DataType>Integer</DataType>
+		<Length>4</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes/>
+		<OwnerMetaClass>PaymentPlan</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>PlanCycleLength</Name>
+		<FriendlyName>Cycle Length</FriendlyName>
+		<Description>Cycle lenth in units of cycle mode.</Description>
+		<DataType>Integer</DataType>
+		<Length>4</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes/>
+		<OwnerMetaClass>PaymentPlan</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>PlanMaxCyclesCount</Name>
+		<FriendlyName>Max Cycles</FriendlyName>
+		<Description>Number of maximum cycles to process</Description>
+		<DataType>Integer</DataType>
+		<Length>4</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes/>
+		<OwnerMetaClass>PaymentPlan</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>PlanCompletedCyclesCount</Name>
+		<FriendlyName>Completed Cycles</FriendlyName>
+		<Description>Number of completed cycles</Description>
+		<DataType>Integer</DataType>
+		<Length>4</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes />
+		<OwnerMetaClass>PaymentPlan</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>PlanStartDate</Name>
+		<FriendlyName>Start Date</FriendlyName>
+		<Description>Plan start date</Description>
+		<DataType>DateTime</DataType>
+		<Length>8</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes />
+		<OwnerMetaClass>PaymentPlan</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>PlanEndDate</Name>
+		<FriendlyName>End Date</FriendlyName>
+		<Description>Plan end date</Description>
+		<DataType>DateTime</DataType>
+		<Length>8</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes/>
+		<OwnerMetaClass>PaymentPlan</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>PlanIsActive</Name>
+		<FriendlyName>Is Plan Active</FriendlyName>
+		<Description>Set to true if plan is active</Description>
+		<DataType>Boolean</DataType>
+		<Length>1</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes />
+		<OwnerMetaClass>PaymentPlan</OwnerMetaClass>
+	</MetaField>
+	<MetaField>
+		<Namespace>Mediachase.Commerce.Orders.System</Namespace>
+		<Name>LastTransactionDate</Name>
+		<FriendlyName>Last Transaction Date</FriendlyName>
+		<Description>The date of last transaction</Description>
+		<DataType>DateTime</DataType>
+		<Length>8</Length>
+		<AllowNulls>True</AllowNulls>
+		<SaveHistory>False</SaveHistory>
+		<AllowSearch>False</AllowSearch>
+		<MultiLanguageValue>False</MultiLanguageValue>
+		<IsSystem>False</IsSystem>
+		<Tag />
+		<Attributes/>
+		<OwnerMetaClass>PaymentPlan</OwnerMetaClass>
+	</MetaField>
+
+
+	<!-- Shipment Ex -->
+
+</MetaDataPlusBackup>

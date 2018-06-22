@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+  <Tabs id="mainTag">
+    <add>
+      <Tab id="navTabCatalogManagement" text="{CatalogStrings:Catalog_Management}" order="60"  contentType="default" imageUrl="~/Apps/Catalog/images/module.png" configUrl="" enableHandler="Mediachase.Commerce.Manager.Catalog.CommandHandlers.CatalogTabEnableHandler, Mediachase.ConsoleManager" enableHandler2="Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager" permissions="catalog:ctlg:mng:view">
+        <Link id="Catalog_CatalogEntrySearch" text="{CatalogStrings:Catalog_Entry_Search}" order="10" iconUrl="~/App_Themes/Default/images/search_magnifier.png" iconCss="treeIcon" command="cmdCatalogEntrySearch" permissions="catalog:ctlg:entries:mng:view"/>
+        <Link id="Catalog_CatalogBatchUpdate" text="{CatalogStrings:Catalog_Batch_Update}" order="20" iconUrl="" iconCss="" command="cmdCatalogBatchUpdate" permissions="catalog:ctlg:entries:mng:edit" />
+        <Link id="Catalog_Catalogs" text="{SharedStrings:Catalogs}" iconUrl="" type="Catalogs" order="30" iconCss="treeIcon" command="cmdCatalogCatalogList" treeLoaderPath="~/Apps/Catalog/Tree/TreeSource.aspx" permissions="catalog:ctlg:mng:view" />
+      </Tab>
+    </add>  
+    <Tab id="navTabAdmin">
+      <Link id="Core_System">
+        <Link id="Core_Dictionaries">
+          <add>
+            <Link id="Core_CurrenciesDictionary" text="{SharedStrings:Currencies}" order="30" iconUrl="~/Apps/Catalog/images/Currency.png" iconCss="treeIcon" command="cmdCatalogCurrenciesDictionary" permissions="core:mng:login"/>
+          </add>
+        </Link>
+      </Link>
+      <add afterId="Core_System">
+        <Link id="Core_CatalogSystem" text="{CatalogStrings:Catalog_System}" order="20" iconUrl="" iconCss="treeIcon" command="cmdCatalogSystemLink" permissions="catalog:admin:warehouses:mng:view,catalog:admin:meta:cls:mng:view,catalog:admin:meta:fld:mng:view">
+          <Link id="Core_Warehouses" text="{SharedStrings:Warehouses}" order="5" iconUrl="" iconCss="" command="cmdCatalogWarehouses" permissions="catalog:admin:warehouses:mng:view"/>
+          <Link id="Core_TaxCategories" text="{CatalogStrings:Tax_Categories}" order="10" iconUrl="" iconCss="" command="cmdCatalogTaxCategories" permissions="catalog:admin:taxcategories:mng:view"/>
+          <Link id="Core_CatalogMetaClasses" text="{CatalogStrings:Meta_Classes}" order="15" iconUrl="" iconCss="" command="cmdCatalogMetaClasses" permissions="catalog:admin:meta:cls:mng:view"/>
+          <Link id="Core_CatalogMetaFields" text="{CatalogStrings:Meta_Fields}" order="20" iconUrl="" iconCss="" command="cmdCatalogMetaFields" permissions="catalog:admin:meta:fld:mng:view"/>
+        </Link>
+      </add>
+    </Tab>
+  </Tabs>
+  <Commands>
+    <add>
+      <Command id="cmdCatalogSystemLink">
+        <EnableHandler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.CatalogSchemaEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdCatalogEntrySearch">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Catalog', 'CatalogEntrySearch-List')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.CatalogSchemaEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdCatalogBatchUpdate">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Catalog', 'CatalogBatchUpdate-List')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdCatalogCatalogList">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Catalog', 'Catalog-List')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <!-- Admin commands -->
+      <Command id="cmdCatalogCurrenciesDictionary">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Catalog', 'Currencies-List')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdCatalogWarehouses">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Catalog', 'Warehouse-List')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdCatalogTaxCategories">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Catalog', 'TaxCategory-List')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdCatalogMetaClasses">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Catalog', 'MetaClass-List', 'namespace=Mediachase.Commerce.Catalog&amp;fieldnamespace=Mediachase.Commerce.Catalog&amp;mfview=MetaField-Edit')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+      <Command id="cmdCatalogMetaFields">
+        <CommandType>ClientAction</CommandType>
+        <ClientScript>CSManagementClient.ChangeView('Catalog', 'MetaFields-List', 'fieldnamespace=Mediachase.Commerce.Catalog')</ClientScript>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</Navigation>

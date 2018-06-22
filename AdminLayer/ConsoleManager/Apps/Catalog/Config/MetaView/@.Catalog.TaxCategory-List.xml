@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+  <Toolbar>
+    <add>
+      <Button id="NewTaxCategory" text="{SharedStrings:New}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdCatalogNewTaxCategory" permissions="catalog:admin:taxcategories:mng:create"/>
+      <Splitter id="ActionsSplitter"/>
+      <Menu id="ActionsSplitButton" text="{SharedStrings:More_Actions}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" permissions="catalog:admin:taxcategories:mng:delete">
+        <Button id="DeleteSelected" text="{SharedStrings:Delete_Selected}" imageUrl="~/App_Themes/Main/Images/toolbar/delete.gif" commandName="cmdCatalogDeleteTaxCategory" permissions="catalog:admin:taxcategories:mng:delete"/>
+      </Menu>
+    </add>
+  </Toolbar>
+
+  <Commands>
+    <add>
+      <Command id="cmdCatalogNewTaxCategory">
+        <CommandType>OpenFrameModalPopup</CommandType>
+        <Url>~/Apps/Core/Controls/DialogPage.aspx?_a=Catalog&amp;_v=TaxCategory-Edit</Url>
+        <Width>450</Width>
+        <Height>120</Height>
+        <PopupTitle>Create Tax Category</PopupTitle>
+        <Drag>True</Drag>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+
+      <Command id="cmdCatalogDeleteTaxCategory">
+        <BeforeClientScript>Toolbar_GridHasItemsSelected</BeforeClientScript>
+        <ConfirmationText>{CommerceManager:DeleteSelectedItemsConfirmation}</ConfirmationText>
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.TaxCategoryDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+
+      <!-- Grid commands -->
+      <Command id="cmdCatalogGridTaxCategoryEdit">
+        <CommandType>OpenFrameModalPopup</CommandType>
+        <Url>~/Apps/Core/Controls/DialogPage.aspx?_a=Catalog&amp;_v=TaxCategory-Edit&amp;tcId=[ClientParam:TaxCategoryId]</Url>
+        <Width>450</Width>
+        <Height>120</Height>
+        <PopupTitle>Edit Tax Category</PopupTitle>
+        <Drag>True</Drag>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+
+      <Command id="cmdCatalogGridTaxCategoryDelete">
+        <CommandType>ServerAction</CommandType>
+        <Handler>Mediachase.Commerce.Manager.Catalog.CommandHandlers.TaxCategoryDeleteHandler, Mediachase.ConsoleManager</Handler>
+        <UpdatePanelIds>panelMainListView</UpdatePanelIds>
+        <EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+      </Command>
+    </add>
+  </Commands>
+</MetaView>

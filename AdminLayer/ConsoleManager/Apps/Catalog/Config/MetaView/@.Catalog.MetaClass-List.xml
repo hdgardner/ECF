@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Menu id="ActionsSplitButton" text="{SharedStrings:Create_New}" imageUrl="~/App_Themes/Default/Images/new.png" commandName="cmdBlankPermissions" permissions="catalog:admin:meta:cls:mng:create,catalog:admin:meta:fld:mng:create">
+				<Button id="NewMetaClass" text="{CatalogStrings:MetaClass_New_Meta_Class}" imageUrl="~/App_Themes/Default/Images/metaclass.gif" commandName="cmdCatalogNewMetaClass" permissions="catalog:admin:meta:cls:mng:create"/>
+				<Button id="NewMetaField" text="{CatalogStrings:MetaField_New_Meta_Field}" imageUrl="~/App_Themes/Default/Images/metafield.gif" commandName="cmdCatalogNewMetaField" permissions="catalog:admin:meta:fld:mng:create"/>
+			</Menu>
+			<Splitter id="ActionsSplitter" commandName="cmdBlankPermissions" permissions="catalog:admin:meta:cls:mng:create,catalog:admin:meta:fld:mng:create"/>
+			<Menu id="ImportExportSplitButton" text="{SharedStrings:Import_Export}" imageUrl="~/App_Themes/Main/Images/toolbar/newtask.gif" commandName="cmdBlankPermissions">
+				<Button id="ImportMetaData" text="{CatalogStrings:MetaClass_Import_MetaData}" imageUrl="~/App_Themes/Main/Images/toolbar/import.png" commandName="cmdCatalogImportMetaData" permissions="*catalog:admin:meta:cls:mng:create,*catalog:admin:meta:fld:mng:create"/>
+				<Button id="ExportMetaData" text="{CatalogStrings:MetaClass_Export_MetaData}" imageUrl="~/App_Themes/Main/Images/toolbar/export.png" commandName="cmdCatalogExportMetaData"/>
+			</Menu>
+		</add>
+	</Toolbar>
+
+	<Commands>
+		<add>
+			<Command id="cmdBlankPermissions">
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogNewMetaClass">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCoreClient.CreateMetaClass('Catalog', 'MetaClass-Edit', 'Mediachase.Commerce.Catalog', 'Mediachase.Commerce.Catalog', 'MetaFields-Edit')</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogNewMetaField">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCoreClient.CreateMetaField('Catalog', 'MetaField-New', 'Mediachase.Commerce.Catalog')</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogImportMetaData">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCoreClient.ImportMetaData('Catalog')</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+			<Command id="cmdCatalogExportMetaData">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CSCoreClient.ExportMetaData('Catalog')</ClientScript>
+				<EnableHandler>Mediachase.Commerce.Manager.CommandHandlers.PermissionEnableHandler, Mediachase.ConsoleManager</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

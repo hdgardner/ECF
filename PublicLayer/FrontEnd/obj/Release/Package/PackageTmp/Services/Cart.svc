@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Mediachase.Cms.Website.Services.Cart" CodeBehind="Cart.svc.cs" %>

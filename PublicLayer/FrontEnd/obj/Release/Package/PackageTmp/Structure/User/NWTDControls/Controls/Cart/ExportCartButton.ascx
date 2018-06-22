@@ -1,3 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ExportCartButton.ascx.cs" Inherits="Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart.ExportCartButton" %>
-<asp:LinkButton runat="server" ID="lbExport" OnClick="Export_Click" Text="Export to Excel" />
-<asp:ImageButton runat="server" ID="imgBtnExport" ImageUrl="~/Structure/User/NWTDControls/Images/ExportToCSV.jpg" onclick="Export_Click" />

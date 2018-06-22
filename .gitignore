@@ -1,0 +1,7 @@
+*.pdf
+*.docx
+PublicLayer/FrontEnd/obj
+*.cache
+.vs
+*.force
+#*.dll

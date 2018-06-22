@@ -39,7 +39,9 @@
 				<span class="nwtd-error nwtd-submitCartWarning" style="display:none">please add quantities before proceeding</span>
 				<%--<asp:Button  runat="server" ID="btnSubmitTop" CssClass="nwtd-submitCart add-shipping-info-btn buttons" Text="Next" onclick="btnSubmit_Click" />--%>
                 <%-- On 08/02/17, Heath replaced the above 'Add Shipping Info' btn with the following 'Continue' btn --%>
+            <% if (Session["po2go_pos"] == null) { %>
                 <asp:Button  runat="server" ID="btnSubmitTop" CssClass="nwtd-submitCart add-shipping-continue-blue-btn buttons" Text="Next" onclick="btnSubmit_Click" />
+            <% } %>
 			</div>
 		</div>
 		<div style="clear:left;float:left;width: 948px;">
@@ -184,20 +186,22 @@
 				<asp:hyperlink ID="hlISBNQuickEntryBottom" runat="server" cssclass="quick-isbn-btn buttons" Text="Quick ISBN Entry" NavigateUrl="~/cart/QuickISBN.aspx" />
 				<%--<asp:HyperLink runat="server" ID="hlBrowseCatalogBottom" cssclass="new-search-btn buttons" NavigateUrl="~/Catalog/SearchResults.aspx"></asp:HyperLink>--%>
 			</div>
-			<div class="nwtd-cartview-buttonrow-right">&nbsp;<asp:Button CssClass="save-changes-btn buttons" runat="server" ID="btnSaveChanges" Text="Save Changes" onclick="btnSaveChanges_Click" />
+			<div class="nwtd-cartview-buttonrow-right">&nbsp;
+            <% if (Session["po2go_pos"] != null) { %>
+                 <% if (this.SelectedCartHelper.Cart.Status != "Transferred") { %>
+                <asp:Button CssClass="nwtd-submitCart save-changes-btn buttons" runat="server" ID="Button1" Text="Save Changes" onclick="btnSaveChanges_Click" />
+    		    <asp:Button runat="server" ID="btnSubmitPO2Go" Text="Transfer Order" CssClass="nwtd-submitCart submit-po2go-btn buttons" onclick="btnSubmitPO2Go_Click" />
+                <% } %>
+            <% } else {%>
+                <asp:Button CssClass="nwtd-submitCart save-changes-btn buttons" runat="server" ID="btnSaveChanges" Text="Save Changes" onclick="btnSaveChanges_Click" />
 				<span class="nwtd-error nwtd-submitCartWarning" style="display:none">please add quantities before proceeding</span>
 				<%--<asp:Button ValidationGroup="SubmitCartGroup" runat="server" ID="btnSubmit" CssClass="nwtd-submitCart add-shipping-info-btn buttons" Text="Add Shipping Info" onclick="btnSubmit_Click" />--%>
                 <%-- On 08/02/17, Heath replaced the above 'Add Shipping Info' btn with the following 'Continue' btn --%>
                 <asp:Button ValidationGroup="SubmitCartGroup" runat="server" ID="btnSubmit" CssClass="nwtd-submitCart add-shipping-continue-blue-btn buttons" Text="Add Shipping Info" onclick="btnSubmit_Click" />
+            <% } %>
 			</div>
 		</div>
 	</asp:Panel>
-
-    <!-- On 03/01/18, Heath Gardner added the following 'panel' with Price and No Charge disclaimers per Customer Service's request -->
-    <asp:Panel runat="server" ID="pnlCartFinePrint" CssClass="order-summary-notification-panel" Visible="true">
-		<p class="cart-price-disclaimers"> <br /> Prices are set by the publisher and are subject to change. <br /> All no-charge items are subject to approval. </p>
-	</asp:Panel>
-    
 </div>
 
 

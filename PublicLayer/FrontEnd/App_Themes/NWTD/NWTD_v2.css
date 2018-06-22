@@ -2294,3 +2294,11 @@ dl.css {
 	float: left;
 	width: 300
 }
+
+input.submit-po2go-btn {
+    background-image: url(images-template/transfer-btn.png);
+    background-repeat: no-repeat;
+    width: 99px;
+    height: 21px;
+    margin-right: 8px;
+}

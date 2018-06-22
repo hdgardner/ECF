@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Drawing;
@@ -30,9 +31,39 @@ using Mediachase.Web.UI;
 using Mediachase.Cms.WebUtility.UI;
 using System.Collections.Specialized;
 using Mediachase.Commerce.Profile;
+using Mediachase.Commerce.Core;
+using System.Linq;
+using Newtonsoft.Json.Linq;
+using System.Data.SqlClient;
 
 namespace Mediachase.Cms.Web
 {
+    public static class JsonHelper
+    {
+        public static object Deserialize(string json)
+        {
+            return ToObject(JToken.Parse(json));
+        }
+
+        private static object ToObject(JToken token)
+        {
+            switch (token.Type)
+            {
+                case JTokenType.Object:
+                    return token.Children<JProperty>()
+                                .ToDictionary(prop => prop.Name,
+                                              prop => ToObject(prop.Value));
+
+                case JTokenType.Array:
+                    return token.Select(ToObject).ToList();
+
+                default:
+                    return ((JValue)token).Value;
+            }
+        }
+    }
+
+
     /// <summary>
     /// The main cms page that is responsible for rendering all cms related pages. Contains logic for handling
     /// two distinct views, Design view and Public view. Design view is used by the CMS Content Editor and designers to
@@ -219,6 +250,7 @@ namespace Mediachase.Cms.Web
         protected void Page_PreRender(object sender, EventArgs e)
         {
             CheckUserAccess();
+            CheckPunchOut2Go();
             
             // Set correct form url
             CmsMainForm.Attributes["action"] = CMSContext.Current.CurrentUrl;
@@ -227,6 +259,63 @@ namespace Mediachase.Cms.Web
 
 
         #endregion
+
+        private void CheckPunchOut2Go()
+        {
+            if (Request.ServerVariables["REQUEST_METHOD"] == "POST" && Request.Form["pos"] != null)
+            { 
+                Session["po2go_pos"] = Request.Form["pos"];
+                Session["po2go_return_url"] = Request.Form["return_url"];
+                Session["po2go_params"] = Request.Form["params"];
+
+                Dictionary<string, object> p = (Dictionary<string, object>) JsonHelper.Deserialize(Request.Form["params"]);
+                Dictionary<string, object> body = (Dictionary<string, object>)p["body"];
+                Dictionary<string, object> contact = (Dictionary<string, object>)body["contact"];
+                string userName = (string) contact["email"];
+
+                MembershipUser user = Membership.GetUser(userName);
+                if (user == null)
+                {
+                    user = Membership.CreateUser(userName, "xyzzy1234", userName);
+                    user.IsApproved = true;
+                    Membership.UpdateUser(user);
+                    SqlConnection connection = new SqlConnection();
+                    connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ECF5_0_200_NWTD_MAINConnectionString"].ConnectionString;
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand("SELECT ObjectId FROM [ECF_COMMON].[dbo].[utb_PunchOut_BP_EmailDomains] inner join [ECF50_NWTD_MAIN].[dbo].[Principal_Organization] on [BP_Code]=[BusinessPartnerID] WHERE [EmailDomain]=@param1", connection);
+                    cmd.Parameters.Add("@param1", SqlDbType.VarChar).Value = userName.ToLower().Split('@')[1];
+                    int org_code = (int)cmd.ExecuteScalar();
+                    connection.Close();
+
+                    // Add user to everyone role
+                    // Check if such role exist
+                    if (Roles.RoleExists(AppRoles.EveryoneRole))
+                    {
+                        Roles.AddUserToRole(user.UserName, AppRoles.EveryoneRole);
+                    }
+                    if (Roles.RoleExists(AppRoles.RegisteredRole))
+                    {
+                        Roles.AddUserToRole(user.UserName, AppRoles.RegisteredRole);
+                    }
+                    // Now create an account in the ECF 
+                    ProfileContext.Current.CreateAccountForUser(user);
+
+                    // and set our custom profile properties
+                    CustomerProfile profile = CustomerProfile.Create(user.UserName) as CustomerProfile;
+
+                    profile.FirstName = "";
+                    profile.LastName = "";
+                    profile.FullName = "";
+                    profile.Account.Name = "";
+                    profile.Account.OrganizationId = org_code;
+                    profile["Phone"] = "";
+                    profile.Account.AcceptChanges();
+                    profile.Save();
+                }
+
+                FormsAuthentication.RedirectFromLoginPage(userName, false);
+            }
+        }
 
         #region CheckUserAccess
         /// <summary>

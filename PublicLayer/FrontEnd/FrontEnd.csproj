@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -22,9 +23,16 @@
     </SccProvider>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <UpgradeBackupLocation />
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -132,6 +140,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\NetSpell.SpellChecker.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="nsoftware.IBizPay, Version=3.0.2099.0, Culture=neutral, PublicKeyToken=cdc168f89cffe9cf">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Components\nsoftware.IBizPay.dll</HintPath>
@@ -238,6 +249,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StoreResources.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PO2Go.aspx.cs">
+      <DependentUpon>PO2Go.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PO2Go.aspx.designer.cs">
+      <DependentUpon>PO2Go.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -1128,7 +1146,6 @@
     </Compile>
     <Compile Include="template.aspx.cs">
       <DependentUpon>template.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="template.aspx.designer.cs">
       <DependentUpon>template.aspx</DependentUpon>
@@ -1801,7 +1818,6 @@
     <Content Include="Errors\ProductNotFound.htm" />
     <Content Include="Errors\StoreClosed.htm" />
     <Content Include="Errors\TemplateNotFound.htm" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\default_bg.gif" />
     <Content Include="Images\delete.gif" />
@@ -2143,9 +2159,9 @@
     <Content Include="Images\move.gif" />
     <Content Include="Images\rightCorner_w.GIF" />
     <Content Include="Images\t\placeholder.txt" />
+    <Content Include="PO2Go.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
-    <Content Include="Orders\PlaceHolder.txt" />
     <Content Include="Repository\07_6-12_ELA.pdf" />
     <Content Include="Repository\07_ESL.pdf" />
     <Content Include="Repository\07_K-6_ELA.pdf" />
@@ -2163,40 +2179,11 @@
     <Content Include="Repository\2013_OR_Bridge.pdf" />
     <Content Include="Repository\create-new-account-btn.png" />
     <Content Include="Repository\create-new-cart-btn.png" />
-    <Content Include="Repository\create-new-login-btn.png" />
-    <Content Include="Repository\Health.pdf" />
-    <Content Include="Repository\HomePage_Slideshow\AK12.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\AK3.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\MSSDBuilding.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\NV1.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\NV8.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\NWTDBuilding.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\OR8.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\OR9.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\ProudlyservingMSSD.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\ProudlyservingNWTD.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\SlideshowImagePaths_MSSD.xml" />
-    <Content Include="Repository\HomePage_Slideshow\SlideshowImagePaths_NWTD.xml" />
-    <Content Include="Repository\HomePage_Slideshow\UT10.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\UT7.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\WA21.jpg" />
-    <Content Include="Repository\HomePage_Slideshow\WA9.jpg" />
     <Content Include="Repository\manage-carts-btn.png" />
-    <Content Include="Repository\MSSD_Order_Form.pdf" />
     <Content Include="Repository\nwtd.jpg" />
     <Content Include="Repository\NWTDLOGO.gif" />
-    <Content Include="Repository\NWTDV2.jpg" />
-    <Content Include="Repository\NWTD_Order_Form.pdf" />
     <Content Include="Repository\order_status_btn.png" />
-    <Content Include="Repository\Oregon_Arts_K-12_Price_List.pdf" />
-    <Content Include="Repository\Oregon_Music_K-8_Price_List.pdf" />
-    <Content Include="Repository\PE.pdf" />
     <Content Include="Repository\PlaceHolder.txt" />
-    <Content Include="Repository\ReturnPolicy.pdf" />
-    <Content Include="Repository\userguidema.pdf" />
-    <Content Include="Repository\userguidemb.pdf" />
-    <Content Include="Repository\userguidena.pdf" />
-    <Content Include="Repository\userguidenb.pdf" />
     <Content Include="Repository\willcall\willcall.pdf" />
     <Content Include="Scripts\DropDownTextBox.js" />
     <Content Include="Scripts\jquery.js" />
@@ -3310,40 +3297,48 @@
     <Content Include="ecf.cms.config" />
     <Content Include="ecf.asset.config" />
     <Content Include="ecf.workflow.config" />
-    <Content Include="ecf.ssl.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="ecf.ssl.config" />
     <Content Include="App_Themes\NWTD\NWTD.skin" />
     <Content Include="App_Themes\NWTD\SkinFile.skin" />
     <Content Include="App_Themes\Test\Test.skin" />
     <Content Include="App_Themes\MSSD\NWTD.skin" />
     <Content Include="App_Themes\MSSD\SkinFile.skin" />
     <None Include="ClassDiagram1.cd" />
+    <Content Include="Orders\MSSD193371.pdf" />
+    <None Include="packages.config" />
     <None Include="Reports\ReportData\Orders.xsc">
       <DependentUpon>Orders.xsd</DependentUpon>
     </None>
-    <Content Include="Reports\ReportData\Orders.xsd">
+    <None Include="Reports\ReportData\Orders.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>Orders.Designer.cs</LastGenOutput>
-    </Content>
+    </None>
     <None Include="Reports\ReportData\Orders.xss">
       <DependentUpon>Orders.xsd</DependentUpon>
     </None>
-    <Content Include="Repository\2014_OR_ELA_CAT1.pdf" />
-    <Content Include="Repository\2014_OR_ELA_CAT2.pdf" />
-    <Content Include="Repository\2014_OR_ELA_CAT3.pdf" />
-    <Content Include="Repository\2015_OR_ELP.pdf" />
-    <Content Include="Repository\2016_OR_Math.pdf" />
-    <Content Include="Repository\2017_OR_Science.pdf" />
-    <Content Include="Repository\PubRep\MSSD_PubRep.pdf" />
-    <Content Include="Repository\PubRep\NWTD_PubRep.pdf" />
-    <Content Include="Repository\Washoe\Math\SaxonMathGr5.pdf" />
-    <Content Include="Repository\Washoe\Math\SaxonMathGr6.pdf" />
-    <Content Include="Repository\Washoe\Math\SaxonMathGr7.pdf" />
-    <Content Include="Repository\Washoe\Math\SaxonMathGr8.pdf" />
-    <Content Include="Repository\Washoe\Washoe.pdf" />
-    <Content Include="Repository\willcall\willcall.docx" />
+    <Content Include="Repository\Health.pdf" />
+    <Content Include="Repository\MSSD_Order_Form.pdf" />
+    <Content Include="Repository\NWTD_Order_Form.pdf" />
+    <Content Include="Repository\Oregon_Arts_K-12_Price_List.pdf" />
+    <Content Include="Repository\Oregon_Music_K-8_Price_List.pdf" />
+    <Content Include="Repository\PE.pdf" />
+    <Content Include="Repository\ReturnPolicy.pdf" />
+    <Content Include="Repository\userguidema.pdf" />
+    <Content Include="Repository\userguidemb.pdf" />
+    <Content Include="Repository\userguidena.pdf" />
+    <Content Include="Repository\userguidenb.pdf" />
+    <None Include="Repository\2014_OR_ELA_CAT1.pdf" />
+    <None Include="Repository\2014_OR_ELA_CAT2.pdf" />
+    <None Include="Repository\2014_OR_ELA_CAT3.pdf" />
+    <None Include="Repository\2015_OR_ELP.pdf" />
+    <None Include="Repository\PubRep\MSSD_PubRep.pdf" />
+    <None Include="Repository\PubRep\NWTD_PubRep.pdf" />
+    <None Include="Repository\Washoe\Math\SaxonMathGr5.pdf" />
+    <None Include="Repository\Washoe\Math\SaxonMathGr6.pdf" />
+    <None Include="Repository\Washoe\Math\SaxonMathGr7.pdf" />
+    <None Include="Repository\Washoe\Math\SaxonMathGr8.pdf" />
+    <None Include="Repository\Washoe\Washoe.pdf" />
     <None Include="Structure\Base\Controls\Editors\FCKEditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
     <None Include="Structure\Base\Controls\Editors\FCKEditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
     <None Include="Structure\Base\Controls\Editors\FCKEditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
@@ -3547,7 +3542,7 @@
     <Content Include="App_Themes\MSSD\ecf.css" />
     <Content Include="App_Themes\MSSD\ElectronicsTemplate.css" />
     <Content Include="App_Themes\MSSD\hilight.htc" />
-    <Content Include="App_Themes\MSSD\home_v2.css" />
+    <Content Include="App_Themes\MSSD\home.css" />
     <Content Include="App_Themes\MSSD\images-template\add-more-isbns-to-cart-btn.png" />
     <Content Include="App_Themes\MSSD\images-template\add-shipping-info-btn.png" />
     <Content Include="App_Themes\MSSD\images-template\add-this-item-btn.png" />
@@ -3776,7 +3771,7 @@
     <Content Include="App_Themes\NWTD\ecf.css" />
     <Content Include="App_Themes\NWTD\ElectronicsTemplate.css" />
     <Content Include="App_Themes\NWTD\hilight.htc" />
-    <Content Include="App_Themes\NWTD\home_v2.css" />
+    <Content Include="App_Themes\NWTD\home.css" />
     <Content Include="App_Themes\NWTD\images-template\add-more-isbns-to-cart-btn.png" />
     <Content Include="App_Themes\NWTD\images-template\add-shipping-info-btn.png" />
     <Content Include="App_Themes\NWTD\images-template\add-this-item-btn.png" />
@@ -4475,7 +4470,24 @@
     <Content Include="Templates\NWTD\PageTemplates\TestTemplate.ascx" />
     <Content Include="Templates\NWTD\Scripts\pngfix.js" />
     <Content Include="Templates\NWTD\SearchLink.ascx" />
+    <Content Include="Templates\NWTD\Swf\AK12.jpg" />
+    <Content Include="Templates\NWTD\Swf\AK3.jpg" />
+    <Content Include="Templates\NWTD\Swf\banner_alaska.xml" />
+    <Content Include="Templates\NWTD\Swf\banner_mssd.xml" />
+    <Content Include="Templates\NWTD\Swf\banner_nevada.xml" />
+    <Content Include="Templates\NWTD\Swf\banner_nwtd.xml" />
+    <Content Include="Templates\NWTD\Swf\banner_oregon.xml" />
+    <Content Include="Templates\NWTD\Swf\banner_utah.xml" />
+    <Content Include="Templates\NWTD\Swf\banner_washington.xml" />
+    <Content Include="Templates\NWTD\Swf\NV1.jpg" />
+    <Content Include="Templates\NWTD\Swf\NV8.jpg" />
     <Content Include="Templates\NWTD\Swf\nwtd_flash.swf" />
+    <Content Include="Templates\NWTD\Swf\OR8.jpg" />
+    <Content Include="Templates\NWTD\Swf\OR9.jpg" />
+    <Content Include="Templates\NWTD\Swf\UT10.jpg" />
+    <Content Include="Templates\NWTD\Swf\UT7.jpg" />
+    <Content Include="Templates\NWTD\Swf\WA21.jpg" />
+    <Content Include="Templates\NWTD\Swf\WA9.jpg" />
     <Content Include="Templates\NWTD\UserStatusModule.ascx" />
   </ItemGroup>
   <ItemGroup>
@@ -4488,8 +4500,13 @@
     <Folder Include="Structure\Base\Controls\Cart\App_LocalResources\" />
     <Folder Include="Structure\Base\Controls\Editors\CuteEditor\ImageEditor\TempFiles\" />
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -4503,7 +4520,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>57269</DevelopmentServerPort>
+          <DevelopmentServerPort>2418</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

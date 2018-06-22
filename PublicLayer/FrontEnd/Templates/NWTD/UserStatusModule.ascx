@@ -14,7 +14,9 @@
 				<div class="welcome-txt">
 					<%=RM.GetString("GENERAL_WELCOME")%> <asp:Literal runat="server" ID="litFirstName" />
 				</div> 
+                    <% if (Session["po2go_pos"] == null) { %>
 					<asp:HyperLink EnableViewState="false" runat="server" CssClass="my-account" NavigateUrl='<%#ResolveUrl("~/Profile/secure/ChangeEmailPassword.aspx")%>'>My Account</asp:HyperLink> <asp:HyperLink ID="HyperLink1" runat="server" CssClass="logout-btn" NavigateUrl='<%#ResolveUrl("~/logout.aspx")%>'><%=RM.GetString("MAIN_LOGOUT")%></asp:HyperLink><br />
+                    <% } %>
 				<div class="need-help-bottom">
 				    <div class="welcome-txt">Active Wish List: </div><%--<asp:HyperLink EnableViewState="false" runat="server" NavigateUrl='<%#ResolveUrl("~/Cart/Manage.aspx")%>'>Your Wish Lists</asp:HyperLink> | --%>
 				    <asp:HyperLink 

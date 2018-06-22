@@ -16,6 +16,7 @@ using Mediachase.Commerce.Shared;
 using Mediachase.Ibn.Data;
 using Mediachase.Ibn.Data.Meta.Schema;
 using NWTD;
+using Newtonsoft.Json;
 
 namespace Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart {
 	
@@ -24,13 +25,38 @@ namespace Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart {
 	/// </summary>
 	public partial class Cart : System.Web.UI.UserControl {
 
-		#region Properties
-		
-		/// <summary>
-		/// The name of the selected cart. Reads the querystring first, then checks the current user's active cart.
-		/// It'll then create the cart if it doesn't exist
-		/// </summary>
-		public String SelectedCartName {
+        private IDictionary<string,object> getItemDict(LineItem item, decimal quantity, decimal price)
+        {
+            IDictionary<string, object> i = new Dictionary<string, object>();
+            IDictionary<string, object> data = new Dictionary<string, object>();
+            i["quantity"] = quantity;
+            i["unitprice"] = Decimal.Round(price, 2);
+            i["description"] = item.DisplayName;
+            i["currency"] = "USD";
+            i["language"] = "en";
+            i["supplierid"] = item.CatalogEntryId;
+            i["supplierauxid"] = item.CatalogEntryId;
+            i["classdomain"] = "UNSPSC";
+            i["classification"] = "55101509";
+            i["uom"] = "EA";
+
+            data["manufacturer"] = null;
+            data["manufacturer_id"] = item.CatalogEntryId;
+            data["test_with_curly_bracket"] = null;
+            data["test_with_quotes"] = null;
+            data["test_with_square_bracket"] = null;
+            i["data"] = data;
+
+            return i;
+        }
+
+        #region Properties
+
+        /// <summary>
+        /// The name of the selected cart. Reads the querystring first, then checks the current user's active cart.
+        /// It'll then create the cart if it doesn't exist
+        /// </summary>
+        public String SelectedCartName {
 			get {
 				if (!string.IsNullOrEmpty(Request["Cart"])) {
 					return Request["Cart"];
@@ -38,6 +64,7 @@ namespace Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart {
 					NWTD.Profile.EnsureCustomerCart();
 					return NWTD.Profile.ActiveCart;
 				}
+                
 			}
 		}
 
@@ -61,16 +88,48 @@ namespace Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart {
             }
         }
 
-		#endregion
+        /// <summary>
+        /// Returns an encoded PunchOut2Go blob
+        /// </summary>
+        protected string EncodedPunchOut2GoParams
+        {
+            get
+            {
+                IDictionary<string, object> body = new Dictionary<string, object>();
+                body["edit_mode"] = 0;
+                body["total"] = Decimal.Round(this.SelectedCartHelper.Cart.Total, 2);
+                body["currency"] = "USD";
+                IList<IDictionary<string, object>> items = new List<IDictionary<string, object>>();
+                foreach (LineItem item in this.SelectedCartHelper.LineItems)
+                {
+                    if (item.Quantity - (decimal)item["Gratis"] > 0)
+                    {
+                        items.Add(this.getItemDict(item, item.Quantity - (decimal)item["Gratis"], item.ListPrice));
+                    }
+                    if ((decimal) item["Gratis"] > 0)
+                    {
+                        items.Add(this.getItemDict(item, (decimal) item["Gratis"], 0));
+                    }
+                }
+                body["items"] = items;
+                IDictionary<string, object> bdict = new Dictionary<string, object>();
+                bdict["body"] = body;
+                string json = JsonConvert.SerializeObject(bdict);
+                string base64 = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(json));
+                return base64;
+            }
+        }
 
-		#region Methods
+        #endregion
 
-		/// <summary>
-		/// Gets the line items from the cart is represented by the supplied name and belongs to the current user
-		/// </summary>
-		/// <param name="CartName"></param>
-		/// <returns></returns>
-		public static System.Collections.IEnumerable getLineItems(String CartName){
+        #region Methods
+
+        /// <summary>
+        /// Gets the line items from the cart is represented by the supplied name and belongs to the current user
+        /// </summary>
+        /// <param name="CartName"></param>
+        /// <returns></returns>
+        public static System.Collections.IEnumerable getLineItems(String CartName){
 			CartHelper helper =  new CartHelper(CartName, ProfileContext.Current.UserId);
 			return helper.LineItems;
 		}
@@ -181,13 +240,32 @@ namespace Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart {
 
 		}
 
-		/// <summary>
-		/// When the data is bound to the Cart grid, show/hide certain buttons depending on whether the data is empty
-		/// Also, re-name the page.
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
-		protected void gvCart_DataBound(object sender, EventArgs e) {
+        /// <summary>
+        /// Save the changes, then submit to PunchOut2Go
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void btnSubmitPO2Go_Click(object sender, EventArgs e)
+        {
+            Page.Validate();
+
+            if (Page.IsValid)
+            {
+                if (this.SaveChanges())
+                {
+                    Session["po2go_outbound_params"] = this.EncodedPunchOut2GoParams;
+                    Response.Redirect("/PO2Go.aspx");
+                }
+            }
+        }
+
+        /// <summary>
+        /// When the data is bound to the Cart grid, show/hide certain buttons depending on whether the data is empty
+        /// Also, re-name the page.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void gvCart_DataBound(object sender, EventArgs e) {
 			this.Page.Title = this.SelectedCartHelper.Cart.Name;
 			if (SelectedCartHelper.LineItems.Count() == 0) {
 				this.btnSubmit.Visible = false;
@@ -322,8 +400,7 @@ namespace Mediachase.Cms.Website.Structure.User.NWTDControls.Controls.Cart {
 			this.hlISBNQuickEntryTop.NavigateUrl = quickISBNUrl;
 		}
 
-		#endregion
+        #endregion
 
-
-	}
+    }
 }

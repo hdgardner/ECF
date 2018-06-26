@@ -50,6 +50,7 @@
 				<asp:AsyncPostBackTrigger ControlID="btnDeleteSelectedTop" />
 				<asp:AsyncPostBackTrigger ControlID="btnDeleteSelected" />
 				<asp:AsyncPostBackTrigger ControlID="btnSaveChanges" />
+				<asp:AsyncPostBackTrigger ControlID="btnSaveChanges2" />
 			</Triggers>
 			<ContentTemplate>
 				<asp:UpdateProgress  runat="server" ID="progressViewCart"  DynamicLayout="true" >
@@ -189,7 +190,7 @@
 			<div class="nwtd-cartview-buttonrow-right">&nbsp;
             <% if (Session["po2go_pos"] != null) { %>
                  <% if (this.SelectedCartHelper.Cart.Status != "Transferred") { %>
-                <asp:Button CssClass="nwtd-submitCart save-changes-btn buttons" runat="server" ID="Button1" Text="Save Changes" onclick="btnSaveChanges_Click" />
+                <asp:Button CssClass="nwtd-submitCart save-changes-btn buttons" runat="server" ID="btnSaveChanges2" Text="Save Changes" onclick="btnSaveChanges_Click" />
     		    <asp:Button runat="server" ID="btnSubmitPO2Go" Text="Transfer Order" CssClass="nwtd-submitCart submit-po2go-btn buttons" onclick="btnSubmitPO2Go_Click" />
                 <% } %>
             <% } else {%>

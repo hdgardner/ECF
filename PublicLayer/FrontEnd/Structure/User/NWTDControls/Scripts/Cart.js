@@ -15,6 +15,7 @@
 
 
 	var submitButton = $('.nwtd-submitCart');
+	var allSubmitButtons = $('.dontcheckdirty');
 
 	var message = $('<div class="error">At least one quantity greater than zero must be entered for each item.</div>').insertAfter(submitButton).hide();
 
@@ -68,10 +69,13 @@
 
 
 
-	submitButton.live('click', function () {
+	allSubmitButtons.live('click', function () {
 		window.onbeforeunload = null;
-		return !checkForErrors();
 	});
+
+        submitButton.live('click', function() {
+		return !checkForErrors();
+        });
 
 	checkForErrors();
 });
